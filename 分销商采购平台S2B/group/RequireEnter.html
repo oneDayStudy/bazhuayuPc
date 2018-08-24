@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta name="renderer" content="webkit" />     
+    <title>八爪鱼在线旅游平台 | 整团需求录入</title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/common.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/main.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/proDetail.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/require.css">
+</head>
+<body>
+    <!--头部开始-->
+    <div class="header">
+        <div class="logo_left"><img src="../resource/images/icon/icon_logo.png"><span class="address triangle">苏州<em></em></span></div>
+        <ul class='menu'>
+            <li class="active"><a>首页</a></li>
+            <li><a>短线</a></li>
+            <li><a>长线</a></li>
+            <li><a>出境</a></li>
+            <li><a>邮轮</a></li>
+            <li><a>整团</a></li>
+            <li><a>分期</a></li>
+        </ul>
+        <div class="icon_list">
+            <div class="s_wrap none">
+                <div class="search_wrap">
+                  <div class="selBox">
+                    <select name="drop1" class="ui-select">
+                      <option>出团旅游</option>
+                      <option>儿童</option>
+                      <option>老人</option>  
+                    </select>
+                  </div>                     
+                    <input type="text" placeholder="输入目的地/线路/关键词/供应商">
+                    <a class="txt_search">搜索</a>
+                    <div class="content_wrap">
+                        <p>热门目的地</p>
+                        <div class="hot">
+                            <a class="active">上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="search"></a>
+            <a class="telphone"></a>
+            <a class="money"></a>
+            <a class="ring"><em>12</em></a>
+            
+            <div class="shop"><span class="triangle">kl-fxs分销商门店<em></em></span>
+                <ul class="all_shop none">
+                    <li class="first"><a>青年分社</a></li>
+                    <li><a>分店</a></li>
+                    <li><a>分店</a></li>
+                    <li class="last"><a>退出</a></li>
+                </ul>
+            </div>
+            <div class="erweima none"><img src="../resource/images/erweima.jpg"></div>
+        </div>
+    </div>
+    <!--头部结束-->
+    <style type="text/css">
+      .requireSwiper{width:100%;height:340px;position:relative;background:#eeb970;}
+      .requireSwiper .swiper-container {height: 340px;width: 100%;} 
+      .twoColinput .inputBox input{width:165px;float:left;} 
+      .twoColinput .mddTags{float:left;margin-left:2px;}
+      .mddTags a{position:relative;display:inline-block;background:#fb7262;color:#fff;font-size:14px;padding:0 32px 0 10px;line-height:34px;margin-left:10px;}
+      .mddTags a i.closed{display:block;width:12px;height:13px;background:url(../resource/images/icon/w_closed.png) no-repeat center center;position:absolute;right:10px;top:50%;margin-top:-6px;}   
+    </style>
+    <div class="requireSwiper">
+     <!--首页轮播图 开始--> 
+     <div class="swiper-container"> 
+      <div class="swiper-wrapper"> 
+       <div class="swiper-slide" style="background:url(../resource/images/1920x340.png) center center no-repeat scroll;"></div> 
+       <div class="swiper-slide" style="background:url(../resource/images/1920x340.png) center center no-repeat scroll;"></div> 
+       <div class="swiper-slide" style="background:url(../resource/images/1920x340.png) center center no-repeat scroll;"></div> 
+      </div> 
+     </div> 
+     <div class="pagination"></div> 
+     <!--首页轮播图 结束-->
+     </div> 
+    <style type="text/css">
+      .madeLayer{width:400px;position:absolute;background:#fff;border:1px solid #CECECE;left:0;top:35px;z-index:9999;}
+      .madeLayer .madeTit{padding: 0 15px;background: #F5F9FB;border-bottom:1px solid #CECECE;position:relative;}
+      .madeLayer  .levelLayer{padding:5px 15px;}
+      .madeLayer  .levelLayer a{display:block;float:left;margin-right:20px;line-height:25px;font-size:12px;color:#666;}
+      .madeLayer  .levelLayer a:hover{color:#FB7262;}
+      .madeLayer  .levelLayer a.cur{color:#FB7262;}
+      .madeLayer  .levelOne a{font-weight:bold;}
+      .madeLayer .levelTwo{border-top:1px dashed #CECECE;}
+      .madeTit .madeSearch{padding:5px 0;}
+      .madeTit .madeSearch input{height:26px;line-height:26px;border-radius:14px;padding:0 15px;}
+      .madeTit .madeSearch .searchTxt{color:#FB7262;line-height:26px;margin-left:10px;font-size:14px;}
+.madeTit i.closedCity {
+    cursor: pointer;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 10px;
+    background: url(../resource/images/icon/closed.png) no-repeat center center;
+}      
+    </style>     
+    <div class="requireBox">
+        <div class="container shadow">
+            <div class="requireTit"><span class="enterIcon">填写定制需求</span></div>
+            <div class="requireTable">
+              <table>
+                <tr>
+                  <td class="title"><i class="f_red">*</i>出发地：</td>
+                  <td><div class="inputBox"><input type="text" placeholder="您的出发地"></div></td>
+                </tr>
+                <tr>
+                  <td class="title"><i class="f_red">*</i>目的地：</td>
+                  <td>
+                    <div class="twoColinput">
+                      <div class="inputBox" style="position:relative;"><input type="text" placeholder=""/>
+                        <div class="madeLayer">
+                          <div class="madeTit">
+                            <div class="madeSearch clearfix">
+                                <input type="text"/>
+                                <a href="javascript:;" class="searchTxt">搜索</a>
+                            </div>
+                            <i class="icon closedCity"></i>
+                          </div>
+                          <div class="levelLayer levelOne clearfix">
+                              <a href="javascript:;" class="cur">江苏</a>
+                              <a href="javascript:;">江苏</a>
+                              <a href="javascript:;">江苏</a>
+                              <a href="javascript:;">江苏</a>
+                              <a href="javascript:;">江苏</a>
+                              <a href="javascript:;">江苏</a>
+                          </div>
+                          <div class="levelLayer levelTwo clearfix">
+                              <a href="javascript:;">江苏</a>
+                              <a href="javascript:;">江苏</a>
+                              <a href="javascript:;">江苏</a>
+                              <a href="javascript:;">江苏</a>
+                              <a href="javascript:;">江苏</a>
+                              <a href="javascript:;">江苏</a>                          
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inputBox"><input type="text" placeholder="" style="margin-left:12px;"></div>
+                      <div class="mddTags">
+                        <a href="javascript:;">云南<i class="closed"></i></a>
+                        <a href="javascript:;">马尔代夫<i class="closed"></i></a>
+                        <a href="javascript:;">天目湖<i class="closed"></i></a>
+                        <a href="javascript:;">马尔代夫<i class="closed"></i></a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">成团地点：</td>
+                  <td><div class="inputBox"><input type="text" placeholder="成团地点"></div></td>
+                </tr>				
+                <tr>
+                  <td class="title"><i class="f_red">*</i>计划出游日期：</td>
+                  <td>
+                    <div class="NumBox clearfix">
+                      <div class="choiceBox clearfix">
+                        <div class="choiceNum">
+                          <a href="javascript:;" class="reduceIcon IconOrange"></a>
+                          <input class="NumBox" type="text" placeholder="1">
+                          <a href="javascript:;" class="addIcon "></a>
+                        </div>
+                        <span>天</span>
+                      </div>
+                      <div class="secTitle"><i class="f_red">*</i>住宿：</div>
+                      <div class="choiceBox clearfix">
+                        <div class="choiceNum">
+                          <a href="javascript:;" class="reduceIcon IconOrange"></a>
+                          <input class="NumBox" type="text" placeholder="1">
+                          <a href="javascript:;" class="addIcon "></a>
+                        </div>
+                        <span>晚</span>
+                      </div>
+                    </div>                   
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title"><i class="f_red">*</i>计划游玩天数：</td>
+                  <td>
+                    <div class="NumBox clearfix">
+                      <div class="choiceBox clearfix">
+                        <div class="choiceNum">
+                          <a href="javascript:;" class="reduceIcon IconOrange"></a>
+                          <input class="NumBox" type="text" placeholder="1">
+                          <a href="javascript:;" class="addIcon "></a>
+                        </div>
+                        <span>成人</span>
+                      </div>
+                      <div class="choiceBox clearfix" style="margin-left:95px;">
+                        <div class="choiceNum">
+                          <a href="javascript:;" class="reduceIcon IconOrange"></a>
+                          <input class="NumBox" type="text" placeholder="1">
+                          <a href="javascript:;" class="addIcon "></a>
+                        </div>
+                        <span>儿童</span>
+                      </div>
+                    </div>                   
+                  </td>
+                </tr> 
+                <tr>
+                  <td class="title"><i class="f_red">*</i>人均预算：</td>
+                  <td><div class="inputBox"><input type="text" placeholder=""></div><span class="tips">元左右</span></td>
+                </tr>
+                <tr>
+                  <td class="title"><i class="f_red">*</i>出游主题：</td>
+                  <td>
+                    <div class="tabsBox clearfix">
+                      <a href="javascript:;" class="checked">团队建设</a>
+                      <a href="javascript:;">奖金旅游</a>
+                      <a href="javascript:;">会展会务</a>
+                      <a href="javascript:;">商务考查</a>
+                      <a href="javascript:;">其他</a>
+                    </div>
+                  </td>
+                </tr> 
+                <tr>
+                  <td class="title"><i class="f_red">*</i>酒店要求：</td>
+                  <td>
+                    <div class="tabsBox clearfix">
+                      <a href="javascript:;" class="checked">团队建设</a>
+                      <a href="javascript:;">奖金旅游</a>
+                      <a href="javascript:;">会展会务</a>
+                      <a href="javascript:;">商务考查</a>
+                      <a href="javascript:;">其他</a>
+                    </div>
+                  </td>
+                </tr> 
+                <tr>
+                  <td class="title"><i class="f_red">*</i>用餐要求：</td>
+                  <td>
+                    <div class="tabsBox clearfix">
+                      <a href="javascript:;" class="checked">团队建设</a>
+                      <a href="javascript:;">奖金旅游</a>
+                      <a href="javascript:;">会展会务</a>
+                      <a href="javascript:;">商务考查</a>
+                      <a href="javascript:;">其他</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title"><i class="f_red">*</i>行程安排：</td>
+                  <td>
+                    <div class="tabsBox clearfix">
+                      <a href="javascript:;" class="checked">团队建设</a>
+                      <a href="javascript:;">奖金旅游</a>
+                      <a href="javascript:;">会展会务</a>
+                      <a href="javascript:;">商务考查</a>
+                      <a href="javascript:;">其他</a>
+                    </div>
+                  </td>
+                </tr>                                                                   
+                <tr>
+                  <td class="title">指定景点：</td>
+                  <td><div class="inputBox"><input type="text" placeholder=""></div></td>
+                </tr> 
+                <tr>
+                  <td class="title">参考行程：</td>
+                  <td>
+                  <div class="inputBox"><input type="text" placeholder=""></div>
+                  <a href="javascript:;" class="addFile">添加附件<input type="file"></a>
+                  </td>
+                </tr> 
+                <tr>
+                  <td class="title">其他要求：</td>
+                  <td><textarea placeholder="请输入备注信息，可不填"></textarea></td>
+                </tr>                                                                               
+              </table>
+            </div>
+            <div class="requireTit"><span class="linkedIcon">联系人信息</span></div>
+            <div class="requireTable"> 
+              <table>
+                <tr>
+                  <td class="title"><i class="f_red">*</i>联系人：</td>
+                  <td><div class="inputBox"><input type="text" placeholder="联系人姓名"></div></td>
+                </tr>
+                <tr>
+                  <td class="title"><i class="f_red">*</i>联系电话：</td>
+                  <td><div class="inputBox"><input type="text" placeholder="联系人电话"></div></td>
+                </tr> 
+                <tr>
+                  <td class="title"><i class="f_red">*</i>邮箱：</td>
+                  <td><div class="inputBox"><input type="text" placeholder="邮箱"></div></td>
+                </tr> 
+                <tr>
+                  <td class="title"></td>
+                  <td><a href="javascript:;" class="subBtn">提交</a></td>
+                </tr>                                                                                                            
+              </table>            
+            </div>           
+        </div>
+    </div>
+    <script src="../resource/js/jquery.min.js"></script>
+    <script src="../resource/js/idangerous.swiper.min.js"></script>
+    <script type="text/javascript">
+        $('html,body').css('background','#F2F5F7');
+        $(function(){
+            $(".shop").hover(function(){
+                $(this).find(".all_shop").toggleClass("none");
+            })
+            $(".search").click(function(){
+                $(this).parent(".icon_list").find(".search_wrap").fadeIn(500);
+            })
+            $("body").click(function(e){
+                var _con = $(".search,.search_wrap");
+                if( !_con.is(e.target) && _con.has(e.target).length == 0){
+                    $(".search_wrap").fadeOut(100)
+                }
+            })
+        })
+        //tab切换
+      $(function () {
+        $(".tabs li").click(function () { 
+        var index_tab = $(this).parent().children().index($(this)); //选项卡的索引值 
+        $(this).addClass('cur').siblings().removeClass('cur');
+        var content_obj = $(".tabs_con") //内容节点 
+        content_obj.hide(); 
+        content_obj.eq(index_tab).show(); 
+        }); 
+      });        
+      //首页轮播图开始
+      var mySwiper = new Swiper('.swiper-container',{
+          pagination: '.pagination',
+          loop:true,
+          grabCursor: true,
+          paginationClickable: true,
+          autoplay: 3000
+      })
+      //模拟radio
+      $(".checkBtn").click( function () {
+        $(this).siblings("span").addClass("active");
+        $(this).parents("div").siblings("div").children("span").removeClass("active");
+      });
+      //城市列表    
+  	  $(".showCityGroup").mouseover(function(){
+  		$(this).children(".cityGroup").show();
+  		$('.ds_catalogMain').css('z-index','101');
+  	  });
+  	  $(".showCityGroup").mouseout(function(){
+  		$(this).children(".cityGroup").hide();
+  		$('.ds_catalogMain').css('z-index','9');
+  	  });
+    </script>
+</body>
+</html>

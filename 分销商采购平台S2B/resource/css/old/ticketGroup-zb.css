@@ -1,0 +1,34 @@
+.proTabsCon .title .flyIcon{float:left;display:inline-block;background:url(../../images/icon/flyIcon.png) no-repeat;width:32px;height:34px;margin-right:10px}
+.ticketFlyBox{margin-top:30px;padding-left:42px}
+.Tab{height:48px;width:1018px;border-bottom:1px solid #fc8e81;color:#666;font-weight:500}
+.Tab span{float:left;display:inline-block;width:100px;height:48px;font-size:16px;line-height:48px;text-align:center}
+.tabBj{width:207px;float:left;overflow:hidden}
+.tabBj1{background:url(../../images/icon/tabBj1.png) no-repeat}
+.tabBj2{background:url(../../images/icon/tabBj2.png) no-repeat}
+.trafficCon{overflow:hidden;color:#666}
+.content_detail{width:932px;border:1px solid #e4e4e4;border-top:0;padding:30px 42px;position:relative}
+.content_detail_check{overflow:hidden;font-size:14px}
+.content_detail_check span b{display:inline-block;width:18px;height:18px;cursor:pointer;background:url(../../images/icon.png) no-repeat;background-position:0 -379px}
+.content_detail_check span b.checked{background-position:-19px -379px}
+.content_detail span{float:left;height:20px;line-height:20px;margin-left:8px}
+.content_input{overflow:hidden;margin-top:24px}
+.content_input p{float:left;width:176px;height:35px;overflow:hidden;line-height:35px;margin-left:36px}
+.content_input p span{float:left;line-height:35px}
+.content_input p input{float:left;width:106px;height:28px;border:1px solid #dfe4e6;margin-left:6px;padding:0 3px;}
+.content_input .search{position:absolute;width:80px;height:30px;background:#fb7262;line-height:30px;text-align:center;color:#fff;border-radius:6px;right:46px;bottom:40px}
+.groupTicketBox .ticketCon .ticketRight{width:180px;}
+.groupTicketBox .resultBox .choiceTicket{padding:0 15px;}
+.groupTicketBox .resultBox .ticketCon .ticketRight{padding-left:30px;padding-top:40px;}
+.groupTicketBox .signleBox .ticketCon .ticketRight{padding-left:20px;padding-top:15px;}
+.groupTicketBox .signleBox .ticketCon .ticketLeft{border-right:none;}
+.groupTicketBox .resultBox .trainTable{table-layout:fixed;}
+.groupTicketBox .flightItem .ticketCol p{width:135px;}
+.groupTicketBox .trainTable .flightItem .moreCol p.price{width:130px;}
+.groupTicketBox .flightInfo .flightItem td{border-top:1px solid #E4E4E4;}
+.width_80{width:80px!important;}
+.groupTicketBox .flightInfo .ticketCol{width:130px;}
+.groupTicketBox .flightItem{padding:30px 0;}
+.groupTicketBox .flightItem .ticketCol.width_80 p{width:80px!important;}
+.groupTicketBox .flightItem .ticketCol .zdBox{width:80px;}
+.groupTicketBox .flightItem .linePrice{line-height:24px!important;}
+.groupTicketBox .flightItem .otherSeat{right:80px;top:75%;}

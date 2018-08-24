@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/common.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/statistics.css">
+    <link href="../resource/js/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="myheader">
+        <div class="shop"><span class="triangle">kl-fxs分销商门店<em></em></span>
+            <ul class="all_shop none">
+                <li class="first"><a>青年分社</a></li>
+                <li><a>分店</a></li>
+                <li><a>分店</a></li>
+                <li class="last"><a>退出</a></li>
+            </ul>
+        </div>
+        <div class="head_right">
+            <ul class="top_menu">
+                <li class="active"><a>首页</a></li>
+                <li><a>短线</a></li>
+                <li><a>长线</a></li>
+                <li><a>出境</a></li>
+                <li><a>邮轮</a></li>
+                <li><a>整团</a></li>
+                <li><a>分期</a></li>
+            </ul>
+            <div class="icon_list">
+                <a class="telphone"></a>
+                <a class="money"></a>
+                <a class="ring"></a>
+            </div>
+        </div>
+    </div>
+    <div class="menu_contain">
+        <div class="menu">
+            <i class="bzy_logo"></i>
+            <em class="pos">苏州站</em>
+            <div class="search_all">
+                <ul class="nav_hd">
+                    <li><a>我的店</a></li>
+                    <li><a>订单中心</a></li>
+                    <li><a>我的财务</a></li>
+                    <li class="cur"><a>收客统计</a></li>
+                    <li><a>电子合同</a></li>
+                    <li><a>我的收藏</a></li>
+                </ul>
+                <div class="search_wrap none">
+                    <span class="triangle r_tri">
+                        <select>
+                            <option>出境</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </span>
+                    <input type="text" placeholder="输入目的地/线路/关键词/供应商">
+                    <i class="yi"></i>
+                    <div class="content_wrap">
+                        <p>热门目的地</p>
+                        <div class="hot">
+                            <a class="active">上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="i_search"></a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <ul>
+                <li class="title"><a>统计</a></li>
+                <li><a>客户管理</a></li>
+                <li><a>按年份统计</a></li>
+                <li class="active"><a>按时间段统计</a></li>
+                <li><a>按地区统计</a></li>
+                <li><a>机场班车统计</a></li>
+                <li><a>后抵用券统计</a></li>
+                <li><a>门店销售统计</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="info">
+                <div class="info_input order_origin">
+                    <span class="date_go">订单类型</span>
+                    <select>
+                        <option>全部</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </div>
+                <div class="info_input cal">
+                    <span class="date_go">日期</span>
+                    <div class="info_input order_origin ft">
+                        <select>
+                            <option>发团</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <label>
+                        <input type="text" value="2017-08-12">
+                        <i class="icon-caladar"></i>
+                    </label>
+                    <em class="zhi">至</em>
+                    <label>
+                        <input type="text" placeholder="下单时间" onclick="WdatePicker({skin:'twoer',dateFmt:'yyyy-MM-dd'})">
+                        <i class="icon-caladar"></i>
+                    </label>
+                </div>
+                <div class="info_input txt width1">
+                    <span class="date_go">供应商</span>
+                    <label>
+                        <input type="text">
+                    </label>
+                </div>
+            </div>
+            <div class="info">
+                <div class="info_input order_origin">
+                    <span class="date_go">线路状态</span>
+                    <select>
+                        <option>全部</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </div>
+                <div class="info_input order_origin yhm">
+                    <span class="date_go">用户名</span>
+                    <select>
+                        <option>全部</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </div>
+                <div class="info_input txt">
+                    <span class="date_go">团队名称</span>
+                    <label>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="info_input txt width1">
+                    <span class="date_go">门店</span>
+                    <label>
+                        <input type="text">
+                    </label>
+                </div>
+            </div>
+            <div class="info">
+                <div class="info_input order_origin">
+                    <span class="date_go">排序方式</span>
+                    <select>
+                        <option>人数</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </div>
+                <div class="info_input order_origin yhm">
+                    <span class="date_go">线路编号</span>
+                    <select>
+                        <option>全部</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="sel_info">
+                <span>整团订单状态：</span>
+                <label><input type="radio" name="order_state"><em>待报价</em></label>
+                <label><input type="radio" name="order_state"><em>带选标</em></label>
+                <label><input type="radio" name="order_state"><em>已选标</em></label>
+                <label><input type="radio" name="order_state"><em>已取消</em></label>
+                <label><input type="radio" name="order_state"><em>回团确认</em></label>
+                <label><input type="radio" name="order_state"><em>计调待确认</em></label>
+            </div>
+            <div class="sel_info">
+                <span>整团订单状态：</span>
+                <label><input type="radio" name="order_state1"><em>待审核</em></label>
+                <label><input type="radio" name="order_state1"><em>已报名确认</em></label>
+                <label><input type="radio" name="order_state1"><em>已出票确认</em></label>
+                <label><input type="radio" name="order_state1"><em>已回团确人</em></label>
+                <label><input type="radio" name="order_state1"><em>已退团</em></label>
+                <label><input type="radio" name="order_state1"><em>已取消</em></label>
+            </div>
+            <div class="sel_info">
+                <span>整团订单状态：</span>
+                <label><input type="radio" name="order_state2"><em>未对账</em></label>
+                <label><input type="radio" name="order_state2"><em>对账中</em></label>
+                <label><input type="radio" name="order_state2"><em>对账完成</em></label>
+                <span class="btn query">查询</span>
+            </div>
+            <table class="stais">
+                <tr class="tit">
+                    <th>旅行社</th>
+                    <th>用户名</th>
+                    <th>订单数</th>
+                    <th>收客数</th>
+                    <th>销售额</th>
+                    <th>结算额</th>
+                    <th>接送费</th>
+                    <th>优惠总金额</th>
+                    <th>加返</th>
+                    <th>已收</th>
+                </tr>
+                <tr>
+                    <td>分销商门店</td>
+                    <td>kl-fxs</td>
+                    <td>445</td>
+                    <td>445</td>
+                    <td>445</td>
+                    <td>445</td>
+                    <td>445</td>
+                    <td>445</td>
+                    <td>445</td>
+                    <td>445</td>
+                </tr>
+                <tr>
+                    <td>分销商门店</td>
+                    <td>kl-fxs</td>
+                    <td>445</td>
+                    <td>445</td>
+                    <td>445</td>
+                    <td>445</td>
+                    <td>445</td>
+                    <td>445</td>
+                    <td>445</td>
+                    <td>445</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="../resource/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../resource/js/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".shop").hover(function(){
+                $(this).find(".all_shop").toggleClass("none");
+            })
+            $(".i_search").click(function(){
+                $(this).parents(".search_all").find(".search_wrap").fadeIn(200);
+            })
+            $("body").click(function(e){
+                var _con = $(".i_search,.search_wrap");
+                if( !_con.is(e.target) && _con.has(e.target).length == 0){
+                    $(".search_wrap").addClass("none").fadeOut(100);
+                }
+            })
+            //订单tab
+            $(".order_tab .tab_item").click(function(){
+                $(this).addClass("active").siblings(".tab_item").removeClass("active");
+                $(".order_list[data-index="+ $(this).data("index")+"]").removeClass("none").siblings(".order_list").addClass("none");
+            })
+        })
+    </script>
+</body>
+</html>

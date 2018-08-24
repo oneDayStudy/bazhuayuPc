@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>线路预定</title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/common.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/proDetail.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/ticket.css">
+<link rel="stylesheet" type="text/css" href="../resource/css/dest/control.css">     
+    <script src="../resource/js/My97DatePicker/WdatePicker.js"></script>   
+</head>
+<body>
+    <!--头部开始-->
+    <div class="header">
+        <div class="logo_left"><a href="javascript:;"><i></i></a><span class="address triangle">苏州<em></em></span></div>
+        <ul class='menu'>
+            <li class="active"><a href="home.html">首页</a></li>
+            <li><a href="javascript:;">短线</a></li>
+            <li><a href="long/index.html">长线</a></li>
+            <li><a href="javascript:;">出境</a></li>
+            <li><a href="javascript:;">邮轮</a></li>
+            <li><a href="javascript:;">整团</a></li>
+            <li><a href="javascript:;">分期</a></li>
+        </ul>
+        <div class="icon_list">
+            <div class="search_wrap none">
+                <span class="triangle">出境<em></em></span>
+                <input type="text" placeholder="输入目的地/线路/关键词/供应商">
+                <i class="yi"></i>
+                <div class="content_wrap">
+                    <p>热门目的地</p>
+                    <div class="hot">
+                        <a class="active">上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a>
+                    </div>
+                </div>
+            </div>
+            <a class="search" href="javascript:;"></a>
+            <a class="telphone" href="javascript:;"></a>
+            <a class="money" href="javascript:;"></a>
+            <a class="ring" href="javascript:;"></a>
+            <div class="shop"><span class="triangle">kl-fxs分销商门店<em></em></span>
+                <ul class="all_shop none">
+                    <li class="first"><a>青年分社</a></li>
+                    <li><a>分店</a></li>
+                    <li><a>分店</a></li>
+                    <li class="last"><a>退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--头部结束-->
+    <div class="content">
+      <div class="TicketReservation">
+        <div class="steps_g"> 
+          <ul> 
+            <li class="current">1.查询航班</li> 
+            <li class="">2.填写订单</li> 
+            <li class="">3.在线支付</li> 
+            <li class="last">4.支付成功</li> 
+          </ul> 
+        </div>
+        <div class="lineDetail ReserveCon clearfix">
+          <div class="ReserveConL">
+            <!--附加产品开始--> 
+            <div class="OpportmanBox ReserveBox">
+              <div class="title">机票信息</div>
+              <div class="infoBox noPadding">
+                <!--机票开始-->
+                <div class="ticketCon ticketTeam clearfix">
+                  <div class="ticketLeft">
+                    <div class="ticketItem clearfix">
+                      <div class="ticketCol width_50">
+                        <p class="airLine">09-25</p>
+                        <p>周一</p>
+                      </div>    
+                      <div class="ticketCol">
+                        <p class="airLine">东方航空MU5615</p>
+                        <p>经济舱</p>
+                      </div>  
+                      <div class="ticketCol">
+                        <h2><span>21：00</span></h2>
+                        <p>上海浦东国际机场</p>
+                      </div>
+                      <div class="ticketCol">
+                        <p>12月21日</p>
+                        <p class="lineIcon"></p>
+                        <p>约3小时40分</p>
+                      </div>
+                      <div class="ticketCol">
+                        <h2><span>00：40<i class="oneDay">+1</i></span></h2>
+                        <p>三亚凤凰国际机场</p>
+                      </div>
+                      <div class="ticketCol width_50">
+                        <p class="airLine"></p>
+                        <p>含餐</p>
+                      </div>
+                    </div>
+                    <div class="ticketItem clearfix">
+                      <div class="ticketCol width_50">
+                        <p class="airLine">09-25</p>
+                        <p>周一</p>
+                      </div>    
+                      <div class="ticketCol">
+                        <p class="airLine">东方航空MU5615</p>
+                        <p>经济舱</p>
+                      </div>  
+                      <div class="ticketCol">
+                        <h2><span>21：00</span></h2>
+                        <p>上海浦东国际机场</p>
+                      </div>
+                      <div class="ticketCol">
+                        <p>12月21日</p>
+                        <p class="lineIcon"></p>
+                        <p>约3小时40分</p>
+                      </div>
+                      <div class="ticketCol">
+                        <h2><span>00：40<i class="oneDay">+1</i></span></h2>
+                        <p>三亚凤凰国际机场</p>
+                      </div>
+                      <div class="ticketCol width_50">
+                        <p class="airLine"></p>
+                        <p>含餐</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ticketRight">
+                    <p>往返票价</p>
+                    <h2>￥<em>2399</em> /人</h2>
+                    <p>仅剩<span class="font_roseo">3</span>席</p>
+                    <p class="tips">
+                      <span class="f_blue">退改
+                          <span class="question">
+                            <i class="icon QIcon"></i>
+                            <span class="answerBox">说明说明</span>
+                         </span>
+                      </span>
+                     </p>
+                  </div>
+                </div> 
+                <!--机票结束-->
+                <div class="blank_5"></div>
+                <!--机票开始-->
+                <div class="ticketCon ticketTeam singleTicket clearfix ">
+                  <div class="ticketLeft">
+                    <div class="ticketItem clearfix">
+                      <div class="ticketCol width_50">
+                        <p class="airLine">09-25</p>
+                        <p>周一</p>
+                      </div>    
+                      <div class="ticketCol">
+                        <p class="airLine">东方航空MU5615</p>
+                        <p>经济舱</p>
+                      </div>  
+                      <div class="ticketCol">
+                        <h2><span>21：00</span></h2>
+                        <p>上海浦东国际机场</p>
+                      </div>
+                      <div class="ticketCol">
+                        <p>12月21日</p>
+                        <p class="lineIcon"></p>
+                        <p>约3小时40分</p>
+                      </div>
+                      <div class="ticketCol">
+                        <h2><span>00：40<i class="oneDay">+1</i></span></h2>
+                        <p>三亚凤凰国际机场</p>
+                      </div>
+                      <div class="ticketCol width_50">
+                        <p class="airLine"></p>
+                        <p>含餐</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ticketRight">
+                    <h2>￥<em>2399</em> /人</h2>
+                    <p>仅剩<span class="font_roseo">3</span>席</p>
+                    <p class="tips">
+                      <span class="f_blue">退改
+                          <span class="question">
+                            <i class="icon QIcon"></i>
+                            <span class="answerBox">说明说明</span>
+                         </span>
+                      </span>
+                     </p>
+                  </div>
+                </div> 
+                <!--机票结束-->
+              </div>              
+            </div>    
+            <!--附加产品结束-->  
+            <!--乘机人信息开始-->
+            <div class="OpportmanBox ReserveBox">
+              <div class="title">乘机人信息<a href="javascript:;" class="addPeo">新增</a><a href="javascript:;" class="choicePlane clientBtn">常用客户列表</a></div>
+              <div class="infoBox">
+                <!--copy begin-->
+                <div class="formCol clearfix">
+                      <div class="selBox">
+        <input name="" type="text" id="drpLineType0" class="dropDownListBox"  readonly="true" data="[{&quot;value&quot;:&quot;&quot;,&quot;text&quot;:&quot;全部&quot;},{&quot;value&quot;:&quot;1&quot;,&quot;text&quot;:&quot;国内短线&quot;},{&quot;value&quot;:&quot;2&quot;,&quot;text&quot;:&quot;国内长线&quot;},{&quot;value&quot;:&quot;3&quot;,&quot;text&quot;:&quot;出境旅游&quot;}]" value="全部" val="1">
+                      </div>  
+                  <div class="formCon">
+                    <div class="formItem clearfix">
+                      <div class="inputBox width_110">
+                        <input type="text" placeholder="姓名">
+                      </div>                    
+                      <div class="selBox">
+        <input name="" type="text" id="drpLineType1" class="dropDownListBox"  readonly="true" data="[{&quot;value&quot;:&quot;&quot;,&quot;text&quot;:&quot;全部&quot;},{&quot;value&quot;:&quot;1&quot;,&quot;text&quot;:&quot;国内短线&quot;},{&quot;value&quot;:&quot;2&quot;,&quot;text&quot;:&quot;国内长线&quot;},{&quot;value&quot;:&quot;3&quot;,&quot;text&quot;:&quot;出境旅游&quot;}]" value="全部" val="1">
+                      </div>     
+                      <div class="inputBox width_300">
+                        <input type="text" placeholder="证件号">
+                      </div>
+                      <a href="javascript:;" class="deleteBtn">删除</a>
+                    </div>
+                  </div>                 
+                </div>
+                <!--copy end-->
+                <!--copy begin-->
+                <div class="formCol clearfix">
+                      <div class="selBox">
+        <input name="" type="text" id="drpLineType2" class="dropDownListBox"  readonly="true" data="[{&quot;value&quot;:&quot;&quot;,&quot;text&quot;:&quot;全部&quot;},{&quot;value&quot;:&quot;1&quot;,&quot;text&quot;:&quot;国内短线&quot;},{&quot;value&quot;:&quot;2&quot;,&quot;text&quot;:&quot;国内长线&quot;},{&quot;value&quot;:&quot;3&quot;,&quot;text&quot;:&quot;出境旅游&quot;}]" value="全部" val="1">
+                      </div>   
+                  <div class="formCon">
+                    <div class="formItem clearfix">
+                      <div class="inputBox width_110">
+                        <input type="text" placeholder="姓名">
+                      </div>                    
+                      <div class="selBox">
+        <input name="" type="text" id="drpLineType3" class="dropDownListBox"  readonly="true" data="[{&quot;value&quot;:&quot;&quot;,&quot;text&quot;:&quot;全部&quot;},{&quot;value&quot;:&quot;1&quot;,&quot;text&quot;:&quot;国内短线&quot;},{&quot;value&quot;:&quot;2&quot;,&quot;text&quot;:&quot;国内长线&quot;},{&quot;value&quot;:&quot;3&quot;,&quot;text&quot;:&quot;出境旅游&quot;}]" value="全部" val="1">
+                      </div>                       
+                      <div class="inputBox width_300">
+                        <input type="text" placeholder="证件号">
+                      </div>
+                      <a href="javascript:;" class="deleteBtn">删除</a>
+                    </div>
+                  </div>          
+                </div>
+                <!--copy end-->
+                <div class="notice f_999"><span class="font_roseo">*</span>&nbsp;&nbsp;暂不支持婴儿票的预订（婴儿定义：未满2周岁），如有需求请先联系客服。</div>                
+              </div>
+
+            </div>
+            <!--乘机人信息结束-->             
+            <!--附加产品开始--> 
+            <div class="OpportmanBox ReserveBox">
+              <div class="title">保险</div>     
+              <div class="addBox noBorder">
+                <div class="secureOuter">
+                  <table class="secureBox">
+                    <tr>
+                      <td rowspan="3" class="s_tit">航意险：</td>
+                      <td>
+                        <div class="securItem clearfix">
+                          <span class="safeItem">20元-合众综合交通意外十天 20元
+                            <span class="question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                            </span>
+                          </span>
+                          <p class="price font_roseo">￥40 元/份<span class="icon checkbox"></span></p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="securItem clearfix">
+                          <span class="safeItem">20元-合众2015高额1天航意险20元
+                            <span class="question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                            </span>                          
+                          </span>
+                          <p class="price font_roseo">￥25 元/份<span class="icon checkbox"></span></p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="securItem clearfix">
+                          <span class="safeItem">0元不购买
+                            <span class="question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                            </span>                          
+                          </span>
+                          <p class="price font_roseo">￥0 元/份<span class="icon checkbox"></span></p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <!--begin-->
+              <div class="addBox">
+                <div class="secureOuter">
+                  <table class="secureBox">
+                    <tr>
+                      <td rowspan="3" class="s_tit">延误险：</td>
+                      <td>
+                        <div class="securItem clearfix">
+                          <span class="safeItem">20元-合众综合交通意外十天 20元
+                            <span class="question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                            </span>
+                          </span>
+                          <p class="price font_roseo">￥40 元/份<span class="icon checkbox"></span></p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="securItem clearfix">
+                          <span class="safeItem">20元-合众2015高额1天航意险20元
+                            <span class="question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                            </span>                          
+                          </span>
+                          <p class="price font_roseo">￥25 元/份<span class="icon checkbox"></span></p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="securItem clearfix">
+                          <span class="safeItem">0元不购买
+                            <span class="question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                            </span>                          
+                          </span>
+                          <p class="price font_roseo">￥0 元/份<span class="icon checkbox"></span></p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>              
+              <!--end-->
+            </div>    
+            <!--附加产品结束-->              
+            <!--联系人信息开始-->
+            <div class="OpportmanBox ReserveBox">
+              <div class="title">联系人信息</div>
+              <div class="infoBox contactBox">
+                <!--copy begin-->
+                <div class="formCol clearfix">
+                  <div class="signStyle">姓名</div>
+                  <div class="formCon">
+                    <div class="formItem clearfix">
+                      <div class="inputBox width_110">
+                        <input type="text" placeholder="姓名">
+                      </div>                    
+                    </div>
+                  </div> 
+                  <div class="signStyle">电话</div>
+                  <div class="formCon">
+                    <div class="formItem clearfix">
+                      <div class="inputBox width_150">
+                        <input type="text" placeholder="电话">
+                      </div>                    
+                    </div>
+                  </div>                 
+                </div>
+                <!--copy end-->              
+              </div>
+            </div>
+            <!--联系人信息结束-->                 
+          </div>
+          <div class="ReserveConR" id="divRightFloat">
+            <div class="title">结算信息</div>
+            <div class="ReservePrice">
+                <div class="priceList">
+                  <h3 class="clearfix">机票价格<span class="data font_roseo">￥4794</span></h3>
+                  <p class="clearfix">成人<span class="data">￥2397 x 2</span></p>
+                  <p class="clearfix">儿童<span class="data">￥2397 x 2</span></p>
+                  <p class="clearfix">老人<span class="data">￥2397 x 2</span></p>
+                  <p class="clearfix">单房差<span class="data">￥2397 x 2</span></p>
+                  <h3 class="clearfix">保险<span class="data font_roseo">￥60</span></h3>
+                  <p class="clearfix">航意险<span class="data">￥2397 x 2</span></p>
+                  <p class="clearfix">延误险<span class="data">￥2397 x 2</span></p>                  
+                  <h3 class="clearfix">其他<span class="data font_roseo">￥300</span></h3>
+                  <p class="clearfix">机建费<span class="data">￥100 x 2</span></p>
+                  <p class="clearfix">燃油费<span class="data">￥50 x 2</span></p>                  
+                </div>                             
+            </div>
+            <div class="payOrder">
+              <p class="priceTotal">订单总金额：<span class="PriceData"><i>￥</i>6709</span></p>
+              <a href="javascript:;" class="orderSubmit">提交订单</a>
+              <!--<p class="notice"><span>退改签说明</span></p>-->
+            </div>
+            <div class="bottBg"></div>
+          </div>
+        </div>        
+      </div>
+    </div> 
+    <!--底部开始-->
+	<div class="foot">
+		<div class="container foot-content">
+			<div class="copyright">
+				<p id="p_Copyright">电信增值业务经营许可证编号:苏B1-20120038/苏B2-20120205<br>版权所有：八爪鱼在线旅游发展有限公司</p>
+			</div>
+			<div id="divpic_links" class="pic_links" style="text-align: center;">
+				<a class="pic_link" href="http://www.szgswljg.gov.cn/websiteMark?siteid=32216" target="_blank">
+					<img src="resource/images/szicbok.gif" alt=""></a>
+				<a class="pic_link" href="https://search.szfw.org/cert/l/CX20140721008850008580" target="_blank">
+					<img src="resource/images/cxwz.jpg" alt=""></a>
+				<a class="pic_link" href="http://www.szgswljg.gov.cn/showCreditHonor?creditId=2514&amp;type=site" target="_blank">
+					<img src="resource/images/rzwz.jpg" alt=""></a>
+				<a class="pic_link" href="http://www.szgswljg.gov.cn/" target="_blank">
+					<img src="resource/images/wlts.jpg" alt=""></a>
+				<a class="pic_link" href="javascript:;">
+					<img src="resource/images/certification.gif" alt=""></a>
+			</div>
+			
+		</div>
+	</div>
+    <!--底部结束-->
+    <div class="popBg"></div>
+    <!--客户常用列表开始-->
+    <div class="popBox shadow">
+      <div class="popTitle">我的客户列表<i class="icon closeIcon"></i></div>
+      <div class="clientBox">
+        <div class="findBox clearfix">
+          <div class="inputItem clearfix">
+            <span class="tit">姓名</span>
+            <input type="text">
+          </div>
+          <div class="inputItem clearfix">
+            <span class="tit">手机号</span>
+            <input type="text">
+          </div>
+          <a href="javascript:;" class="searchBtn">搜索</a>        
+        </div>
+        <div class="clientList">
+            <table>
+              <tr>
+                <td style="width:30px;"><span class="icon checkbox"></span></td>
+                <td>王二狗</td>
+                <td>18501598421</td>
+                <td>身份证</td>
+                <td>230105191101011111</td>
+                <td>女</td>
+              </tr>
+              <tr>
+                <td style="width:30px;"><span class="icon checkbox"></span></td>
+                <td>王二狗</td>
+                <td>18501598421</td>
+                <td>身份证</td>
+                <td>230105191101011111</td>
+                <td>女</td>
+              </tr>
+              <tr>
+                <td style="width:30px;"><span class="icon checkbox"></span></td>
+                <td>王二狗</td>
+                <td>18501598421</td>
+                <td>身份证</td>
+                <td>230105191101011111</td>
+                <td>女</td>
+              </tr>
+              <tr>
+                <td style="width:30px;"><span class="icon checkbox"></span></td>
+                <td>王二狗</td>
+                <td>18501598421</td>
+                <td>身份证</td>
+                <td>230105191101011111</td>
+                <td>女</td>
+              </tr>
+              <tr>
+                <td style="width:30px;"><span class="icon checkbox"></span></td>
+                <td>王二狗</td>
+                <td>18501598421</td>
+                <td>身份证</td>
+                <td>230105191101011111</td>
+                <td>女</td>
+              </tr>
+              <tr>
+                <td style="width:30px;"><span class="icon checkbox"></span></td>
+                <td>王二狗</td>
+                <td>18501598421</td>
+                <td>身份证</td>
+                <td>230105191101011111</td>
+                <td>女</td>
+              </tr> 
+              <tr>
+                <td style="width:30px;"><span class="icon checkbox"></span></td>
+                <td>王二狗</td>
+                <td>18501598421</td>
+                <td>身份证</td>
+                <td>230105191101011111</td>
+                <td>女</td>
+              </tr>
+              <tr>
+                <td style="width:30px;"><span class="icon checkbox"></span></td>
+                <td>王二狗</td>
+                <td>18501598421</td>
+                <td>身份证</td>
+                <td>230105191101011111</td>
+                <td>女</td>
+              </tr>
+              <tr>
+                <td style="width:30px;"><span class="icon checkbox"></span></td>
+                <td>王二狗</td>
+                <td>18501598421</td>
+                <td>身份证</td>
+                <td>230105191101011111</td>
+                <td>女</td>
+              </tr>
+              <tr>
+                <td style="width:30px;"><span class="icon checkbox"></span></td>
+                <td>王二狗</td>
+                <td>18501598421</td>
+                <td>身份证</td>
+                <td>230105191101011111</td>
+                <td>女</td>
+              </tr>                                                                        
+            </table>
+        </div>
+        <div class="editBtn">
+          <a href="javascript:;" class="button">使用</a>
+        </div>
+      </div>
+    </div>
+    <!--客户常用列表结束-->
+<script src="../resource/js/jquery.min.js"></script>
+<script src="../resource/js/idangerous.swiper.min.js"></script>  
+<script src="../resource/js/My97DatePicker/WdatePicker.js"></script>
+<script src="../resource/js/jquery.mx.controls-1.1.js"></script>
+<script src="../resource/js/jquery.mx.webscroll.js"></script> 
+<script src="../resource/js/jquery.json-2.2.min.js"></script>      
+  <script type="text/javascript">
+      //初始化线路类型下拉框
+    new DropDownList($("#drpLineType0"), true, null, function () {
+    }, false);  
+     new DropDownList($("#drpLineType1"), true, null, function () {
+    }, false);  
+    new DropDownList($("#drpLineType2"), true, null, function () {
+    }, false);  
+     new DropDownList($("#drpLineType3"), true, null, function () {
+    }, false);  
+
+        $('html,body').css('background','#f2f5f7');
+        $(function(){
+            $(".shop").hover(function(){
+                $(this).find(".all_shop").toggleClass("none");
+            })
+            $(".search").click(function(){
+                $(this).parent(".icon_list").find(".search_wrap").fadeIn(500);
+            })
+            $("body").click(function(e){
+                var _con = $(".search,.search_wrap");
+                if( !_con.is(e.target) && _con.has(e.target).length == 0){
+                    $(".search_wrap").fadeOut(100)
+                }
+            })
+        })
+        //tab切换
+      $(function () {
+        $(".tabs li").click(function () { 
+        var index_tab = $(this).parent().children().index($(this)); //选项卡的索引值 
+        $(this).addClass('cur').siblings().removeClass('cur');
+        $(this).addClass('icon').siblings().removeClass('icon');
+        var content_obj = $(".tabs_con") //内容节点 
+        content_obj.hide(); 
+        content_obj.eq(index_tab).show(); 
+        }); 
+      });        
+      $(".checkbox").toggle(
+        function(){
+          $(this).addClass('checked');
+        },
+        function(){
+          $(this).removeClass('checked');
+        }
+      )
+      $(".clientBtn").click(function(){
+          $('.popBg').show();
+          $('.popBox').show();
+      }) 
+      $(".pickTic").click(function(){
+          $('.popBg').show();
+          $('.airList').show();
+      })      
+      $(".popTitle .closeIcon").click(function(){
+          $('.popBg').hide();
+          $('.popBox').hide();
+      }) 
+      $(".choiceBtn").click(function(){
+          $('.popBg').hide();
+          $('.airList').hide();
+      }) 
+  $(".chooseBtn").toggle(
+    function(){
+      $(this).parents().next('.flightList').show();
+    },
+    function(){
+      $(this).parents().next('.flightList').hide();
+    }
+  )  
+  var initTop = $('#divRightFloat').offset().top;
+    
+</script>
+</body>
+</html>

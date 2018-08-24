@@ -1,0 +1,205 @@
+body{background:#eff3f5;font-size:14px;color:#666}
+.main_content{width:1200px;margin:0 auto}
+.process_bg{width:1153px;height:6px;margin:0 auto}
+.process{margin-top:-18px;text-align:center}
+.process span{display:inline-block;width:29px;height:29px;background:url(../../images/icon/icon_state.png) no-repeat 0 0;position:relative;margin-bottom:35px}
+.process span i{top:35px;display:inline-block;width:100px;position:absolute;left:-34px}
+.process span+span{margin-left:155px}
+.process span.cur,.process span.pre{background:url(../../images/icon/icon_state.png) no-repeat 0 -60px;color:#f01447}
+.process span.cur:before,.process span.pre:before{content:'';height:6px;background:#f01447;position:absolute;left:29px;top:12px;z-index:22}
+.process span.pre:before{width:160px}
+.process span.cur:before{width:80px}
+.process span+span:after{content:'';height:6px;background:#d3d3d3;position:absolute;left:-160px;top:12px;width:160px;z-index:11}
+.nav_href{color:#666;font-size:12px;padding:20px 0;}
+.nav_href a.current{color:#f01447}
+.base_info{padding:20px 50px;line-height:30px;background-color:#fff;}
+.base_info span{margin-right:70px}
+.base_info span em{color:#999}
+.flightdetail tr{border-bottom:1px dashed #cecece}
+.flightdetail td{padding:16px;text-align:center}
+.flightdetail .cangwei,.flightdetail .left_tb{width:200px}
+.flightdetail .right_tb{width:176px}
+.center_tb i.flight_arrow{display:inline-block;width:113px;height:10px;background:url(../../images/icon/icon_jt.png) no-repeat center}
+.flightdetail .f_price{color:#f01447;font-size:24px}
+.flightdetail .f_price em{font-size:14px}
+.flightdetail .flighttime{font-size:24px;color:#333;margin-bottom:5px}
+.flightdetail .flighttime sup{font-size:14px;color:#e74c3c}
+.flightdetail .tripNum{width:26px;height:26px;background:#6bceee;line-height:26px;text-align:center;border-radius:5px;color:#fff}
+.flightdetail .tripNum.return{background:#ffba64}
+.pro_info{background:#fff;}
+/*.pro_info.base_pro_info{margin-top:20px}*/
+.order_infom .line_title{display:inline-block;width:400px;margin-right:80px;text-align:left}
+.order_infom .price{color:#f01447;padding-left:50px}
+.fl_detail .fl_price{color:#f01447}
+.fl_detail,.sq_tui table.sq_table{width:100%}
+.fl_detail tr+tr{border:none}
+.fl_detail td{text-align:left}
+.tt_order{width:700px}
+.tt_order .flight_info{padding-top:0}
+.sq_tui table.sq_table td{padding:10px 0;text-align:left}
+.order_daily table.sq_table td{padding:12px 0}
+.pro_info{border:1px solid #dfe4e6;}
+ .title{background:#f6f9fa;height:52px;line-height:52px;padding-left:20px;color:#333;font-size:16px;font-weight:700;position:relative;}
+.title .exportTable{position:absolute;right:20px;top:50%;margin-top:-15px;display:inline-block;line-height:25px;border:1px solid #fb7262;font-size:16px;color:#fb7262;padding:2px 15px;border-radius:15px;font-weight:normal;float:right;}
+.title .exportTable:hover{color:#fff;background:#fb7262;}
+ .title .intro{color:#999;font-size:12px;float:right;font-weight:normal;padding-right:15px;}
+.cell{display:table-cell;padding-bottom:35px;padding-top:20px}
+.cell .line_i{color:#999}
+.cell .bold{color:#666;font-weight:700;font-size:16px;padding:13px 0}
+.cell .bold{color:#666}
+.tit_title{padding:0 50px;display:table-cell;font-size:16px;color:#333;text-align:center;}
+.flight_info .order_tit{width:100%}
+.flight_info .order_tit .tit_title{padding:0 32px 0 50px}
+.order_tit .date span,.order_tit .line_i span{margin-right:50px}
+.insurance{padding:10px 0 10px 140px;position:relative}
+.insurance .isue_item{line-height:24px;padding:7px 0;position:relative}
+.insurance .isue_item em{color:#999}
+/*.insurance .isue_item i{display:inline-block;width:16px;height:16px;background:url(../../images/icon/icon_detail.png) no-repeat center;position:absolute;left:273px;top:10px;cursor:pointer}*/
+table.sq_table{width:100%}
+table.sq_table td{padding:10px 0;text-align:center}
+table.sq_table td.state{position:relative}
+table.sq_table td.state .tui_detail{color:#333;cursor:pointer}
+table.sq_table td.ticket_no{line-height:26px;padding-left:15px;}
+table.sq_table td.ticket_no p{font-size:12px;text-align:left;}
+table.sq_table td.ticket_no img{display:inline-block;float:left;width:18px;vertical-align: bottom;margin-right:8px;margin-top: 3px;}
+.sq_table tr{color:#999;}
+
+.sq_table .tr_title{color:#999}
+.certi{width:220px}
+.plane_price{position:relative}
+/*.plane_price .price_detail,.state .price_detail{position:absolute;right:-118px;top:1px;background:rgba(35,45,57,.8);width:164px;text-align:left;z-index: 99;}*/
+.plane_price .price_detail,.state .price_detail{position:absolute;right:-118px;top:1px;background:url("../../Image/black_rgba.png");width:164px;text-align:left;z-index: 99;}
+.plane_price .price_detail{width:125px}
+.price_detail p{line-height:24px;color:#fff;text-align:left;padding:10px 0}
+.state .price_detail{left: -150px;}
+.plane_price .price_detail tr td,.state .price_detail tr td{line-height:12px;color:#fff;text-align:left;padding:10px}
+.price_detail tr td.price_num{color:#fc0}
+.pro_info .tourist_table{padding:0 50px;position:relative}
+.order_daily .tourist_table{height:172px;overflow:hidden}
+.order_daily .tourist_table.autoheight{height:auto}
+.bc_info .tourist_table table{text-align:center;border:1px solid #dfe4e6}
+.bc_info .tourist_table th{border-bottom:1px dashed #dfe4e6;padding:12px 0;text-align:center;color:#999}
+.bc_info .tourist_table td{padding:12px 0;border-right:1px dashed #dfe4e6}
+.bc_info .tourist_table .bc_title{width:735px;border-right:1px dashed #dfe4e6}
+.bc_info .tourist_table .bc_money{width:360px}
+table.js_table td{border-bottom:1px solid #dfe4e6;line-height:26px;padding:8px 0}
+table.js_table .heji td{padding:3px 0;}
+.js_table .heji td{border:none;}
+.js_table .heji td>p{text-align:right;font-size:14px;padding-right:50px;}
+.amount_tit{display:inline-block;width:70px;text-align:right;color:#999;}
+.amount_val{display:inline-block;width:105px;color:#F01447;text-align:left;margin-left:8px;}
+
+.js_table .heji .color_f{font-size:14px;color:#999;position:relative;}
+.js_table .heji .color_f.weiyue{text-align:right}
+.js_table .heji .color_f em{color:#f01447;padding-left:10px}
+.js_table .heji .color_f i{display:inline-block;width:16px;height:16px;background:url(../../images/icon/icon_detail.png) no-repeat center;position:absolute;right:0;top:10px;cursor:pointer}
+.js_table .heji .color_f i.ticket{right:42px}
+.extra{padding-top:20px}
+.tr_title .num{width:350px}
+.tr_title .px{width:200px}
+.ticket .tr_title .px{width:250px}
+.ticket .num{width:230px;padding-right:320px}
+.extra .beizhu .tit{color:#999;padding:25px 25px 25px 50px}
+.extra .biezhu .txtarea,textarea{width:1000px;border:1px solid #dfe4e6}
+.tourist_table .tr_title{border-bottom:1px dashed #dfe4e6}
+.order_daily .order_ly{width:100px}
+.order_daily .order_people{width:300px}
+.order_daily .certi{width:530px}
+.sure_op{text-align:center;padding-bottom:50px}
+.sure_op span{display:inline-block;width:160px;height:40px;line-height:40px;text-align:center;color:#fff;border-radius:5px;box-sizing:border-box;cursor:pointer}
+.sure_op .close{color:#666;background:#fff;border-radius:5px;margin:50px 0;border:1px solid #cecece;margin-right:95px}
+.sure_op .add_xg{background:#f01447;border-radius:5px;margin:30px 0;border:1px solid #cecece;border:none}
+.bc_info .tourist_table{padding:25px 0 25px 50px}
+.plane_name{position:relative}
+.plane_name sup{color:#e74c3c;position:absolute;right:13px;top:-9px}
+.order_daily{position:relative}
+.order_daily .open{position:absolute;right:0;bottom:0;background:#fb7262;width:58px;height:22px;line-height:22px;text-align:center;cursor:pointer;color:#fff}
+.order_daily .open em{margin-right:6px}
+.order_daily .open i{display:inline-block;width:0;height:0;border:5px solid transparent;border-top:7px solid #fff;position:absolute;right:2px;top:8px}
+.order_daily .open.up i{border-top:0;border-bottom:7px solid #fff}
+.relative{position:relative}
+.relative .open{position:absolute;right:0;bottom:0;background:#fb7262;width:58px;height:22px;line-height:22px;text-align:center;cursor:pointer;color:#fff}
+.relative .open em{margin-right:6px}
+.relative .open i{display:inline-block;width:0;height:0;border:5px solid transparent;border-top:7px solid #fff;position:absolute;right:2px;top:8px}
+.relative .open.up i{border-top:0;border-bottom:7px solid #fff}
+.daoji{font-weight:400;margin-left:200px;float:right;font-size:14px;}
+.daoji i{display:inline-block;width:11px;height:12px;background:url(../../images/icon/icon_time.png) no-repeat center;margin-right:5px}
+.daoji em{color:#f01447;padding-right:20px}
+.daoji .pay{display:inline-block;width:70px;height:30px;line-height:30px;text-align:center;background:#fb7262;color:#fff;border-radius:5px;margin:0 20px}
+.color_f .dialog_price{position:absolute;left:45px;top:38px;background:rgba(79,87,97,.9);filter:Alpha(opacity=90);z-index:99;width:400px}
+.color_f .dialog_price tr{color:#fc0}
+.color_f .dialog_price th{color:#fff;text-align:center}
+.color_f .dialog_price td,.order_item .dialog_price th{padding:5px 8px}
+.color_f .dialog_price .one th{padding-top:15px}
+.color_f .dialog_price .last td{padding-bottom:15px}
+.plane_name .share{position:absolute;right:-202px;top:-25px;background:rgba(35,45,57,.8);padding:10px;color:#fff}
+.insurance .share{position:absolute;right:186px;top:-3px;background:rgba(35,45,57,.8);padding:10px;color:#fff}
+.insurance .insur_title{color:#fc0;margin-top:6px}
+
+
+.proInfoTable{width:100%;margin:25px 0;}
+.proInfoTable tr th,.proInfoTable tr td{border:1px solid #e4e4e4;padding:10px 5px;text-align:center;}
+.proInfoTable tr th{color:#999;}
+.proInfoTable tr td{color:#2a333e;}
+.proTicketInfo{padding-bottom:10px;}
+.proTicketTable{width:100%;background:#f8f8f8;margin-bottom:15px;}
+.proTicketTable .proNum{width:150px;text-align:center;vertical-align: middle;padding:0 10px;border-right: 1px dashed #CECECE;}
+.proTicketTable .ticketItem .ticketCol{width:120px;}
+.proTicketTable .ticketCon .ticketLeft{width:auto;border-right:none;}
+.proTicketTable .ticketCon .ticketRight{width:200px;padding-top:45px;}
+.proTicketTable .ticketLeft .ticketItem{padding:20px 0;}
+.curStatus{float:right;font-size:14px;font-weight:normal;margin-right: 25px;height:52px;}
+.curStatus tr td{line-height:22px;}
+.curStatus span.djs{background: url(../../images/icon/icon_time.png) no-repeat center left;padding-left:15px;margin-left:8px;color:#f01447;margin-right: 8px;}
+.OrderTab{background:#fff;;border-bottom:1px solid #e4e4e4;padding:15px 10px 0 10px;}
+.OrderTab a.tabItem{display:black;float:left;line-height:42px;padding:0 20px;color:#666;font-weight:bold;font-size:16px;border-bottom:3px solid #fff;}
+.OrderTab a.tabItem.cur{color:#f01447;border-bottom:3px solid #f01447;}
+.processOuter{background:#fff;}
+.processOuter .process{margin-top:15px;}
+.processOuter .process span+span{margin-left:315px;}
+.processOuter .process span.cur:before{width:160px;}
+.processOuter .process span.pre:before{width:320px;}
+.processOuter .process span.last:after{width:320px;left: -320px;}
+.orderTabMain .orderDetailBox{background:#fff;padding:30px 25px;}
+.orderTabMain .orderDetailBox .tripBox{background:#fff;margin:0 0 0 25px;}
+.downLoadBtn{width:64px;margin:50px auto 0 auto;text-align:center;display:block;line-height: 25px;border: 1px solid #fb7262;font-size: 16px;color: #fb7262;padding: 2px 15px;border-radius: 15px;font-weight: normal;}
+.downLoadBtn:hover{color: #fff;background: #fb7262;}
+
+
+.detail .ticketCon{}
+.detail .ticketCon .ticketLeft{width:auto;border-right:none;}
+.detail .ticketCon .ticketRight{width:200px;padding-top:45px;}
+.detail .ticketLeft .ticketItem{padding:20px 0;}
+.pro_info .tourist_table.mixProTable{padding:10px;}
+.mixProTable tr th,.mixProTable tr td{border:1px solid #E4E4E4;}
+.mixProTable .price_detail tr td{border:none;}
+
+.productTable{width:100%;margin-bottom:-1px;}
+
+/*.productTable tr td{border:1px solid #e4e4e4;}*/
+
+.productTable tr td.td_title{border-left:none;width:150px;text-align:center;font-size:16px;color:#333;}
+.productTable tr td.td_center{width:860px;}
+.productTable tr td.nameBox{border-right:none;}
+.productTable tr td.nameBox .visitBox{width:100%;text-align:center;font-size:14px;}
+.productTable tr td.nameBox .visitBox h2{color:#999;margin-bottom:10px;}
+.productTable tr td.nameBox .visitBox p{color:#333;display:table;width:100%;}
+.productTable tr td.nameBox .visitBox p span{display:table-cell;text-align:center;line-height:20px;}
+.ticketCol .share{position:absolute;right:-202px;top:-25px;background:#232d39;padding:10px;color:#fff;z-index:999;}
+.ticketCol .share span{display:block;}
+.productTable .insurance{border-top:1px dashed #CECECE;}
+.detail.productTable .ticketCon{border-bottom:0;border-top:1px solid #e4e4e4;width:760px;margin:0 auto;}
+.productTable tr td.td_center .ticketCon:first-child{border-top:none;border-bottom:0;}
+
+.productTable tr td.trafficOuter{border-right:none;}
+.trafficTable{width:100%;}
+/*.trafficTable tr td{border-top:1px solid #e4e4e4;}*/
+.trafficTable tr td.nameBox{border-left:1px solid #e4e4e4;}
+
+/*.td_center{border-bottom:1px solid #e4e4e4;}*/
+.info_mar{margin-top:20px;}
+
+
+ table.sq_table>tbody>tr>td{
+            color:#333;
+        }

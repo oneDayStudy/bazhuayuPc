@@ -1,0 +1,532 @@
+.content{width:1200px;margin:0 auto}
+.ticketFilterBox{background:#fff;padding:20px}
+.filterSel .inputText{width:100px;height:30px;border:1px solid #DFE4E6;float:left;margin-right:10px}
+.filterSel .inputText input{border:none;outline:0;width:100%;height:30px;line-height:30px;font-size:14px;box-sizing:border-box;padding:0 5px}
+.filterSel .Ichange{display:block;float:left;width:51px;height:24px;background:url(../../images/ticket.png) no-repeat;background-position:0 -4px;margin-top:3px;margin-right:10px}
+.filterSel .Ichange:hover{background-position:0 -30px}
+.filterSel .calendar{width:165px;position:relative}
+.calendar .day{position:absolute;right:30px;font-size:14px;color:#999;top:5px}
+.calendar .calendarIcon{display:inline-block;width:16px;height:16px;background-position:-64px -30px;position:absolute;top:50%;margin-top:-8px;right:7px;background:url(../../images/i_date.png) no-repeat center center}
+.filterSel .text{float:left;margin-right:10px;color:#666;font-size:16px;display:block;line-height:30px}
+.filterSel .filterBtn{float:right;display:block;color:#fff;border-radius:3px;height:30px;padding:0 15px;font-size:14px;line-height:30px;text-align:center;background:#fb7262;font-weight:400;width:50px}
+.filterSel .filterBtn:hover{background:#f98274}
+.ticketMain{margin-top:8px}
+.date_bar{background:#fff}
+.date_bar .next_btn,.date_bar .prev_btn{float:left;border:1px solid #E3E3E3;height:58px}
+.date_bar .next_btn,.date_bar .prev_btn{width:30px;cursor:pointer;position:relative;background:#fafafa}
+.date_bar .next_btn{margin-left:-1px}
+.date_bar .next_btn:hover,.date_bar .prev_btn:hover{background:#fff8f1}
+.date_bar .prev_btn .caret_left{width:6px;height:10px;position:absolute;left:50%;margin-left:-3px;top:50%;margin-top:-5px;display:block;background:url(../../images/ticket.png) no-repeat;background-position:-85px -10px}
+.date_bar .next_btn .caret_right{width:6px;height:10px;position:absolute;left:50%;margin-left:-3px;top:50%;margin-top:-5px;display:block;background:url(../../images/ticket.png) no-repeat;background-position:-92px -10px}
+.date_bar .bar_con{width:1137px;float:left;overflow:hidden}
+.date_bar .bar_con ul{width:5000px}
+.date_bar .bar_con ul li{width:162px;height:46px;float:left;font-size:14px;text-align:center;border:1px solid #E3E3E3;border-bottom:1px solid #F01447;border-right:none;background:#f5f5f5;padding-top:12px;cursor:pointer;color:#666}
+.date_bar .bar_con ul li:first-child{border-left:none}
+.bar_con .price{color:#F01447}
+.date_bar .bar_con ul li:hover{background:#fff}
+.date_bar .bar_con .sel{border:1px solid #F01447;border-bottom:1px solid #fff;background:#fff}
+.twoDate .bar_con ul li{height:68px}
+.twoDate .next_btn,.twoDate .prev_btn{height:80px}
+.choiceInfo{background:#fff;padding:15px 30px 0 30px;color:#666;font-size:14px}
+.resultFilter{padding:20px 30px;background:#fff}
+.resultFilter .select_box{font-size:14px;color:#999;width:115px;line-height:26px;background:url(../../images/selList.png) no-repeat 95px -12px}
+.resultFilter .select_showbox{height:26px;width:85px;overflow:hidden}
+.resultFilter .select_option{top:26px;font-size:14px;min-width:115px}
+.resultFilter .resultText{line-height:28px;color:#333;font-size:16px;float:right}
+.resultFilter .resultText span{color:#f88a00;font-size:20px;margin:0 5px}
+.flightTit{background:#fff;padding-bottom:10px}
+.flightTit ul li{float:left;font-size:14px;color:#666;width:156px;padding:0 10px;background:url(../../images/lineS.png) no-repeat center left;text-align:center}
+.flightTit ul li:first-child{background:0 0}
+.flightTit .sortIcon{display:inline-block;width:9px;height:10px;background:url(../../images/ticket.png) no-repeat -42px -77px;margin-left:5px}
+.flightInfo{background:#fff}
+.flightInfo .flightItem{padding:20px 0;border-top:1px solid #E3E3E3;position:relative}
+.flightItem .ticketCol .lineBg{padding:8px 0;position:relative}
+.flightItem .ticketCol .lineBg .lineOne{display:block;width:132px;height:1px;background:#E3E3E3}
+.flightItem .ticketCol .lineBg .airIcon{display:block;width:26px;height:15px;background:url(../../images/icon/airIcon.png) no-repeat center center #fff;position:absolute;left:50%;margin-left:-13px;top:50%;margin-top:-8px}
+.flightItem .ticketCol .lineBg .trainIcon{display:block;width:26px;height:15px;background:url(../../images/icon/trainIcon.png) no-repeat center center #fff;position:absolute;left:50%;margin-left:-13px;top:50%;margin-top:-8px}
+.flightInfo .ticketCol{width:156px;padding:0 10px;float:left;text-align:center;font-size:14px;color:#405063}
+.flightInfo .ticketCol p{line-height:24px}
+.flightItem .ticketCol .airTit{position:relative;padding-left:28px}
+.flightItem .ticketCol .airTit .airlines{position:absolute;left:0}
+.flightItem .ticketCol h2{font-size:24px;font-weight:700;margin-bottom:10px;color:#333}
+.flightItem .ticketCol h2 span{position:relative}
+.flightItem .ticketCol h2 i{color:#e74c3c;font-size:14px;position:absolute;right:-25px;top:2px}
+.flightItem .ticketCol p{width:156px;overflow:hidden;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px;}
+.flightItem .ticketIcon{width:110px;height:46px}
+.flightItem .quIcon{background:url(../../images/quIcon.png) no-repeat center center}
+.flightItem .fanIcon{background:url(../../images/fanIcon.png) no-repeat center center}
+.flightItem .ticketCol .lineIcon{display:block;margin:0 auto;width:132px;height:10px;background:url(../../images/lineIcon.png) no-repeat center center}
+.flightItem .ticketCol .airLine{margin-bottom:10px}
+.flightItem .ticketCol .zdBox{width:120px;margin:8px auto}
+.flightItem .ticketCol .zdBox p{text-align:center}
+.flightItem .zd{width:45px;padding:0 8px;border-left:2px solid #E7E7E7;text-align:center;float:left}
+.flightItem .ticketCol .food{float:left;padding:0 8px;line-height:36px}
+.flightItem .linePrice{color:#f01447;line-height:52px!important}
+.flightItem .linePrice i{font-size:24px;margin:0 5px;font-weight:bold;}
+.flightItem .chooseBtn{position:absolute;right:15px;top:50%;margin-top:-20px;display:block;width:100px;height:34px;background:#f01447;color:#fff;line-height:34px;font-size:16px;text-align:center;border-radius:3px;}
+.flightItem .chooseBtn:hover{background:#F73764}
+.flightList{background:#fafafa;padding:0 30px;border-top:1px solid #E3E3E3}
+.flightList .flightBuyItem{padding:30px 0;border-top:1px dashed #CECECE}
+.flightList .flightBuyItem:first-child{border-top:none}
+.flightBuyItem .itemCol{float:left;vertical-align:middle}
+.flightBuyItem .flyStyle{width:105px;text-align:center}
+.flightBuyItem .flyStyle h2{font-size:16px;color:#666}
+.flightBuyItem .flyStyle p{font-size:14px;color:#999;margin:3px 0}
+.flightBuyItem .flyTags{padding:8px 0;font-size:14px}
+.flightBuyItem .flyTags span.info{display:inline-block;margin:0 35px;position:relative}
+.flightBuyItem .flyTags span.question{position:absolute;display:block;margin:0;top:0}
+.flightBuyItem .flyTags span.question .QIcon{width:16px;height:16px;background-position:-265px 0}
+.flightBuyItem .flyTags span.hasBorder{color:#f88a00;padding:2px 8px;border:1px solid #f88a00}
+.flightBuyItem .discount{color:#999;font-size:14px;line-height:42px;margin:0 75px}
+.flightBuyItem .DiscountPrice{float:right;width:156px;padding:0 10px;text-align:center;font-size:14px;color:#666;margin-right:20px;line-height:42px}
+.DiscountPrice .price{color:#f01447}
+.DiscountPrice .price i{font-size:24px;font-weight:bold;}
+.DiscountPrice .coupon{font-size:14px;font-weight:700;cursor:pointer}
+.DiscountPrice .coupon i{color:#e84c3d}
+.DiscountPrice .coupon .i_b{display:inline-block;margin-left:3px;width:10px;height:6px;background:url(../../images/selList.png) no-repeat;background-position:0 -23px}
+.flightBuyItem .ReserveBtn{float:right;display:block;border-radius:3px;width:90px;height:34px;font-size:16px;line-height:34px;background:#fb7262;color:#fff;text-align:center}
+.flightBuyItem .ReserveBtn:hover{background:#F98274}
+.flightBuyItem .ReserveBtn.checked{background:transparent;color:#333;}
+.flightBuyItem .ReserveBtn.checked:hover{background:transparent;color:#333;}
+.steps_g ul{overflow:hidden;zoom:1}
+.steps_g ul li{width:25%;font-size:16px;float:left;height:40px;line-height:40px;color:#666;text-align:center;background:url(../../images/barbg.png) no-repeat 100% 0 #e2e3e3}
+.steps_g ul li.done{background-position:100% -80px;background-color:#aaadb2;color:#fff}
+.steps_g ul li.current_prev{background-position:100% -40px;background-color:#aaadb2;color:#fff}
+.steps_g ul li.current{color:#fff;background-color:#f01447}
+.steps_g ul li.last{background-image:none}
+.ReserveCon{width:1200px;margin:30px 0}
+.ReserveCon .ReserveConL{width:840px;float:left}
+.ReserveConL .ticketBox{border:4px solid #F0F0F0;padding:20px 0;position:relative}
+.ticketBox .ticketCol{float:left;text-align:center;width:197px}
+.ticketBox .ticketCol h2{font-size:24px;font-weight:700;margin-bottom:10px}
+.ticketBox .ticketCol h2 span{position:relative}
+.ticketBox .ticketCol h2 i{color:#e74c3c;font-size:14px;position:absolute;left:-25px;top:2px}
+.ticketBox .ticketCol p{width:197px;overflow:hidden;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ticketBox .ticketCol .lineIcon{display:block;margin:0 auto;width:132px;height:10px;background:url(../../images/lineIcon.png) no-repeat center center}
+.ticketBox .halfCircle{width:11px;height:26px;background:url(../../images/flight.png) no-repeat}
+.ticketBox .Left{position:absolute;left:-4px;top:50%;margin-top:-13px;background-position:-104px -49px}
+.ticketBox .Right{position:absolute;right:-4px;top:50%;margin-top:-13px;background-position:-116px -49px}
+.ReserveConL .OpportmanBox{border:1px solid #E8EBED;background:#fff}
+.ReserveBox{margin-bottom:20px}
+.ReserveBox .infoBox{padding:20px}
+.ReserveBox .chooseBox{padding:20px;border-bottom:1px solid #DFE4E6}
+.ReserveBox .chooseBox span{float:left;margin-right:35px}
+.ReserveBox .chooseBox span.bold{font-weight:700;font-size:14px;color:#333}
+.ReserveBox .chooseBox a.changeBtn{float:right;display:block;width:90px;height:24px;border:1px solid #FB7262;line-height:24px;color:#FB7262;border-radius:3px;text-align:center}
+.ReserveBox .chooseBox a.changeBtn:hover{background:#FB7262;color:#fff}
+.ReserveBox .title{background:#f6f9fa;font-size:16px;padding:17px;position:relative;color:#333;font-weight:700}
+.ReserveBox .title .selBox{float:right;margin-top:-6px;background:#fff}
+.ReserveBox .title .selBox .dropDownListBox{border-radius:3px;font-size:14px;color:#666}
+.ReserveBox .title .addPeo{color:#fb7262;font-size:14px;line-height:30px;margin-left:30px;font-weight:400}
+.ReserveBox .title .tips{font-size:14px!important;font-weight:400;color:#666;margin-right:140px;float:right}
+.ReserveBox .formBox{padding:30px 0}
+.ReserveBox .ticketCon .ticketItem .ticketCol .lineBg .airIcon{background:url(../../images/icon/airIcon.png) no-repeat center center #fff}
+.ReserveBox .ticketCon .ticketItem .ticketCol .lineBg .trainIcon{background:url(../../images/icon/trainIcon.png) no-repeat center center #fff}
+
+.formCol{padding-left:30px}
+.formCol .signNum{float:left;width:32px;height:32px;margin-right:20px;color:#fff;font-size:20px;line-height:32px;text-align:center;background:url(../../images/flight.png) no-repeat;background-position:-75px -97px}
+.formCol .signNumcur{background-position:-108px -97px}
+.formCol .formCon{float:left}
+.formCon .formItem{margin-bottom:15px}
+.formCon .formItem .inputBox,.formCon .formItem .selectBox{float:left}
+.formCon .formItem .inputBox,.formCon .formItem .selectBox{height:28px;border:1px solid #DFE4E6;line-height:28px;width:357px;padding:0 5px;position:relative}
+.formCon .formItem .inputBox:hover,.formCon .formItem .selectBox:hover{border:solid 1px #FB7262}
+.formCon .formItem .textareaBox{width:650px;min-height:75px;border:1px solid #DFE4E6;padding:10px}
+.formCon .formItem .textareaBox textarea{border:none;outline:0;resize:none;width:100%;min-height:75px}
+.formCon .formItem .inputBox input{border:none;outline:0;height:28px;font-size:14px;width:100%;background:0 0}
+.formItem .inputBox .infoTips{position:absolute;right:0;top:0;display:block;width:30px;height:30px;background:url(../../images/flight.png) no-repeat;background-position:-69px -203px}
+.formCon .formItem .selectBox select{border:none;outline:0;height:30px;font-size:14px;width:100%;padding:0;vertical-align:top;background:0 0}
+.formCol .delete_form{float:right;line-height:30px;margin-right:18px}
+.formCol .delete_form a{color:#00a7de;font-size:16px;margin-left:10px}
+.formCol .delete_form a:hover{color:#e74c3c}
+.formCon .addNewPeo a{display:block;color:#fff;border-radius:5px;height:40px;width:115px;font-size:18px;line-height:40px;text-align:center;float:left;background:url(../../images/addIcon.png) no-repeat center left 15px #6bceee;padding-left:20px}
+.formCon .addNewPeo span{color:#999;font-size:16px;margin-left:10px;float:left;line-height:40px}
+.formCon .savePeo{margin-bottom:20px;color:#666;font-size:14px}
+.ReserveBox .contactBox{padding:20px 20px 5px 20px}
+.addBox .secureOuter{border-top:1px solid #DDD;padding:20px;font-size:14px}
+.addBox .secureBox{width:100%}
+.addBox .secureOuter .secureBox tr td{padding:5px 0}
+.secureBox .tit{color:#999;float:left}
+.secureBox .s_tit{width:75px;color:#999}
+.secureBox .secureCol{float:left;width:600px}
+.secureBox .secureCol .safeItem{background:url(../../images/i_Q.png) no-repeat center right;padding-right:20px;cursor:pointer}
+.securItem .safeItem{color:#666;position:relative}
+.securItem .safeItem .question{top:0}
+.securItem .safeItem .question .QIcon{width:16px;height:16px;background-position:-265px 0}
+.securItem .safeItem .question .answerBox{top:16px}
+.securItem .price{float:right}
+.securItem .price .checkbox{float:right;margin-left:8px}
+.secureCol p{margin-bottom:15px}
+.secureCol p label{float:right;color:#e74c3c;cursor:pointer}
+.secureCol label input[type=checkbox]{vertical-align:middle;-webkit-appearance:none;background:url(../../images/flight.png) no-repeat;height:20px;width:20px;border:none;outline:0;background-position:0 -245px;margin-left:10px}
+.secureCol label input[type=checkbox]:checked{vertical-align:middle;background:url(../../images/flight.png) no-repeat;height:20px;width:20px;background-position:-20px -245px;margin-left:10px}
+.secureCol .iQuestion{display:inline-block;width:16px;height:16px;background:url(../../images/i_Q.png)}
+.ReserveCon .ReserveConR{width:342px;float:right;border:1px solid #E8EBED;border-bottom:none;background:#fff;position:relative}
+.ReserveConR .bottBg{width:346px;height:16px;position:absolute;bottom:-16px;left:-2px;background:url(../../images/ticket-BG.png) no-repeat center center}
+.ReserveConR .title{font-size:16px;color:#333;padding:20px 10px;border-bottom:1px dashed #D8D8D9;text-align:center;font-weight:700}
+.ReserveConR .ReservePrice{padding:0 15px}
+.ReservePrice .priceList{padding:10px 0 20px 0;border-bottom:1px dashed #D8D8D9}
+.ReservePrice .priceList .data{float:right}
+.ReservePrice .priceList h3{font-size:14px;color:#333;margin-top:10px}
+.ReservePrice .priceList h3 .data{font-size:20px}
+.ReservePrice .priceList p{font-size:12px;color:#666;margin-top:10px;padding-left:15px}
+.ReservePrice .priceList p .data{font-size:14px}
+.ReserveConR .payOrder{padding:25px 0 0 0;text-align:center}
+.ReserveConR .payOrder p{font-size:14px;color:#333}
+.ReserveConR .payOrder p .f_999{font-size:12px}
+.ReserveConR .payOrder p.tips{margin-bottom:3px}
+.ReserveConR .payOrder p.tips span{margin:0 10px}
+.ReserveConR .payOrder .priceTotal{font-size:16px;color:#333;margin-bottom:20px}
+.payOrder .priceTotal .PriceData{color:#f01447;font-size:32px}
+.payOrder .priceTotal .PriceData i{font-size:16px;font-weight:700}
+.payOrder .orderSubmit{display:block;width:160px;height:40px;color:#fff;font-size:20px;text-align:center;line-height:40px;background:#f01447;margin:20px auto;border-radius:5px}
+.payOrder .orderSubmit:hover{background:#F73764}
+.payOrder .notice{text-decoration:underline;color:#00a7de;font-size:16px;cursor:pointer}
+.steps_g{margin:30px 0 20px 0}
+.steps_5 ul li{width:20%}
+.lineInfoScan{padding:20px 20px 5px 20px;font-size:14px}
+.lineInfoScan .infoItems{margin-bottom:10px}
+.infoItems .infoTit{float:left;color:#999;line-height:28px}
+.infoItems .infoIntro{float:left;color:#666;margin-left:10px}
+.infoItems .infoIntro p{line-height:28px}
+.infoItems .lineTitle{margin-left:0}
+.infoItems .lineTitle p{font-size:16px}
+.infoItems .width_650{width:650px}
+.groupInfo .infoIntro{margin-right:65px}
+.lineInfoScan .infoItems .lineInfo{float:left;width:560px;padding:0 10px;height:28px;line-height:28px;border:1px solid #DFE4E6;margin-left:10px;color:#666;position:relative}
+.lineInfoScan .infoItems .lineInfo:hover{border:solid 1px #FB7262}
+.lineInfoScan .infoItems .lineInfo span{float:left;margin-right:20px}
+.lineInfoScan .infoItems .lineInfo span.teamName{margin-right:20px;width:130px;overflow:hidden}
+.lineInfoScan .infoItems .lineInfo .infoCol{position:relative}
+.lineInfoScan .infoItems .lineInfo .arrBott{position:absolute;width:7px;height:4px;top:50%;margin-top:-2px;right:10px;background:url(../../images/i_more_b.png) no-repeat center center}
+.infoItems .lineInfo .InfoList{position:absolute;width:580px;border:1px solid #FB7262;left:-1px;margin-top:-1px;background:#fff;display:none;box-shadow:0 0 3px rgba(0,0,0,.3);max-height:150px;overflow-y:auto}
+.infoItems .lineInfo .InfoList li{padding:0 10px;cursor:pointer}
+.infoItems .lineInfo .InfoList li:hover{color:#fff;background:#FABBB3}
+.infoIntro .inputDate{float:left;position:relative;width:110px;padding:0 5px;height:28px;border:1px solid #DFE4E6}
+.infoIntro .inputDate:hover{border:solid 1px #FB7262}
+.infoIntro .inputDate input{width:100%;height:28px;line-height:28px;border:none;outline:0}
+.infoItems .greyBox{width:796px;float:left;background:#f6f9fa;margin-top:15px}
+.infoItems .greyBox table{width:100%}
+.infoItems .greyBox tr td,.infoItems .greyBox tr th{padding:12px 0;text-align:center;font-size:14px}
+.infoItems .greyBox tr th{color:#999;border-bottom:1px dashed #D3D3D3;padding:12px 0}
+.infoItems .greyBox tr td{color:#666}
+.infoItems .greyBox .width_215{width:155px;padding-left:15px;text-align:left}
+.greyBox .choiceNum .NumBox{background:#f8f8f8}
+.infoItems .limit a{color:#00a7de}
+.infoItems .limit a:hover{text-decoration:underline}
+.hasborder .useCar{border-top:1px solid #DDD}
+.YHtable{font-size:14px;width:100%}
+.YHtable tr td{text-align:left;padding:6px 0;color:#666}
+.YHtable .secureCol .checkbox{float:right}
+.YHtable .disabled span{color:#cecece}
+.infoBox .tourTit{display:block;margin-bottom:10px}
+.infoBox .tourTit li{display:block;float:left;font-size:14px;color:#666;text-align:center;margin-right:5px}
+.infoBox .returnBox{width:110px;float:left}
+.infoBox .formCol .signleCol{width:60px;margin-left:25px!important}
+.infoBox .formCol{padding-left:0}
+.infoBox .formCol .deleteBtn{color:#fb7262;float:left;font-size:14px;line-height:30px;margin-left:15px}
+.infoBox .formCol .signStyle{font-size:14px;color:#666;float:left;line-height:30px;margin-right:10px;width:120px}
+.infoBox .tourInfoBox .signStyle{font-size:12px;color:#666;margin-bottom:8px}
+.infoBox .formCol .width_110{width:80px;margin-right:5px}
+.infoBox .formCol .width_150{width:150px;margin-right:5px}
+.infoBox .formCol .width_300{width:300px;margin-right:10px}
+.infoBox .formCol .secureCol{float:left;margin-left:10px;font-size:14px;line-height:20px}
+.infoBox .formCol .secureCol input{margin-right:10px}
+.infoBox .formCol .secureCol p label{color:#666}
+.infoBox .formCol .secureCol .hascheck{line-height:30px}
+.infoBox .formCol .secureCol .hascheck .checkbox{float:left;margin-right:8px;margin-top:5px}
+.choicePlane{position:absolute;right:20px;top:50%;margin-top:-15px;display:block;color:#fff;border-radius:3px;height:30px;padding:0 15px;font-size:14px;line-height:30px;text-align:center;background:#fb7262;font-weight:400}
+.choicePlane:hover{background:#f98274;color:#fff}
+.contactBox .formCol .signStyle{width:auto}
+.contactBox .formCol .formCon{margin-right:40px}
+.payEnd{width:500px;min-height:402px;margin:80px auto;background:url(../../images/end.png) no-repeat top left;padding-left:120px}
+.payEnd h2{font-size:30px;line-height:70px;color:#333}
+.payEnd .orderPrice{font-size:14px;margin-left:25px}
+.payEnd .orderPrice i{font-size:28px}
+.payEnd p{font-size:16px;line-height:30px;color:#666}
+.payEnd .small{font-size:12px;line-height:1.5;color:#999}
+.payEnd p.font_roseo b{color:#f01447;font-size:30px}
+.payEnd .twoBtn{margin-top:50px}
+.payEnd .twoBtn a{font-size:16px;color:#666;display:block;float:left;padding:6px 35px;border:1px solid #CECECE;border-radius:5px;margin-right:15px}
+.payEnd .twoBtn a.whiteBg{background:#fff}
+.payEnd .twoBtn a:hover{background:#eee}
+.payEnd .twoBtn a.roseoBg{background:#f01447;color:#fff}
+.payEnd .twoBtn a.roseoBg:hover{background:#F73764}
+.payEnd .djsBox{background:url(../../images/djsIcon.png) no-repeat center left;padding-left:40px;margin-top:15px}
+.payEnd .djsBox p{font-size:30px;color:#fb7262;font-weight:700}
+.infoBox .ticketTeam .ticketItem .ticketCol{width:135px}
+.ticketTeam .ticketItem .ticketCol p{width:auto}
+.ticketTeam .ticketLeft{width:630px}
+.ticketTeam .ticketItem .ticketCol.width_50{width:50px}
+.ticketTeam .ticketItem .ticketCol.width_50 p{width:auto}
+.ticketTeam .ticketItem .ticketCol .lineIcon{background-size:100% auto}
+.infoBox .ticketTeam .ticketItem .ticketIcon{width:40px!important}
+.ticketTeam .ticketRight{width:156px;padding-top:50px}
+.ticketTeam .ticketRight h2{font-size:14px;padding:5px 0}
+.ticketTeam .ticketRight h2 em{font-size:24px}
+.ticketRight .tips{color:#666}
+.ticketRight .tips .f_blue{position:relative}
+.ticketRight .question{top:3px;right:-17px}
+.ticketRight .question .QIcon{width:16px;height:16px;background-position:-265px 0}
+.ticketRight .question .answerBox{top:16px}
+.singleTicket{margin-top:5px}
+.singleTicket .ticketRight{width:150px;padding-top:15px}
+.clientBox{padding:25px;font-size:14px}
+.clientList{height:400px;overflow-y:auto}
+.clientList table{width:100%}
+.clientList table tr td{padding:10px 8px;font-size:14px;color:#666;vertical-align:middle}
+.airList .airTabs{width:100%;height:49px;line-height:49px;position:relative}
+.airList .airTabs ul{display:block;margin:0;padding:0;width:100%;height:49px;line-height:49px;background:url(../../images/tabBG_1.png) no-repeat center left transparent;}
+.airList .airTabs ul.tabBg_2{background:url(../../images/tabBG_2.png) no-repeat center left transparent}
+.airList .airTabs ul.airUl{background: url(../../images/tabs_01.png) no-repeat center left transparent; }
+.airList .airTabs ul.airUl.tabBg_1{background:url(../../images/tabs_01.png) no-repeat center left transparent}
+.airList .airTabs ul.airUl.tabBg_2{background:url(../../images/tabs_02.png) no-repeat center left transparent}
+.airList .airTabs ul.airUl.tabBg_3{background:url(../../images/tabs_03.png) no-repeat center left transparent}
+.airList .airTabs ul.ulOne{background: url(../../images/tabbG.png) no-repeat center left transparent; }  
+.airList .airTabs ul li{font-size:16px;float:left;width:132px;text-align:center;height:49px;color:#7e8995;box-sizing:border-box;cursor:pointer;background:0 0}
+.airList .airTabs ul li.second{text-align:center;box-sizing:border-box;margin-left:-15px}
+.airList .airTabs ul li.three{margin-left:-20px;}
+.airList .airTabs ul li.cur{color:#f01447;font-weight:700}
+.airBox{background:#fff;padding:20px;margin-top:-1px;border:1px solid #FDB8B0}
+.airBox .notice{font-size:14px;color:#999}
+.airBox .lineAddress{padding:20px;border:1px solid #E4E4E4;margin-bottom:15px;position:relative}
+.airBox .lineAddress a.searchBtn{position:absolute;right:20px;top:50%;margin-top:-15px;border-radius: 3px;background:#fb7262;display:block;width:80px;height:30px;text-align:center;line-height:30px;font-size:16px;color:#fff;}
+.airBox .lineAddress a.searchBtn:hover{background:#F98274;}
+.airBox .lineAddress .calendar{position:relative}
+.airBox .lineAddress p{font-size:14px;float:left;line-height:28px;color:#7e8995}
+.airBox .lineAddress i.linkPlaneIcon{float:left;margin:0 15px;display:block;width:28px;height:28px;background:url(../../images/icon/palne23Icon.png) no-repeat center center}
+.airBox .lineAddress i.linkTrainIcon{float:left;margin:0 15px;display:block;width:28px;height:28px;background:url(../../images/icon/train23Icon.png) no-repeat center center}
+.airBox .lineAddress .distance select{width:145px;height:28px;font-size:12px;float:left;margin:0 5px}
+.airBox .lineAddress .distance span{float:left;font-size:14px;line-height:28px}
+.airBox .lineAddress .distance span.line{display:inline-block;width:51px;height:28px;background:url(../../images/line.png) no-repeat center center}
+.airBox .lineAddress .secondCol{margin-top:15px;margin-left:107px;}
+.airBox .lineAddress .secondCol label{display:inline-block;float:left;margin-right:30px;line-height:22px;}
+.airBox .lineAddress .secondCol label span.checkbox{margin-right:5px;}
+.airBox .lineNotice{padding:20px;border:1px solid #f6f9fa;background:#f6f9fa;margin-bottom:15px;position:relative} 
+.airBox .lineNotice .distance span{margin-right:20px;}
+.airBox .freeChoice{margin:0 0 20px 0}
+.airBox .freeChoice p{font-size:16px;line-height:30px;float:left;margin-right:200px}
+.airBox .freeChoice .cfDate{float:left}
+.airBox .freeChoice .cfDate span{line-height:30px;float:left;font-size:16px}
+.airBox .freeChoice .cfDate input{border:1px solid #DDD;width:140px;height:30px;float:left;margin-left:8px;padding:0 5px;color:#333}
+.airBox .choiceTicket{padding:0}
+.airBox .ticketCon .ticketRight{width:220px;padding-left:20px}
+.airBox .ticketCon .ticketRight p{display:block}
+.airBox .ticketCon .ticketRight h2{display:block}
+.airBox .ticketCon .ticketRight .choiceBtn{color:#fff;font-size:16px;padding:5px 25px;background:#f01447;border-radius:3px}
+.airBox .ticketCon .ticketRight .choiceBtn:hover{background:#F73764}
+.airBox .flightItem .ticketCol{width:150px;padding:0}
+.airBox .flightItem .ticketCol.width_80{width:80px}
+.airBox .flightItem .ticketCol p{width:auto}
+.airBox .flightItem .ticketLine p{color: #8898b2;font-size:12px;}
+.airBox .flightItem .ticketCol.hasTips{position:relative;text-align:left}
+.airBox .flightItem .ticketCol.hasTips .tips{position:absolute;top:37px;left:0}
+.ReturnBox{border-top:1px solid #DFE4E6;border-bottom:1px solid #DFE4E6}
+.ReturnBox .ticketCon .ticketLeft{width:970px}
+.ReturnBox .ticketCon .ticketRight{width:228px}
+.ReturnBox .ticketItem .quIcon{width:80px}
+.ReturnBox .ticketItem .fanIcon{width:80px}
+.ReturnBox .ticketCol{width:140px}
+.ReturnBox .ticketCon .ticketRight h2{font-size:16px}
+.ReturnBox .ticketCon .ticketRight h2 em{font-size:28px;font-weight:700}
+.ReturnBox .ticketCon .ticketRight .choiceBtn{color:#fff;font-size:16px;padding:5px 25px;background:#f01447;border-radius:3px}
+.ReturnBox .ticketCon .ticketRight .choiceBtn:hover{background:#F73764}
+.returnTit ul li{width:145px}
+.ticketCol .share{width:34px;height:18px;background-position:-162px -290px;position:absolute;top:0;right:0}
+.ticketPop{background:#fff;color:#333;padding:30px;box-sizing:border-box;margin:0 auto;display:none;}
+.resultBox{border:1px solid #E4E4E4;}
+.resultBox .ticketTable{width:100%;}
+.resultBox .ticketTable tr th{height:35px;background:#F6F9FA;font-size:12px;color:#7e8995;text-align:center;position:relative;}
+.resultBox .ticketTable tr td{border-top:1px solid #E4E4E4;}
+.trainCheck .hascheck{float:left;}
+.trainCheck label{display:inline-block;float:left;margin-left:15px;line-height:22px;}
+.trainCheck label span{float: left;font-size: 14px;line-height: 28px;margin-top:4px;margin-right: 3px;}
+.trainCheck label span.checkbox{margin-right:10px;}    
+.ticketTable .SearchBox{position: absolute;right:5px;top:50%;margin-top:-12px;margin-right:5px;background:transparent;border:1px solid #DFE4E6;width:118px;padding: 0 24px 0 8px;box-sizing:border-box;height:24px;border-radius:13px;}
+.ticketTable .SearchBox input{background:transparent;border:none;outline:none;width:100%;height:24px;}
+.ticketTable .SearchBox .smallSearch{position:absolute;display:block;width:14px;height:14px;background-position:0 -354px;top:50%;margin-top:-7px;right:3px;}
+.resultBox .choiceTicket .ticketCon{background:#fff;border-radius:0;}
+.resultBox .choiceTicket{padding:0 25px;}
+.resultBox .choiceTicket .ticketItem .ticketIcon{width:40px;}
+.resultBox .ticketLeft .ticketItem{padding:35px 0;}
+.resultBox .ticketCon .ticketLeft{width:800px;border-right: 1px solid #E4E4E4;}
+.resultBox .ticketCon .ticketRight{padding-left:50px;padding-top:16px;text-align:left;}
+.resultBox .ticketCon .ticketRight h2{padding:10px 0;font-size:16px;}
+.resultBox .ticketCon .ticketRight h2 i{font-size:24px;font-weight:bold;margin:0 3px;}
+.resultBox .ticketCon .ticketItem .ticketCol .lineBg .airIcon{background: url(../../images/icon/airIcon.png) no-repeat center center #fff;}
+.resultBox .ticketCon .ticketItem .ticketCol .lineBg .trainIcon{background: url(../../images/icon/trainIcon.png) no-repeat center center #fff;}
+.ticketTable tr th a.ArrowBot i{display:inline-block;width:9px;height:10px;background-position:-308px 0;margin-left:5px;}
+.ticketTable tr th a.ArrowTop i{background-position:-308px -9px;}
+.ticketTable .selectCon{position:relative;cursor:pointer;}
+.ticketTable .selectCon span.cur{display:inline-block;height:35px;line-height:35px;}
+.ticketTable .selectCon span.cur i{display:inline-block;width:10px;height:6px;background-position:-326px 0;margin-left:5px;}
+.ticketTable .selectCon .selItem{display:none;position:absolute;top:34px;left:-10px;min-width:170px;text-align:left;background:#fff;z-index:9999;border: 1px solid #E4E4E4;}
+.ticketTable .selectCon .selItem a{display:block;padding:5px;white-space:nowrap;}
+.ticketTable .selectCon .selItem a:hover{color:#f01447;}
+.ticketTable .selectCon .selItem a.curr{background:#F6F9FA;color:#2a333e;}
+.ticketTable .selectCon:hover .selItem{display:block;}
+/*自由搭配*/
+.flightInfo .ticketTable tr td{border-top:none;}
+.airBox .btnOuter{text-align:center;}
+.airBox .btnOuter a.backBtn{margin-top:20px;}
+
+/*折扣弹层*/
+.discountBox{position:relative;font-size:14px;font-weight:normal;}
+.discountBox .discountIcon{display:inline-block;width:22px;height:22px;background-position:-52px -324px;position:absolute;margin-left:3px;cursor:pointer;}
+.discountBox:hover .discountIcon{background-position:-52px -346px;}
+.discountBox .discountItem{display:none;width:210px;border:1px solid #eee;background:#fff;position:absolute;top:19px;left:70%;margin-left:-105px;z-index:9;}
+.discountBox:hover .discountItem{display:block;}
+.discountBox .discountItem a{display:block;font-size:14px;color:#7e8995;padding:6px 5px;}
+.discountBox .discountItem a:hover{color:#f01447;}
+.discountBox .discountItem a.cur{background:#F6F9FA;color:#2a333e;}
+.discountBox .discountItem a em{margin:0 8px;font-weight:normal;}
+.discountBox .discountItem a em.smallCheck{display:none;width:15px;height:12px;background-position:-79px -330px;}
+.discountBox .discountItem a.cur em.smallCheck{display:inline-block;}
+
+/*火车往返*/
+.trainBox{border:none;padding:0;}
+.resultBox .trainTable{width:100%;}
+.resultBox .trainTable tr td{padding:10px;}
+.resultBox .trainTable .ticketCol a.trainChange{display:block;text-align:center;}
+.trainTable .flightItem .ticketCol{width:100%;}
+.trainTable .flightItem .moreCol{padding-right:30px;}
+.trainTable .flightItem .moreCol p{float:left;padding: 10px;text-align:center;display:block;} 
+.trainTable .flightItem .moreCol p.seatLevel{width:86px;}
+.trainTable .flightItem .moreCol p.price{width:140px;font-size:16px;color:#f01447;}
+.trainTable .flightItem .moreCol p.price b{margin:0 3px;}
+.trainTable .flightItem .moreCol p.seatNum{width:120px;color:#7E8995;}
+.trainTable .flightItem .ticketCol .trainChange{float:left;margin-top:10px;margin-left:25px;border-radius:3px;width:60px;height:25px;color:#fff;text-align:center;line-height:25px;background:#fb7262;}
+.trainTable .flightItem .ticketCol .trainChange:hover{background:#F98274;}
+.airBox .lineAddress .trainAdd{float:left;margin: 0 5px;position:relative;z-index: 99999;}
+
+/*城市列表*/
+.showChooseCity{border:1px solid #ddd;display:none;width:410px;font-size:12px;line-height:29px;position:absolute;left:0;top:28px;background:#fff;z-index:9999}
+.showChooseCity .tips{padding:0 15px;background:#F5F9FB;position:relative;}
+.showChooseCity .tips i{cursor:pointer;display:inline-block;width:12px;height:12px;position:absolute;top:50%;margin-top:6px;right:5px;background:url(../../images/icon/closed.png) no-repeat center center;}
+.recom-city{z-index:3;width:390px;background:#fff;padding:0 10px;}
+.recom-city .page{font-size:12px;text-align:right;width:100%;float:left;padding-right:15px;box-sizing:border-box;}
+.recom-city .page a{margin:0 5px;color:#666;}
+.recom-city .page a:hover{color:#fb7262;}
+.rcc-ban{border-bottom:1px solid #ddd;height:25px;width:390px}
+.rcc-ban .rcc-at{border:0;border-bottom:2px solid #fb7262;color:#fb7262;font-weight:700}
+.rcc-ban li{float:left;padding:0 11px;height:24px;line-height:24px;cursor:pointer}
+.rcc-ban li:first-child{padding:0 11px 0 5px;}
+.rcc-ban .rcc-at span{color:#fb7262}
+.rcc-con{padding:10px 0 10px 5px;width:390px;overflow:hidden}
+.rcc-con div span span,.rcc-con>span{color:#666;float:left;margin-right:38px;margin-bottom:5px;white-space:nowrap;transition:all ease .2s;line-height:20px;cursor:pointer}
+.rcc-con div>span:first-child{width:12px;font-size:14px;margin-right:15px;line-height:20px}
+.rcc-con div>span{display:block;color:#f60;float:left;width:350px}
+.rcc-con span.cur{color:#fb7262}
+
+/*搜索结果*/
+.searchResult{display:none;width:224px;height:210px;border:1px solid #ddd;font-size:12px;position:absolute;left:0;top:28px;background:#fff;z-index:9999}
+.searchResult .tips{padding:0 15px;background:#F5F9FB;position:relative;width:100%;box-sizing:border-box;font-size:12px;}
+.resultList a{display:block;width:100%;line-height:28px;color:#fb7262;padding:0 15px;box-sizing:border-box;border-top:1px solid #fff;border-bottom:1px solid #fff;}
+.resultList a:hover{border-top:1px solid #fb7262;border-bottom:1px solid #fb7262;background:#fb7262;color:#fff;}
+.resultList a i.EN{float:right;}
+#flip_cities {padding:3px 8px;}
+.citypage{text-align:center;height:30px;line-height:30px;overflow:hidden}
+.citypage a{color:#fb7262;font-size:12px;text-decoration:underline;display:inline-block;width:20px;margin:0 2px;text-align:center}
+.citypage .pagetxt{text-decoration:none}
+.citypage .cur{color:#666;text-decoration:none}
+.yh_lijian {padding:0 4px;color:#ff3d0c !important;border:1px solid #ffbdb5;border-radius:2px;margin-top:7px;display: inline-block;font-size: 12px !important}
+
+.idBox{padding-left: 3px;position: inherit;display: inline-block;top: 1px;right: -5px;cursor:pointer;}
+.idBox .idIcon{width:23px;height:16px;background:url(/Resource/images/icon/idIcon.png) no-repeat center center;display:inline-block;}
+.idBox .answerBox{display:none;position:absolute;top:20px;left:50%;margin-left:-90px;font-size:12px;color:#666;background:#fff;width:180px;padding:8px;font-weight:400;border:1px solid #ccc;z-index:9999;text-align:left}
+.idBox:hover .answerBox{display:block}        
+
+.returnTime{border: 1px solid #E4E4E4;border-top:none;padding:15px 20px;margin-top:-30px;margin-bottom:15px;} 
+.returnTime p{display:inline-block;font-size:14px;margin-right:55px;}
+.returnTime p .font_pink{font-size:14px;position:relative;}
+.returnTime .question{top:50%;margin-top:-8px;}
+.returnTime .question .QIcon{width: 16px;height: 16px;background-position: -265px 0;}	     
+
+
+.ticked_dashed_dashed{margin-top:20;width:796px}
+.ticked_dashed_header{width:89%;margin-top:2%;margin-bottom:2%;margin-left:1%;height:8%;overflow:hidden}
+.ticked_dashed_header li{float:left;margin-left:2%;font-size:14px}
+.ticked_dashed_checked{color:#666}
+.ticked_dashed_checked li{overflow:hidden;margin-left:2%;line-height:20px;padding-top:10px}
+.ticked_dashed_checked li span{float:left;margin-left:1%}
+.ticked_email .formCol .signStyle{width:100px;text-align:right}
+.ticked_email .ticked_email_titileDetail{display:inline-block;width:40%;font-size:14px!important;font-weight:400;margin-left:30px;color:#fb7262!important}
+.zhushi{float:left;line-height:30px;color:#999;margin-left:0}
+.checkAdress{margin-bottom:14px}
+.formCon select{border:1px solid #ccc;margin-left:10px}
+.pv1 div{position:absolute;background:#fff;border:1px solid #ccc;width:200px;z-index:9999;color:#000;padding:10px;font-size:12px}
+.pv2 div{position:absolute;background:#fff;border:1px solid #ccc;width:200px;z-index:9999;color:#000;padding:10px;font-size:12px}
+.lineDetail .ReserveBox .title span.question{margin-left:0;font-size:12px;color:#333;margin-top:13px}
+.lineDetail .ReserveBox .title span.question .QIcon{width:16px;height:16px;background-position:-265px 0}
+
+/*MixOrder_DLY.html-2018-04-02*/
+
+.tickedEmailBox{
+	width:100%;
+}
+.formBtn .redBtn{
+	/*background: yellow!important;*/
+}
+.formBtn .closeBtn{
+	background: #fff;
+	border:1px solid #eceef0;
+	color:#666;
+}
+/*因为加了一列所有宽度需要改变*/
+.YD_table_width{
+	width:50px;
+} 
+/*叹号的提示图标变了所有再次声明一下*/
+/*.question .specialIcon{
+	width:16px;
+	height:16px;
+	background-position: -265px 0;
+	margin-top:14px;
+}*/
+
+.disabledchecked{
+	display: block;
+	width:20px;height:20px;
+	/*border:2px solid #c6c6c6;
+	border-radius: 10px;*/
+	background: url(/Resource/Images/icon/disabledchecked.png) no-repeat center;
+	vertical-align:middle;
+}
+.f_cecece{
+	color:#cecece;
+}
+
+/*MixOrder_DLY.html-2018-04-02 over*/
+
+
+.newReturnBox{border:none;}
+.newReturnBox .ticketTable tr td{border:1px solid #E4E4E4;}
+.lineTit{color:#405063;font-size:18px;font-weight:bold;display:block;padding:20px 0;position:relative;}
+.lineTit .changeLink{color: #00a7de;text-decoration: none;font-weight: normal;font-size: 14px;margin-left: 50px;}
+.lineTit .changeLink:hover{color:#0b9fd0}
+.airBox .ticketCon .ticketRight .choiceBtn.selected{color: #f01447;background: #fff;}
+.airBox .ticketCon .ticketRight .choiceBtn.selected:hover{background:none;} 
+.flightItem .otherSeat {position: absolute;display: block;color: #f01447;font-size: 14px;width:90px;text-align:left;right:15px;padding-right: 10px;background:url(/Resource/Images/selList.png) no-repeat 74px -16px;top: 65%;}     
+.lineTit .returnTime{border:none;padding:0;font-weight:normal;position:absolute;left:220px;margin-top:0;top:20px;}      
+
+.ticketItem .ticketCol p.tips{overflow:inherit;}
+.ticketItem .ticketCol p.tips .question{right: -20px;top: 0;}    
+.ticketItem .ticketCol p.tips .question .QIcon{width:16px;height:16px;background-position:-265px 0;}
+.noresult {text-align:center; border: 1px solid #E4E4E4;width:100%;height:100px;line-height:100px;font-size: 14px;color:#405063;}
+.trainTable .flightItem .moreCol p.seatLevel{overflow:inherit}
+.trainTable .flightItem .moreCol p.seatLevel:hover .answerBox{display:block}
+.ticketCol p.seatLevel{overflow:inherit;position:relative;}
+.ticketCol p.seatLevel:hover .answerBox{display:block}
+.seatLevel .answerBox{display:none;position:absolute;top:38px;left:50%;margin-left:-90px;font-size:12px;color:#666;background:#fff;width:180px;padding:8px;font-weight:400;border:1px solid #ccc;z-index:9999;text-align:left;white-space:normal;line-height:18px;}
+.ticked_dashed_checked li span.checked{margin-top:0;!important}
+
+.visitorTable{width:100%;color:#333;}
+.visitorInfoBox p{display:block;float:left;color:#666;line-height:28px;padding:4px 0;margin-left:30px;}
+.visitorInfoBox p.centerCol{width:240px;height:28px;white-space:nowrap;overflow:hidden;}
+.visitorInfoBox i.quIcon{display:inline-block;float:left;margin-right:10px;width:24px;height:28px;background: url(/resource/images/quIcon.png) no-repeat center center;}
+.visitorInfoBox i.fanIcon{display:inline-block;float:left;margin-right:10px;width:24px;height:28px;background: url(/resource/images/fanIcon.png) no-repeat center center;}
+.visitorInfoBox i.airIcon{vertical-align:middle;display:inline-block;margin:0 3px;width:26px;height:20px;background: url(/resource/images/planeIcon.png) no-repeat center center;}
+.visitorInfoBox i.trainIcon{vertical-align:middle;display:inline-block;margin:0 3px;width:26px;height:20px;background: url(/resource/images/trainIcon.png) no-repeat center center;}  
+.priceGroup{border-left:1px dashed #CECECE;padding-left:15px;}                                        
+.priceGroup p{line-height:28px;padding:4px 0;}
+              

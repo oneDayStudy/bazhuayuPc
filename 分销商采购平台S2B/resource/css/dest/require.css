@@ -1,0 +1,242 @@
+﻿.requireBox{/*background:url(../../images/groupBg.png) repeat-x top left;*/padding:30px 0;}
+.requireBox .container{padding:25px 50px;background:#fff;}
+.requireTit{color:#333;font-size:20px;padding:15px 0;border-bottom:1px dashed #CECECE;}
+.requireTit .enterIcon{background:url(../../images/icon/enterIcon.png) no-repeat center left;padding-left:40px;background-size:25px 28px;}
+.requireTit .linkedIcon{background:url(../../images/icon/linkIcon.png) no-repeat center left;padding-left:40px;background-size:25px 28px;}
+.requireTable table{width:100%;margin-top:26px;}
+.requireTable tr td{padding:8px;}
+.requireTable tr td .dropDownListBox{background:none;}
+.requireTable tr td.title{text-align:right;color:#666;font-size:14px;width:240px;}
+.requireTable tr td.title i{margin-right:3px;}
+.requireTable .inputBox{position:relative;float:left;}
+.requireTable .inputBox input{width:350px;border:1px solid #CECECE;height:34px;line-height:34px;padding:0 3px;font-size:14px;}
+.requireTable .NumBox .choiceBox{float:left;width:160px;font-size:14px;color:#666;}
+.requireTable .NumBox .secTitle{font-size:14px;color:#666;float:left;line-height:30px;margin-left:45px;width:50px;}
+.requireTable .tips{color:#666;font-size:14px;line-height:34px;margin:0 3px;float:left;}
+.requireTable textarea{width:435px;border:1px solid #CECECE;padding:3px;font-size:14px;resize:none;height:100px;}
+.tabsBox a{position:relative;display:block;float:left;padding:0 20px;height:34px;line-height:34px;color:#666;border:1px solid #CECECE;min-width:54px;text-align:center;margin-right:15px;}
+.tabsBox a.checked{border:2px solid #FB7262;height:32px;line-height:32px;background:url(../../images/icon/checked.png) no-repeat right bottom;}
+.requireTable .addFile{cursor:pointer;display:block;margin:5px;height:24px;padding:0 5px;color:#fb7262;line-height:24px;float:left;border:1px solid #fb7262;font-size:14px;border-radius:3px;position:relative;}
+.requireTable .addFile input{position:absolute;width:100%;height:100%;top:0;left:0;opacity:0;cursor:pointer;}
+.requireTable .subBtn{display:block;border-radius:3px;width:358px;height:36px;line-height:36px;background:#f01447;font-size:18px;color:#fff;text-align:center;}
+.requireTable .subBtn:hover{background:#F73764;}
+
+.container{width:1200px;margin:0 auto;}
+.requireDetail{margin:40px auto;}
+.top_5{width:1198px;height:5px;background:#475D72;border:1px solid #475D72;}
+.container .top_5{margin:50px auto 0 auto;} 
+.requireDetail{width:1198px;background:#fff;margin:0 auto;border:1px solid #DFE4E6;border-bottom:0;position:relative;padding:15px 0;}
+.requireDetail .bottBg{display:block;position:absolute;width:1199px;height:11px;background:url(../../images/requireBott.png) no-repeat center center;background-size:100% 100%;left:0;bottom:-11px;}
+.requireDetail .requireL{float:left;width:239px;color:#666;font-size:16px;text-align:center;}
+.requireL h2{font-size:30px;font-weight:bold;display:block;padding:15px 0;margin-top:20px;color:#475d72;}
+.requireL p.date{font-size:14px;color:#999;}
+.requireL .btnGroup{margin-top:15px;}
+.requireL .btnGroup a{display:block;width:98px;height:28px;font-size:14px;margin:8px auto;border-radius:3px;line-height:28px;}
+a.whiteBg{border:1px solid #D3D9E3;color:#666;background:#fff;} 
+a.whiteBg:hover{border:1px solid #ccc;color:#fff;background:#ccc;}
+a.redBorderBtn{border:1px solid #F01447;color:#F01447;background:#fff;} 
+a.redBorderBtn:hover{border:1px solid #F01447;color:#fff;background:#F01447;}
+a.rebBtn{border:1px solid #f01447;color:#fff;background:#f01447;} 
+a.rebBtn:hover{background:#F73764;}
+.requireDetail .requireR{float:right;width:898px;padding:0 30px;border-left:1px solid #DFE4E6;}
+.requireR table{width:100%;color:#666;font-size:14px;}
+.requireR table tr td{padding:8px 0;}
+.seeFile{display:inline-block;padding:0 10px;margin:0 10px;height:23px;font-size:14px;margin:8px auto;border-radius:3px;line-height:23px;text-align:center;}
+.twoCol span{display:block;float:left;}
+.twoCol span.left{width:80px;}
+.twoCol span.right{width:818px;}
+
+.contactBox{margin-top:15px;background:#fff;border:1px solid #DFE4E6;padding:20px 50px;}
+.contactBox .title{font-size:16px;font-weight:bold;color:#333;margin-bottom:15px;}
+.contactBox table{width:100%;color:#666;font-size:14px;}
+.contactBox table tr td{width:33.33%;}
+
+/*报价单*/
+.offerBox .prointro{padding-left:42px;}
+.noBorder{border:none;}
+.offerTable table{margin:10px 0;font-size:14px;color:#7e8995;width:100%;}
+.offerTable table tr td{padding:5px;box-sizing:border-box;text-align:right;vertical-align:top;line-height:23px;} 
+.offerTable table tr td.flTxt{width:400px;text-align:left;padding-left:30px;color:#405063;}
+
+.tripBox{border-left:1px solid #FDB8B0;margin:30px 0 30px 25px;padding-left:50px;position:relative;}
+.DayBox .tit{position:relative;font-size:16px;color:#405063;line-height:26px;}
+.DayBox .tit .dayNum{position:absolute;left:-75px;display:block;width:50px;height:26px;color:#fff;font-size:16px;line-height:26px;background:url(../../images/icon/dayBg.png) no-repeat center center;text-align:center;}
+.DayBox .dayInfo{margin:20px 0;color:#7e8995;font-size:14px;line-height:26px;}
+.tripBox .redDot{position:absolute;left:-3px;bottom:0;display:block;width:5px;height:5px;background:url(../../images/dot_5.png) no-repeat center center;}
+.exportTrip{display:block;width:140px;height:36px;margin:0 auto;border:1px solid #FB7262;border-radius:18px;color:#fb7262;font-size:16px;text-align:center;line-height:36px;}
+.exportTrip .exportIcon{width:23px;height:20px;display:inline-block;background-position:0 -325px;vertical-align:middle;margin-top:-3px;margin-right:3px;}
+.exportTrip:hover{color:#fff;background:#FB7262;}
+.exportTrip:hover .exportIcon{background-position:-23px -325px;}
+
+.planBox a{display:block;float:left;width:108px;height:35px;margin:15px 0 15px 15px;border:1px solid #EBEBEB;border-radius:3px;font-size:16px;color:#7e8995;line-height:35px;text-align:center;}
+.planBox a.active {
+    color: #fb7262;
+    background: url(../../images/icon/checked.png) no-repeat right bottom;
+
+    border: 1px solid #fb7262;
+}
+.feeTable{font-size:12px;width:100%;}
+.feeTable tr th,.feeTable tr td{border:1px solid #E4E4E4;}
+.feeTable tr th{background:#f8f8f8;color:#7e8995;padding:5px 10px;text-align:center;}
+.feeTable tr td{color:#2a333e;font-size:12px;padding:5px 10px;text-align:center;width:20%;}
+.feeTable a{color:#007ede;text-decoration:underline;}
+.priceSet{font-size:14px;color:#7e8995;margin:25px 0 0 50px;}
+.priceSet p{margin-top:0!important;}
+.priceSet span{margin:0 20px;}
+
+.offerBtnBox{text-align:center;margin-top:20px;}
+.offerBox .editBtn{text-align:center;padding-left:0!important;}
+
+.proTabsCon .prointro .ticketBox p{margin-top:0;line-height:18px;}
+.ticketBox .ticketCon{background:#f8f8f8;border:1px solid #E4E4E4;margin-top:15px;position:relative;}
+.ticketBox .ticketCon .ticketLeft{width:auto;margin:0 15px;border-right:none;}
+.ticketBox .ticketCon .tuijianIcon{position:absolute;top:0;left:0;display:block;width:50px;height:50px;background:url(../../images/introIcon.png) no-repeat center center;background-size:100% 100%;}
+.ticketBox .ticketLeft .ticketItem{padding:25px 0;}
+.ticketBox .ticketItem .ticketCol{width:125px;}
+.ticketBox .ticketItem .ticketIcon{width:60px;}
+.ticketBox .ticketCon .ticketRight{float:right;text-align:left;padding-top:30px;}
+.ticketBox .ticketRight .price{color:#f01447;font-size:14px;margin-bottom:5px;}
+.ticketBox .ticketRight .price span{position:relative;display:inline-block;line-height:20px; background:url(../../images/icon/yuIcon.png) no-repeat top right;background-size:20px 20px;padding-right:23px;}
+.ticketBox .ticketRight .price i{font-size:24px;}
+.ticketBox .ticketRight .price em.yuIntro{display:none;padding: 8px;white-space:nowrap;background: #4d5660;font-size: 14px;color: #fff;position: absolute;left:-40%;top:-40px;}
+.ticketBox .ticketRight .price span:hover .yuIntro{display:block;}
+.ticketBox .ticketRight .price em.yuIntro i{font-size:14px;font-weight:normal;color:#ffcc00;margin:0 3px;}
+.ticketBox .ticketRight span.kucun{margin-right:20px;}
+.ydOut {margin-top:30px;}
+.ydBox{margin:10px 0;}
+.ydBox .checkOut{float:left;line-height:32px!important;}
+.ydBox .checkOut .checkbox{float:left;margin-right:8px;margin-top:6px;}
+.ydBox .choiceBox{float:right;margin-right:15px;}
+.ydBox .choiceNum .NumBox{background:#f8f8f8;}
+.moreTicket{display:inline-block;color:#f01447;background:#f8f8f8;margin-top:-1px;border:1px solid #E4E4E4;padding:8px 20px;float:right;}
+.moreTicket i{width: 10px;height: 6px;background-position: -152px -7px;margin-left: 5px;}
+.moreTicket.upIcon i{background-position: -152px -0px;}
+.confirmBtn{display:block;width:158px;height:40px;border-radius:3px;background:#f01447;color:#fff;font-size:20px;text-align:center;line-height:40px;margin:50px auto 0 auto;}
+.confirmBtn:hover{background:#F73764;color:#fff;}
+
+.formBox{border:1px solid #E4E4E4;margin:30px 0;padding:35px;}
+.formBox .label{margin-bottom:20px;}
+.formBox .label p{display:block;float:left;font-size:14px;color:#666;line-height:20px;margin-right:30px;}
+.formBox .label p span{display:inline-block;float:left;margin:0 3px;}
+.formBox .formCol{margin-top:15px;}
+.formBox .formCol span{font-size:14px;color:#7e8995;line-height:28px;margin:0 3px;position:relative;}
+.formBox .formCol span.tip{color:#cecece;}
+.formBox .formCol span input{height:28px;border:1px solid #DFE4E6;padding:0 3px;}
+.formBox .formCol span select {border:1px solid #DFE4E6;}
+.formBox .formCol .secondTit{margin-left:35px;}
+
+.noInfoBox{border:1px solid #E4E4E4;padding:0 45px;}
+.noInfoBox .formBox{border:none;padding:0;}
+.noInfoBox .ticketBox .ticketCon{margin-bottom:20px;}
+.noInfoBox .ticketBox .ticketCon .ticketRight{width:200px;padding-top: 45px;}
+.ticketBox .ticketCon .ticketRight .cancelYD{display:block;font-size:14px;color:#00a7de;text-decoration:underline;margin-top:30px;}
+
+
+/*出境整团表单*/
+.requireForm{padding:30px;}
+.requireForm table{width:100%;font-size:14px;color:#405063;}
+.requireForm table tr td{vertical-align:middle;padding:5px;}
+.requireForm table tr td.forTit{color:#7e8995;line-height:35px;width:130px;text-align:right;padding-right:10px;}
+.requireForm table tr td.forTit i{margin-right:5px;}
+.requireForm select,.requireForm input{width:190px;height:30px;border:1px solid #CECECE;padding:0 3px;}
+.requireForm .checkBox label{float:left;line-height:30px;margin-right:50px;}
+.requireForm .checkBox span{float: left;}
+.requireForm .checkBox span.checkbox{margin-top:5px;margin-right:5px;}
+.requireForm .tip{margin-right:15px;}
+.dateIcon{display: inline-block;width:16px;height:16px;background-position:-127px 0;position:absolute;right:5px;top:50%;margin-top:-8px;cursor:pointer;}
+.requireForm .dateBox{position:relative;width:180px;}
+.requireForm textarea{width:450px;height:100px;border:1px solid #CECECE;padding:8px;resize:none;}
+.requireForm .genUpload_button{background:none;border:none;}
+.requireForm .genUpload_groups{border:none;}
+.requireForm .genUpload_fileInfos{border:1px solid #CECECE;}
+.requireForm .genUpload_fileInfos li{color:#7e8995;}
+.requireForm .genUpload_button a{border-right:none;color:#007ede;background: url(../../images/icon/uploadIcon.png) 15px 7px no-repeat;}
+.requireForm .genUpload_button a.del{background: url(../../images/icon/delIcon.png) 15px 7px no-repeat;}
+
+/*出团通知书*/
+.noticeMain{width:1000px;margin:0 auto;}
+.noticeMain .head{font-size:20px;color:#405063;font-weight:bold;text-align:center;margin:15px 0 10px 0;}
+.noticeMain .subHead{color:#7e8995;margin-bottom:15px;text-align:center;}
+.noticeMain .subHead span{margin:0 10px;}
+.basicInfo{border:1px solid #E4E4E4;padding:20px 0;margin-top:-1px;}
+.basicInfo table{width:100%;color:#2a333e;}
+.basicInfo table tr td{padding:5px;}
+.basicInfo table tr td.titL{text-align:right;color:#7e8995;width:80px;}
+.otherInfo{margin-top:20px;}
+.otherInfo table{width:100%;border:1px solid #E4E4E4;color: #2a333e;}
+.otherInfo table tr th,.otherInfo table tr td{border:1px solid #E4E4E4;padding:15px 5px;}
+.otherInfo table tr th{background:#fff7f6;color:#405063;font-size:16px;padding-left:25px;}
+.otherInfo table tr th span{border-left:3px solid #F01447;padding-left:6px;}
+.otherInfo table tr td{text-align:center;padding:10px 5px;line-height: 22px;}
+.otherInfo .noBorder td{border-left:none;border-right:none;}
+.tableFixed{table-layout: fixed;}
+.otherInfo .ticketCon{margin:0 auto;}
+.otherInfo .ticketCon .ticketLeft{border-right:none;width:630px;margin:0 auto;float:none;}
+.otherInfo .ticketLeft .ticketItem{padding:15px 0;}
+.otherInfo .ticketCon .ticketItem .ticketCol .lineBg .airIcon {
+    background: url(../../images/icon/airIcon.png) no-repeat center center #fff;
+}
+.otherInfo .ticketCon .ticketItem .ticketCol .lineBg .airIcon {
+    background: url(../../images/icon/airIcon.png) no-repeat center center #fff;
+}
+.otherInfo .ticketItem .ticketCol{width:110px;}
+.otherInfo .tripBox{text-align:left;}
+.otherInfo.requireForm{padding:0;}
+.otherInfo .genUpload{text-align:left;padding-left:10px;font-size:12px;color:#7e8995;}
+
+
+/*退订机票*/
+.tdBox{background:#fff;padding:0 20px 20px 20px;}
+.tdBox .tdItem{padding-top:20px;}
+.tdItem .title{padding:15px 0;font-size:20px;color:#333;border-bottom:1px dashed #CECECE;position:relative;}
+.tdItem .title span.TDIcon{background:url(../../images/icon/TDTit.png) no-repeat center left;padding-left:40px;}
+.tdItem .title span.TDRuleIcon{background:url(../../images/icon/tdRule.png) no-repeat center left;padding-left:40px;}
+.tdItem .title span.ApplyTD{background:url(../../images/icon/applyTD.png) no-repeat center left;padding-left:40px;}
+.tdItem .title span.editIcon{background:url(../../images/icon/editIcon.png) no-repeat center left;padding-left:40px;}
+.tdItem .tdInfo{padding:20px 0;}
+.tdItem .tdInfo span{color:#666;font-size:14px;margin-right:20px;}
+.tdTable{width:100%;}
+.tdTable tr th{font-size:16px;font-weight:bold;color:#333;padding-bottom:20px;padding-left:12px;}
+.tdTable tr th:first-child{padding-left:0;padding-right:10px;}
+.tdTable tr td{padding-left:12px;vertical-align:top;}
+.tdTable tr td:first-child{padding-left:0;padding-right:10px;}
+.touristBox{border:1px solid #e4e4e4;width:566px;font-size:14px;}
+.touristBox .tourSearch{background:#f6f9fa;border-bottom:1px solid #e4e4e4;padding:20px 10px;color:#666;}
+.tourList{text-align:center;width:100%;}
+.tourList tr th{font-weight:normal;font-size:14px;color:#999;text-align:center;padding:12px 0;}
+.tourList tr th:first-child{padding-right:0;}
+.tourList tr td{border-top:1px solid #e4e4e4;padding:12px 0;color:#666;vertical-align:middle;}
+.tourList tr td:first-child{padding-right:0;}
+.tourList .checkbox{display:block;margin:0 auto;}
+.tourSearch .formCol{padding-left:0;}
+.tourSearch .formCol span{float:left;line-height:30px;margin-right:6px;}
+.tourSearch .formCol span input[type="text"]{border:1px solid #e4e4e4;height:30px;padding:0 3px;width:100px;}
+.tourSearch .formCol span select{border:1px solid #e4e4e4;height:32px;}
+.tourSearch .editBTN{margin-top:20px;}
+.tourSearch .editBTN a{margin-right:15px;}
+.tourList .totalPrice{padding:12px 20px!important;text-align:left;}
+.tdBox .tdItem .ruleBox{padding:20px 0;font-size:14px;}
+.tdBox .tdItem .ruleBox table{width:100%;table-layout:fixed;}
+.tdBox .tdItem .ruleBox h2{color:#333;margin-bottom:10px;} 
+.tdBox .tdItem .ruleBox p{color:#666;line-height:22px;}
+
+
+/*完善信息*/
+.tdBox .tdItem .title a{color:#fb7262;font-size:14px;cursor:pointer;margin-left:20px;float:right;}
+.tdBox .tdItem .title a.batchUpload{background:url(../../images/icon/inportIncon.png) no-repeat center left;padding-left:25px;}
+.tdBox .tdItem .title a.batchDownLoad{background:url(../../images/icon/downLoadIcon.png) no-repeat center left;padding-left:25px;}
+.tdInfo .formCol{margin-top:20px;}
+.touristBoxMain .tit h2{line-height:30px;}
+.touristBoxMain .tit h2 b{color:#333;font-size:16px;}
+.touristBoxMain .tit h2 span{color:#666;font-size:14px;margin:0 5px;}
+.touristBoxMain .tit h2 a{float:right;}
+.touristBoxMain .touristTable{width:100%;margin:15px 0;font-size:14px;border: 1px solid #e4e4e4;}
+.touristBoxMain .touristTable tr th,.touristBoxMain .touristTable tr td{border-bottom: 1px solid #e4e4e4;padding:10px 5px;text-align:center;vertical-align: middle;}
+.touristBoxMain .touristTable tr th{background:#f6f9fa;color:#999;}
+.touristBoxMain .touristTable tr td{color:#666;line-height:20px;}
+.touristBoxMain .touristTable tr td a{margin:0 3px;color:#00a7de;}
+.touristBoxMain .touristTable tr td a:hover{text-decoration:underline;}
+
+
+/*新增用户*/
+.AddNewBox{background:#fff;padding:35px;display:none;}

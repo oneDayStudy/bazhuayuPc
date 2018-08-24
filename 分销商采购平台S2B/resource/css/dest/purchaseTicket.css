@@ -1,0 +1,215 @@
+/*代购机票*/
+.mask{background: url("../../../resource/images/bodyMask.png");width:100%;height:3600px;}
+.customerList{margin:100px auto;width: 950px;background: #fff;font-size:16px;}
+.errorIcon{display: inline-block;width: 18px;height: 18px;background: url("../../../resource/images/icon/return_btn.png") no-repeat;}
+.customer_header p{background: #f6f9fa;width:950px;height:50px;text-align: center;line-height: 50px;font-size: 18px;position: relative;}
+.customer_header p i{position: absolute;right: 10px;top:14px;}
+.cust_btn{text-align: center;margin-top: 32px;}
+.cust_useBtn{
+    display: inline-block;
+    width: 160px;
+    height:32px;
+    line-height: 32px;
+    background: #00c6ba;
+    color:#fff;
+    border-radius:4px;
+    font-size: 16px;
+}
+.blank_20{height:20px;}
+
+.orderNum{
+    padding:0 20px;
+    color:#666;
+    font-size: 14px;
+    margin-top: 32px;
+}
+.orderNum p input{
+    border:1px solid #d6d6d6;
+    border-radius: 4px;
+    padding:0 16px;
+    height:30px;
+    line-height: 30px;
+}
+.cha_search{
+    display: inline-block;
+    background:#00c6ba;
+    color:#fff;
+    padding:0 16px;
+    height:30px;
+    line-height: 30px;
+    border-radius: 4px;
+    margin-left: 16px;
+    font-size: 14px;
+}
+.pur_ticket{
+}
+.basic_info{
+    font-size: 16px;
+    font-weight: bold;
+    color:#333;
+    margin-top: 32px;
+    margin-bottom:16px;
+    padding:0 20px;
+}
+.gong_content{
+    font-size: 14px;
+    color:#666;
+    padding:0 20px;
+}
+.gong_content span em{
+    color:#333;
+}
+.content_tal{
+    display: inline-block;
+    margin-left: 40px;
+}
+.ji_info{
+    border:1px solid #d6d6d6;
+    margin:0 20px;
+}
+.ticketCon{
+    margin:20px;
+    padding: 10px 0 20px 0;
+    overflow: hidden;
+}
+.ticketOne{
+    border-bottom: 1px dashed #d6d6d6;
+}
+.ticketGO{
+    float: left;
+    width:70px;
+    color:#666;
+    font-size: 14px;
+    text-align: center;
+}
+.lineBg {
+    padding: 8px 0;
+    position: relative;
+    color: #8898b2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.lineOne {
+    display: block;
+    width: 132px;
+    height: 1px;
+    background: #E3E3E3;
+}
+.airIcon {
+    display: block;
+    width: 26px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    margin-left: -13px;
+    top: 50%;
+    margin-top: -8px;
+    background: url("../../../resource/images/icon/airIcon.png") no-repeat center center #fff;
+}
+.qucheng{
+    margin-top: 15px;
+}
+.jus{
+    margin-top: 10px;
+}
+.plane_name{
+    width:150px;
+}
+.plane_time{
+    font-size: 24px;
+    font-weight: 700;
+    color: #405063;
+}
+.ticketHan{
+    width:60px;
+}
+.ticketHan p{
+    margin-top: 10px;
+}
+.line_Fj{
+    margin-top: 10px;
+}
+.ticketFan{
+    padding: 10px 0 0 0;
+}
+.tri_info{
+}
+.youCon{
+    margin:0 20px;
+}
+.youTable{
+    border:1px solid #d6d6d6;
+    width:100%;
+    font-size: 14px;
+}
+.youTable tr th{
+    background:#e3e3e3;
+    line-height:20px;
+    text-align: center;
+    color:#666;
+}
+.youTable tr td{
+    line-height: 48px;
+    text-align: center;
+    color:#333;
+}
+.youTable tbody tr{
+    border-bottom: 1px dashed #d6d6d6;
+}
+.youTable tbody tr td.plane_red{
+    color:#ff4858;
+}
+.red_name{
+    background: url("../../../resource/images/icon/warning.png") no-repeat center left;
+    position: relative;
+}
+.liu{
+    position: absolute;
+    top:30px;
+}
+.detail_one {
+    position: relative;
+    padding: 0 16px;
+    line-height: 25px;
+    background: #fef2da;
+    box-shadow: 1px 2px 3px #fef2da;
+    border: 1px solid #f3d8ba;
+    border-radius: 4px;
+    text-align: center;
+    color: #666;
+    margin-top: 15px;
+    white-space: nowrap;
+}
+.triangle-border {
+    position: absolute;
+    left: 20px;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: dashed dashed solid dashed;
+}
+.tb-border {
+    bottom: 25px;
+    border-color: transparent transparent #f3d8ba transparent;
+}
+.tb-background {
+    bottom: 24px;
+    border-color: transparent transparent #fef2da transparent;
+}
+.yunPrice{
+    width:30px;
+    padding:5px 16px;
+    border:1px solid #d6d6d6;
+    border-radius: 4px;
+    text-align: center;
+}
+.yuan{
+    color:#999;
+    display: inline-block;
+    font-size: 12px;
+}
+
+
+/*代购机票 over*/

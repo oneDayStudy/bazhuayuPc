@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>整团订单</title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/common.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/mix_order.css">    
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/ticket_order.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/require.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/proDetail.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/ticket.css">    
+    <link href="../resource/js/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="myheader">
+        <div class="shop"><span class="triangle">kl-fxs分销商门店<em></em></span>
+            <ul class="all_shop none">
+                <li class="first"><a>青年分社</a></li>
+                <li><a>分店</a></li>
+                <li><a>分店</a></li>
+                <li class="last"><a>退出</a></li>
+            </ul>
+        </div>
+        <div class="head_right">
+            <ul class="top_menu">
+                <li class="active"><a>首页</a></li>
+                <li><a>短线</a></li>
+                <li><a>长线</a></li>
+                <li><a>出境</a></li>
+                <li><a>邮轮</a></li>
+                <li><a>整团</a></li>
+                <li><a>分期</a></li>
+            </ul>
+            <div class="icon_list">
+                <a class="telphone"></a>
+                <a class="money"></a>
+                <a class="ring"></a>
+            </div>
+        </div>
+    </div>
+    <div class="menu_contain">
+        <div class="menu">
+            <i class="bzy_logo"></i>
+            <em class="pos">苏州站</em>
+            <div class="search_all">
+                <ul class="nav_hd">
+                    <li><a>我的店</a></li>
+                    <li class="cur"><a>订单中心</a></li>
+                    <li><a>我的财务</a></li>
+                    <li><a>收客统计</a></li>
+                    <li><a>电子合同</a></li>
+                    <li><a>我的收藏</a></li>
+                </ul>
+                <div class="s_wrap none">
+                    <div class="search_wrap">
+                        <span class="triangle r_tri">出境</span>
+                        <ul class="depart_wrap none">
+                            <li>邮轮</li>
+                            <li>出境</li>
+                            <li>邮轮</li>
+                        </ul>                       
+                        <input type="text" placeholder="输入目的地/线路/关键词/供应商">
+                        <i class="yi"></i>
+                        <div class="content_wrap">
+                            <p>热门目的地</p>
+                            <div class="hot">
+                                <a class="active">上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="i_search"></a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <ul>
+                <li class="title"><a>旅游订单</a></li>
+                <li><a>游客订单</a></li>
+                <li><a>散客订单</a></li>
+                <li class="active"><a>整团订单</a></li>
+                <li class="new"><a>目的地订单</a><i></i></li>
+            </ul>
+            <ul class="order_g">
+                <li class="title">其他订单<a></a></li>
+                <li><a>机票订单</a></li>
+                <li><a>保鲜订单</a></li>
+                <li><a>门票订单</a></li>
+                <li><a>签证订单</a></li>
+                <li><a>车辆订单</a></li>
+                <li><a>人工订单</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="info">
+                <div class="info_input cal">
+                    <span class="date_go">出游日期</span>
+                    <label>
+                        <input type="text" value="2017-08-12">
+                        <i class="icon-caladar"></i>
+                    </label>
+                    <em class="zhi">至</em>
+                    <label>
+                        <input type="text" placeholder="下单时间" onclick="WdatePicker({skin:'twoer',dateFmt:'yyyy-MM-dd'})">
+                        <i class="icon-caladar"></i>
+                    </label>
+                </div>
+                <div class="info_input cal">
+                    <span class="date_go">回团日期</span>
+                    <label>
+                        <input type="text" value="2017-08-12">
+                        <i class="icon-caladar"></i>
+                    </label>
+                    <em class="zhi">至</em>
+                    <label>
+                        <input type="text" placeholder="下单时间" onclick="WdatePicker({skin:'twoer',dateFmt:'yyyy-MM-dd'})">
+                        <i class="icon-caladar"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="info">
+                <div class="info_input cal">
+                    <span class="date_go">下单日期</span>
+                    <label>
+                        <input type="text" value="2017-08-12">
+                        <i class="icon-caladar"></i>
+                    </label>
+                    <em class="zhi">至</em>
+                    <label>
+                        <input type="text" placeholder="下单时间" onclick="WdatePicker({skin:'twoer',dateFmt:'yyyy-MM-dd'})">
+                        <i class="icon-caladar"></i>
+                    </label>
+                </div>
+                <div class="info_input txt">
+                    <span class="date_go">整团订单编号</span>
+                    <label>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="info_input order_origin">
+                    <span class="date_go">机票订单编号</span>
+                    <label>
+                        <input type="text">
+                    </label>
+                </div>
+            </div>
+            <div class="info">
+                <div class="info_input txt">
+                    <span class="date_go">出发地</span>
+                    <label>
+                        <input type="text">
+                    </label>
+                    <span class="date_go arrive">目的地</span>
+                    <label>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="info_input txt">
+                    <span class="date_go">订单状态</span>
+                    <span class="checkouter"><span class="icon checkbox"></span><span>已预订</span></span>
+                    <span class="checkouter"><span class="icon checkbox"></span><span>待出团 </span></span>
+                    <span class="checkouter"><span class="icon checkbox"></span><span>已出团</span></span>
+                    <span class="checkouter"><span class="icon checkbox"></span><span>已退团</span></span>
+                </div>
+            </div>
+            <div class="info">
+                <div class="info_input cal">
+                    <span class="date_go">支付状态</span>
+                    <span class="checkouter"><span class="icon checkbox"></span><span>待支付</span></span>
+                    <span class="checkouter"><span class="icon checkbox"></span><span>已支付 </span></span>
+                </div>
+                <div class="info_input txt">
+                    <span class="btn query">查询</span>
+                    <span class="btn export">导出Excel</span>
+                </div>
+            </div>            
+            <div class="order_info">
+                <div class="order_tab">
+                    <span class="tab_item">全部订单</span>
+                </div>
+                <table class="groupList">
+                    <tr>
+                        <th style="width:245px;">订单信息</th>
+                        <th style="width:150px;">出游日期/回团日期</th>
+                        <th style="width:75px;">人数</th>
+                        <th style="width:180px;">支付情况</th>
+                        <th style="width:150px;">状态</th>
+                        <th style="width:150px;">操作</th>
+                    </tr>
+                    <tr>
+                    <td colspan="6">
+                        <table class="g_orderBox">
+                            <tr>
+                                <th colspan="6">
+                                    订单编号：kls123455666
+                                    <div class="operateGroup">
+                                        <i class="ApplyIcon" title="申请记录"></i>                                    
+                                        <i class="BuyIcon" title="购买机票"></i>                                    
+                                        <i class="PayIcon" title="合并付款"></i>                                    
+                                        <i class="perfectIcon" title="完善游客信息"></i>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td style="width:245px;text-align:left;">
+                                    <p>订单名称：雾凇岛+雪乡+亚布力+私家山庄+哈尔滨双飞6日跟团游</p>
+                                    <p>目的地：哈尔滨</p>
+                                    <p>出游天数：6天</p>
+                                </td>
+                                <td style="width:150px;">
+                                    <p>01-01</p>
+                                    <p>01-07</p>                                    
+                                </td>
+                                <td style="width:75px;">
+                                    <p>2人</p>                                  
+                                </td>
+                                <td style="width:180px;" class="priceGroup">
+                                    <p><i>报价</i>￥20000</p>
+                                    <p><i>平台优惠</i> ￥2000</p>
+                                    <p><i>结算价</i> ￥18000</p>
+                                    <p><i>应付</i> ￥18000</p>
+                                    <p><i>已付</i> ￥16000</p>
+                                    <p><i>未付</i> ￥1200</p>                                    
+                                </td>
+                                <td style="width:150px;">
+                                    <p>已预订</p>
+                                    <p>待支付</p>
+                                    <p><span class="djs">00 : 29 : 32</span></p>
+                                    <p>机票尾款</p>                                    
+                                </td>
+                                <td style="width:150px;">
+                                    <a href="javascript:;" class="roseoButton">在线支付</a><br>
+                                    <a href="javascript:;" class="whiteButton evaluateBtn">线路评价</a><br>
+                                    <a href="javascript:;" class="f_blue">查看订单</a><br>
+                                    <a href="javascript:;" class="buySafeIcon f_blue">购买保险</a><br>
+                                    <a href="javascript:;" class="f_blue">申请退订</a><br>
+                                    <a href="javascript:;" class="f_blue">取消订单</a>                                   
+                                </td>
+                            </tr>
+                            <tr>
+                            <td colspan="6" class="ticketOrder">
+                                <table>                            
+                                    <tr>
+                                        <td style="width:245px;text-align:left;">
+                                            <div class="airLine">
+                                                <p class="orderNum">机票订单编号：kls123455666</p>
+                                                <p><span><img src="../resource/images/icon/airPlane.png"></span>上海虹桥-三亚凤凰</p>
+                                                <p><span>去程</span>中国南方航空 CZ62723</p>
+                                            </div>
+                                            <div class="airLine">
+                                                <p><span><img src="../resource/images/icon/airPlane.png"></span>上海虹桥-三亚凤凰</p>
+                                                <p><span>去程</span>中国南方航空 CZ62723</p>
+                                            </div>                                            
+                                        </td>
+                                        <td style="width:150px;">
+                                            <p>01-01  06:25</p>
+                                            <p>01-07  06:25</p>                                    
+                                        </td>
+                                        <td style="width:75px;">
+                                            <p>2人</p>                                  
+                                        </td>
+                                        <td style="width:180px;" class="priceGroup">
+                                            <p><i>应付</i> ￥18000</p>
+                                            <p><i>已付</i> ￥16000</p>
+                                            <p><i>未付</i> ￥1200</p>                                    
+                                        </td>
+                                        <td style="width:150px;">
+                                            <p>已预订</p>
+                                            <p>待支付</p>
+                                            <p><span class="djs">00 : 29 : 32</span></p>
+                                            <p>机票尾款</p>                                    
+                                        </td>
+                                        <td style="width:150px;">
+                                            <a href="javascript:;" class="roseoButton">在线支付</a><br>
+                                            <a href="javascript:;" class="whiteButton">线路评价</a><br>
+                                            <a href="javascript:;" class="f_blue">查看订单</a><br>
+                                            <a href="javascript:;" class="f_blue">出团确认书</a><br>
+                                            <a href="javascript:;" class="f_blue">申请退订</a><br>
+                                            <a href="javascript:;" class="f_blue">取消订单</a>                                   
+                                        </td>
+                                    </tr>
+                               </table>
+                            <div class="invalidBox none">
+                               <table>                         
+                                    <tr>
+                                        <td style="width:245px;text-align:left;">
+                                            <div class="airLine">
+                                                <p class="orderNum">机票订单编号：kls123455666</p>
+                                                <p><span><img src="../resource/images/icon/airPlane.png"></span>上海虹桥-三亚凤凰</p>
+                                                <p><span>去程</span>中国南方航空 CZ62723</p>
+                                            </div>
+                                            <div class="airLine">
+                                                <p><span><img src="../resource/images/icon/airPlane.png"></span>上海虹桥-三亚凤凰</p>
+                                                <p><span>去程</span>中国南方航空 CZ62723</p>
+                                            </div>                                            
+                                        </td>
+                                        <td style="width:150px;">
+                                            <p>01-01  06:25</p>
+                                            <p>01-07  06:25</p>                                    
+                                        </td>
+                                        <td style="width:75px;">
+                                            <p>2人</p>                                  
+                                        </td>
+                                        <td style="width:180px;" class="priceGroup">
+                                            <p><i>应付</i> ￥18000</p>
+                                            <p><i>已付</i> ￥16000</p>
+                                            <p><i>未付</i> ￥1200</p>                                    
+                                        </td>
+                                        <td style="width:150px;">
+                                            <p>已预订</p>
+                                            <p>待支付</p>
+                                            <p><span class="djs">00 : 29 : 32</span></p>
+                                            <p>机票尾款</p>                                    
+                                        </td>
+                                        <td style="width:150px;">
+                                            <a href="javascript:;" class="roseoButton">在线支付</a><br>
+                                            <a href="javascript:;" class="whiteButton">线路评价</a><br>
+                                            <a href="javascript:;" class="f_blue">查看订单</a><br>
+                                            <a href="javascript:;" class="f_blue">出团确认书</a><br>
+                                            <a href="javascript:;" class="f_blue">申请退订</a><br>
+                                            <a href="javascript:;" class="f_blue">取消订单</a>                                   
+                                        </td>
+                                    </tr>
+                               </table>
+                               <table>                            
+                                    <tr>
+                                        <td style="width:245px;text-align:left;">
+                                            <div class="airLine">
+                                                <p class="orderNum">机票订单编号：kls123455666</p>
+                                                <p><span><img src="../resource/images/icon/airPlane.png"></span>上海虹桥-三亚凤凰</p>
+                                                <p><span>去程</span>中国南方航空 CZ62723</p>
+                                            </div>
+                                            <div class="airLine">
+                                                <p><span><img src="../resource/images/icon/airPlane.png"></span>上海虹桥-三亚凤凰</p>
+                                                <p><span>去程</span>中国南方航空 CZ62723</p>
+                                            </div>                                            
+                                        </td>
+                                        <td style="width:150px;">
+                                            <p>01-01  06:25</p>
+                                            <p>01-07  06:25</p>                                    
+                                        </td>
+                                        <td style="width:75px;">
+                                            <p>2人</p>                                  
+                                        </td>
+                                        <td style="width:180px;" class="priceGroup">
+                                            <p><i>应付</i> ￥18000</p>
+                                            <p><i>已付</i> ￥16000</p>
+                                            <p><i>未付</i> ￥1200</p>                                    
+                                        </td>
+                                        <td style="width:150px;">
+                                            <p>已预订</p>
+                                            <p>待支付</p>
+                                            <p><span class="djs">00 : 29 : 32</span></p>
+                                            <p>机票尾款</p>                                    
+                                        </td>
+                                        <td style="width:150px;">
+                                            <a href="javascript:;" class="roseoButton">在线支付</a><br>
+                                            <a href="javascript:;" class="whiteButton">线路评价</a><br>
+                                            <a href="javascript:;" class="f_blue">查看订单</a><br>
+                                            <a href="javascript:;" class="f_blue">出团确认书</a><br>
+                                            <a href="javascript:;" class="f_blue">申请退订</a><br>
+                                            <a href="javascript:;" class="f_blue">取消订单</a>                                   
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="clickOut">
+                            <a href="javascript:;" class="font_roseo editBtn"><span>展开</span><i class="icon"></i></a>
+                            </div>                                                        
+                           </td>
+                           </tr>
+                       </table>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td colspan="6">
+                        <table class="g_orderBox">
+                            <tr>
+                                <th colspan="6">订单编号：kls123455666</th>
+                            </tr>
+                            <tr>
+                                <td style="width:245px;text-align:left;">
+                                    <p>订单名称：雾凇岛+雪乡+亚布力+私家山庄+哈尔滨双飞6日跟团游</p>
+                                    <p>目的地：哈尔滨</p>
+                                    <p>出游天数：6天</p>
+                                </td>
+                                <td style="width:150px;">
+                                    <p>01-01</p>
+                                    <p>01-07</p>                                    
+                                </td>
+                                <td style="width:75px;">
+                                    <p>2人</p>                                  
+                                </td>
+                                <td style="width:180px;" class="priceGroup">
+                                    <p><i>报价</i>￥20000</p>
+                                    <p><i>平台优惠</i> ￥2000</p>
+                                    <p><i>结算价</i> ￥18000</p>
+                                    <p><i>应付</i> ￥18000</p>
+                                    <p><i>已付</i> ￥16000</p>
+                                    <p><i>未付</i> ￥1200</p>                                    
+                                </td>
+                                <td style="width:150px;">
+                                    <p>已预订</p>
+                                    <p>待支付</p>
+                                    <p><span class="djs">00 : 29 : 32</span></p>
+                                    <p>机票尾款</p>                                    
+                                </td>
+                                <td style="width:150px;">
+                                    <a href="javascript:;" class="roseoButton">在线支付</a><br>
+                                    <a href="javascript:;" class="whiteButton">线路评价</a><br>
+                                    <a href="javascript:;" class="f_blue">查看订单</a><br>
+                                    <a href="javascript:;" class="f_blue">出团确认书</a><br>
+                                    <a href="javascript:;" class="f_blue">申请退订</a><br>
+                                    <a href="javascript:;" class="f_blue">取消订单</a>                                   
+                                </td>
+                            </tr>
+                       </table>
+                    </td>
+                    </tr>                    
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--订单评价开始-->
+    <div class="pj_order none" id="evaluateBox">
+        <div class="edit_content">
+            <div class="pf">
+                <span class="colo">线路评分</span>
+                <em class="red"></em><em class="red"></em><em class="red"></em><em class="grey"></em><em class="grey"></em>
+                <span>2分（不太满意）</span>
+            </div>
+            <div class="pf">
+                <span class="colo">线路客服</span>
+                <label><input type="radio" name="pj0">好评</label>
+                <label><input type="radio" name="pj0">中评</label>
+                <label><input type="radio" name="pj0">差评</label>
+            </div>
+            <div class="pf">
+                <span class="colo">线路客服</span>
+                <label><input type="radio" name="pj1">好评</label>
+                <label><input type="radio" name="pj1">中评</label>
+                <label><input type="radio" name="pj1">差评</label>
+            </div>
+            <div class="pf">
+                <span class="colo advice">建议改进</span>
+                <textarea></textarea>
+            </div>
+            <div class="plus">
+                <p class="ps">出团日7天内，若未进行评价系统默认进行10分好评</p>
+            </div>
+            <div class="formBtn">
+                <a href="javascript:;" class="witeBg">关闭</a>
+                <a href="javascript:;" class="redBtn">提交</a>                
+            </div>
+        </div>
+    </div>
+</div>    
+    <!--订单评价结束-->
+    <!--申请记录开始-->
+    <div class="applyRecord none" id="applyRecord">
+        <table>
+            <tr>
+                <th>申请人</th>
+                <th>申请时间</th>
+                <th style="width:500px">申请内容</th>
+                <th>申请状态</th>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>2017-11-11</td>
+                <td>
+                    <table class="applyMain">
+                        <tr>
+                            <td>出发城市：苏州</td>
+                            <td>到达城市：北京</td>
+                        </tr>
+                        <tr>
+                            <td>出发日期：2017-11-11</td>
+                            <td>返回日期：2017-11-11</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">人&nbsp;&nbsp;&nbsp;&nbsp;数：6成人 4儿童</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">其他备注：其他备注其他备注其他备注其他备注其他备注其他备注</td>
+                        </tr>                                                                        
+                    </table>
+                </td>
+                <td><a href="javascript:;" class="font_pink">申请中</a><a href="javascript:;" class="f_blue">查看订单</a></td>
+            </tr> 
+            <tr>
+                <td>张三</td>
+                <td>2017-11-11</td>
+                <td>
+                    <table class="applyMain">
+                        <tr>
+                            <td>出发城市：苏州</td>
+                            <td>到达城市：北京</td>
+                        </tr>
+                        <tr>
+                            <td>出发日期：2017-11-11</td>
+                            <td>返回日期：2017-11-11</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">人&nbsp;&nbsp;&nbsp;&nbsp;数：6成人 4儿童</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">其他备注：其他备注其他备注其他备注其他备注其他备注其他备注</td>
+                        </tr>                                                                        
+                    </table>
+                </td>
+                <td><a href="javascript:;" class="font_pink">申请中</a><a href="javascript:;" class="f_blue">查看订单</a></td>
+            </tr>
+        </table>
+    </div>
+    <!--申请记录结束-->
+    <!--购买保险开始-->
+    <div class="buySafe none" id="buySafe">
+        <table class="safeTable">
+            <tr>
+                <th>订单编号</th>
+                <th>航班信息</th>
+            </tr>
+            <tr>
+                <td>F0000000001</td>
+                <td>
+                    <div  class="otherInfo">
+                    <div class="ticketCon clearfix" >
+                      <div class="ticketLeft" style="width:100%">
+                        <div class="ticketItem clearfix">
+                          <div class="ticketCol ticketIcon quIcon" style="width:30px;"></div>
+                          <div class="ticketCol width_80">
+                            <p class="airLine">09-25</p>
+                            <p>周一</p>
+                          </div>    
+                          <div class="ticketCol">
+                            <p class="airLine">东方航空MU5615</p>
+                            <p>经济舱</p>
+                          </div>  
+                          <div class="ticketCol">
+                            <h2><span>21：00</span></h2>
+                            <p>上海浦东国际机场</p>
+                          </div>
+                          <div class="ticketCol ticketLine">
+                            <p class="lineBg"><i class="lineOne"></i><i class="airIcon"></i></p>
+                            <p>约3小时40分</p>
+                            <p>经停</p>
+                          </div>
+                          <div class="ticketCol">
+                            <h2><span>00：40<i class="oneDay">+1</i></span></h2>
+                            <p>三亚凤凰国际机场</p>
+                          </div>
+                            <div class="ticketCol width_50">
+                            <p class="airLine"></p>
+                            <p>含餐</p>
+                          </div>                           
+                        </div>
+                        <div class="ticketItem clearfix">
+                          <div class="ticketCol ticketIcon fanIcon" style="width:30px;"></div>
+                          <div class="ticketCol width_80">
+                            <p class="airLine">09-25</p>
+                            <p>周一</p>
+                          </div>    
+                          <div class="ticketCol">
+                            <p class="airLine">东方航空MU5615</p>
+                            <p>经济舱</p>
+                          </div>  
+                          <div class="ticketCol">
+                            <h2><span>21：00</span></h2>
+                            <p>上海浦东国际机场</p>
+                          </div>
+                          <div class="ticketCol ticketLine">
+                            <p class="lineBg"><i class="lineOne"></i><i class="airIcon"></i></p>
+                            <p>约3小时40分</p>
+                            <p>经停</p>
+                          </div>
+                          <div class="ticketCol">
+                            <h2><span>00：40<i class="oneDay">+1</i></span></h2>
+                            <p>三亚凤凰国际机场</p>
+                          </div>
+                            <div class="ticketCol width_50">
+                            <p class="airLine"></p>
+                            <p>含餐</p>
+                          </div>                          
+                        </div>
+                      </div>
+                    </div>
+                    </div>                
+                </td>
+            </tr>            
+        </table>
+        <div class="addBox hasborder">
+            <div class="safeTit">选择险种</div>
+            <div class="secureOuter">
+              <table class="secureBox">
+                <tbody><tr>
+                  <td rowspan="3" class="s_tit">航意险：</td>
+                  <td>
+                    <div class="securItem clearfix">
+                      <span class="safeItem">20元-合众综合交通意外十天 20元
+                        <span class="question">
+                            <i class="icon QIcon"></i>
+                            <span class="answerBox">说明说明</span>
+                        </span>
+                      </span>
+                      <p class="price font_roseo">￥40 元/份<span class="icon checkbox"></span></p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="securItem clearfix">
+                      <span class="safeItem">20元-合众2015高额1天航意险20元
+                        <span class="question">
+                            <i class="icon QIcon"></i>
+                            <span class="answerBox">说明说明</span>
+                        </span>                          
+                      </span>
+                      <p class="price font_roseo">￥25 元/份<span class="icon checkbox"></span></p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody></table>
+              <hr class="dashed">
+              <table class="secureBox">
+                <tbody><tr>
+                  <td rowspan="3" class="s_tit">航延险：</td>
+                  <td>
+                    <div class="securItem clearfix">
+                      <span class="safeItem">20元-合众综合交通意外十天 20元
+                        <span class="question">
+                            <i class="icon QIcon"></i>
+                            <span class="answerBox">说明说明</span>
+                        </span>
+                      </span>
+                      <p class="price font_roseo">￥40 元/份<span class="icon checkbox"></span></p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="securItem clearfix">
+                      <span class="safeItem">20元-合众2015高额1天航意险20元
+                        <span class="question">
+                            <i class="icon QIcon"></i>
+                            <span class="answerBox">说明说明</span>
+                        </span>                          
+                      </span>
+                      <p class="price font_roseo">￥25 元/份<span class="icon checkbox"></span></p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody></table>
+              <hr class="dashed">
+              <table class="secureBox">
+                <tbody><tr>
+                  <td rowspan="3" class="s_tit">火车保险：</td>
+                  <td>
+                    <div class="securItem clearfix">
+                      <span class="safeItem">20元-合众综合交通意外十天 20元
+                        <span class="question">
+                            <i class="icon QIcon"></i>
+                            <span class="answerBox">说明说明</span>
+                        </span>
+                      </span>
+                      <p class="price font_roseo">￥40 元/份<span class="icon checkbox"></span></p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="securItem clearfix">
+                      <span class="safeItem">20元-合众2015高额1天航意险20元
+                        <span class="question">
+                            <i class="icon QIcon"></i>
+                            <span class="answerBox">说明说明</span>
+                        </span>                          
+                      </span>
+                      <p class="price font_roseo">￥25 元/份<span class="icon checkbox"></span></p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+              </table>                                    
+            </div>
+          </div>
+        <div class="formBtn">
+            <a href="javascript:;" class="redBtn">提交</a>                
+        </div>                         
+    </div>    
+    <!--购买保险结束-->
+    <!--合并付款开始-->
+    <div class="payAll none" id="payAll">
+        <div class="payTit">订单信息</div>
+        <ul class="payOrderInfo clearfix">                                                        
+            <li>订单编号：L09988777</li>
+            <li>下单时间：L09988777</li>
+            <li>出发日期：2017-09-11</li>
+            <li>返回日期：2017-09-11</li>
+        </ul>
+        <div class="payTit">申请退团</div>
+        <table class="payTable">
+            <tr>                                                                                                                        
+                <th>订单编号</th>
+                <th style="width:200px;">订单信息</th>
+                <th>付款名称</th>
+                <th>应付金额</th>
+                <th>付款截止时间</th>
+                <th><span class="checkouter"><span class="icon checkbox"></span><span>全选</span></span></th>
+            </tr>
+            <tr>                                                                               
+                <td>F00052522</td>
+                <td>MU5615/MU8888</td>
+                <td>机票押金</td>
+                <td>￥6000</td>
+                <td>2017-10-19 16：00</td>
+                <td><span class="icon checkbox"></span></td>
+            </tr>
+            <tr>                                                                               
+                <td>W00052522</td>
+                <td>雾凇岛+雪乡+亚布力+私家山庄+哈尔滨双飞6日跟团游</td>
+                <td>预付款</td>
+                <td>￥6000</td>    
+                <td>2017-10-19 16：00</td>
+                <td><span class="icon checkbox"></span></td>
+            </tr> 
+            <tr>
+                <td colspan="6" class="payData">合计付款金额  <i class="font_roseo">￥9000</i> </td>
+            </tr>           
+        </table>
+        <div class="payTit">在线付款</div>
+        <div class="payStyle"><span class="checkouter"><span class="icon checkbox"></span><span>鱼钱宝支付</span></span></div>
+        <div class="formBtn">
+            <a href="javascript:;" class="witeBg">关闭</a>
+            <a href="javascript:;" class="redBtn">确认付款</a>                
+        </div>        
+    </div>
+    <!--合并付款结束-->
+    <!--完善游客信息开始-->
+    <div class="container" id="perfectInfo">
+        <div class="tdBox">
+            <div class="tdItem">
+                <div class="tdInfo tourSearch">
+                    <span>出游人数：24人（20成人  4儿童）</span>
+                    <a href="javascript:;" class="batchDownLoad">批量模板下载</a>
+                    <a href="javascript:;" class="batchUpload">批量上传</a>       
+                    <div class="formCol clearfix">
+                        <span>姓名</span>
+                        <span><input type="text" class="textBox"></span>
+                        <span>
+                            <select>
+                                <option>成人</option>
+                                <option>儿童</option>
+                            </select>
+                        </span>
+                        <span>
+                            <select>
+                                <option>身份证</option>
+                                <option>护照</option>
+                            </select>
+                        </span>
+                        <span><input type="text" class="textBox" style="width:180px;"></span>                                               
+                        <span style="margin-left:50px;">联系方式</span>
+                        <span><input type="text" class="textBox" style="width:180px;" placeholder="请输入联系方式"></span>
+                        <a href="javascript:;" class="RedButton">查询</a>
+                    </div>
+                </div>
+                <div class="touristBoxMain">
+                    <div class="tit">
+                        <h2 class="clearfix"><b>游客列表</b><span>已录入：<i class="font_roseo">10</i>人</span><span>未录入：<i class="font_roseo">10</i>人</span></h2>
+                    </div>
+                    <table class="touristTable">
+                        <tr>
+                            <th>序号</th>
+                            <th>姓名</th>
+                            <th>类型</th>
+                            <th>性别</th>
+                            <th>证件类型</th>
+                            <th>证件号码</th>
+                            <th>联系方式</th>
+                            <th>航班信息</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>王二狗</td>
+                            <td>成人</td>
+                            <td>男</td>
+                            <td>身份证</td>
+                            <td>148697859655236974</td>
+                            <td>48569872564</td>
+                            <td><p>去程：MU5615（12月31日）</p><p>返程：MU5615（01月09日）</p></td>
+                            <td><a href="javascript:;">查看</a><a href="javascript:;">修改</a><a href="javascript:;">删除</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>王二狗</td>
+                            <td>成人</td>
+                            <td>男</td>
+                            <td>身份证</td>
+                            <td>148697859655236974</td>
+                            <td>48569872564</td>
+                            <td>--</td>
+                            <td><a href="javascript:;">查看</a></td>
+                        </tr>                                                                            
+                    </table>
+                    <div class="add_tourist">
+                        <a href="javascript:;" class="RedButton addNew">新增游客</a>
+                    </div>
+                </div>
+            </div>         
+        </div>
+    </div>
+    <!--完善游客信息结束-->
+	<!--取消需求单开始-->
+	<style>
+	.cancelBox{padding:30px;}
+	.cancelBox .formOuter{margin:15px 0;}
+	.cancelBox .formOuter select{width:200px;}    
+	.cancelBox .formOuter textarea{border: 1px solid #cecece;width:100%;height:90px;}
+	</style>
+    <div class="cancelOrder none" id="cancelOrder">
+		<div class="cancelBox">
+			<p>请问取消此需求单的原因是？</p>
+			<p class="formOuter">
+			<select>
+				<option>客人原因</option>
+				<option>其他原因</option>
+			</select>
+			</p>
+			<p class="formOuter">
+			<select>
+				<option>备注</option>
+				<option>客户行程取消</option>
+			</select>
+			</p>
+			<p class="formOuter">
+			<textarea></textarea>
+			</p>			
+		</div>
+        <div class="formBtn">
+            <a href="javascript:;" class="witeBg">关闭</a>
+            <a href="javascript:;" class="redBtn">确认付款</a>                
+        </div>        
+    </div>	
+	<!--取消需求单结束-->
+    <script src="../resource/js/jquery.min.js"></script>
+    <script src="../resource/js/layer/layer.js"></script>
+    <script type="text/javascript" src="../resource/js/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript">
+        $(function () {
+          $(".evaluateBtn").click(function () {
+              layer.open({
+                  scrollbar: false,
+                  title: '订单评价',
+                  type: 1,
+                  area: ['600px', '450px'],
+                  content: $("#cancelOrder")
+                  //content: $("#trainPop_1")
+              });
+            });
+          $(".ApplyIcon").click(function () {
+              layer.open({
+                  scrollbar: false,
+                  title: '申请记录',
+                  type: 1,
+                  area: ['900px', '500px'],
+                  content: $("#applyRecord")
+                  //content: $("#trainPop_1")
+              });
+            }); 
+          $(".buySafeIcon").click(function () {
+              layer.open({
+                  scrollbar: false,
+                  title: '购买保险',
+                  type: 1,
+                  area: ['900px', '680px'],
+                  content: $("#buySafe")
+                  //content: $("#trainPop_1")
+              });
+            }); 
+          $(".PayIcon").click(function () {
+              layer.open({
+                  scrollbar: false,
+                  title: '合并付款',
+                  type: 1,
+                  area: ['900px', '600px'],
+                  content: $("#payAll")
+                  //content: $("#trainPop_1")
+              });
+            });     
+            $(".perfectIcon").click(function () {
+              layer.open({
+                  scrollbar: false,
+                  title: '完善游客信息',
+                  type: 1,
+                  area: ['1200px', '600px'],
+                  content: $("#perfectInfo")
+              });
+            });                                
+          })    
+        $(function(){           
+          $(".checkbox").toggle(
+            function(){
+              $(this).addClass('checked');
+            },
+            function(){
+              $(this).removeClass('checked');
+            }); 
+            $(".editBtn").click(function(){
+                if ($(this).children('span').text() == '展开') {
+                    $(this).children('span').text('收起');
+                    $(this).addClass('upIcon');
+                    $(this).parents().children('.invalidBox').removeClass('none');
+                } else {
+                    $(this).children('span').text('展开');
+                    $(this).removeClass('upIcon');
+                    $(this).parents().children('.invalidBox').addClass('none');
+                }
+            });                        
+        })
+    </script>
+</body>
+</html>

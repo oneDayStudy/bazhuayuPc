@@ -1,0 +1,31 @@
+/*城市列表*/
+.chooseCityBox{border:1px solid #ddd;display:none;font-size:12px;line-height:29px;position:absolute;left: 8px;top: 37px;background:#fff;z-index:9999}
+.chooseCityBox .tip{padding:0 15px;background:#F5F9FB;position:relative;}
+.chooseCityBox .tip i{cursor:pointer;display:inline-block;width:12px;height:12px;position:absolute;top:50%;margin-top:-6px;right:10px;background:url(../../images/icon/closed.png) no-repeat center center;}
+.recom-city{z-index:3;width:460px;background:#fff;padding:0 10px;}
+.recom-city .page{font-size:12px;text-align:right;width:100%;float:left;padding-right:15px;box-sizing:border-box;}
+.recom-city .page a{margin:0 5px;color:#666;}
+.recom-city .page a:hover{color:#fb7262;}
+.rcc-ban{border-bottom:1px solid #ddd;height:25px;}
+.rcc-ban .rcc-at{border:0;border-bottom:2px solid #fb7262;color:#fb7262;font-weight:700}
+.rcc-ban li{float:left;padding:0 11px;height:24px;line-height:24px;cursor:pointer}
+.rcc-ban li:first-child{padding:0 11px 0 5px;}
+.rcc-ban .rcc-at span{color:#fb7262}
+.rcc-con{padding:10px 0 10px 5px;width:450px;overflow:hidden}
+.rcc-con div span span,.rcc-con>span{color:#666;float:left;margin-right:38px;margin-bottom:5px;white-space:nowrap;transition:all ease .2s;line-height:20px;cursor:pointer}
+.rcc-con div>span:first-child{width:12px;font-size:14px;margin-right:15px;line-height:20px}
+.rcc-con div>span{display:block;color:#f60;float:left;width:420px}
+.rcc-con span.cur{color:#fb7262}
+
+
+/*搜索结果*/
+.searchResult{display:none;width:224px;height:210px;border:1px solid #ddd;font-size:12px;position:absolute;left:0;top:28px;background:#fff;z-index:9999}
+.searchResult .tips{padding:0 15px;background:#F5F9FB;position:relative;width:100%;box-sizing:border-box;font-size:12px;}
+.resultList a{display:block;width:100%;line-height:28px;color:#fb7262;padding:0 15px;box-sizing:border-box;border-top:1px solid #fff;border-bottom:1px solid #fff;}
+.resultList a:hover{border-top:1px solid #fb7262;border-bottom:1px solid #fb7262;background:#fb7262;color:#fff;}
+.resultList a i.EN{float:right;}
+#flip_cities {padding:3px 8px;}
+.citypage{text-align:center;height:30px;line-height:30px;overflow:hidden}
+.citypage a{color:#fb7262;font-size:12px;text-decoration:underline;display:inline-block;width:20px;margin:0 2px;text-align:center}
+.citypage .pagetxt{text-decoration:none}
+.citypage .cur{color:#666;text-decoration:none}

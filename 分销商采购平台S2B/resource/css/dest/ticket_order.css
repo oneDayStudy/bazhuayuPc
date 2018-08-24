@@ -1,0 +1,186 @@
+body{background:#eff3f5}
+.content{width:1200px;margin:0 auto;padding-top:20px;overflow:hidden}
+.content .left{float:left;font-size:16px;background:#eff3f5}
+.content .left li{color:#666;padding:6px 0}
+.content .left li.title{color:#333;font-weight:700}
+.content .left li.new i{display:inline-block;width:24px;height:12px;background:url(../../images/icon/icon_new.png) no-repeat center;margin-left:5px}
+.content .left .order_g{margin-top:20px}
+.content .left li.active{color:#f01447}
+.content .right{padding:20px;background:#fff;width:1040px;box-sizing:border-box;float:right;color:#666;margin-bottom:100px}
+.right .info{margin-bottom:12px;padding-left:26px}
+.right .info input{border:1px solid #cecece;height:30px;box-sizing:border-box;line-height:30px;padding-left:10px;color:#666;font-size:14px}
+.right .info .info_input{display:table-cell}
+.right .info .info_input+.info_input{padding-left:68px}
+.right .info .info_input.cal input{width:150px}
+.right .info .info_input.txt input{width:120px}
+.right .info .info_input label{position:relative}
+.info_input .date_go{margin-right:10px}
+.info_input .arrive{margin-left:24px}
+.info_input .icon-caladar{display:inline-block;width:16px;height:16px;background:url(../../images/icon/i_cal.png) no-repeat center;position:absolute;right:10px;top:0}
+.info_input em.zhi{padding:0 5px}
+input::-ms-input-placeholder{color:#ceced0}
+input::-webkit-input-placeholder{color:#ceced0}
+.order_num input{width:220px}
+.order_origin{position:relative}
+select{border:1px solid #cecece}
+.order_origin select{width:159px}
+.order_origin:after{content:'';width:0;height:0;border:5px solid transparent;border-top:7px solid #999;position:absolute;right:15px;top:12px}
+.info .btn{background:#fb7262;text-align:center;height:28px;line-height:28px;display:inline-block;color:#fff;border-radius:3px;cursor:pointer}
+.info .btn.query{width:50px;margin-right:66px}
+.info .btn.export{width:100px}
+.order_info{font-size:14px;padding-top:20px}
+.order_info .order_tab .tab1,.order_info .order_tab .tab2{font-size:16px;padding:5px 10px;cursor:pointer}
+.order_info .order_tab .tab1{margin-right:38px}
+.order_info .order_tab .active{color:#f01447;border-bottom:1px solid #f01447}
+.order_info .order_tab em{color:#f01447}
+.order_info .order_tab .mon_info{display:inline-block;float:right}
+.order_info .order_tab .mon_info span{margin-right:10px}
+.order_info .order_title{background:#f6f9fa;margin-top:22px;color:#666;width:100%}
+.order_info .order_title td{padding-top:8px;padding-bottom:8px}
+.order_info .order_title .order_price{width:70px}
+.order_info .order_title .pp_price{width:88px}
+.order_info .order_title .cz{width:116px}
+.order_info .order_title .first{padding-left:25px;padding-right:78px}
+.order_info .order_title .two{width:100px}
+.order_info .order_title .sel_order{position:relative;width:163px}
+.order_info .order_title .sel_order:after{content:'';width:0;height:0;border:5px solid transparent;border-top:7px solid #666;position:absolute;right:79px;top:20px}
+.sel_order select{width:96px}
+.order_item{border:1px solid #f6f9fa;margin-top:20px}
+.order_item table{margin:18px 0;width:100%}
+.order_item .num{padding:10px 0;background:#f6f9fa;color:#333}
+.order_item p span{padding-left:25px}
+.order_item .t_first{text-align:center}
+.order_item .t_first .go{margin-bottom:20px}
+.order_item .t_first i{display:inline-block;width:40px;height:40px;background:url(../../images/icon/icon_plane.png) no-repeat center;vertical-align:middle}
+.order_item.list_item table:not(.flightdetail) td{text-align:center;line-height:22px}
+.order_item.list_item .hb_info{text-align:left!important;line-height:24px}
+.order_item .hb_info .concat{color:#999}
+.hb_info .go{margin-bottom:20px}
+.order_item .time .go{margin-bottom:26px}
+.order_item .price{color:#f01447;font-size:20px}
+.order_item .state .cping{color:#f01447}
+.order_item .state .daoji i{display:inline-block;width:11px;height:12px;background:url(../../images/icon/icon_shalou.png) no-repeat center;margin-right:3px}
+.order_item .operation{color:#00a7de;width:175px;padding-left:0}
+.order_item .operation a{display:block}
+.order_item .operation .online{padding:7px 0;color:#fff;background:#f01447;border-radius:5px;width:90px;margin:0 auto 5px auto;text-align:center}
+.bc_order{width:838px;margin-left:-450px;margin-top:-462px}
+.edit_wrap{position:fixed;top:50%;left:50%;z-index:99;background:#fff}
+.edit_wrap .edit_text{padding:20px 0;background:#f6f9fa;color:#666;font-size:18px;font-weight:700;text-align:center}
+.edit_content{padding:0 40px}
+.edit_content .order_tit{color:#666;font-size:16px}
+.edit_content .order_infom{padding:10px 0 15px}
+.edit_content .order_infom em{margin-right:30px}
+.tourist_info{background:#f6f9fa}
+.edit_content .add_bc,.edit_content .add_yk{background:#fb7262;float:right}
+.edit_content .add_bc,.edit_content .add_xg,.edit_content .add_yk,.edit_content .close{display:inline-block;width:90px;height:30px;line-height:30px;text-align:center;color:#fff;border-radius:5px}
+.edit_content .add_xg,.edit_content .close{background:#f01447;margin:0 0 15px 0;cursor:pointer}
+.edit_content .sure_op{text-align:center}
+.edit_content .close{color:#666;background:#fff;border-radius:5px;border:1px solid #cecece;margin-right:95px}
+.flightdetail tr{border-bottom:1px dashed #cecece}
+.flightdetail td{padding:16px;text-align:center}
+.center_tb i.flight_arrow{display:inline-block;width:113px;height:10px;background:url(../../images/icon/icon_jt.png) no-repeat center}
+.flightdetail .f_price{color:#f01447;font-size:24px}
+.flightdetail .f_price em{font-size:14px}
+.flightdetail .flighttime{font-size:24px;color:#333;margin-bottom:5px}
+.flightdetail .flighttime sup{font-size:14px;color:#e74c3c}
+.flightdetail .tripNum{width:26px;height:26px;background:#6bceee;line-height:26px;text-align:center;border-radius:5px;color:#fff}
+.flightdetail .tripNum.return{background:#ffba64}
+.flight_info{padding-top:20px}
+.order_infom .line_title{display:inline-block;width:400px;margin-right:80px;text-align:left}
+.order_infom .price{color:#f01447;padding-left:50px}
+.fl_detail .fl_price{color:#f01447}
+.fl_detail,.sq_tui table.sq_table{width:100%}
+.fl_detail tr+tr{border:none}
+.fl_detail td{text-align:left}
+.tt_order{width:700px}
+.tt_order .flight_info{padding-top:0}
+.sq_tui table.sq_table td{padding:7px 0;text-align:left}
+.go_re{width:310px}
+.tt_order .plus{width:636px;margin:0 auto;text-align:center}
+.dia_bd{width:100%;height:100%;background:rgba(0,0,0,.6);position:fixed;left:0;top:0;z-index:9}
+.please_txt{padding:20px 0}
+.please_txt .p_title{color:#666;font-size:16px;font-weight:700;margin-right:50px}
+.bc_order .edit_content .p_go{margin-bottom:-13px}
+.bc_order .edit_content .p_go_txt{display:inline-block;width:70px;height:28px;text-align:center;line-height:28px;background:#fb7262;color:#fff}
+.order_item .bc_order table.flightdetail{margin:0 0 18px 0}
+.bc_order .edit_content .apply{float:right;font-size:12px;color:#666}
+.bc_order .edit_content .apply input{vertical-align:-5px}
+.please_txt .able{border:1px solid #cecece}
+.please_txt .selected{background:url(../../images/icon/icon_retu_.png) no-repeat center;background-size:cover;color:#fff;border:1px solid #f01447}
+.sq_table td{padding:7px 0;text-align:center}
+input[type=radio],input[type=checkbox]{appearance:none;-webkit-appearance:none;-moz-appearance:none;-ms-progress-appearance:none;width:20px;height:20px;background:url(../../images/icon/icon_radio.png) no-repeat center;vertical-align:middle;margin-right:8px;border:none}
+input[type=radio]:checked,input[type=checkbox]:checked{background:url(../../images/icon/icon_checked.png) no-repeat center}
+.sq_table{width:100%}
+.plus{width:510px;margin:0 auto 20px;text-align:left;border:1px solid #e3e3e3;padding:16px 0 16px 40px;line-height:24px}
+.mon{text-align:right;position:relative}
+.mon span{display:inline-block;margin-right:20px;padding:4px 0 15px 0}
+.mon span i{font-size:22px;color:#f01447;padding-left:5px}
+.mon span em{display:inline-block;width:16px;height:16px;background:url(../../images/icon/icon_detail.png) no-repeat center;position:absolute;right:-5px;top:6px;cursor:pointer}
+.plus .plus_tit{font-weight:700;color:#666}
+.plus .ps{color:#999}
+.order_item .dialog_price{position:absolute;left:615px;top:-87px;background:rgba(79,87,97,.9);filter:Alpha(opacity=90);color:#fc0}
+.order_item .dialog_price td.tit,.order_item .dialog_price th{color:#fff;text-align:left}
+.order_item .dialog_price td,.order_item .dialog_price th{padding:5px 18px}
+.order_item .dialog_price .one th{padding-top:15px}
+.order_item .dialog_price .last td{padding-bottom:15px}
+.dialog_price .rig_price{padding-left:0!important}
+.sq_table{background:#f6f9fa}
+.sq_table .tr_title{border-bottom:1px dashed #cfd0d0}
+.sq_table .tou_radio{width:69px}
+.order_item.list_item table.tou_table td+td{padding-left:0}
+.sq_table .by_people{width:45px}
+
+
+/*整团列表*/
+.groupList{width:100%;margin-top:20px;font-size:14px;}
+.groupList tr th{background:#f6f9fa;padding:15px 20px;}
+.groupList tr th,.groupList tr td{text-align:center;}
+.groupList tr td{padding-top:30px;}
+.groupList .g_orderBox{width:100%;border:1px solid #e4e4e4;}
+.g_orderBox tr th{border-bottom:1px solid #e4e4e4;padding:10px 20px;text-align:left;color:#333;}
+.g_orderBox tr td{padding:25px 20px;}
+.g_orderBox a{display:inline-block;margin:3px 0;}
+.g_orderBox a.f_blue:hover{text-decoration:underline;}
+.g_orderBox .priceGroup p{text-align:center;padding-left:20px;line-height:24px;}
+.g_orderBox .djs{background: url(../../images/icon/icon_shalou.png) no-repeat center left;padding-left:15px;}
+.g_orderBox .ticketOrder{padding:0px;}
+.g_orderBox .operateGroup{float:right;}
+.g_orderBox .operateGroup i{display:block;float:right;margin-left:10px;width:22px;height:18px;background: url(../../images/icon/icon.png) no-repeat;cursor:pointer;}
+.g_orderBox .operateGroup i.perfectIcon{background-position:0 0;}
+.g_orderBox .operateGroup i.PayIcon{background-position:-38px 0;}
+.g_orderBox .operateGroup i.BuyIcon{background-position:-76px 0;}
+.g_orderBox .operateGroup i.ApplyIcon{background-position:-115px 0;}
+.ticketOrder table{width:100%;border-top:1px solid #e4e4e4;}
+.ticketOrder table th{border-bottom:none;background:none;border-bottom:1px dashed #e4e4e4;}
+.ticketOrder .airLine{margin:8px 0;line-height:24px;}
+.ticketOrder .airLine span{color:#7e8995;margin-right:10px;}
+.ticketOrder .airLine span img{float:left;}
+.ticketOrder .airLine .orderNum{color: #333;margin-bottom: 6px;}
+#evaluateBox{position:relative;}
+#evaluateBox .plus{border:none;}
+.applyRecord{padding:30px;background:#fff;}
+.applyRecord table{width:100%;font-size:14px;}
+.applyRecord table tr th,.applyRecord table tr td{border:1px solid #e4e4e4;padding:10px;text-align:center;}
+.applyRecord table tr th{color:#999;}
+.applyRecord table tr td{color:#666;}
+.applyRecord .applyMain tr td{text-align:left;border:none;padding:5px;}
+.applyRecord tr td a{display:block;text-align:center;margin:3px 0;}
+.applyRecord tr td a.f_blue:hover{text-decoration:underline;}
+.buySafe{padding:30px;width:840px;background:#fff;}
+.buySafe .safeTable{width:100%;font-size:14px;}
+.buySafe .safeTable tr th,.buySafe .safeTable tr td{border:1px solid #e4e4e4;padding:10px;text-align:center;}
+.buySafe .safeTable tr th{color:#999;}
+.buySafe .safeTable tr td{color:#405063;}
+.buySafe .secureBox{width:100%;}
+.buySafe .addBox .secureOuter{border-top:none;padding:0;}
+.buySafe .safeTit{color:#666;font-weight:bold;font-size:16px;padding:20px 0;}
+.payAll{padding:0 30px;width:840px;background:#fff;}
+.payAll .payTit{color:#666;font-weight:bold;font-size:16px;padding:20px 0;}
+.payOrderInfo li{float:left;font-size:14px;color:#666;margin-right:40px;}
+.payTable{background:#f6f9fa;width:100%;}
+.payTable tr th,.payTable tr td{padding:15px 10px;text-align:center;}
+.payTable tr th{color:#999;border-bottom:1px dashed #D0D0D0;}
+.payTable tr td{color:#666;}
+.payTable .checkouter{color:#999;}
+.payTable .payData{text-align:left;color:#999;border-top:1px dashed #D0D0D0;}
+

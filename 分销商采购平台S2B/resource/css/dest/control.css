@@ -1,0 +1,606 @@
+﻿/***************************
+   Common mends Css 
+ ***************************/
+.spc8 { height: 8px; font-size: 0; line-height: normal; }
+.spc5 { height: 5px; font-size: 0; line-height: normal; }
+.spc10 { height: 10px; font-size: 0; line-height: normal; }
+.spc15 { height: 15px; font-size: 0; line-height: normal; }
+.spc20 { height: 20px; font-size: 0; line-height: normal; }
+.clear { display: block; clear: both; font-size: 0; line-height: normal; }
+
+.textBox { border: 1px solid #DFE4E6; font-size: 12px; line-height: 26px; color: #000; height: 26px; padding: 0 6px; }
+.textBox:hover { border: solid 1px #FB7262; }
+.textBox:focus { box-shadow: 0 0 3px rgba(0,0,0,.3); border: solid 1px #FB7262; }
+
+.textArea { border: solid 1px #95A5A6; font-size: 12px; color: #000; line-height: 18px; padding: 4px; }
+.textArea:hover { border: solid 1px #3842A3; }
+.textArea:focus { box-shadow: 0 0 3px rgba(0,0,0,.3); border: solid 1px #3842A3; }
+
+.dropDownList { border: solid 1px #95A5A6; background: #fff; color: #000; height: auto; padding: 3px; }
+.dropDownList:hover { border-color: #3842A3; }
+.dropDownList:focus { border-color: #3842A3; }
+
+.dropDownListBox { border: solid 1px #DFE4E6; font-size: 12px; line-height: 30px; color: #000; height: 30px; padding: 0 32px 0 6px; background: url(../../images/dropDownListBox.gif) right center no-repeat; }
+.dropDownListBox:hover { border: solid 1px #FB7262; }
+.dropDownListBox:focus { box-shadow: 0 0 3px rgba(0,0,0,.3); border: solid 1px #FB7262; }
+
+.buttonChoice { height: 27px; padding: 0 1px 1px 0; }
+.buttonChoice a { float: left; height: 26px; line-height: 26px; padding: 0 20px; color: #000; text-decoration: none; border: solid 1px #DDD; margin: 0 -1px -1px 0; position: relative; z-index: 88; }
+.buttonChoice a i { position: absolute; height: 12px; width: 12px; top: 0; left: 0; background: url(/Resource/Image/Controls/chiose.gif) no-repeat; display: none; }
+.buttonChoice a:hover { border-color: #3842A3; color: #3842A3; z-index: 99; }
+.buttonChoice a.se, .buttonChoice a.se:hover { border-color: #3842A3; color: #3842A3; z-index: 99; }
+.buttonChoice a.se i { display: block; }
+
+.payChoice { height: 27px; padding: 0 1px 1px 0; }
+.payChoice a { float: left; height: 0px; padding: 30px 0 0 0; width: 136px; overflow: hidden; color: #000; text-decoration: none; border: solid 1px #DDD; margin: 0 -1px -1px 0; position: relative; z-index: 88; background: url(/Resource/Image/pay-choice.gif) 10px 0 no-repeat; }
+.payChoice a i { position: absolute; height: 12px; width: 12px; top: 0; left: 0; background: url(/Resource/Image/Controls/chiose.gif) no-repeat; display: none; }
+.payChoice a:hover { border-color: #3842A3; color: #3842A3; z-index: 99; }
+.payChoice a.se, .payChoice a.se:hover { border-color: #3842A3; color: #3842A3; z-index: 99; }
+.payChoice a.se i { display: block; }
+.payChoice a.alipay { background-position: 10px -850px; width: 136px; }
+.payChoice a.alipay-qr { background-position: 10px -1142px; width: 136px; }
+.payChoice a.weixin-qr { background-position: 10px -1188px; width: 136px; }
+.payChoice a.hxbank { background-position: 10px -1234px; width: 136px; }
+/*银行LOGO*/
+.bankChoice { padding: 0 2px 2px 0; overflow:hidden; zoom:1;}
+.bankChoice a { float: left; height: 0px; padding: 33px 0 0 0; width: 154px; overflow: hidden; color: #000; text-decoration: none; border: solid 2px #DDD; margin: 0 -2px -2px 0; position: relative; z-index: 88; background: url(/Resource/Image/Base/bank_logo.gif) -10px -10px no-repeat; }
+.bankChoice a i { position: absolute; height: 12px; width: 12px; top: 0; left: 0; background: url(/Resource/Image/Controls/bank_chiose.gif) no-repeat; display: none; }
+.bankChoice a:hover { border-color: #AAA; color: #CC0000; z-index: 98; }
+.bankChoice a.BANK_ICBC { background-position: -10px -10px; }
+/*工商银行*/
+.bankChoice a.BANK_CMBCHINA { background-position: -10px -44px; }
+/*招商银行*/
+.bankChoice a.BANK_ABC { background-position: -10px -78px; }
+/*中国农业银行*/
+.bankChoice a.BANK_CCB { background-position: -10px -112px; }
+/*建设银行*/
+.bankChoice a.BANK_BCCB { background-position: -10px -146px; }
+/*北京银行*/
+.bankChoice a.BANK_BOCO { background-position: -10px -180px; }
+/*交通银行*/
+.bankChoice a.BANK_CIB { background-position: -10px -214px; }
+/*兴业银行*/
+.bankChoice a.BANK_NJCB { background-position: -10px -248px; }
+/*南京银行*/
+.bankChoice a.BANK_CMBC { background-position: -10px -282px; }
+/*中国民生银行*/
+.bankChoice a.BANK_CEB { background-position: -10px -316px; }
+/*光大银行*/
+.bankChoice a.BANK_BOC { background-position: -10px -350px; }
+/*中国银行*/
+.bankChoice a.BANK_PINGANBANK { background-position: -10px -384px; }
+/*平安银行*/
+.bankChoice a.BANK_CBHB { background-position: -10px -418px; }
+/*渤海银行*/
+.bankChoice a.BANK_HKBEA { background-position: -165px -10px; }
+/*东亚银行*/
+.bankChoice a.BANK_NBCB { background-position: -165px -44px; }
+/*宁波银行*/
+.bankChoice a.BANK_ECITIC { background-position: -165px -78px; }
+/*中信银行*/
+.bankChoice a.BANK_SDB { background-position: -165px -112px; }
+/*深圳发展银行*/
+.bankChoice a.BANK_GDB { background-position: -165px -146px; }
+/*广发银行*/
+.bankChoice a.BANK_SHB { background-position: -165px -180px; }
+/*上海银行*/
+.bankChoice a.BANK_SPDB { background-position: -165px -214px; }
+/*上海浦东发展银行*/
+.bankChoice a.BANK_POST { background-position: -165px -248px; }
+/*中国邮政*/
+.bankChoice a.BANK_BJRCB { background-position: -165px -282px; }
+/*北京农村商业银行*/
+.bankChoice a.BANK_HXB { background-position: -165px -316px; }
+/*华夏银行*/
+.bankChoice a.BANK_CZ { background-position: -165px -350px; }
+/*浙商银行*/
+.bankChoice a.BANK_HZBANK { background-position: -165px -384px; }
+/*杭州银行*/
+.bankChoice a.BANK_SRCB { background-position: -165px -418px; }
+/*上海农商银行*/
+.bankChoice a.BANK_NCBBANK { background-position: -320px -10px; }
+/*南洋商业银行*/
+.bankChoice a.BANK_SCCB { background-position: -320px -44px; }
+/*河北银行*/
+.bankChoice a.BANK_ZJTLCB { background-position: -320px -78px; }
+/*泰隆银行*/
+.bankChoice a.BANK_1000000 { background-position: -320px -112px; }
+/*广州银行*/
+.bankChoice a.BANK_BGZ { background-position: -320px -146px; }
+/*易宝会员支付*/
+.bankChoice a.se, .payChoice a.se:hover { border-color: #CC0000; color: #CC0000; z-index: 99; box-shadow: 0 0 3px rgba(0,0,0,.3); }
+.bankChoice a.se i { display: block; }
+/*快捷支付银行LOGO*/
+.quickBankChoice { padding: 0 2px 2px 0; }
+.quickBankChoice a { float: left; height: 0px; padding: 40px 0 0 0; width: 147px; overflow: hidden; color: #000; text-decoration: none; border: solid 2px #DDD; margin: 0 -2px -2px 0; position: relative; z-index: 88; background: url(/Resource/Image/Base/bank_logo.gif) -10px -10px no-repeat; }
+.quickBankChoice a i { position: absolute; height: 12px; width: 12px; top: 0; left: 0; background: url(/Resource/Image/Controls/bank_chiose.gif) no-repeat; display: none; }
+.quickBankChoice a:hover { border-color: #AAA; color: #CC0000; z-index: 98; }
+.quickBankChoice a.QCKBANK_GDB { background-position: -479px -5px; }
+/*广发银行快捷支付（信）*/
+.quickBankChoice a.QCKBANK_ECITIC { background-position: -479px -45px; }
+/*中信银行快捷支付（信）*/
+.quickBankChoice a.QCKBANK_CPB { background-position: -479px -85px; }
+/*平安银行快捷支付（信）*/
+.quickBankChoice a.QCKBANK_CMBCHINA { background-position: -479px -125px; }
+/*招商银行快捷支付（信）*/
+.quickBankChoice a.QCKBANK_ICBC { background-position: -479px -165px; }
+/*工商银行快捷支付（信）*/
+.quickBankChoice a.QCKBANK_CCB { background-position: -479px -205px; }
+/*建设银行快捷支付（信）*/
+.quickBankChoice a.QCKBANK_BOC { background-position: -479px -245px; }
+/*中国银行快捷支付（信）*/
+.quickBankChoice a.QCKBANK_ABC { background-position: -479px -285px; }
+/*农业银行快捷支付（信）*/
+.quickBankChoice a.QCKBANK_CMBC { background-position: -479px -325px; }
+/*民生银行快捷支付（信）*/
+.quickBankChoice a.QCKBANK_CEB { background-position: -479px -365px; }
+/*光大银行快捷支付（信）*/
+.quickBankChoice a.QCKBANK_SPDB { background-position: -479px -405px; }
+/*上海浦东发展银行快捷支付（信）*/
+.quickBankChoice a.QCKBANK_CIB { background-position: -626px -5px; }
+/*兴业银行快捷支付（借）*/
+.quickBankChoice a.QCKBANK_POST { background-position: -626px -45px; }
+/*邮政储蓄快捷支付（借）*/
+.quickBankChoice a.QCKBANK_SDB { background-position: -626px -85px; }
+/*深圳发展银行快捷支付（借）*/
+.quickBankChoice a.se, .payChoice a.se:hover { border-color: #CC0000; color: #CC0000; z-index: 99; box-shadow: 0 0 3px rgba(0,0,0,.3); }
+.quickBankChoice a.se i { display: block; }
+
+.bankCards{padding:0 2px 2px 0; overflow:hidden; zoom:1;}
+.bankCards li{border:solid 2px #ECF0F1; padding:15px 10px 15px 5px; height:60px; width:310px; float:left; margin:0 -2px -2px 0; position:relative; z-index:88;}
+.bankCards li:hover{border-color:#95A5A6; z-index:98; cursor:pointer;}
+.bankCards li i{position: absolute; height: 12px; width: 12px; top: 0; left: 0; background: url(/Resource/Image/Controls/bank_chiose.gif) no-repeat; display:none;}
+.bankCards li.se{border-color: #CC0000; color: #CC0000; z-index:99; box-shadow:0 0 5px rgba(0,0,0,.3);}
+.bankCards li.se i{display:block;}
+.bankCards li .bank_logo{float:left; width:147px; height:0px; overflow:hidden; padding:33px 0 0 0; margin:14px 5px 0 0; background:url(/Resource/Image/Base/bank_logo.gif) -10px -10px no-repeat;}
+.bankCards li .card_info{float:left; height:33px;}
+.bankCards li .card_info .card_number{display:block; height:20px; line-height:20px; font-size:14px; font-weight:bold;}
+.bankCards li .card_info .card_prv{display:block; height:20px; line-height:20px; font-size:12px;}
+.bankCards li .card_info .card_exp{display:block; height:20px; line-height:20px; font-size:12px; color:#888;}
+.bankCards li .bank_BANK_ICBC { background-position: -10px -10px; }
+/*工商银行*/
+.bankCards li .bank_BANK_CMBCHINA { background-position: -10px -44px; }
+/*招商银行*/
+.bankCards li .bank_BANK_ABC { background-position: -10px -78px; }
+/*中国农业银行*/
+.bankCards li .bank_BANK_CCB { background-position: -10px -112px; }
+/*建设银行*/
+.bankCards li .bank_BANK_BCCB { background-position: -10px -146px; }
+/*北京银行*/
+.bankCards li .bank_BANK_BOCO { background-position: -10px -180px; }
+/*交通银行*/
+.bankCards li .bank_BANK_CIB { background-position: -10px -214px; }
+/*兴业银行*/
+.bankCards li .bank_BANK_NJCB { background-position: -10px -248px; }
+/*南京银行*/
+.bankCards li .bank_BANK_CMBC { background-position: -10px -282px; }
+/*中国民生银行*/
+.bankCards li .bank_BANK_CEB { background-position: -10px -316px; }
+/*光大银行*/
+.bankCards li .bank_BANK_BOC { background-position: -10px -350px; }
+/*中国银行*/
+.bankCards li .bank_BANK_PINGANBANK { background-position: -10px -384px; }
+/*平安银行*/
+.bankCards li .bank_BANK_CBHB { background-position: -10px -418px; }
+/*渤海银行*/
+.bankCards li .bank_BANK_HKBEA { background-position: -165px -10px; }
+/*东亚银行*/
+.bankCards li .bank_BANK_NBCB { background-position: -165px -44px; }
+/*宁波银行*/
+.bankCards li .bank_BANK_ECITIC { background-position: -165px -78px; }
+/*中信银行*/
+.bankCards li .bank_BANK_SDB { background-position: -165px -112px; }
+/*深圳发展银行*/
+.bankCards li .bank_BANK_GDB { background-position: -165px -146px; }
+/*广发银行*/
+.bankCards li .bank_BANK_SHB { background-position: -165px -180px; }
+/*上海银行*/
+.bankCards li .bank_BANK_SPDB { background-position: -165px -214px; }
+/*上海浦东发展银行*/
+.bankCards li .bank_BANK_POST { background-position: -165px -248px; }
+/*中国邮政*/
+.bankCards li .bank_BANK_BJRCB { background-position: -165px -282px; }
+/*北京农村商业银行*/
+.bankCards li .bank_BANK_HXB { background-position: -165px -316px; }
+/*华夏银行*/
+.bankCards li .bank_BANK_CZ { background-position: -165px -350px; }
+/*浙商银行*/
+.bankCards li .bank_BANK_HZBANK { background-position: -165px -384px; }
+/*杭州银行*/
+.bankCards li .bank_BANK_SRCB { background-position: -165px -418px; }
+/*上海农商银行*/
+.bankCards li .bank_BANK_NCBBANK { background-position: -320px -10px; }
+/*南洋商业银行*/
+.bankCards li .bank_BANK_SCCB { background-position: -320px -44px; }
+/*河北银行*/
+.bankCards li .bank_BANK_ZJTLCB { background-position: -320px -78px; }
+/*泰隆银行*/
+.bankCards li .bank_BANK_1000000 { background-position: -320px -112px; }
+
+.sup-selector { border: solid 1px #95A5A6; font-size: 12px; line-height: 26px; padding: 0 30px 0 6px; color: #000; height: 26px; background: url(/Resource/Image/Controls/text-box-supplier.gif) right center no-repeat; }
+
+a.button { display: inline-block; height: 28px; background: #3842A3; line-height: 28px; border: none; padding: 0 20px; color: #FFF; text-decoration: none; text-decoration: none; }
+a.button:hover { background: #2C3587; color: #FFF; text-decoration: none; }
+a.button:active { background: #2C3587; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); color: #FFF; text-decoration: none; }
+a.button_disabled, a.button_disabled:hover, a.button_disabled:active { background: #CCC; color: #FFF; box-shadow: none; cursor: default; }
+a.redButton { display: inline-block; height: 28px; background: #E74C3C; line-height: 28px; border: none; padding: 0 20px; color: #FFF; text-decoration: none; text-decoration: none; }
+a.redButton:hover { background: #C0392B; color: #FFF; text-decoration: none; }
+a.redButton:active { background: #C0392B; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); color: #FFF; text-decoration: none; }
+a.redButton_disabled, a.redButton_disabled:hover, a.redButton_disabled:active { background: #CCC; color: #FFF; box-shadow: none; cursor: default; }
+a.cancelButton { display: inline-block; height: 28px; background: #888; line-height: 28px; padding: 0 20px; color: #FFF; text-decoration: none; border-radius: 3px; text-decoration: none; }
+a.cancelButton:hover { background: #AAA; text-decoration: none; text-decoration: none; color: #FFF; }
+a.cancelButton:active { background: #888; text-decoration: none; text-decoration: none; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); }
+
+.checkSimple { height: 28px; display: inline-block; padding: 0 6px; }
+.checkSimple input { float: left; height: 13px; width: 13px; padding: 0; margin: 7px 3px 0 0; }
+.checkSimple em { height: 28px; line-height: 28px; color: #000; float: left; }
+.checkSimple:hover, .checkSimple:hover em { color: #16a085; }
+
+/* MXNET UI gen loading css */
+.genLoading { display: block; width: 100px; height: 18px; margin: 20px auto; padding: 35px 20px 5px 20px; /*border:solid 1px #c0c9c1;*/ background: url(/Resource/Image/Controls/genLoading.gif) center 8px no-repeat; color: #888; text-align: center; }
+.formLoading { display: inline-block; height: 29px; width: 28px; float: left; background: url(/Resource/Image/Controls/genLoading.gif) center center no-repeat; }
+
+/* combox-lay */
+.combox-lay { position: absolute; top: 500px; left: 200px; height: 100px; width: 100px; background: #FFF; border: 1px solid #FB7262; box-shadow: 0 0 3px rgba(0,0,0,.3); }
+.combox-lay .container { height: 100px; width: 100px; overflow: hidden; overflow-y: auto; padding: 0; margin: 0; border: 0; position: relative; z-index: 1000; }
+.combox-lay .container a { display: block; padding: 3px 5px; line-height:18px; border-bottom: solid 1px #ECF0F1; text-decoration: none; color: #34495E; background: white; }
+.combox-lay .container a:hover { color: #fff; background:#FABBB3;}
+.combox-lay .container a.se { background: #34495E; color: #FFF; }
+
+/*** MXNET UI Date Picker Css ***/
+.datePicker { display: inline-block; height: 28px; width: 118px; overflow: hidden; zoom: 1; }
+.datePicker input.selector_txt { height: 20px; line-height: 20px; border: solid 1px #95A5A6; background: #fff; color: #34495E; padding: 3px; width: 79px; float: left; }
+.datePicker input.selector_txt:hover { border: solid 1px #3842A3; }
+.datePicker input.selector_txt:focus { border-color: #3842A3; }
+.datePicker a.selector_btn { display: inline-block; height: 26px; line-height: normal; width: 30px; border: solid 1px #95A5A6; border-left: none 0; background: url(/Resource/Image/Controls/calendar-blue.gif) center center no-repeat #ECF0F1; color: #555; text-align: center; text-decoration: none; float: left; }
+.dpk-splitTxt { float: left; padding: 0 3px; color: #888; line-height: 28px; }
+/*** MXNET UI Hour Picker Css ***/
+.hourPicker { display: inline-block; height: 28px; width: 67px; overflow: hidden; zoom: 1; }
+.hourPicker input.selector_txt { height: 20px; line-height: 20px; border: solid 1px #95A5A6; background: #fff; color: #34495E; padding: 3px; width: 32px; float: left; }
+.hourPicker input.selector_txt:hover { border: solid 1px #3842A3; }
+.hourPicker input.selector_txt:focus { border-color: #3842A3; }
+.hourPicker a.selector_btn { display: inline-block; height: 26px; line-height: normal; width: 26px; border: solid 1px #95A5A6; border-left: none 0; background: url(/Resource/Image/Controls/hour-blue.gif) center center no-repeat #ECF0F1; color: #555; text-align: center; text-decoration: none; float: left; }
+/*** MXNET UI Hour Picker Css ***/
+.minutesPicker { display: inline-block; height: 28px; width: 118px; overflow: hidden; zoom: 1; }
+.minutesPicker input.selector_txt { height: 20px; line-height: 20px; border: solid 1px #95A5A6; background: #fff; color: #34495E; padding: 3px; width: 32px; float: left; }
+.minutesPicker input.selector_txt:hover { border: solid 1px #3842A3; }
+.minutesPicker input.selector_txt:focus { border-color: #3842A3; }
+.minutesPicker a.selector_btn { display: inline-block; height: 26px; line-height: normal; width: 26px; border: solid 1px #95A5A6; border-left: none 0; background: url(/Resource/Image/Controls/minutes-blue.gif) center center no-repeat #ECF0F1; color: #555; text-align: center; text-decoration: none; float: left; }
+/* datePicker layer css */
+.datePicker_Layer { display: none; width: 200px; border: solid 1px #ccc; background: #fff; position: absolute; padding: 0px; }
+.datePicker_Layer * { font-size: 11px; font-family: Tahoma, PMingLiU; color: #555; }
+.datePicker_Layer .dpkLay_head { height: 31px; background: url(/Resource/Image/Controls/datePicker_lay.gif) 0 -34px repeat-x; padding: 0 8px; overflow: hidden; zoom: 1; }
+.datePicker_Layer .dpkLay_head .dpkHeadL { display: block; width: 34px; height: 17px; margin: 7px 0 0 0; float: left; }
+.datePicker_Layer .dpkLay_head .dpkHeadR { display: block; width: 34px; height: 17px; margin: 7px 0 0 0; float: right; }
+.datePicker_Layer .dpkLay_head .dpkHeadM { display: block; padding: 5px 0 0 0; margin: 0 34px; text-align: center; }
+.datePicker_Layer .dpkLay_head .dpkHeadL a.dpkLay_arrowBtn,
+.datePicker_Layer .dpkLay_head .dpkHeadR a.dpkLay_arrowBtn { float: left; }
+.datePicker_Layer a.dpkLay_arrowBtn { display: inline-block; height: 17px; width: 17px; background: url(/Resource/Image/Controls/datePicker_lay.gif) 0 0 no-repeat; font-size: 0; line-height: normal; }
+.datePicker_Layer a.preYear { background-position: 0 0; }
+.datePicker_Layer a.preYear:hover { background-position: 0 -17px; }
+.datePicker_Layer a.preMonth { background-position: -17px 0; }
+.datePicker_Layer a.preMonth:hover { background-position: -17px -17px; }
+.datePicker_Layer a.nextMonth { background-position: -34px 0; }
+.datePicker_Layer a.nextMonth:hover { background-position: -34px -17px; }
+.datePicker_Layer a.nextYear { background-position: -51px 0; }
+.datePicker_Layer a.nextYear:hover { background-position: -51px -17px; }
+.datePicker_Layer .opts { border-top: 1px solid #ccc; height: 26px; padding: 6px; text-align: center; }
+.datePicker_Layer .opts a { background: none repeat scroll 0 0 #ff7200; border-radius: 3px; color: #fff; display: inline-block; height: 22px; line-height: 22px; padding: 0 15px; }
+.datePicker_Layer .opts a.opt-today { float: left; }
+.datePicker_Layer .opts a.opt-clear { background: none repeat scroll 0 0 #888; color: #fff; float: right; }
+.datePicker_Calendar { width: 100%; }
+.datePicker_Calendar th, .datePicker_Calendar td { height: 20px; text-align: center; }
+.datePicker_Calendar th { font-weight: bold; background: #eee; height: 26px; cursor: default; }
+.datePicker_Calendar td { cursor: pointer; }
+.datePicker_Calendar td.dayHv { color: #fff; background: #168101; text-decoration: underline; }
+.datePicker_Calendar td.daySe { color: #fff; background: #05bf07; text-decoration: none; }
+.datePicker_Calendar td.today { color: #fff; background: #ff7200; text-decoration: none; }
+.datePicker_Calendar td.nodate { cursor: default; }
+
+/*** MXNET UI Time Picker Css ***/
+.timePicker { display: inline-block; height: 25px; width: 100px; overflow: hidden; zoom: 1; }
+.timePicker input.selector_txt { height: 24px; border: solid 1px #ccc; background: #fff; color: #AD1F24; padding: 3px; width: 69px; float: left; }
+.timePicker input.selector_txt:focus { border-color: #AD1F24; }
+.timePicker a.selector_btn { display: inline-block; height: 23px; line-height: normal; width: 22px; border: solid 1px #ccc; border-left: none 0; background: url(Images/time-icon.gif) 0 0 no-repeat; color: #555; text-align: center; text-decoration: none; float: left; }
+/* timePicker layer css */
+.timePicker_Layer { display: block; width: 200px; height: 177px; border: solid 1px #ccc; background: #fff; position: absolute; padding: 0px; }
+.timePicker_Layer * { font-size: 11px; font-family: Tahoma, PMingLiU; color: #555; }
+.timePicker_Items { height: 100%; width: 100%; overflow: hidden; overflow-y: auto; }
+.timePicker_Items li { height: 18px; line-height: 18px; padding: 0 6px; cursor: default; }
+.timePicker_Items li:hover, .timePicker_Items li.hv { background: #FFEEEE; color: #AD1F24; }
+.timePicker_Items li.se { background: #AD1F24; color: #FFF; }
+
+.datetime-group { display: block; width: 262px; }
+.datetime-group .datePicker { height: 32px; width: 121px; float: left; margin: 0 10px 0 0; }
+.datetime-group .datePicker input { height: 24px; width: 79px; }
+.datetime-group .datePicker a { height: 30px; width: 33px; background: url(Images/date-icon.gif) no-repeat; }
+.datetime-group .datePicker a:hover { background-color: #FFFFEA; }
+.datetime-group .timePicker { height: 32px; width: 121px; float: left; margin: 0 10px 0 0; }
+.datetime-group .timePicker input { height: 24px; width: 79px; }
+.datetime-group .timePicker a { height: 30px; width: 33px; background: url(Images/time-icon.gif) no-repeat; }
+.datetime-group .timePicker a:hover { background-color: #FFFFEA; }
+
+/* MXNET UI datetime selector css */
+.dateTimeSelector { border: solid 2px #EEE; background: #FFF; padding: 12px 15px; width: 454px; }
+.dateTimeSelector dl { overflow: hidden; zoom: 1; padding: 3px 0; }
+.dateTimeSelector dl dt { float: left; width: 100px; }
+.dateTimeSelector dl dd { float: left; }
+.dateTimeSelector dl.week dt { line-height: 51px; }
+.dateTimeSelector dl.week label { float: left; border: solid 1px #DDD; text-align: center; padding: 0 0 8px 0; margin-right: -1px; position: relative; z-index: 8; cursor: pointer; }
+.dateTimeSelector dl.week label:hover { background: #FFFFEA; border-color: #AD1F24; color: #AD1F24; z-index: 9; }
+.dateTimeSelector dl.week label i { display: block; text-align: center; width: 41px; height: 18px; line-height: 18px; padding: 5px 0; }
+.dateTimeSelector dl.week label.se { background: #FFFFEA; }
+.dateTimeSelector dl.date .datePicker { height: 32px; width: 121px; float: left; margin: 0 10px 0 0; }
+.dateTimeSelector dl.date dt { line-height: 32px; }
+.dateTimeSelector dl.date .datePicker input { height: 24px; width: 79px; }
+.dateTimeSelector dl.date .datePicker a { height: 30px; width: 33px; background: url(Images/date-icon.gif) no-repeat; }
+.dateTimeSelector dl.date .datePicker a:hover { background-color: #FFFFEA; }
+.dateTimeSelector dl.time dt { line-height: 32px; }
+.dateTimeSelector dl.time .datePicker { height: 32px; width: 121px; float: left; margin: 0 10px 0 0; }
+.dateTimeSelector dl.time .datePicker input { height: 24px; width: 79px; }
+.dateTimeSelector dl.time .datePicker a { height: 30px; width: 33px; background: url(Images/time-icon.gif) no-repeat; }
+.dateTimeSelector dl.time .datePicker a:hover { background-color: #FFFFEA; }
+.dateTimeSelector dl.desc dt { line-height: 18px; }
+.dateTimeSelector dl.desc dd { color: #AD1F24; line-height: 18px; font-size: 11px; }
+
+.number-range { display: block; overflow: hidden; zoom: 1; }
+.number-range .textBox { float: left; }
+.number-range span { padding: 0 10px; line-height: 25px; color: #000; float: left; }
+
+.comm-button { display: inline-block; border: solid 1px #DDD; height: 30px; line-height: 30px; padding: 0 15px; text-decoration: none; color: #000; background: #FFF; border-radius: 3px; }
+.comm-button:hover { border-color: #AAA; color: #AD1F24; background: #FAFAFA; text-decoration: none; }
+.comm-button:active { box-shadow: 0 1px 2px rgba(0,0,0,.2) inset; }
+
+/* MXNET UI tree selector */
+.treeSelector { display: inline-block; height: 28px; overflow: hidden; zoom: 1; }
+.treeSelector input.selector_txt { height: 20px; border: solid 1px #95A5A6; background: #fff; color: #34495E; padding: 3px; width: 79px; float: left; border-radius: 3px 0 0 3px; box-shadow: inset rgba(0,0,0,.15) 0px 1px 2px; }
+.treeSelector input.selector_txt:hover { border: solid 1px #7f8c8d; }
+.treeSelector input.selector_txt:focus { border-color: #1ABC9C; }
+.treeSelector a.selector_btn { display: inline-block; height: 26px; line-height: normal; width: 30px; border: solid 1px #95A5A6; border-left: none 0; background: url(/Resource/Image/Controls/tree-selector.gif) center center no-repeat #ECF0F1; color: #555; text-align: center; text-decoration: none; float: left; border-radius: 0 3px 3px 0; }
+
+.treeSelectorLay { position: absolute; height: 200px; overflow: auto; overflow-x: hidden; background: #FFF; border: solid 1px #CCC; z-index: 99999; }
+.treeLoading { background: url(/Resource/Image/Controls/ctrlLoading.gif) center center no-repeat #ffffe0; }
+
+/*** MXNET UI TreeView Css ***/
+.ztree * { padding: 0; margin: 0; font-size: 12px; font-family: Verdana, Arial, Helvetica, AppleGothic, sans-serif; }
+.ztree { margin: 0; padding: 5px; color: #333; }
+.ztree li { padding: 0; margin: 0; list-style: none; line-height: 14px; text-align: left; white-space: nowrap; outline: 0; }
+.ztree li ul { margin: 0; padding: 0 0 0 18px; }
+.ztree li ul.line { background: url(/Resource/Image/Controls/line_conn.gif) 0 0 repeat-y; }
+
+.ztree li a { padding: 1px 3px 0 0; margin: 0; cursor: pointer; height: 17px; color: #333; background-color: transparent; text-decoration: none; vertical-align: top; display: inline-block; }
+.ztree li a:hover { text-decoration: underline; }
+.ztree li a.curSelectedNode { padding-top: 0px; background-color: #FFE6B0; color: black; height: 16px; border: 1px #FFB951 solid; opacity: 0.8; }
+.ztree li a.curSelectedNode_Edit { padding-top: 0px; background-color: #FFE6B0; color: black; height: 16px; border: 1px #FFB951 solid; opacity: 0.8; }
+.ztree li a.tmpTargetNode_inner { padding-top: 0px; background-color: #316AC5; color: white; height: 16px; border: 1px #316AC5 solid; opacity: 0.8; filter: alpha(opacity=80); }
+.ztree li a.tmpTargetNode_prev { }
+.ztree li a.tmpTargetNode_next { }
+.ztree li a input.rename { height: 14px; width: 80px; padding: 0; margin: 0; font-size: 12px; border: 1px #7EC4CC solid; *border: 0px; }
+.ztree li span { line-height: 16px; margin-right: 2px; }
+.ztree li span.button { line-height: 0; margin: 0; width: 16px; height: 16px; display: inline-block; vertical-align: middle; border: 0 none; cursor: pointer; outline: none; box-shadow: none; background-color: transparent; background-repeat: no-repeat; background-attachment: scroll; background-image: url("/Resource/Image/Controls/zTreeStandard.png"); *background-image: url("/Resource/Image/Controls/zTreeStandard.gif"); }
+
+.ztree li span.button.chk { width: 13px; height: 13px; margin: 0 3px 0 0; cursor: auto; }
+.ztree li span.button.chk.checkbox_false_full { background-position: 0 0; }
+.ztree li span.button.chk.checkbox_false_full_focus { background-position: 0 -14px; }
+.ztree li span.button.chk.checkbox_false_part { background-position: 0 -28px; }
+.ztree li span.button.chk.checkbox_false_part_focus { background-position: 0 -42px; }
+.ztree li span.button.chk.checkbox_false_disable { background-position: 0 -56px; }
+.ztree li span.button.chk.checkbox_true_full { background-position: -14px 0; }
+.ztree li span.button.chk.checkbox_true_full_focus { background-position: -14px -14px; }
+.ztree li span.button.chk.checkbox_true_part { background-position: -14px -28px; }
+.ztree li span.button.chk.checkbox_true_part_focus { background-position: -14px -42px; }
+.ztree li span.button.chk.checkbox_true_disable { background-position: -14px -56px; }
+.ztree li span.button.chk.radio_false_full { background-position: -28px 0; }
+.ztree li span.button.chk.radio_false_full_focus { background-position: -28px -14px; }
+.ztree li span.button.chk.radio_false_part { background-position: -28px -28px; }
+.ztree li span.button.chk.radio_false_part_focus { background-position: -28px -42px; }
+.ztree li span.button.chk.radio_false_disable { background-position: -28px -56px; }
+.ztree li span.button.chk.radio_true_full { background-position: -42px 0; }
+.ztree li span.button.chk.radio_true_full_focus { background-position: -42px -14px; }
+.ztree li span.button.chk.radio_true_part { background-position: -42px -28px; }
+.ztree li span.button.chk.radio_true_part_focus { background-position: -42px -42px; }
+.ztree li span.button.chk.radio_true_disable { background-position: -42px -56px; }
+
+.ztree li span.button.switch { width: 18px; height: 18px; }
+.ztree li span.button.root_open { background-position: -92px -54px; }
+.ztree li span.button.root_close { background-position: -74px -54px; }
+.ztree li span.button.roots_open { background-position: -92px 0; }
+.ztree li span.button.roots_close { background-position: -74px 0; }
+.ztree li span.button.center_open { background-position: -92px -18px; }
+.ztree li span.button.center_close { background-position: -74px -18px; }
+.ztree li span.button.bottom_open { background-position: -92px -36px; }
+.ztree li span.button.bottom_close { background-position: -74px -36px; }
+.ztree li span.button.noline_open { background-position: -92px -72px; }
+.ztree li span.button.noline_close { background-position: -74px -72px; }
+.ztree li span.button.root_docu { background: none; }
+.ztree li span.button.roots_docu { background-position: -56px 0; }
+.ztree li span.button.center_docu { background-position: -56px -18px; }
+.ztree li span.button.bottom_docu { background-position: -56px -36px; }
+.ztree li span.button.noline_docu { background: none; }
+
+.ztree li span.button.ico_open { margin-right: 2px; background-position: -110px -16px; vertical-align: top; *vertical-align: middle; }
+.ztree li span.button.ico_close { margin-right: 2px; background-position: -110px 0; vertical-align: top; *vertical-align: middle; }
+.ztree li span.button.ico_docu { margin-right: 2px; background-position: -110px -32px; vertical-align: top; *vertical-align: middle; }
+.ztree li span.button.edit { margin-right: 2px; background-position: -110px -48px; vertical-align: top; *vertical-align: middle; }
+.ztree li span.button.remove { margin-right: 2px; background-position: -110px -64px; vertical-align: top; *vertical-align: middle; }
+
+.ztree li span.button.ico_loading { margin-right: 2px; background: url(/Resource/Image/Controls/loading.gif) no-repeat scroll 0 0 transparent; vertical-align: top; *vertical-align: middle; }
+
+ul.tmpTargetzTree { background-color: #FFE6B0; opacity: 0.8; filter: alpha(opacity=80); }
+
+span.tmpzTreeMove_arrow { width: 16px; height: 16px; display: inline-block; padding: 0; margin: 2px 0 0 1px; border: 0 none; position: absolute; background-color: transparent; background-repeat: no-repeat; background-attachment: scroll; background-position: -110px -80px; background-image: url("/Resource/Image/Controls/zTreeStandard.png"); *background-image: url("/Resource/Image/Controls/zTreeStandard.gif"); }
+
+ul.ztree.zTreeDragUL { margin: 0; padding: 0; position: absolute; width: auto; height: auto; overflow: hidden; background-color: #cfcfcf; border: 1px #00B83F dotted; opacity: 0.8; filter: alpha(opacity=80); }
+.zTreeMask { z-index: 10000; background-color: #cfcfcf; opacity: 0.0; filter: alpha(opacity=0); position: absolute; }
+
+/*** MXNET UI Toolbar Css ***/
+.toolbar { height: 27px; padding: 5px; background: #ecf0f1; border: solid 1px #bdc3c7; }
+.toolbar a { display: inline-block; height: 25px; border: solid 1px #ecf0f1; cursor: pointer; float: left; margin-right: 2px; text-decoration: none; }
+.toolbar a span { display: inline-block; float: left; }
+.toolbar a span.toolbarTxt { height: 25px; line-height: 25px; color: #555; padding: 0px 5px; }
+.toolbar a span.toolbarIcn { margin: 4px 0px 5px 3px; width: 16px; height: 16px; background-image: url(/Resource/Image/Controls/toolbar.gif); background-repeat: no-repeat; }
+.toolbar a span.toolbarIcn_add { background-position: 0px -36px; }
+.toolbar a span.toolbarIcn_edit { background-position: 0px -53px; }
+.toolbar a span.toolbarIcn_del { background-position: 0px -70px; }
+.toolbar a span.toolbarIcn_up { background-position: 0px -87px; }
+.toolbar a span.toolbarIcn_down { background-position: 0px -104px; }
+.toolbar a span.toolbarIcn_rfs { background-position: 0px -121px; }
+.toolbar a span.toolbarIcn_pwAudit { background-position: 0px -138px; }
+.toolbar a span.toolbarIcn_pwFun { background-position: 0px -155px; }
+.toolbar a span.toolbarIcn_pwDept { background-position: 0px -172px; }
+.toolbar a span.toolbarIcn_pwInfoCatg { background-position: 0px -189px; }
+.toolbar a span.toolbarIcn_asgnRole { background-position: 0px -206px; }
+.toolbar a span.toolbarIcn_join { background-position: 0px -225px; }
+.toolbar a span.toolbarIcn_infoAudit { background-position: 0px -242px; }
+.toolbar a span.toolbarIcn_recomm { background-position: 0px -259px; }
+.toolbar a span.toolbarIcn_unrecomm { background-position: 0px -276px; }
+.toolbar a span.toolbarIcn_lock { background-position: 0px -293px; }
+.toolbar a span.toolbarIcn_unlock { background-position: 0px -310px; }
+.toolbar a span.toolbarIcn_asgAct { background-position: 0px -327px; }
+.toolbar a span.toolbarIcn_view { background-position: 0px -344px; }
+.toolbar a span.toolbarIcn_copy { background-position: 0px -361px; }
+.toolbar a span.toolbarIcn_move { background-position: 0px -378px; }
+.toolbar a span.toolbarIcn_exportExcel{background-position:0px -479px;}         /*导出Excel*/
+.toolbar a span.toolbarIcn_setting{background-position:0px -530px;}             /*设置、配置*/
+.toolbar a:hover { height: 25px; background: #fff; border-left: solid 1px #ccc; border-top: solid 1px #ccc; border-right: solid 1px #999; border-bottom: solid 1px #999; text-decoration: none; }
+.toolbar a:hover span.toolbarTxt { color: #000; text-decoration: none; }
+.toolbar-no-btm { border-bottom: none 0; }
+
+/* 搜索条件框样式 */
+.searchBar { border-left: solid 1px #ccc; border-right: solid 1px #ccc; padding: 3px 6px; }
+.searchBar .schRow { color: #666; overflow: hidden; zoom: 1; padding: 3px 0; }
+.searchBar .schRow .schCtrlTxt { display: inline-block; line-height: 28px; padding: 0 3px; float: left; }
+.searchBar .schRow .schCtrl { display: block; line-height: 28px; padding: 0 3px; float: left; }
+.searchBar .schRow .schCtrl select { float: left; }
+.searchBar .schExpTxt { display: inline-block; line-height: 28px; padding: 0 3px; float: left; }
+.searchBar .datePicker { float: left; }
+.searchBar .schBtn { display: inline-block; padding: 0 10px; float: left; }
+.searchBar a.button { display: inline-block; height: 28px; line-height: 28px; padding: 0 12px; color: #FFF; background: #1ABC9C; cursor: pointer; text-decoration: none; box-shadow: inset 0 -1px 0px rgba(0,0,0,.3); }
+.searchBar a.button:hover { background: #48C9B0; text-decoration: none; color: #FFF; }
+.searchBar a.button:active { background: #48C9B0; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); }
+
+.noToolbar { border-top: solid 1px #CCC; }
+
+/*** MXNET UI Grid View Css ***/
+.grid { border: solid 1px #ccc; background: #fff; overflow: hidden; overflow-x: auto; }
+.gridHead { height: 35px; line-height: 35px; padding: 0px 10px; border-bottom: solid 1px #ccc; background: #FAFAFA; font-weight: bold; font-size: 14px; color: #34495E; }
+.gridRowCnt { font-weight: normal; font-size: 11px; color: #555; }
+.gridTbl { width: 100%; table-layout: fixed; }
+.gridTbl th, .gridTbl td { text-align: center; word-wrap: break-word; word-break: normal; word-break: break-all; }
+.gridTblHead { height: 28px; background: #FAFAFA; }
+.gridTblHead th { height: 32px; border-bottom: solid 1px #ccc; font-weight: bold; color: #34495E; }
+.gridTbl #grv_head th { border: dotted 1px #DDD; border-top: solid 1px #DDD; border-bottom: solid 1px #DDD; background: #ECF0F1; }
+.gridTbl #grv_rows td { border: dotted 1px #DDD; }
+.gridTbl #grv_foot td { padding: 6px 0; }
+.gridTbl #grv_foot td .paging { padding: 0; }
+.gridTbl th.gridOpt,
+.gridTbl td.gridOpt { width: 70px; }
+.gridTbl td.gridOpt .gridOpt-wrap { padding: 4px; width: 62px; }
+.gridTbl td.gridOpt span { display: none; }
+.gridTbl td.gridOpt a { display: block; background: #1abc9c; border-radius: 3px; font-size: 11px; color: #FFF; padding: 0 15px; height: 22px; line-height: 22px; text-decoration: none; }
+.gridTbl td.gridOpt a:hover { background: #48c9b0; }
+.gridTbl td.gridOpt a:active { background: #16a085; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); }
+
+.gridOptLay { width: 100px; position: absolute; top: 24px; right: 0px; box-shadow: 0 1px 3px rgba(0,0,0,.3); background: #FFF; border: solid 1px #95A5A6; border-radius: 3px; overflow: hidden; }
+.gridOptLay a { display: block; height: 24px; line-height: 24px; color: #34495e; background: #FFF; text-align: center; border-bottom: solid 1px #EEE; text-decoration: none; }
+.gridOptLay a:hover { background: #1abc9c; color: #FFF; }
+.gridOptLay a:active { box-shadow: inset 0 1px 3px rgba(0,0,0,.3); }
+.gridOptLay a.last { border: none 0; }
+
+/*多选框分组*/
+.chk-dl-group { }
+.chk-dl-group dl { border-bottom: solid 1px #EEE; overflow: hidden; zoom: 1; }
+.chk-dl-group dl label { height: 28px; padding: 0 6px; float: left; cursor: pointer; border-bottom: solid 2px #FFF; white-space: nowrap; }
+.chk-dl-group dl label input { float: left; margin: 8px 3px 0 0; height: 13px; width: 13px; padding: 0; }
+.chk-dl-group dl label em { float: left; line-height: 28px; white-space: nowrap; }
+.chk-dl-group dl label:hover { border-bottom-color: #16a085; background: #ECF0F1; }
+.chk-dl-group dl label:hover em { color: #16a085; }
+.chk-dl-group dl label.se, .chk-dl-group dl label.se:hover { border-bottom-color: #34495e; }
+.chk-dl-group dl label.se em, .chk-dl-group dl label.se:hover em { color: #34495e; }
+.chk-dl-group dl.checked { border-bottom-color: #1ABC9C; }
+.chk-dl-group dl dt { width: 100px; float: left; }
+.chk-dl-group dl dt label { width: 88px; }
+.chk-dl-group dl dd { float: left; padding: 0; word-wrap: break-word; word-break: normal; width: 699px; border-left: solid 1px #ecf0f1; }
+
+/*目的地多选框*/
+.chk-grp-destination { }
+.chk-grp-destination dl { border-bottom: solid 1px #EEE; overflow: hidden; zoom: 1; margin-bottom: 6px; }
+.chk-grp-destination dl dt.group-name { display: block; padding: 0 15px; background: #ecf0f1; height: 24px; line-height: 24px; clear: both; }
+.chk-grp-destination dl dt.group-chk { width: 100px; float: left; }
+.chk-grp-destination dl dt.group-chk label { width: 88px; }
+.chk-grp-destination dl dd { float: left; padding: 0; width: 699px; white-space: nowrap; border-left: solid 1px #ecf0f1; }
+.chk-grp-destination dl label { height: 28px; float: left; cursor: pointer; border-bottom: solid 2px #FFF; padding: 0 6px; white-space: nowrap; }
+.chk-grp-destination dl label input { float: left; margin: 8px 3px 0 0; height: 13px; width: 13px; padding: 0; white-space: nowrap; }
+.chk-grp-destination dl label em { float: left; line-height: 28px; white-space: nowrap; }
+.chk-grp-destination dl label:hover { border-bottom-color: #16a085; background: #ECF0F1; }
+.chk-grp-destination dl label:hover em { color: #16a085; }
+.chk-grp-destination dl label.se, .chk-dl-group dl label.se:hover { border-bottom-color: #34495e; }
+.chk-grp-destination dl label.se em, .chk-dl-group dl label.se:hover em { color: #34495e; }
+.chk-grp-destination dl.last { margin: 0; }
+.chk-grp-destination dl.checked { border-bottom-color: #1ABC9C; }
+
+.table-group { width: 100%; border: none 0; }
+.table-group .table-group-title { width: 130px; padding: 5px; text-align: right; border-left: none 0; }
+.table-group td.fedTxt { width: 80px; }
+
+
+.gridRow { height: 28px; cursor: default; color: #666; }
+.gridRow_Hv { color: #000; background: #ffffd9; cursor: pointer; }
+.gridRow_Se { color: #000; background: #ffff99; }
+.gridRow td { border-bottom: solid 1px #ccc; height: 28px; }
+.grvLoading { background: url(/Resource/Image/Controls/ctrlLoading.gif) center center no-repeat #FFFFE0; }
+.gridRow_NoData { height: 28px; text-align: center; border-bottom: solid 1px #ccc; color: #888; }
+
+/* paging css */
+.paging { height: 30px; font-size: 12px; overflow: hidden; zoom: 1; padding: 10px 0px; }
+.pagingInfo { display: block; height: 24px; line-height: 24px; margin: 0px 0; float: left; }
+.pagingInfo .infoGrp { height: 24px; line-height: 24px; margin-right: 3px; float: left; }
+.pagingInfo .infoGrp em { padding: 0 3px; }
+.pagingInfo #paging_pageList,
+.pagingInfo .paging_pageList { float: left; height: 22px; line-height: 22px; width: 40px; text-align: center; margin-right: 3px; font-size: 11px; }
+.pagingInfo a.paging_goto { display: block; background: #3842A3; font-size: 12px; color: #FFF; padding: 0 8px; height: 24px; line-height: 24px; text-decoration: none; float: left; }
+.pagingInfo a.paging_goto:hover { background: #2C3587; }
+.pagingInfo a.paging_goto:active { background: #2C3587; box-shadow: inset 0 1px 3px rgba(0,0,0,.3); }
+.pagingInfo .dropDownList { float: left; height: 24px; margin: 0 0 0 5px; }
+
+.pageNum { display: block; height: 24px; line-height: 24px; margin: 0px 0; float: right; }
+.pageNum .pageMore { display: inline-block; height: 24px; line-height: 24px; padding: 0 6px; color: #888; float: left; margin: 0 0 0 1px; }
+.pageNum a { display: inline-block; height: 22px; line-height: 22px; padding: 0 6px; border: solid 1px #DDD; color: #666; text-decoration: none; float: left; margin: 0 0 0 1px; }
+.pageNum a:hover { color: #FFF; border-color: #3842A3; background: #3842A3; }
+.pageNum a.First { margin: 0; }
+.pageNum a.Previous { margin: 0 0 0 1px; }
+.pageNum a.Next { margin: 0 0 0 1px; }
+.pageNum a.Last { margin: 0 0 0 1px; }
+.pageNum a.PageIndex { color: #3842A3; border-color: #3842A3; background: #FFFFE0; }
+
+
+.page-tab { border-bottom: 1px solid #259980; height: 36px; }
+.page-tab a { background: none repeat scroll 0 0 #fff; border-style: solid solid none; border-width: 1px 1px 0; border-color: #DDD; float: left; font-size: 14px; height: 35px; line-height: 35px; margin-right: -1px; padding: 0 20px; position: relative; z-index: 88; }
+.page-tab a:hover { color: #259980; text-decoration: none; }
+.page-tab a.se { border-color: #259980; color: #259980; height: 36px; line-height: 36px; z-index: 99; }
+.tabcontainer { clear: both; padding: 10px 0; }
+
+
+/*日历样式*/
+.calendar { }
+.calendar-head { height: 32px; overflow: hidden; zoom: 1; text-align: center; padding: 10px 0px; background: #FFF; }
+.calendar-head b { line-height: 32px; font-size: 16px; color: #000; text-align: center; }
+.calendar-head a { display: block; height: 0px; padding: 32px 0 0 0; width: 32px; background: url(../Image/calendar.gif) -10px -10px no-repeat; overflow: hidden; }
+.calendar-head a.prevbtn { float: left; background-position: -10px -10px; }
+.calendar-head a.prevbtn:hover { background-position: -10px -43px; }
+.calendar-head a.nextbtn { float: right; background-position: -43px -10px; }
+.calendar-head a.nextbtn:hover { background-position: -43px -43px; }
+.calendar-head a.prev_disabled, .calendar-head a.prev_disabled:hover { background-position: -10px -76px; cursor: default; }
+.calendar-head a.next_disabled, .calendar-head a.next_disabled:hover { background-position: -10px -76px; cursor: default; }
+.calendar-head a.today { float: left; height: 30px; line-height: 30px; padding: 0 15px; width: auto; background: #FFF; color: #3842a3; border: solid 1px #DDD; margin: 0px 10px; border-radius: 3px; }
+.calendar-head a.today:hover { background: #3842a3; border-color: #3842a3; color: #FFF; text-decoration: none; }
+.calendar-body { border: solid 0px #DDD; border-top: none 0; }
+.calendar-body table { width: 100%; border-collapse: collapse; border: solid 1px #EEE; }
+.calendar-body th { background: #f3f6f6; text-align: center; height: 48px; border: solid 1px #EEE; border-top: none 0; font-size: 14px; font-weight: bold; border-collapse: collapse; }
+.calendar-body td { background: #FFF; text-align: center; height: 48px; border: solid 1px #EEE; font-size: 12px; color: #AAA; border-collapse: collapse; }
+.calendar-body td div { position: relative; height: 40px; padding: 4px 4px; text-align: left; }
+.calendar-body td i { display: none; }
+.calendar-body td.tours { color: #34495E; background: #FFF; cursor: pointer; }
+.calendar-body td.tours:hover { background: #EEE; color: #C0392B; }
+.calendar-body td.tours i { height: 16px; width: 16px; top: 2px; right: 2px; position: absolute; background: url(../Image/calendar.gif) -76px -10px no-repeat; display: block; }
+.calendar-body td.today, .calendar-body td.today:hover { background: #FFFAAA; color: #c0392b; }

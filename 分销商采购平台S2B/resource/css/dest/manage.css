@@ -1,0 +1,70 @@
+.content{width:1200px;margin:0 auto;padding-top:20px;overflow:hidden;}
+.content .left_con{float:left;font-size:16px;}
+.content .left_con .account{margin-top:30px}
+.content .left_con li .num{color:#f01447}
+.content .left_con li{color:#666;padding:6px 0;font-size:14px;}
+.content .left_con li.title{color:#333;font-weight:700;font-size:16px;}
+.content .left_con li.title a {color:#333;}
+.content .left_con li.title a:hover {color:#333;cursor:default;}
+.content .left_con li.new:after{content:'NEW';padding:1px 2px;background:#f01447;font-size:8px;color:#fff;margin-left:5px}
+.content .left_con .order_g{margin-top:20px}
+.content .left_con li.active{color:#f01447}
+ .content .left_con li a:hover {text-decoration:none; }
+.content .right{width:1040px;box-sizing:border-box;float:right;color:#666;margin-bottom:100px;background:#fff;}
+.myBox{margin:0}
+.myBox .myItem{background:#fff;box-shadow:0 1px 5px #EBEFF1;margin-bottom:10px}
+.myBox .myItem table{width:100%}
+.myItem table tr td{width:347px;border:1px solid #ECEDEF;vertical-align:middle;height:220px;text-align:center}
+.userBox .userPhoto{width:100px;height:100px;border-radius:50%;margin-left:40px}
+.userBox .userInfo{text-align:left;width: 180px;margin-left: 10px;}
+.userBox .userInfo h2{font-size:30px;color:#405063;margin:10px 0 20px 0;line-height:35px;}
+.userBox .userInfo p{font-size:16px;color:#8898b2;margin-bottom:10px}
+.moneyBox .moneyIcon{margin-left:40px;margin-right:10px}
+.moneyBox .moneyInfo{text-align:left}
+.noSel .moneyInfo{margin-top:20px}
+.moneyBox .moneyInfo h2{font-size:30px;color:#405063;margin:10px 0 20px 0}
+.moneyBox .moneyInfo p{font-size:18px;color:#8898b2;margin-bottom:10px}
+.moneyBox .moneyInfo p .small{color:#8898b2;font-weight:400;font-size:18px;margin-left:5px}
+.moneyBox .moneyInfo p.price{font-weight:700;font-size:28px;position:relative;padding-left:15px;margin:18px 0}
+.moneyBox .moneyInfo p.price sup{position:absolute;left:0;top:-8px;font-weight:700;font-size:16px}
+.moneyBox .linkBtn{margin-top:10px;display:inline-block;font-size:18px;padding:7px 25px;border-radius:17px}
+.smallSel{text-align:center;position:relative}
+.smallSel .current{border:1px solid #AAADB2;color:#AAADB2;font-size:12px;padding:3px 0;border-radius:15px}
+.smallSel .triangle{padding:5px 18px 5px 5px;background:0 0}
+.smallSel:hover ul{display:block}
+.smallSel ul{position:absolute;background:#fff;display:none;left:0;top:26px;width:100%;box-shadow:0 1px 5px #EBEFF1}
+.smallSel ul li{padding:5px 0;color:#AAADB2;cursor:pointer}
+.smallSel ul li:hover{color:#f01447}
+.myBox .myItem.pcBg{background:url(../../images/pcBg.png) no-repeat top left;background-size:100% 100%;box-shadow:0 1px 5px #EBEFF1;padding:10px 10px 10px 105px}
+.myBox .myItem.phoneBg{background:url(../../images/phoneBg.png) no-repeat top left;background-size:100% 100%;box-shadow:0 1px 5px #EBEFF1;padding:10px 10px 10px 105px}
+.myBox .myItem.pcBg table,.myBox .myItem.phoneBg table{background:#fff}
+.myBox .myItem.pcBg table tr td,.myBox .myItem.phoneBg table tr td{height:200px}
+.myBox .myItem.pcBg table tr td.title,.myBox .myItem.phoneBg table tr td.title{width:248px;padding-left:55px;box-sizing:border-box}
+.myItem.pcBg .moneyBox .moneyIcon,.myItem.phoneBg .moneyBox .moneyIcon{margin-left:18px;margin-right:50px;margin-top:20px}
+
+.shopQR{position:relative}
+.shopQR .standard{position:absolute;bottom:52px;left:50%;margin-left:-100px;z-index:9999;display:none;padding:15px 0;width:200px;background:#fff;text-align:center;box-shadow:0 0 16px 2px rgba(0,0,0,.3);-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=135, Color='#000000')";filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')}
+.shopQR .standard p{margin-bottom:0}
+.shopQR .standard p.title{font-size:16px;color:#405063;margin-bottom:10px}
+.shopQR .standard p.intro{font-size:14px;color:#405063;margin-top:5px}
+.shopQR .standard p.tips{font-size:12px;color:#7e8995;margin-top:5px}
+.shopQR .standard .qrOuter{border:1px solid #E4E4E4;padding:5px;width:104px;height:104px;margin:0 auto}
+.shopQR .standard .qrOuter img{width:104px;height:104px;display:block;margin:0 auto}
+.shopQR:hover .standard{display:block}
+.shopQR .standard:after{position:absolute;bottom:-16px;left:50%;margin-left:-4px;z-index:9999;display:block;overflow:hidden;width:0;height:0;border-color: #fff transparent transparent;border-style:dashed dashed solid;border-width:8px;content:' ';font-size:0;line-height:0}
+/* hover */
+.page-list-body .list-item-hv{border:2px solid #E74C3C;margin:19px -1px -1px;}
+.page-list-body .list-item-hv .num{background:#FEF4F4;}
+.storegk {background: rgb(239, 243, 245);padding-bottom: 10px;}
+
+.page-tabs{ height:37px;}
+.page-tabs a{float:left; height:36px; padding:0 20px; position:relative; z-index:88; font-size:16px;line-height:36px; margin-right:-1px; background:#FFF; text-decoration:none;}
+.page-tabs a:hover{color:#E74C3C;}
+.page-tabs a.se,.page-tabs a.se:hover{border-bottom:2px solid #fb7262; height:38px; z-index:98; color:#fb7262;font-size:16px;}
+.page-tabs a.se{margin:0 -1px -1px 0;}
+.page-tabs-more{height:37px;line-height:37px}
+.page-tabs-more a{float:left; height:36px; padding:0 10px; position:relative; z-index:88; font-size:16px;line-height:36px; margin-right:-1px; background:#FFF; text-decoration:none;}
+.page-tabs-more a:hover{color:#fb7262;}
+.page-tabs-more a.se,.page-tabs-more a.se:hover{border-bottom:2px solid #fb7262; height:38px;z-index:98; color:#fb7262;font-size:16px;box-sizing:border-box}
+.page-tabs-more a.rule{float:right; border:none 0; color:#E74C3C;}
+.page-tabs-more a.rule:hover{text-decoration:underline; color:#C0392B;}

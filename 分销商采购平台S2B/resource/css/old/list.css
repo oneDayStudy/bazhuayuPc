@@ -1,0 +1,112 @@
+﻿.lineBox{background:#fff;margin:30px auto}
+.content .list_searchBox{background:#fff}
+.searchTab{padding:15px 0;border-bottom:1px solid #FEE3E0}
+.searchTab li{float:left;cursor:pointer;display:block;line-height:34px;text-align:center;color:#666;font-size:16px;margin-left:30px;padding:0 20px}
+.searchTab li span{margin-left:8px}
+.searchTab li:hover{text-decoration:none;color:#f01447}
+.searchTab li.cur{background:#fb7262;font-size:16px;color:#fff;border-radius:17px}
+.list_searchCon{margin-top:-1px;padding:8px 20px 4px 20px}
+.list_searchCon dl{padding:6px 0}
+.list_searchCon dt{margin-right:25px;width:60px;color:#2a333e;float:left}
+.list_searchCon dt.hot_search{background:url(../../images/i_search_s.png) no-repeat center left;padding-left:25px;margin-right:0}
+.list_searchCon dd{float:left;width:800px}
+.list_searchCon dd a{float:left;color:#7e8995;line-height:20px;width:100px;cursor:pointer;margin-bottom:4px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;background-color:#fff;padding-right:10px;display:inline-block}
+.list_searchCon dd a:hover{text-decoration:none;color:#f01447}
+.list_searchCon dd.pack_down,.list_searchCon dd.pack_up{float:right;color:#999;font-size:12px;width:37px;height:20px;line-height:20px;padding-right:0;margin-right:14px}
+.list_searchCon .pack_down,.list_searchCon .pack_up{display:inline-block;cursor:pointer;position:relative;margin-right:58px}
+.list_searchCon .lx_x,.list_searchCon .ts_x{position:relative;display:inline-block;width:74px;height:17px;line-height:17px;text-indent:5px;border:1px solid #d9d9d9;background:#fff;z-index:10}
+.list_searchCon .pack_down em{width:7px;height:4px;background:url(../../images/i_more_b.png) no-repeat;position:absolute;top:8px;right:4px}
+.list_searchCon .pack_top em{background:url(../../images/i_more_t.png) no-repeat}
+.list_searchCon .data_main{position:relative;display:inline-block;width:74px;padding:10px 0;top:5px;left:0;border:1px solid #f7f7f7\9;box-shadow:0 1px 10px 2px #e8e8e8;z-index:2;background:#fff}
+.list_searchCon .data_main a{display:block;text-align:center;margin:0;width:74px;line-height:24px;padding:0}
+.liner_searchCon dd #benefitType,.liner_searchCon dd #orderType,.list_searchCon dd #dayType{position:absolute;top:13px;right:0}
+.list_searchCon .data_main a:hover{color:#fff;background:#CCC}
+.list_searchCon dl.overflow{padding-bottom:30px;overflow:inherit}
+.none{display:none}
+.list_searchCon .hot_tags_s dd a{background:#ffd9d9;color:#e74c3c;width:auto;padding:0 10px;margin-right:10px}
+.list_searchCon .hot_tags_s dd a:hover{text-decoration:underline}
+.search_title{position:relative;padding:9px 20px 5px;line-height:26px;color:#666;border-top:1px dashed #ddd}
+.s_name{position:absolute;left:0;top:8px}
+.allSearchList{padding-left:65px}
+.search_value{float:left;margin-right:10px;margin-bottom:5px;border:1px solid #f01447;height:22px;line-height:22px;white-space:nowrap;border-radius:2px}
+.left_text{padding:0 5px;float:left}
+.filterDiv{float:left}
+.allSearchList a{text-decoration:none}
+.search_value_close{float:left;display:block;width:22px;height:22px;cursor:pointer;background:url(../../images/i_v_close.png) no-repeat center center}
+#Del_searchList{margin-left:10px;color:#f01447}
+#Del_searchList:hover{text-decoration:underline}
+.cond_tab_conbox dd a{float:left}
+.calendar_box{position:relative;float:left;padding-left:28px;height:19px;background:url(../../images/i_holiday.png) no-repeat center left;cursor:pointer}
+.calendar_box .scut_sty{position:absolute;top:20px;left:23px;width:391px;z-index:100}
+.calendar_box .scut_sty .scut_sty_main{background-color:#fff;border:1px solid #eee\9;padding:0;box-shadow:0 1px 10px 2px #e8e8e8;overflow:hidden}
+.rqsliderCon{position:relative;width:391px;overflow:hidden}
+.rqsliderCon .rqslider{position:relative;overflow:hidden}
+.year_sty{float:left;width:180px;padding:0 0 10px 15px;border-right:1px solid #dcdcdc}
+.year_sty .year_tit{line-height:40px;text-align:center;font-size:14px}
+.calendar_box .moremonth{color:#7e8995}
+.calendar_box:hover .moremonth{background:#f01447;color:#fff}
+.calendar_box .scut_sty .link_sty{width:46px;height:18px;text-align:center;line-height:18px;float:left;margin:0 10px 6px 0;padding:0;border:1px solid #e9e9e9;color:#7e8995;overflow:hidden}
+.cond_tab_conbox dd a{color:#7e8995;line-height:20px;width:129px;cursor:pointer;margin-bottom:4px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;background-color:#fff;padding-right:10px}
+.calendar_box .scut_sty .link_sty:hover{background:#f01447;color:#fff}
+.calendar_box .scut_sty .link_none,.calendar_box .scut_sty .link_none:hover{color:#bbb;cursor:default;background:#eee;border:1px solid #eee}
+.hidden_dd{height:24px;overflow:hidden}
+.liner_searchCon .pack_top em{width:7px;height:4px;background:url(../../images/i_more_t.png) no-repeat;position:absolute;top:7px;right:4px}
+.prolist_group{position:relative}
+.cond_tab{background:#f8f8f8;position:relative;padding:15px 0;font-size:14px;height:55px;box-sizing:border-box}
+.cond_tab a{display:inline-block;float:left;padding:0 20px;border-left:1px solid #DDD;line-height:23px;position:relative}
+.cond_tab a:first-child{border-left:none}
+.cond_tab a span{float:left}
+.cond_tab a.sort:hover{color:#f01447}
+.cond_tab a.sort i{background:url(../../images/down.png) no-repeat center right;width:9px;height:10px;display:inline-block;margin-left:7px}
+.cond_tab a.sort.sort-desc{color:#f01447}
+.cond_tab a.sort.sort-desc i{background:url(../../images/up.png) no-repeat center right}
+.cond_tab a.sort ul{display:none;position:absolute;width:110px;top:-15px;left:0;padding:10px 15px;box-sizing:border-box;background:#fff;z-index:10;font-size:12px;border:1px solid #ddd;box-shadow:0 1px 10px 2px #e8e8e8;text-align:center}
+.cond_tab a.sort:hover ul{color:#333;display:block}
+.cond_tab a.sort ul li:hover{color:#f01447}
+.inputbox,.inputbox em,.inputbox input,.price-bot,.pricelist span{float:left}
+.pricebox{position:relative;top:1px;float:left;margin-left:28px;font-size:14px}
+.pricebox .title{float:left;line-height:23px;margin-right:8px}
+.pricebox input{width:63px;line-height:23px;height:23px;border:1px solid #ddd}
+.pricelist{position:absolute;padding:15px 10px;border:1px solid #d3d3d3;box-shadow:0 0 5px 2px #dcdcdc;width:150px;background-color:#fff;top:-15px;left:61px}
+.price-bot{display:none;padding-top:10px;width:100%;margin:0;float:left}
+.price-bot a{float:right;display:block;width:65px;padding:0;line-height:24px;border-radius:3px;background:#f01447;color:#fff;text-align:center}
+.pricelist span{color:#999}
+.inputbox em{margin:0 3px}
+.lineSearch{float:right;margin-top:-3px}
+.lineSearch .inputbox{width:200px;height:30px;border:1px solid #DDD;border-radius:15px;background:#fff;position:relative}
+.lineSearch .inputbox input{border:none;outline:0;background:0 0;position:absolute;width:100%;height:100%;padding:0 18px;box-sizing:border-box}
+.lineSearch a.searchBtn{border-left:none;line-height:30px;color:#f01447;font-size:16px}
+.prolistItem{background:#fff;padding:20px 0 20px 30px;border-bottom:1px solid #D4D6D8}
+.prolistItem .proInfo,.prolistItem .proPic,.prolistItem .proPriceGroup{float:left}
+.prolistItem .proInfo{margin:0 15px;width:700px}
+.proInfo h2{font-size:16px;line-height:25px;height:50px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;padding-bottom:4px}
+.proInfo h2:hover{color:#f01447}
+.proOther li{padding-top:6px}
+.proOther li p{display:block;float:left;width:33.3%;height:22px;color:#405063;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.proOther li p.yhGroup i{border:1px solid #ccc;display:inline-block;height:18px;line-height:18px;border-radius:10px;padding:0 10px;margin-right:5px}
+.proOther .pLocation{background:url(../../images/i_location.png) no-repeat center left;padding-left:15px}
+.proPriceGroup{background:url(../../images/proLine.png) no-repeat center left;position:relative}
+.proPriceGroup .price{cursor:pointer;position:relative;font-size:14px;color:#8898b2;text-align:left;margin-bottom:10px}
+.proPriceGroup .price p.m_bottom{margin-bottom:8px}
+.proPriceGroup .price em{font-size:18px}
+.proPriceGroup .OrangeBtn{width:125px;height:40px;line-height:40px;display:block;float:right;color:#fff;font-size:16px;text-align:center;border-radius:3px;background:#f88a00}
+.proPriceGroup .OrangeBtn:hover{background:#ffa32f}
+.proPriceGroup .i_question{position:absolute;top:6px;right:0;width:16px;height:16px;background-position:-76px -46px;cursor:pointer}
+.proPriceGroup .price:hover .priceGroup{display:block}
+.priceGroup{width:200px;border:1px solid #eee;display:none;font-size:14px;position:absolute;bottom:35px;right:-15px;background:#fff;box-shadow:0 0 16px 2px rgba(0,0,0,.3)}
+.priceGroup:after{content:' ';position:absolute;display:block;height:0;width:0;font-size:0;line-height:0;overflow:hidden;border-color:#fff transparent transparent;border-style:dashed dashed solid;border-width:8px;z-index:9999;bottom:-16px;right:15px}
+.priceGroup table{width:100%}
+.priceGroup table tr td,.priceGroup table tr th{padding:10px;text-align:center}
+.priceGroup table tr th{background:#f8f8f8;color:#666}
+.prolistItem .proPic{position:relative;margin-right:10px}
+.prolistItem .proPic img{display:block}
+.prolistItem .mark{position:absolute;top:0;left:0;width:72px;height:24px;line-height:24px;text-align:center;color:#fff}
+.prolistItem .lineNum{position:absolute;width:100%;height:30px;line-height:30px;color:#fff;text-align:center;left:0;bottom:0;background:url(../../images/blackBg.png) repeat;font-size:14px}
+.prolistItem .proInfo .tags{margin-top:5px}
+.prolistItem .proInfo .tags span{display:inline-block;height:24px;color:#fff;background:#ccc;line-height:24px;padding:0 10px;border-radius:12px;font-size:12px;margin-right:8px;}
+.yh_lijian {padding:0 6px;color:#ff3d0c;border:1px solid #ffbdb5;border-radius:2px;font-size:12px;display:inline-block;margin-left: 30px;margin-top:8px;}
+.proPriceGroup .price .font_pink{color:#f01447;font-size: 18px}
+.proPriceGroup .price .font_gre{color:#8898b2;font-size: 12px}
+.proPriceGroup .price .font_text{text-align: right;min-width: 100px;display: inline-block;margin-right: 6px;}
+.proPriceGroup .price .font_12{font-size: 12px;}
+.proPriceGroup .price p.no_margin{margin-bottom: 0;}

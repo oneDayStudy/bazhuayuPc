@@ -1,0 +1,183 @@
+body{
+    background: #eff3f5;
+}
+select{
+    border:1px solid #cecece;
+    color:#666;
+}
+.r_tri select{
+    border:none;
+}
+.content{
+    width:1200px;
+    margin: 0 auto;
+    padding-top:20px;
+    overflow: hidden;
+}
+.content .left{
+    float: left;
+    font-size: 16px;
+    background: #eff3f5;
+}
+.content .left li{
+    color:#666;
+    padding:8px 0;
+}
+.content .left li.title{
+    color:#333;
+    font-weight: bold;
+}
+.content .left li.active{
+    color:#f01447;
+}
+.content .right{
+    padding:30px 20px;
+    background: #fff;
+    width:1040px;
+    box-sizing: border-box;
+    float: right;
+    color:#666;
+    margin-bottom: 100px;
+}
+.right .info{
+    margin-bottom: 12px;
+}
+.right .info input{
+    border: 1px solid #cecece;
+    height: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+    padding-left: 10px;
+    color:#666;
+    font-size: 14px;
+}
+.right .info .info_input{
+    display: table-cell;
+}
+.right .info .info_input.ft{
+    display: inline-block;
+}
+.right .info .info_input + .info_input{
+    padding-left:45px;
+}
+.right .info .info_input.cal input{
+    width:150px;
+}
+.right .info .info_input.txt input{
+    width:160px;
+}
+.right .info .info_input label{
+    position: relative;
+}
+.right .info .info_input.yhm select{
+    width:140px;
+}
+.right .info .info_input.width1 input{
+    width:190px;
+} 
+.info_input .date_go{
+    margin-right:10px;
+}
+.info_input .arrive{
+    margin-left:24px;
+}
+.info_input .icon-caladar{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../../images/icon/i_cal.png) no-repeat center;
+    position: absolute;
+    right: 10px;
+    top:0;
+}
+.info_input em.zhi{
+    padding:0 5px;
+}
+input::-ms-input-placeholder{
+    color: #ceced0;
+}
+input::-webkit-input-placeholder{
+    color: #ceced0;
+}
+.order_num input{
+    width:220px;
+}
+.order_origin{
+    position: relative;
+}
+.order_origin select{
+    width:80px;
+}
+.order_origin:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top: 7px solid #999;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+.sel_info .btn{
+    background: #fb7262;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    color:#fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width:50px;
+    margin-right:66px;
+    float: right;
+}
+.sel_info{
+    margin-top: 22px;
+}
+.sel_info label{
+    width: 120px;
+    display: inline-block;
+}
+.sel_info input{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-progress-appearance: none;
+    width:20px;
+    height: 20px;
+    background: url(../../images/icon/icon_radio.png) no-repeat center;
+    vertical-align: middle;
+    margin-right:8px;
+}
+.sel_info input:checked{
+    background: url(../../images/icon/icon_checked.png) no-repeat center;
+}
+.sel_info label em{
+    vertical-align: middle;
+}
+.right{
+    font-size: 14px;
+}
+.right .stais{
+    width:100%;
+    text-align: center;
+    margin-top: 38px;
+}
+.right .stais tr td{
+    border:1px solid #f6f9fa;
+    color: #666;
+}
+.right .stais tr{
+    height: 50px;
+    line-height: 50px;
+}
+.right .stais tr.tit{
+    border:1px solid #f6f9fa;
+    background: #f6f9fa;
+    color: #405063;
+    height: 36px;
+    line-height: 36px;
+}
+.right .stais tr.tit th{
+    text-align: center;
+}

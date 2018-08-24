@@ -1,0 +1,925 @@
+.mask{background: url("../../../resource/images/bodyMask.png");width:100%;height:3600px;}
+.customerList{margin:100px auto;width: 950px;background: #fff;font-size:16px;}
+.errorIcon{display: inline-block;width: 18px;height: 18px;background: url("../../../resource/images/icon/return_btn.png") no-repeat;}
+.customer_header p{background: #f6f9fa;width:950px;height:50px;text-align: center;line-height: 50px;font-size: 18px;position: relative;}
+.customer_header p i{position: absolute;right: 10px;top:14px;}
+
+.customerList{
+    width:1200px;
+}
+.customer_header p{
+    width:1200px;
+}
+.errorIcon{
+    background: url("../../../resource/images/icon/tan_delete.png") no-repeat center center;
+}
+.traffic_style{
+    overflow: hidden;
+    margin:10px 20px;
+    color:#7e8995;
+    /*border-bottom: 2px solid #e4e4e4;*/
+}
+.traffic_style li{
+    float: left;
+    padding:10px 15px 10px 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.actived{
+    border-bottom:2px solid #ff4858;
+    font-size: 18px;
+    color:#ff4858;
+    font-weight: bold;
+    background: url("../../../resource/images/icon/tuiyuan.png")no-repeat center left;
+    background-position: center left 10px;
+}
+.traffic_bot{
+    height:2px;
+    background:#e4e4e4;
+    margin: 0 20px;
+    margin-top: -12px;
+}
+.traffic_content{
+    margin:20px;
+}
+.tra_tabs{
+    overflow: hidden;
+    font-size: 14px;
+    color:#7e8995;
+    cursor: pointer;
+}
+.tra_tabs li{
+    float: left;
+    padding:5px 20px;
+    border-right:1px solid #e4e4e4;
+    border-top:1px solid #e4e4e4;
+    border-left:1px solid #e4e4e4;
+}
+.tra_now{
+    background:#fb7262;
+    border:1px solid #fb7262;
+    color:#fff;
+}
+/*.apply{*/
+/*border-right:1px solid #e4e4e4;*/
+/*border-top:1px solid #e4e4e4;*/
+/*border-left:1px solid #e4e4e4;*/
+/*}*/
+.recommended_flight{
+    border:1px solid #fb7262;
+    /*margin-top: -1px;*/
+}
+.traffic_search{
+    margin-top: 10px;
+    padding:10px 20px;
+    font-size: 14px;
+}
+.traffic_search select{
+    border:1px solid #e4e4e4;
+    padding:3px 5px;
+    height:32px;
+    color:#666;
+    font-size: 14px;
+}
+.goCity{
+    width:85px;
+    height:30px;
+    font-size: 14px;
+    padding-left:35px;
+    border:1px solid #e4e4e4;
+    background: url("../../../resource/images/icon/plane_start.png")no-repeat center left;
+    background-position: center left 10px;
+}
+input.goCity::-webkit-input-placeholder{
+    color:#666;
+}
+.laihui{
+    display:inline-block;
+    width:20px;
+    height:28px;
+    vertical-align: middle;
+    background:url("../../../resource/images/icon/laihui.png")no-repeat center left;
+}
+.arriveCity{
+    width:85px;
+    height:30px;
+    font-size: 14px;
+    padding-left:35px;
+    border:1px solid #e4e4e4;
+    background: url("../../../resource/images/icon/plane_arrive.png")no-repeat center left;
+    background-position: center left 10px;
+}
+.goDate{
+    width:95px;
+    height:30px;
+    font-size: 14px;
+    padding-left:35px;
+    border:1px solid #e4e4e4;
+    background: url("../../../resource/images/icon/arrive_city.png")no-repeat center left;
+    background-position: center left 10px;
+}
+.city_search{
+    border:1px solid #fb7262;
+    background: #fb7262;
+    color:#fff;
+    font-size: 14px;
+    padding:5px 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.time_details{
+    padding:10px 20px;
+}
+.time_details span{
+    color:#fb7262;
+    font-size: 14px;
+}
+.overTime{
+    margin-left: 20px;
+    padding-right: 25px;
+    background: url("../../../resource/images/icon/gantan.png") no-repeat center right;
+}
+.plane_big{
+    border:1px solid #e4e4e4;
+    border-top: 0;
+    overflow: hidden;
+}
+.plane-left{
+    float: left;
+    width:auto;
+}
+.planeItem{
+    padding: 25px 0 25px 20px;
+    overflow: hidden;
+    font-size: 14px;
+    color:#405063;
+}
+.plane_two{
+    border-top:1px dashed #e4e4e4;
+}
+.plane_quIcon{
+    width:30px;
+    height: 30px;
+    float: left;
+    background: url("../../../resource/images/icon/qu.png") no-repeat center center;
+}
+.width_eity{
+    float: left;
+    width:60px;
+    text-align: center;
+    position: relative;
+}
+.planeCol{
+    float: left;
+    text-align: center;
+    width: 160px;
+    position: relative;
+}
+.planeCol h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #405063;
+}
+.planeCol h2 span {
+    position: relative;
+}
+.planeCol h2 i {
+    color: #e74c3c;
+    font-size: 14px;
+    position: absolute;
+    left: -20px;
+    top: 2px;
+}
+.airLine {
+    margin-bottom: 10px;
+    color: #405063;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.planeTime h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #405063;
+}
+.planeTime p{
+    color: #405063;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.lineBg {
+    padding: 8px 0;
+    position: relative;
+    color: #8898b2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.lineOne {
+    display: block;
+    width: 132px;
+    height: 1px;
+    background: #E3E3E3;
+}
+.airIcon {
+    display: block;
+    width: 26px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    margin-left: -13px;
+    top: 50%;
+    margin-top: -8px;
+    background: url("../../../resource/images/icon/airIcon.png") no-repeat center center #F8F8F8;
+}
+.planeLine p{
+    color:#8898b2;
+}
+.width_50 {
+    width: 80px;
+}
+.planeCol .airLine {
+    margin-bottom: 10px;
+}
+.plane_fanIcon{
+    width:30px;
+    height: 30px;
+    float: left;
+    background: url("../../../resource/images/icon/fan.png") no-repeat center center;
+}
+
+
+.plane-right{
+    float: right;
+    text-align: left;
+    padding: 30px 10px 30px 0;
+    font-size: 14px;
+    overflow: hidden;
+}
+.plane_right1{
+    float: left;
+    margin:5px 0 0 0;
+}
+.return_price{
+    color:#7e8995;
+}
+.ticket_price{
+    color:#ff4858;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.ticket_price i{
+    font-size: 16px;
+    font-weight: normal;
+}
+.yuwei{
+    color:#7e8995;
+    margin-top: 20px;
+}
+.tui_rule{
+    background: url("../../../resource/images/icon/gantan.png") no-repeat center left;
+    padding-left: 20px;
+    color:#00a7de;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.plane_right2{
+    float: left;
+    margin:5px 0 0 30px;
+    color:#666;
+}
+.reduceIcon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d6d6d6;
+    background: url("../../../resource/images/newPackImg.png") no-repeat center center;
+    background-position:-95px -2px;
+}
+.NumBox {
+    width: 34px;
+    height: 32px;
+    vertical-align: middle;
+    border: 1px solid #d6d6d6;
+    box-sizing: border-box;
+    border-left: 0;
+    border-right: 0;
+    display: inline-block;
+    text-align: center;
+    margin-top: 1px;
+}
+.addIcon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d6d6d6;
+    background: url("../../../resource/images/newPackImg.png") no-repeat center center;
+    background-position:-115px -2px;
+}
+.zhi_din{
+    margin-top: 10px;
+}
+.plane_go{
+    background: #f6f9fa;
+    font-size: 14px;
+    line-height: 25px;
+    border:1px solid #e4e4e4;
+}
+.plane_go span{
+    display: inline-block;
+    text-align: center;
+    color:#7e8995;
+}
+.s_green{
+    display: inline-block;
+    width:18px;
+    height:18px;
+    vertical-align: middle;
+    background: url("../../../resource/images/icon/shen_green.png") no-repeat center center;
+}
+.jiang{
+    display: inline-block;
+    width:18px;
+    height:18px;
+    vertical-align: middle;
+    background: url("../../../resource/images/icon/jiang.png") no-repeat center center;
+}
+.shen{
+    display: inline-block;
+    width:18px;
+    height:18px;
+    vertical-align: middle;
+    background: url("../../../resource/images/icon/shen.png") no-repeat center center;
+}
+.plane_go span.flyTime{
+    color:#00a7de;
+}
+.plane_list{
+    margin:0 20px;
+}
+.page{
+    margin:20px 20px;
+    overflow: hidden;
+}
+.pageNum{
+    float: left;
+    font-size: 12px;
+    color:#ccc;
+}
+.number_pages{
+    float: right;
+    font-size: 14px;
+    color:#333;
+}
+.number_pages a{
+    display: inline-block;
+    border:1px solid #e4e4e4;
+    width:30px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+}
+.number_pages a.page_symbol{
+    color:#999;
+}
+.page_click{
+    background: #fb7262;
+    color:#fff;
+    border:1px solid #fb7262;
+}
+.jul{
+    margin-left: -5px;
+}
+.cust_btn{text-align: center;padding:30px 0;}
+.cust_btn a{display: inline-block;width: 180px;height:40px;line-height: 40px;border-radius:4px;border:1px solid #ff4858;font-size: 18px;}
+.blank_20{height:20px;}
+.cust_close{
+    color:#ff4858;
+
+}
+.cust_update{
+    background: #fd4a67;color:#fff;
+    margin-left: 20px;
+}
+.apply_plane{
+    border:1px solid #fb7262;
+    margin-top: -1px;
+}
+.planeInfo{
+    border:1px solid #e4e4e4;
+    margin: 20px;
+    padding:20px;
+
+}
+.plane_title{
+    color:#405063;
+    font-size: 14px;
+    font-weight: bold;
+}
+.airport_return{
+    margin:20px 0;
+}
+.go_airport{
+    color:#7e8995;
+    font-size: 14px;
+    margin:10px 0;
+}
+.go_airport span{
+    display: inline-block;
+
+}
+.go_airport span i{
+    display: inline-block;
+    width:8px;
+    color:#ff4858;
+    vertical-align: middle;
+    padding:0 3px;
+    text-align: center;
+}
+.go_inp{
+    border:1px solid #e4e4e4;
+    padding:3px 5px;
+    width:200px;
+    margin-left: 10px;
+}
+input.go_inp::-webkit-input-placeholder{
+    color:#ccc;
+}
+.airport_name{
+    border:1px solid #fb7262;
+    color:#fff;
+    padding:2px 0;
+    background:#fb7262;
+}
+.airport_delete{
+    display: inline-block;
+    width:10px;
+    height:10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    background: url("../../../resource/images/icon/white_delete.png") no-repeat center center;
+}
+.go_date{
+    border:1px solid #e4e4e4;
+    color:#fff;
+    padding:2px 25px 2px 5px;
+    background: url("../../../resource/images/icon/rili.png") no-repeat center right 5px;
+    margin-left: 10px;
+}
+.big_num,.small_num{
+    border:1px solid #e4e4e4;
+    padding:2px 5px;
+    width:40px;
+    color:#333;
+}
+.remarks{
+    vertical-align:top;
+}
+.remarks{
+    width: 455px;
+    height: 80px;
+    margin-left: 10px;
+    border:1px solid #e4e4e4;
+}
+.tra_info{
+    margin-top: 30px;
+}
+.air_content input.go_inp{
+    width:180px;
+    color:#333;
+}
+
+
+
+.plane_dan,.train_dan{
+    margin:20px;
+}
+.train_tips{
+    font-size: 14px;
+    color: #ff4858;
+    padding:0 20px;
+    margin-top: 20px;
+}
+.train_dan .train_tips{
+    padding:0;
+}
+.go_write{
+    display: inline-block;
+    background:#ff725f;
+    font-size: 16px;
+    color:#fff;
+    padding:5px 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.recommend_train{
+    padding:20px;
+}
+.lineTit .returnTime{
+    left:100px;
+}
+.ticketItem{
+    font-size: 14px;
+}
+.newReturnBox .ticketTable tr td{
+    border:0;
+}
+.choiceTicket{
+    border:1px solid #e4e4e4;
+    border-top: 0;
+}
+.resultBox .ticketCon .ticketLeft{
+    border-right: 0;
+}
+.ticketItem .quIcon{
+    width:30px;
+    height: 30px;
+    float: left;
+    background: url("../../../resource/images/icon/qu.png") no-repeat center center;
+}
+.ticketItem .fanIcon{
+    width:30px;
+    height: 30px;
+    float: left;
+    background: url("../../../resource/images/icon/fan.png") no-repeat center center;
+}
+.ticketItem .ticketCol{
+    width: 150px;
+}
+.resultBox .ticketCon .ticketItem .ticketCol .lineBg .airIcon{
+    background: url("../../../resource/images/icon/trainIcon.png") no-repeat center center #fff;
+}
+.ticketCon .ticketRight p.tui_rule{
+    color:#00a7de;
+}
+.ticketCon .ticketRight{
+    float: right;
+    width:auto;
+}
+.resultBox .ticketCon .ticketLeft{
+    width:auto;
+}
+.resultBox .ticketCon .ticketRight{
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.edit_train{
+    background:#f5f9fa;
+    padding:20px;
+    color:#405063;
+    overflow: hidden;
+    font-size: 14px;
+    margin: 20px;
+}
+.editItem{
+    width:150px;
+    float: left;
+    text-align: center;
+}
+.quIcon{
+    width:30px;
+    height: 30px;
+    background: url("../../../resource/images/icon/qu.png") no-repeat center center;
+    margin-top: 10px;
+}
+.edit_date{
+    float: left;
+    width:60px;
+    text-align: center;
+
+}
+.edit_date p{
+    padding:5px 0;
+}
+.edit_time{
+    font-size: 24px;
+    padding:5px 0;
+}
+.edit_Num{
+    float: right;
+    margin-top: 15px;
+}
+.edit_Num a{
+    border:1px solid #f86a5c;
+    font-size: 16px;
+    color:#fff;
+    padding:5px 15px;
+    background: #f86a5c;
+    border-radius: 5px;
+}
+.gdt{
+    margin-top: 15px;
+}
+.trainCity{
+    width:85px;
+    height:30px;
+    font-size: 14px;
+    padding-left:35px;
+    border:1px solid #e4e4e4;
+    background: url("../../../resource/images/icon/train.png")no-repeat center left;
+    background-position: center left 10px;
+}
+.resultBox{
+    margin:0 20px 30px 20px;
+}
+.resultBox .trainTable tr td{
+    padding:0
+}
+.flightItem .ticketCol h2{
+    color:#405063;
+}
+.trainTable .flightItem .moreCol p{
+    padding:10px 0;
+}
+.trainTable .flightItem .moreCol p.price{
+    width:100px;
+}
+.trainTable .flightItem .ticketCol .trainChange{
+    margin-left: 0;
+    width:auto;
+    padding:0 10px;
+}
+.trainTable .flightItem .ticketCol{
+    width:100%;
+}
+.SearchBox input::-webkit-input-placeholder {
+    color: #ccc;
+}
+.trainCheck label{
+    width: 80px;
+}
+.price{
+    color:#f01447;
+}
+.trainTable .flightItem .ticketCol .trainChange_grey{
+    background: #CCCCCC;
+    float: left;
+    margin-top: 10px;
+    border-radius: 3px;
+    height: 25px;
+    color: #fff;
+    line-height: 25px;
+    margin-left: 0;
+    width: auto;
+    padding: 0 10px;
+    text-align: center;
+}
+.ticketCol p.yue_time{
+    color:#7e8995;
+}
+.train_qu{
+    margin: 0 20px 20px 20px;
+}
+.now_ban{
+    padding:10px 0;
+    font-weight: bold;
+}
+.trainIcon{
+    display: block;
+    width: 26px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    margin-left: -13px;
+    top: 50%;
+    margin-top: -8px;
+    background: url("../../../resource/images/icon/airIcon.png") no-repeat center center #fff;
+}
+.trainCol{
+    float: left;
+    text-align: center;
+    width: 150px;
+    position: relative;
+}
+.train_tui{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.edit_card{
+    background: #fc7363;
+    text-align: center;
+    padding:5px 15px;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+}
+.train_right{
+    margin-left:10px;
+}
+.train_right p.ticket_price{
+    margin-top: 0;
+}
+.train_right p.yuwei{
+    margin-top: 10px;
+}
+.train_tab{
+    width:100%;
+    font-size: 14px;
+    border:1px solid #e4e4e4;
+    /*margin-top: 30px;*/
+}
+.train_tab tr th{
+    color:#7e8995;
+    text-align: center;
+    background: #f5f9fa;
+    line-height: 40px;
+
+}
+.train_tab tr td{
+    text-align: center;
+    line-height: 40px;
+}
+
+.go_detail{
+    color:#666;
+    font-size: 12px;
+}
+.gou{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    cursor: pointer;
+    /*border:1px solid #e4e4e4;*/
+    background: url("../../../resource/images/icon.png") no-repeat center center;
+}
+.checkbox {
+    width: 20px;
+    height: 20px;
+    background-position: 0 -379px;
+    cursor: pointer;
+}
+.checked{
+    background-position: -19px -379px;
+}
+.piao{
+    color:#00a7de;
+    padding:0 10px;
+    cursor: pointer;
+}
+.piao_detail{
+    color:#fc7363;
+    padding:0 10px;
+    cursor: pointer;
+}
+.train_piao{
+    display: inline-block;
+    background: url("../../../resource/images/icon/gantan.png") no-repeat center right;
+    padding: 0 20px 0 20px;
+    font-size:18px;
+    font-weight: bold;
+
+}
+.youji{
+    color:#fc7363;
+    padding:0 20px;
+}
+.tab_add p{
+    padding:0 20px;
+}
+.tab_add p:first-child{
+    margin-top: 10px;
+}
+.tab_add p:last-child{
+    margin-bottom: 10px;
+}
+.tab_add p span{
+    display: inline-block;
+    width:120px;
+    color:#666;
+    text-align: right;
+}
+.tab_add p span i{
+    color:#fc7363;
+    display: inline-block;
+    width:15px;
+    vertical-align: middle;
+    text-align: center;
+}
+.tab_add p input, .tab_add p select{
+    padding:3px 5px;
+    border:1px solid #e4e4e4;
+}
+.tab_add p i{
+    display: inline-block;
+    color:#999;
+    margin-left: 10px;
+}
+.street_address{
+    width:300px;
+}
+
+.tui_rule2{
+    background: url("../../../resource/images/icon/gantan.png") no-repeat center right;
+    padding-right: 20px;
+    color: #00a7de;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.train_bor2 .ban{
+    color:#999;
+    font-weight: normal;
+}
+.dan_bor{
+    border:1px solid #e4e4e4;
+    margin-top: 20px;
+}
+.train_dan .resultBox{
+    margin:20px 0 0 0;
+}
+.resultBox{
+    border:0;
+}
+.yuding_grey{
+    background: #CCCCCC;
+    float: right;
+    margin-top: 10px;
+    border-radius: 3px;
+    height: 25px;
+    color: #fff;
+    line-height: 25px;
+    margin-right: 50px;
+    width: auto;
+    padding: 0 10px;
+    text-align: center;
+}
+.yuding{
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+    border-radius: 3px;
+    height: 25px;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    background: #fb7262;
+    padding:0 10px;
+}
+.train_table{
+    width:100%;
+    margin-top: 20px;
+    border:1px solid #e4e4e4;
+}
+.train_table tr{
+    border-top:1px solid #e4e4e4;
+}
+.train_table tr th,.train_table tr td{
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    border:0;
+}
+.train_table tr th{
+    background:#f5f9fa;
+    color:#666;
+}
+.train_table tr td.no_pass{
+    color:#fd4a67;
+}
+.no-pass{
+    margin-top: 20px;
+}
+.no-pass p{
+    padding:0 20px;
+
+}
+textarea{
+    outline: none;
+    resize:none;
+    padding:2px 5px;
+}
+.train_checkBox{
+    display: inline-block;
+    width:14px;
+    height:14px;
+    vertical-align: middle;
+    cursor: pointer;
+    background: url("../../../resource/images/icon/fangClick.png") no-repeat;
+}
+.after_checkBox{
+    background: url("../../../resource/images/icon/fangClicked.png") no-repeat;
+}
+.ticketTable .SearchBox input{
+    width: 85px;
+    height: 24px;
+    position: absolute;
+    left: 10px;
+}
+.after_squre{
+    background: url("../../../resource/images/icon/checkedBox.png") no-repeat center center;
+}
+.return_air{
+    width:60px;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url("../../../resource/images/icon/down_jian.png") no-repeat scroll right 5px center transparent;
+
+}

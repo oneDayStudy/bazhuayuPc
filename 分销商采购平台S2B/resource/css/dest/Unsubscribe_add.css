@@ -1,0 +1,481 @@
+.errorIcon{
+        background: url(../../../resource/images/icon/tan_delete.png) no-repeat center center;
+    }
+    .orderNum{
+        border-bottom:1px solid #d6d6d6;
+        padding:20px 0 30px 0;
+        margin:0 20px;
+    }
+    .orderNum p{
+        color:#666;
+        padding:3px 0;
+    }
+    .orderNum p em{
+        color:#000;
+    }
+    .orderNum p em i{
+        display: inline-block;
+        width:20px;
+    }
+    .choseCustomer{
+        margin:20px 20px 10px  20px;
+        position: relative;
+    }
+    .plea_cho{
+        font-size: 18px;
+        color:#000;
+        padding:10px 0;
+        overflow: hidden;
+    }
+    .choseNum{
+        padding:5px 0;
+        border:1px solid #d6d6d6;
+    }
+    .plea_cho i{
+        float: right;
+        color:#35bae6;
+        cursor: pointer;
+    }
+    .rule_details{
+        position: absolute;
+        right:0;
+        top:40px;
+        border:1px solid #fce1bc;
+        width:250px;
+        padding:10px;
+        background: #fff3db;
+        box-shadow: 1px 2px 3px #eff3f5;
+        color:#666;
+        line-height:22px;
+        font-size: 14px;
+        display: none;
+    }
+    .triangle-border {
+        position: absolute;
+       right:10%;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-style: dashed dashed solid dashed;
+    }
+    .tb-border {
+       top:-21px;
+        border-color: transparent transparent #fce1bc transparent;
+    }
+    .tb-background {
+       top:-20px;
+        border-color: transparent transparent #fff3db transparent;
+    }
+    .cho_search{
+        padding:10px 10px;
+    }
+    .cho_search a{
+        border:1px solid #ff4858;
+        padding:3px 20px;
+        border-radius: 5px;
+        color:#ff4858;
+    }
+    .cho_tab{
+        border:1px solid #d6d6d6;
+        width:98%;
+        margin:0 10px 5px 10px;
+        height:200px;
+    }
+    .cho_tab tr th{
+        text-align: center;
+        font-size: 16px;
+        color:#666;
+    }
+    .cho_tab tr td{
+        text-align: center;
+        color:#000;
+        font-size: 16px;
+    }
+    .king_money{
+        color:#ff4858;
+    }
+    .tips_money{
+        color:#ff4858;
+        text-align: center;
+        padding:10px 0 20px 0;
+    }
+    .inp_name{
+        width:80px;
+        margin-right: 30px;
+        border:1px solid #d6d6d6;
+        padding:3px 5px;
+    }
+    .inp_card{
+        width:180px;
+        margin-right:10px;
+        border:1px solid #d6d6d6;
+        padding:3px 5px;
+    }
+    /*第二种退订机票*/
+   .reduceIcon{
+       display: inline-block;
+       vertical-align: middle;
+       width:20px;
+       height:20px;
+       border:1px solid #d6d6d6;
+       background: url(../../../resource/images/newPackImg.png) no-repeat center center;
+       background-position:-100px -7px ;
+   }
+    .NumBox {
+       width:24px;
+        height:22px;
+        vertical-align: middle;
+        border:1px solid #d6d6d6;
+        box-sizing: border-box;
+        border-left: 0;
+        border-right: 0;
+        display: inline-block;
+        text-align: center;
+        margin-top: 1px;
+    }
+    .addIcon {
+        display: inline-block;
+        vertical-align: middle;
+        width:20px;
+        height:20px;
+        border:1px solid #d6d6d6;
+        background: url(../../../resource/images/newPackImg.png) no-repeat center center;
+        background-position: -121px -7px;
+    }
+    .tu_rule{
+        border:1px solid #d6d6d6;
+        margin:0 20px 30px 20px;
+        padding:30px;
+        background: #f6f9fa;
+    }
+    .tui_title{
+        font-size: 16px;
+    }
+    .tui_detail{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .tui_detail p{
+        line-height: 25px;
+    }
+    .tui_detail p i{
+        display: inline-block;
+        width:20px;
+    }
+    .cust_btn a{
+        background: #fd4a67;
+    }
+    .customerList .order_bor{
+        border-bottom: 0;
+    }
+
+    /*绑定乘客*/
+    /*.passenger_wai{*/
+        /*width:1000px;*/
+    /*}*/
+    .passenger{
+        overflow: hidden;
+        padding:0 0 30px 0;
+    }
+    .choice_passenger{
+        float: left;
+        width:58%;
+    }
+    .passenger_title{
+        padding:5px 0;
+    }
+    .passenger_left{
+        border:1px solid #d6d6d6;
+        padding:10px;
+        height:250px;
+    }
+    .passenger_search{
+
+    }
+    .pa_name{
+        width:50px;
+    }
+    .pa_card{
+        width:130px;
+    }
+    .passenger_search a{
+        border:1px solid #ff4858;
+        color:#ff4858;
+        padding:0 5px;
+        border-radius: 5px;
+    }
+    .info_passenger{
+        padding-left: 20px;
+        color:#00a7de;
+    }
+    .passenger_tab{
+        width:100%;
+        max-height:205px;
+        border:1px solid #d6d6d6;
+        overflow: scroll;
+    }
+    .passenger_tab tr{
+        border-top:1px solid #cecece;
+    }
+    .passenger_tab tbody tr th,.passenger_tab tbody tr td{
+        text-align: center;
+        padding:10px 0;
+    }
+    .passenger_tab tbody tr th{
+        background: #f6f9fa;
+        color:#666;
+    }
+    .passenger_modify{
+        color:#00a7de;
+        cursor: pointer;
+    }
+    .passenger_modify:hover{
+        text-decoration: underline;
+
+    }
+    .input_text{
+        width:80px;
+        text-align: center;
+        color:#000;
+        border:1px solid #cecece;
+    }
+    .select_passenger{
+        width:80px;
+        height:25px;
+        text-align: left;
+        border:1px solid #cecece;
+
+    }
+    .input_card{
+        width:170px;
+        height:25px;
+        text-align: center;
+        border:1px solid #CECECE;
+    }
+    .td_tri{
+        position: relative;
+    }
+    .tips_pass{
+        position: absolute;
+        left: 0;
+        top:25px;
+        border: 1px solid #fad6a7;
+        padding: 5px;
+        background: #fef3da;
+        box-shadow: 1px 2px 3px #eff3f5;
+        color:#ff4858;
+        font-size: 14px;
+    }
+    .triangle-border1{
+        position: absolute;
+        left: 10%;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-style: dashed dashed solid dashed;
+
+    }
+    .tb-border1 {
+        top:-21px;
+        border-color: transparent transparent #fad6a7 transparent;
+    }
+    .tb-background1 {
+        top:-20px;
+        border-color: transparent transparent #fef3da transparent;
+    }
+
+    .passenger_right{
+        float: left;
+        width:40%;
+        margin-left:10px;
+    }
+    .over_scroll{
+        max-height: 205px;
+        margin-top: 10px;
+        overflow-y:scroll;
+    }
+
+    /*绑定乘客2*/
+    .update_passenger{
+        padding:0 20px;
+        overflow: hidden;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .update_passenger a{
+        color:#00a7de;
+        display: inline-block;
+    }
+    .fan{
+        float: left;
+    }
+    .pilia,.xiaz{
+        float: right;
+        padding-left: 25px;
+        background: url("../../../resource/images/icon/inportup.png") no-repeat center left;
+        margin-left: 20px;
+    }
+    .xiaz{
+        background: url("../../../resource/images/icon/downLoad1.png") no-repeat center left;
+
+    }
+    .tor_content{
+        padding:10px 20px 10px 20px;
+    }
+    .tor_content p{
+        padding:10px 0;
+    }
+    .content_inp{
+        padding:5px 0;
+    }
+    .content_inp span{
+        display: inline-block;
+        color:#666;
+        font-size: 14px;
+        width:280px;
+    }
+    .content_inp span em{
+        text-align: right;
+        padding-right: 5px;
+        display: inline-block;
+    }
+    .em-na{
+        width:40px;
+    }
+    .em-co{
+        width:70px;
+    }
+    .content_inp span i{
+        width:10px;
+        color:#ff4858;
+        vertical-align: middle;
+    }
+    .content_inp span input{
+        width:180px;
+        padding:3px 5px;
+        border:1px solid #dfe4e6;
+    }
+    .content_save{
+        border:1px solid #ff4858;
+        padding:3px 20px;
+        color:#ff4858;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+    .tor_list{
+        margin-top: 15px;
+    }
+    .jihua{
+        display: inline-block;
+        font-size: 14px;
+        color:#666;
+    }
+    .width_20{
+        display: inline-block;
+        width:20px;
+    }
+    .list_red{
+        color:#ff4858;
+    }
+    .add_bor{
+        height:330px;
+        margin:20px;
+        overflow-y:scroll;
+    
+    }
+    .add_tor{
+        border:1px solid #dfe4e6;
+        width:100%;
+        max-height: 330px;
+
+       
+    }
+    .add_tor tr{
+        border-top:1px solid #dfe4e6;
+    }
+    .add_tor tr th,.add_tor tr td{
+        text-align: center;
+        padding:10px 5px;
+        font-size: 14px;
+
+    }
+    .add_tor tr th{
+        background:#f6f9fa;
+        color:#405063;
+        font-weight: bold;
+    }
+    .add_tor tr td{
+        color:#405063;
+    }
+    .add_tor tr td a{
+        display: inline-block;
+        padding:0 10px;
+        color:#00a7de;
+    }
+    .add_tor tr td input{
+        color:#000;
+    }
+    .add_tor tr td input::-webkit-input-placeholder{
+        color:#ccc;
+    }
+    .add_tor tr td input,.add_tor tr td select{
+        padding:2px 5px;
+        text-align: center;
+        border:1px solid #dfe4e6;
+    }
+    .tor_name{
+        width:60px;
+    }
+
+    .tor_sex{
+        width:50px;
+    }
+    .tor_old{
+        width:70px;
+    }
+    
+    .tor_card{
+        width:80px;
+    }
+    .add_tor tr td input.tor_cardNum{
+        width:160px;
+        text-align: left;
+    }
+    .add_tor tr td input.tor_tel{
+        width:100px;
+        text-align: left;
+    }
+    .gantan{
+        width:170px;
+        background:url("../../../resource/images/icon/gantan.png") no-repeat center right;
+        background-position: center right 10px;
+    }
+    .add_tor tr td.edit_one{
+        text-align: left;
+        padding-left:13px;
+    }
+    .tips_card{
+        left:20px;
+        top:50px;
+        white-space:nowrap;
+    }
+    .tips_tel{
+        left:30px;
+        top:50px;
+        white-space:nowrap;
+    }
+    .add_tor tr td a.tor_add{
+        border:1px solid #ff4858;
+        padding:5px 15px;
+        color:#ff4858;
+        text-align: right;
+        border-radius: 5px;
+        margin: 10px 10px 10px 0;
+        font-size: 16px;
+
+    }
+    .ding{
+        position: relative;
+    }

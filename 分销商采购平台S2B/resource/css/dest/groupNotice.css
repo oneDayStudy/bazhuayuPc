@@ -1,0 +1,147 @@
+.formBtn a.redBtn,.formBtn a.witeBg{
+    background: #ff4858;
+    border: 1px solid #ff4858;
+    color:#fff;
+}
+.formBtn a.witeBg:hover{
+    background: #ff4858;
+    color:#fff;
+}
+.formBtn a.witeBg:hover {
+    background: #F73764;
+}
+.formBtn a.redBtn, .formBtn a.witeBg{
+    width:180px;
+    padding:0;
+}
+.noticeMain .head{
+    margin: 20px 0 20px 0;
+}
+.notice_container{
+    border:1px solid #e4e4e4;
+}
+.basicInfo{
+    border-top:1px solid #e4e4e4;
+    border-left:0;
+    border-right:0;
+    border-bottom:0;
+    margin: 0 25px;
+}
+.info2{
+    border-top:0;
+    border-bottom: 1px solid #e4e4e4;
+}
+.clearingInfo{
+    color: #405063;
+    font-size: 16px;
+    padding-left: 30px;
+    height:30px;
+    padding-top:20px;
+}
+.clearingInfo span i{
+    font-size: 12px;
+}
+.otherInfo table{
+    width: 95%;
+    margin: 0 25px;
+}
+.clearingInfo span{
+    border-left: 3px solid #F01447;
+    padding-left: 6px;
+}
+.price_title{
+    padding:15px 0 5px 0;
+}
+.otherInfo table tr td.f_7E8995{
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+.f_7E8995 p{
+    overflow: hidden;
+}
+.f_7E8995 p em{
+    display: inline-block;
+    width:60px;
+    float: left;
+    height:30px;
+}
+.f_7E8995 p em i{
+    width:24px;
+    display: inline-block;
+}
+.f_7E8995 p span{
+    float: left;
+    display: inline-block;
+    width:850px;
+}
+.otherInfo table.company{
+    border:0!important;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.otherInfo table.company tbody tr td{
+    border-left: 1px solid #e4e4e4;
+    border-top:0;
+    border-right:0;
+    border-bottom:0;
+}
+.otherInfo table.company tbody tr td:first-child{
+    border-left:0;
+}
+.annex{
+    border:1px solid #e4e4e4;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+}
+.otherInfo table.tab_annex{
+    margin-top: 10px;
+
+}
+.otherInfo table.tab_annex tr th{
+    background: none;
+    font-size: 12px;
+    text-align: center;
+    color:#7e8995;
+}
+.otherInfo table.tab_annex tr td{
+    font-size: 12px;
+    text-align: center;
+    color:#2a333e;
+    padding:10px 0;
+}
+.otherInfo table.tab_annex tr td a{
+    color:#217dfa;
+    display: inline-block;
+    padding:0 10px;
+}
+.ticketItem .quIcon{
+    background: url(../../../resource/images/icon/qu.png) no-repeat center center;
+}
+.ticketItem .fanIcon {
+    background: url(../../../resource/images/icon/fan.png) no-repeat center center;
+}
+.ticketItem .ticketCol h2 i{
+    right:auto;
+    top: -5px;
+    left:5px;
+}
+.lineBg{
+    background: url("../../../resource/images/icon/air_yuan.png") no-repeat center center;
+    background-size: 100%;
+}
+.ticketItem .ticketLine p{
+    color:#666;
+    font-size: 14px;
+}
+.otherInfo .ticketItem .ticket-time{
+    width:140px;
+}
+.otherInfo .ticketItem .ticketCol{
+    font-size: 14px;
+}
+.otherInfo .ticketItem .ticket-info{
+    width:120px;
+}
+.tableFixed tbody .f_7E8995 td{
+    border:none;
+}

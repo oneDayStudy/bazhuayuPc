@@ -1,0 +1,2132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="resource/css/dest/common.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/dest/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/dest/exit_home.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/dest/drop-down.css" /> 
+	<link rel="stylesheet" type="text/css" href="resource/css/dest/control.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/dest/main.css">
+    <style>
+        .start_zhu{
+            background: url("resource/images/start.png") no-repeat left center;
+            padding-left: 25px;
+        }
+        .geo-title>span.start_zhu{
+            color:#fb7262;
+        }
+        .detail-city-ul>li>dt{
+            border-left: 3px solid #f01447;
+            padding-left: 10px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo_left"><img src="resource/images/icon/icon_logo.png"><span class="address triangle">苏州<em></em></span></div>
+        <ul class='menu'>
+            <li class="active"><a>首页</a></li>
+            <li><a>短线</a></li>
+            <li><a>长线</a></li>
+            <li><a>出境</a></li>
+            <li><a>邮轮</a></li>
+            <li><a>门票</a></li>
+            <li><a>整团</a></li>
+            <li><a>签证</a></li>
+            <li><a>分期</a></li>
+            <li><a>特卖</a></li>
+            <li><a>智科机票</a></li>         
+        </ul>
+        <div class="icon_list">
+            <div class="s_wrap">
+                <div class="search_wrap">
+                  <div class="selBox">
+                    <!--下拉框开始-->
+                    <div class="select-main z-index">
+                        <div class="select-arrow"></div>
+                        <div class="select-set">当地游</div>
+                        <div class="select-block" style="display: none;">
+                            <ul class="select-list">
+                            <li class="select-items">周边短线</li>
+                            <li class="select-items">国内长线</li>
+                            <li class="select-items">出境游</li>
+                            <li class="select-items">当地游</li>
+                            <li class="select-items">供应商</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--下拉框结束-->	
+                  </div>                     
+                    <input type="text" placeholder="输入目的地/线路/关键词/供应商">
+                    <button class="txt_search">搜索</button>
+                    <div class="content_wrap">
+                        <p>热门目的地</p>
+                        <div class="hot">
+                            <a class="active">上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="search"></a>
+            <a class="telphone"></a>
+            <a class="money"></a>  
+            <a class="ring"><em>12</em></a>          
+            <div class="shop">
+                <span class="userPhoto relative" style="background:url(resource/images/userPhoto.png) no-repeat center center;background-size:cover;"></span>
+                <ul class="all_shop shadow none">
+                    <li class="first">
+                    <a>kl-fxs分销商门店</a>
+                    <a>苏州青年旅行社干将路分社</a>
+                    </li>
+
+                    <li class="mid">
+                        <div class="con_list">
+                            <a>个人中心</a>
+
+                        </div>
+                    </li>
+
+                    <li class="last"><a>退出</a></li>
+                </ul>
+            </div>
+            <div class="erweima none"><img src="resource/images/erweima.jpg"></div>
+        </div>
+    </div>
+    <div class="main">
+		<!--搜索开始-->
+        <!--
+		<div class="gray shadow">
+		  <div class="seachBox clearfix">
+			<div class="searchLeft"><img src="resource/images/searchLeft.png"></div>
+			<div class="tn_search_box"> 
+			 <div id="tnSearchBox" class="clearfix"> 
+			  <form> 
+			   <p class="tn_s_input hasBorder"> <input type="text" value="" placeholder="马尔代夫"> </p> 
+			   <div class="an_mo"> 
+				<p class="tn_s_button"><button type="button">搜索</button></p> 
+			   </div> 
+			  </form> 
+			 </div> 
+			</div> 
+		  </div>
+		</div>
+        -->
+		<!--搜索结束--> 
+        <div class="left">
+			<div class="leftTopBanner"><img src="resource/images/270x104_cj.png"></div>
+            <div class="destination-city">
+
+                <div class="city-wrap-bor">
+                    <div class="bottom">
+                        <div class="city-wrap border-dashed">
+                            <dl class="line-geo">
+                                <dt class="geo-title"><span class="start_zhu">主题游</span><em></em></dt>
+                                <dd class="geo-city"><a>苏州</a><a>南京</a><a>无锡</a><a>扬州</a><a>常州</a><a>徐州</a><a>泰州</a></dd>
+                            </dl>
+                            <div class="detail-city none">
+                                <ul class="detail-city-ul">
+                                    <li>
+                                        <dt class="">主题游</dt>
+                                        <p class="city-list"><a>苏州</a><a>南京</a><a>无锡</a><a>扬州</a><a>常州</a></p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="city-wrap-bor first-city-wrap">
+                    <div class="bottom">
+                        <div class="city-wrap border-dashed">
+                            <dl class="line-geo">
+                                <dt class="geo-title"><span>短线</span><em></em></dt>
+                                <dd class="geo-city"><a>苏州</a><a>南京</a><a>无锡</a><a>扬州</a><a>常州</a><a>徐州</a><a>泰州</a></dd>
+                            </dl>
+                            <div class="detail-city none">
+                                <ul class="detail-city-ul">
+                                    <li>
+                                        <em>东南亚</em>
+                                        <p class="city-list"><a>韩国</a><a>苏梅</a><a>新加坡</a><a>苏梅</a></p>
+                                    </li>
+                                    <li>
+                                        <em>东北亚</em>
+                                        <p class="city-list"><a>韩国</a><a>苏梅</a><a>新加坡</a></p>
+                                    </li>
+                                    <li>
+                                        <em>欧洲</em>
+                                        <p class="city-list"><a>韩国</a><a>苏梅</a><a>新加坡</a><a>韩国</a><a>苏梅</a><a>新加坡</a><a>韩国</a><a>苏梅</a><a>新加坡</a><a>韩国</a><a>苏梅</a><a>新加坡</a></p>
+                                    </li>
+                                    <li>
+                                        <em>欧洲</em>
+                                        <p class="city-list"><a>韩国</a><a>苏梅</a><a>新加坡</a><a>韩国</a><a>苏梅</a><a>新加坡</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="city-wrap-bor">
+                    <div class="bottom">
+                        <div class="city-wrap border-dashed">
+                            <dl class="line-geo">
+                                <dt class="geo-title"></img><span>短线</span><em></em></dt>
+                                <dd class="geo-city"><a>苏州</a><a>南京</a><a>无锡</a><a>扬州</a><a>常州</a><a>徐州</a><a>泰州</a></dd>
+                            </dl>
+                            <div class="detail-city none">
+                                <ul class="detail-city-ul">
+                                    <li>
+                                        <em>海岛线</em>
+                                        <p class="city-list"><a>韩国</a><a>苏梅</a><a>新加坡</a></p>
+                                    </li>
+                                    <li>
+                                        <em>东北亚</em>
+                                        <p class="city-list"><a>韩国</a><a>苏梅</a><a>新加坡</a></p>
+                                    </li>
+                                    <li>
+                                        <em>欧洲</em>
+                                        <p class="city-list"><a>韩国</a><a>苏梅</a><a>新加坡</a><a>韩国</a><a>苏梅</a><a>新加坡</a><a>韩国</a><a>苏梅</a><a>新加坡</a><a>韩国</a><a>苏梅</a><a>新加坡</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="city-wrap-bor">
+                    <div class="bottom">
+                        <div class="city-wrap border-dashed">
+                            <dl class="line-geo">
+                                <dt class="geo-title"></i><span>短线</span><em></em></dt>
+                                <dd class="geo-city"><a>苏州</a><a>南京</a><a>无锡</a><a>扬州</a><a>常州</a><a>徐州</a><a>泰州</a></dd>
+                            </dl>
+                            <div class="detail-city none">
+                                <ul class="detail-city-ul">
+                                    <li>
+                                        <em>东南亚</em>
+                                        <p class="city-list"><a>韩国</a><a>苏梅</a><a>新加坡</a></p>
+                                    </li>
+                                    <li>
+                                        <em>东北亚</em>
+                                        <p class="city-list"><a>韩国</a><a>苏梅</a><a>新加坡</a><a>新加坡</a></p>
+                                    </li>
+                                    <li>
+                                        <em>欧洲</em>
+                                        <p class="city-list"><a>韩国</a><a>苏梅</a><a>新加坡</a><a>韩国</a><a>苏梅</a><a>新加坡</a><a>韩国</a><a>苏梅</a><a>新加坡</a><a>韩国</a><a>苏梅</a><a>新加坡</a></p>
+                                    </li>
+                                    <li>
+                                        <em>欧洲</em>
+                                        <p class="city-list"><a>韩国</a><a>苏梅</a><a>新加坡</a><a>韩国</a><a>苏梅</a><a>新加坡</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="city-wrap-bor last-city-wrap">
+                    <div class="bottom">
+                        <div class="city-wrap border-dashed">
+                            <dl class="line-geo">
+                                <dt class="geo-title"><span>短线</span><em></em></dt>
+                                <dd class="geo-city"><a>苏州</a><a>南京</a><a>无锡</a><a>扬州</a><a>常州</a><a>徐州</a><a>泰州</a></dd>
+                            </dl>
+                            <div class="detail-city none">
+                                <ul class="detail-city-ul">
+                                    <li>
+                                        <em>港澳台</em>
+                                        <p class="city-list"><a>韩国</a><a>苏梅</a><a>新加坡</a></p>
+                                    </li>
+                                    <li>
+                                        <em>东北亚</em>
+                                        <p class="city-list"><a>韩国</a><a>苏梅</a><a>新加坡</a></p>
+                                    </li>
+                                    <li>
+                                        <em>欧洲</em>
+                                        <p class="city-list"><a>韩国</a><a>苏梅</a><a>新加坡</a><a>韩国</a><a>苏梅</a><a>新加坡</a><a>韩国</a><a>苏梅</a><a>新加坡</a><a>韩国</a><a>苏梅</a><a>新加坡</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                       
+            </div>
+            <div class="adv0">
+                <img src="./resource/images/adv0.jpg">
+            </div>
+            <div class="adv0">
+                <a href="javascript:;"><img src="./resource/images/270X160_visa.png"></a>
+            </div>
+            <div class="adv0">
+                <a href="javascript:;"><img src="./resource/images/270x160_group.png"></a>
+            </div>
+            <div class="tou">
+                <i></i><span class="h_capition">TA们刚刚预定了</span>
+            </div>
+            <ul class="history">
+                <li>
+                    <a><span class="h_title">九华山祈福之旅<span class="h_red"><九华山华山二日游></span>15分钟前被预订</span></a>
+                </li>
+                <li>
+                    <a><span class="h_title">九华山祈福之旅<span class="h_red"><九华山华山二日游></span>15分钟前被预订</span></a>
+                </li>
+                <li>
+                    <a><span class="h_title">九华山祈福之旅<span class="h_red"><九华山华山二日游></span>15分钟前被预订</span></a>
+                </li>
+                <li>
+                    <a><span class="h_title">九华山祈福之旅<span class="h_red"><九华山华山二日游></span>15分钟前被预订</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="center">
+        <!--搜索开始-->
+          <div class="seachBox clearfix">
+            <div class="tn_search_box"> 
+             <div id="tnSearchBox" class="clearfix"> 
+              <form> 
+                <div class="tn_s_select"> 
+                <span style="">线路</span> 
+                <div id="spic" class="icon spic"></div> 
+                <ul class="tn_search_bar"> 
+                 <li class="type_s">
+                  目的地
+                 </li> 
+                 <li class="type_s">
+                  出发地
+                 </li> 
+                </ul> 
+               </div>              
+               <p class="tn_s_input"> <input type="text" value="" placeholder="马尔代夫"> </p> 
+               <div class="an_mo"> 
+                <p class="tn_s_button"><button type="button"><i class="searchIcon"></i>搜索</button></p> 
+               </div> 
+              </form> 
+             </div> 
+            </div> 
+          </div>
+          <!--搜索结束-->
+            <div class="swiper-container"> 
+                <ul class="swiper-wrapper"> 
+                    <li class="swiper-slide"><img src="resource/images/line.jpg"></li> 
+                    <li class="swiper-slide"><img src="resource/images/line.jpg"></li> 
+                    <li class="swiper-slide"><img src="resource/images/line.jpg"></li> 
+                </ul> 
+                <div class="pagination"></div> 
+            </div> 
+            <ul class="adv_list">
+                <li><a><img src="./resource/images/232x180.png" class="scale"></a></li>
+                <li><a><img src="./resource/images/232x180_1.png" class="scale"></a></li>
+                <li><a><img src="./resource/images/232x180.png" class="scale"></a></li>
+                <li><a><img src="./resource/images/232x180_1.png" class="scale"></a></li>
+            </ul>
+            <dl class="showcase list_wrap">
+                <dt class="top">
+                    <i>1F</i><em>浙风旅游</em>
+                    <div class="tab_title">
+                        <span class="active" data-index="0">海滨派对</span>
+                        <span data-index="1">海滨派对</span>
+                        <span data-index="2">海滨派对</span>
+                        <span data-index="3">海滨派对</span>
+                        <span data-index="4">海滨派对</span>
+                    </div>
+                </dt>
+                <dd class="tab_con" data-index="0">
+                    <div class="adv_image"><img src="./resource/images/line.jpg"></div>
+                    <ul class="line_list">
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="price">
+                                            <span class="priceNum">6984</span>
+                                            <div class="price_detail none">
+                                                <table>
+                                                    <tr>
+                                                        <td class="price_name">价格名称</td>
+                                                        <td class="price_p">市场价</td>
+                                                        <td class="fanli">返利</td>
+                                                        <td class="price_js">结算价</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>成人</td>
+                                                        <td class="price_p">698</td>
+                                                        <td>698</td>
+                                                        <td>698</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>儿童</td>
+                                                        <td class="price_p">698</td>
+                                                        <td>698</td>
+                                                        <td>698</td>
+                                                    </tr>
+                                                </table>
+                                                <i class="arrow"></i>
+                                            </div>                                        
+                                        </td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="price">
+                                            <span class="priceNum">6984</span>
+                                            <div class="price_detail none">
+                                                <table>
+                                                    <tr>
+                                                        <td class="price_name">价格名称</td>
+                                                        <td class="price_p">市场价</td>
+                                                        <td class="fanli">返利</td>
+                                                        <td class="price_js">结算价</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>成人</td>
+                                                        <td class="price_p">698</td>
+                                                        <td>698</td>
+                                                        <td>698</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>儿童</td>
+                                                        <td class="price_p">698</td>
+                                                        <td>698</td>
+                                                        <td>698</td>
+                                                    </tr>
+                                                </table>
+                                                <i class="arrow"></i>
+                                            </div>                                        
+                                        </td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td  class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                    </ul> 
+                </dd>
+                <dd class="tab_con none" data-index="1">
+                    <div class="adv_image"><img src="./resource/images/line.jpg"></div>
+                    <ul class="line_list">
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                    </ul> 
+                </dd>
+                <dd class="tab_con none" data-index="2">
+                    <div class="adv_image"><img src="./resource/images/line.jpg"></div>
+                    <ul class="line_list">
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                    </ul> 
+                </dd>
+                <dd class="tab_con none" data-index="3">
+                    <div class="adv_image"><img src="./resource/images/line.jpg"></div>
+                    <ul class="line_list">
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                    </ul> 
+                </dd>
+                <dd class="tab_con none" data-index="4">
+                    <div class="adv_image"><img src="./resource/images/line.jpg"></div>
+                    <ul class="line_list">
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                    </ul> 
+                </dd>
+            </dl>
+            <dl class="showcase list_wrap second_floor">
+                <dt class="top">
+                    <i>2F</i><em>浙风旅游</em>
+                    <div class="tab_title">
+                        <span class="active"data-index="0">海滨派对</span>
+                        <span data-index="1">海滨派对</span>
+                        <span data-index="2">海滨派对</span>
+                        <span data-index="3">海滨派对</span>
+                        <span data-index="4">海滨派对</span>
+                    </div>
+                </dt>
+                <dd class="tab_con" data-index="0">
+                    <div class="adv_image"><img src="./resource/images/line.jpg"></div>
+                    <ul class="line_list">
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                    </ul> 
+                </dd>
+                <dd class="tab_con none" data-index="1">
+                    <div class="adv_image"><img src="./resource/images/line.jpg"></div>
+                    <ul class="line_list">
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                    </ul> 
+                </dd>
+                <dd class="tab_con none" data-index="2">
+                    <div class="adv_image"><img src="./resource/images/line.jpg"></div>
+                    <ul class="line_list">
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                    </ul> 
+                </dd>
+                <dd class="tab_con none" data-index="3">
+                    <div class="adv_image"><img src="./resource/images/line.jpg"></div>
+                    <ul class="line_list">
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                    </ul> 
+                </dd>
+                <dd class="tab_con none" data-index="4">
+                    <div class="adv_image"><img src="./resource/images/line.jpg"></div>
+                    <ul class="line_list">
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="line_item">
+                            <div class="infoBox">
+                                <a href="javascript:;">
+                                <img src="./resource/images/adv_test.jpg" class="line_img">
+                                </a>
+                                <a href="javascript:;">
+                                <div class="line_info">
+                                    <p class="title"><img src="./resource/images/tubiao.png"><象山三日> H05象山影视城-松兰山海滨-宁海湾捕鱼-浙东 小九寨松兰山海滨-宁海湾捕鱼-浙东小九寨</p>
+                                    <p class="intro">[L00375538]1、全程无自理景点，纯玩无购物，送1早2正风情渔家餐，送</p>
+                                    <span class="start_date">出团日期：12月31</span><span class="end_date">报名截止日期：09月16日</span>
+                                </div>
+                                 </a>
+                                <div class="item_price">
+                                    <p class="jsj_price">结算价<em><i>¥</i>9550</em>起</p>
+                                    <p class="lr_price">利润<em>¥9550</em></p>
+                                    <p class="btn"><a href="javascript:;" class="btn_order">立即预定</a><a href="javascript:;" class="btn_other">其他団期</a></p>
+                                </div>
+                                <div class="price_detail none">
+                                    <table>
+                                        <tr>
+                                            <td class="price_name">价格名称</td>
+                                            <td class="price_p">市场价</td>
+                                            <td class="fanli">返利</td>
+                                            <td class="price_js">结算价</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成人</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                        <tr>
+                                            <td>儿童</td>
+                                            <td class="price_p">698</td>
+                                            <td>698</td>
+                                            <td>698</td>
+                                        </tr>
+                                    </table>
+                                    <i class="arrow"></i>
+                                </div>
+                            </div>
+                            <div class="period_wrap none">
+                                <table>
+                                    <tr class="title">
+                                        <td>团队编号（名称）</td>
+                                        <td>出团日期</td>
+                                        <td>市场价</td>
+                                        <td>座位</td>
+                                        <td>已订</td>
+                                        <td>剩余</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZFLYG09294087</td>
+                                        <td><i class="good"></i><i class="date">10-31</i><i class="week">周二</i></td>
+                                        <td class="date">6984</td>
+                                        <td>52</td>
+                                        <td>1</td>
+                                        <td class="date">3</td>
+                                        <td><a class="operation">预订</a></td>
+                                    </tr>
+                                    <tr class="next_page">
+                                        <td colspan="7"><a class="operation">下一页</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                    </ul> 
+                </dd>
+            </dl>
+        </div>
+        <div class="right">
+            <div class="manager_intro active_coll">
+                <div class="title"><img src="./resource/images/icon/icon_touxiang.png"><span><i>万网阿</i>专属客户经理<em></em></span></div>
+                <div class="intro_info">
+                    <p class="qq"><em></em>1562437442</p>
+                    <p class="tel"><em></em>18954261478</p>
+                </div>
+            </div>
+            <div class="manager_intro online_wrap active_coll">
+                <div class="title"><img src="./resource/images/icon/bzy.png"><span><i>万网阿</i>专属客户经理<em></em></span></div>
+                <dl class="expand">
+                    <dt>目的地【24小时热线】<i></i></dt>
+                    <dd class="none">
+                        <ul class="ul_expand">
+                            <li>目的地【客服】</li>
+                            <li>冯海燕 87778512</li>
+                            <li>赵 辉 87778512</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="expand">
+                    <dt>门票咨询<i></i></dt>
+                    <dd class="none">
+                        <ul class="ul_expand">
+                            <li>目的地【客服】</li>
+                            <li>冯海燕 87778512</li>
+                            <li>赵 辉 87778512</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="expand last">
+                    <dt>短线QQ群<i></i></dt>
+                    <dd class="none">
+                        <ul class="ul_expand">
+                            <li>目的地【客服】</li>
+                            <li>冯海燕 87778512</li>
+                            <li>赵 辉 87778512</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <script src="resource/js/jquery.min.js"></script>
+    <script src="resource/js/idangerous.swiper.min.js"></script>
+    <script src="resource/js/My97DatePicker/WdatePicker.js"></script>
+	<script src="resource/js/jquery.mx.controls-1.1.js"></script>
+	<script src="resource/js/jquery.mx.webscroll.js"></script>	
+	<script src="resource/js/jquery.json-2.2.min.js"></script>	    
+    <script type="text/javascript">
+
+        $(function(){
+             $(".shop").hover(function(){
+                 $(this).find(".all_shop").toggleClass("none");
+             })
+            //搜索框目的地点击
+            $(".search").click(function(){
+                $(this).parent(".icon_list").find(".s_wrap").fadeIn(100);                
+                $(this).addClass("yi");
+            })
+            $(".search_wrap input").focus(function () {
+                $(this).parent().find(".content_wrap").fadeIn(300);
+            }) ;             
+            $(".search_wrap input").keyup(function () {
+                $(this).parent().find(".content_wrap").fadeIn(300);
+            }) ; 
+            $(".txt_search").click(function(){
+                $(this).parent().find(".content_wrap").fadeOut(300);
+            })            
+            $("body").click(function(e){
+                var _con = $(".search,.s_wrap");
+                if( !_con.is(e.target) && _con.has(e.target).length == 0){
+                    $(".s_wrap").fadeOut(100);
+                    $(".search").removeClass("yi");
+                    $('.search_wrap input').parent().find(".content_wrap").fadeOut(300);
+                }
+            })
+            /*
+            $(".depart_wrap li").click(function(){
+                $(this).parents(".search_wrap").find(".triangle").text($(this).text());
+                $(this).parent(".depart_wrap").addClass("none");
+            })
+            $(".search_wrap .triangle").click(function(){
+                $(this).parents(".search_wrap").find(".depart_wrap").toggleClass("none");
+            })*/
+            /*目的地hover*/
+            $(".city-wrap-bor").hover(function(){
+                $(this).find(".detail-city").removeClass("none");
+                $(this).addClass("active-bor").find(".bottom").addClass("active-bor2").find(".city-wrap").removeClass("border-dashed");
+            },function(){
+                $(this).find(".detail-city").addClass("none");
+                $(this).removeClass("active-bor").find(".bottom").removeClass("active-bor2").find(".city-wrap").addClass("border-dashed");;
+            })
+            /*目的地导航高度设置*/
+            var desHeight = $(".destination-city").outerHeight();
+            $(".detail-city").css("min-height",desHeight);
+            /*首页轮播图开始*/
+            var mySwiper = new Swiper('.swiper-container',{
+                pagination: '.pagination',
+                loop:true,
+                grabCursor: true,
+                paginationClickable: true,
+                autoplay: 3000
+            })
+            /*产品列表list tab*/
+            $(".tab_title span").click(function(){
+                $(this).addClass("active").siblings("span").removeClass("active");
+                $(this).parents(".list_wrap").find(".tab_con[data-index="+$(this).data("index")+"]").removeClass("none").siblings(".tab_con").addClass("none");
+            })
+            //右侧栏展开收起
+            $(".manager_intro .title em").click(function(){
+                $(this).parents(".manager_intro").toggleClass("active_coll");
+            })
+            //右侧八爪鱼在线客服
+            $(".expand dt").click(function(){
+               $(this).find("i").toggleClass("up");
+               $(this).parents(".expand").find("dd").toggleClass("none");
+            })
+            //tab列表价格明细
+            $(".item_price .jsj_price").hover(function(){
+                $(this).parents(".item_price").next(".price_detail").removeClass("none");
+            },function(){
+                $(this).parents(".item_price").next(".price_detail").addClass("none");
+            })
+            $(".period_wrap .price").hover(function(){
+                $(this).children(".price_detail").removeClass("none");
+            },function(){
+                $(this).children(".price_detail").addClass("none");
+            })            
+            //二维码
+            $(".icon_list .telphone").hover(function(){
+                $(this).parents(".icon_list").find(".erweima").removeClass("none");
+            },function(){
+                $(this).parents(".icon_list").find(".erweima").addClass("none");
+            })
+            //其他団期展示
+            $(".line_item .btn_other").click(function(){
+                $(this).parents(".line_item").find(".period_wrap").toggleClass("none");
+                if($(this).text()=="其他団期"){
+                    $(this).text("隐藏団期");
+                }else{
+                    $(this).text("其他団期");
+                }
+            })
+            //头部分销商门店样式
+            $('.selBox .select-main').hover(function() {
+				$('.selBox .select-main .select-block').show();
+                $('.select-arrow').addClass('reverse');
+            }, function() {
+				$('.selBox .select-main .select-block').hide();
+               $('.select-arrow').removeClass('reverse');
+            });
+            $('.selBox .select-main .select-block li').click(function() {
+	            $('.selBox .select-main .select-set').text($(this).text());
+	            $('.selBox .select-main .select-block').hide();
+        	});
+        })
+    </script>
+</body>
+</html>

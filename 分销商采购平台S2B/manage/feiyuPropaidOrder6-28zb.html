@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>整团订单</title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/common.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/mix_order.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/ticket_order.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/require.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/proDetail.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/ticket.css">
+    <link href="../resource/js/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="myheader">
+        <div class="shop"><span class="triangle">kl-fxs分销商门店<em></em></span>
+            <ul class="all_shop none">
+                <li class="first"><a>青年分社</a></li>
+                <li><a>分店</a></li>
+                <li><a>分店</a></li>
+                <li class="last"><a>退出</a></li>
+            </ul>
+        </div>
+        <div class="head_right">
+            <ul class="top_menu">
+                <li class="active"><a>首页</a></li>
+                <li><a>短线</a></li>
+                <li><a>长线</a></li>
+                <li><a>出境</a></li>
+                <li><a>邮轮</a></li>
+                <li><a>整团</a></li>
+                <li><a>分期</a></li>
+            </ul>
+            <div class="icon_list">
+                <a class="telphone"></a>
+                <a class="money"></a>
+                <a class="ring"></a>
+            </div>
+        </div>
+    </div>
+    <div class="menu_contain">
+        <div class="menu">
+            <i class="bzy_logo"></i>
+            <em class="pos">苏州站</em>
+            <div class="search_all">
+                <ul class="nav_hd">
+                    <li><a>我的店</a></li>
+                    <li class="cur"><a>订单中心</a></li>
+                    <li><a>我的财务</a></li>
+                    <li><a>收客统计</a></li>
+                    <li><a>电子合同</a></li>
+                    <li><a>我的收藏</a></li>
+                </ul>
+                <div class="s_wrap none">
+                    <div class="search_wrap">
+                        <span class="triangle r_tri">出境</span>
+                        <ul class="depart_wrap none">
+                            <li>邮轮</li>
+                            <li>出境</li>
+                            <li>邮轮</li>
+                        </ul>
+                        <input type="text" placeholder="输入目的地/线路/关键词/供应商">
+                        <i class="yi"></i>
+                        <div class="content_wrap">
+                            <p>热门目的地</p>
+                            <div class="hot">
+                                <a class="active">上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="i_search"></a>
+            </div>
+
+        </div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <ul>
+                <li class="title"><a>旅游订单</a></li>
+                <li><a>游客订单</a></li>
+                <li><a>散客订单</a></li>
+                <li class="active"><a>整团订单</a></li>
+                <li class="new"><a>目的地订单</a><i></i></li>
+            </ul>
+            <ul class="order_g">
+                <li class="title">其他订单<a></a></li>
+                <li><a>机票订单</a></li>
+                <li><a>保鲜订单</a></li>
+                <li><a>门票订单</a></li>
+                <li><a>签证订单</a></li>
+                <li><a>车辆订单</a></li>
+                <li><a>人工订单</a></li>
+            </ul>
+        </div>
+        <div class="right" style="padding-left:0;padding-right:0;">
+
+            <!--订单基本信息-->
+            <!--预付款-->
+            <style>
+                .prepaidT{padding-left:40px;}
+                .prepaidT p{color:#333333;font-size:20px;font-weight: 500;}
+                .prepaidCon{border-top:1px solid #e4e4e4;border-bottom: 1px solid #e4e4e4;margin-top:20px;padding-left:40px;}
+                .prepaidTable{table-layout: fixed; width: 100%;margin-top:20px;margin-bottom:20px;}
+                .prepaidTable td{text-align:left;line-height: 34px;margin-left:10px;}
+                .prepaidContent{padding-left:40px;}
+                .preAttention{color:#666666;font-size:14px;line-height: 42px;margin-top:48px;border:1px solid #ffc581;padding:0px 8px;background: #fff8ee;
+                border-radius:4px;width:800px;}
+                .preAttention span{color:#e74d68;font-size:18px;}
+                .dedution{font-size:14px;color:#333333;margin-top:40px;}
+                .dedutionAmount{font-size:26px}
+                .cashPay{font-size:14px;color:#333333;margin-top:40px;}
+                .cashPayNum{border:1px solid #e4e4e4;padding:0 6px;color:#fd4a67;font-size:30px;margin:0px 8px;border-radius:4px;}
+                .payBtn{width:330px;margin:40px auto;}
+                .payBtn a{display: inline-block;width:140px;height:50px;border-radius:4px;line-height: 50px;text-align: center;}
+                .scavengerPayBtn{ border:1px solid #fd4a67;background: #fff;color: #fd4a67;}
+                .goPayBtn{background: #fd4a67;color: #fff;margin-left:36px;}
+                .no_prepaid{margin-top:80px;}
+                .cashPay input.cashPayInp{border:1px solid #e4e4e4;color:#fd4a67;font-size:30px;margin:0px 8px;border-radius:4px;width:170px;height: 40px;}
+                .notice{display: inline-block;width: 24px;height: 24px;margin-right:10px;background: url("../resource/images/icon/notice.png") no-repeat;vertical-align: middle;}
+            </style>
+            <div class="info" style="padding:0; display: block" >
+                <div class="prepaidInfo">
+                    <div class="prepaidT">
+                        <p>订单基本信息</p>
+                    </div>
+                    <div class="prepaidCon">
+                        <table class="prepaidTable" style="table-layout: fixed">
+                            <tr>
+                                <td>订单类型：<span style="color:#fd4a67">肥鱼订单</span></td>
+                                <td>总金额：<span>$2000</span></td>
+                                <td>已付金额：<span>$100</span></td>
+                            </tr>
+                            <tr>
+                                <td>下单时间：<span>2018-06-22 15:17:44</span></td>
+                                <td>订单编号：<span>RF0003645</span></td>
+                                <td>未付金额：<span style="color:#fd4a67">￥2020</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="prepaidContent">
+                        <p class="preAttention">
+                           <i class="notice"></i>此订单需要预付款，请于2018-06-19 11:14之前至少现金支付 <span> ¥100.00，</span>  否则订单将被取消！请尽快完成支付！
+                        </p>
+                        <p class="dedution">
+                            授信额度扣除：<span class="dedutionAmount">461920.00</span>元 （账号剩余可用额度：1500.00元）
+                        </p>
+                        <p class="cashPay">
+                            <!--现金支付 <span class="cashPayNum">568100.00</span>元-->
+                            现金支付 <input type="text" value="52101.00" class="cashPayInp"/>                       </p>
+                    </div>
+                    <div class="payBtn">
+                        <a href="javascript:;" class="scavengerPayBtn">扫码支付</a>
+                        <a href="javascript:;" class="goPayBtn">去支付</a>
+                    </div>
+                </div>
+            </div>
+            <!--非预付款    -->
+            <div class="info" style="padding:0;">
+                <div class="prepaidInfo">
+                    <div class="prepaidT">
+                        <p>订单基本信息</p>
+                    </div>
+                    <div class="prepaidCon">
+                        <table class="prepaidTable" style="table-layout: fixed">
+                            <tr>
+                                <td>订单类型：<span style="color:#fd4a67">肥鱼订单</span></td>
+                                <td>总金额：<span>$2000</span></td>
+                                <td>已付金额：<span>$100</span></td>
+                            </tr>
+                            <tr>
+                                <td>下单时间：<span>2018-06-22 15:17:44</span></td>
+                                <td>订单编号：<span>RF0003645</span></td>
+                                <td>未付金额：<span style="color:#fd4a67">￥2020</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="prepaidContent no_prepaid">
+                        <p class="cashPay">
+                            现金支付 <input type="text" value="52101.00" class="cashPayInp"/>元
+                        </p>
+                    </div>
+                    <div class="payBtn">
+                        <a href="javascript:;" class="scavengerPayBtn">扫码支付</a>
+                        <a href="javascript:;" class="goPayBtn">去支付</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        body{position: relative;}
+        .mask{position:absolute;top:0;left:0;background: url("../resource/images/bodyMask.png");}
+        .scavenger{width:300px;height:380px;border-radius:8px;padding:4px;background: #fff;margin:400px auto;}
+        .error{text-align: right;margin-right:10px;margin-top:10px;}
+        .errorIcon{display:inline-block;width:13px;height:13px;background: url("../resource/images/icon/close.png") no-repeat;cursor: pointer;}
+        .scavengerImg{width:230px;margin:14px auto;height:230px;border:1px solid #e4e4e4;text-align: center;}
+        .scavengerImg img{width:200px;margin:14px auto;}
+        .scavengerT1{text-align: center;color:#fd4a67;font-size:26px;margin-top:20px;}
+        .scavengerT2{text-align: center;color:#666666;font-size: 14px;margin-top:20px;}
+    </style>
+    <div class="mask" style="display: none;">
+        <div class="scavenger">
+            <p class="error"><i class="errorIcon"></i></p>
+            <p class="scavengerImg"><img src="../resource/images/QRshare.png" alt=""/></p>
+            <p class="scavengerT1">扫码支付</p>
+            <p class="scavengerT2">手机打开小八助理APP扫一扫</p>
+        </div>
+    </div>
+</div>
+    <script src="../resource/js/jquery.min.js"></script>
+    <script src="../resource/js/layer/layer.js"></script>
+    <script type="text/javascript" src="../resource/js/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript">
+        $(function () {
+//            弹窗
+            $(".scavengerPayBtn").on("click",function(){
+                var wH = $(document).height()
+                var wW = $(document).width()
+                $(".mask").css({
+                    display:"block",
+                    width:wW+"px",
+                    height:wH+"px",
+                })
+            })
+            $(".scavenger .errorIcon").on("click",function(){
+                $(".mask").css({
+                    display:"none"
+                })
+            })
+
+
+          $(".evaluateBtn").click(function () {
+              layer.open({
+                  scrollbar: false,
+                  title: '订单评价',
+                  type: 1,
+                  area: ['600px', '450px'],
+                  content: $("#cancelOrder")
+                  //content: $("#trainPop_1")
+              });
+            });
+          $(".ApplyIcon").click(function () {
+              layer.open({
+                  scrollbar: false,
+                  title: '申请记录',
+                  type: 1,
+                  area: ['900px', '500px'],
+                  content: $("#applyRecord")
+                  //content: $("#trainPop_1")
+              });
+            });
+          $(".buySafeIcon").click(function () {
+              layer.open({
+                  scrollbar: false,
+                  title: '购买保险',
+                  type: 1,
+                  area: ['900px', '680px'],
+                  content: $("#buySafe")
+                  //content: $("#trainPop_1")
+              });
+            });
+          $(".PayIcon").click(function () {
+              layer.open({
+                  scrollbar: false,
+                  title: '合并付款',
+                  type: 1,
+                  area: ['900px', '600px'],
+                  content: $("#payAll")
+                  //content: $("#trainPop_1")
+              });
+            });
+            $(".perfectIcon").click(function () {
+              layer.open({
+                  scrollbar: false,
+                  title: '完善游客信息',
+                  type: 1,
+                  area: ['1200px', '600px'],
+                  content: $("#perfectInfo")
+              });
+            });
+          })
+        $(function(){
+          $(".checkbox").toggle(
+            function(){
+              $(this).addClass('checked');
+            },
+            function(){
+              $(this).removeClass('checked');
+            });
+            $(".editBtn").click(function(){
+                if ($(this).children('span').text() == '展开') {
+                    $(this).children('span').text('收起');
+                    $(this).addClass('upIcon');
+                    $(this).parents().children('.invalidBox').removeClass('none');
+                } else {
+                    $(this).children('span').text('展开');
+                    $(this).removeClass('upIcon');
+                    $(this).parents().children('.invalidBox').addClass('none');
+                }
+            });
+        })
+    </script>
+</body>
+</html>

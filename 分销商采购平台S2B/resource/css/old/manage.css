@@ -1,0 +1,40 @@
+.content{width:1200px;margin:0 auto;padding-top:20px;overflow:hidden}
+.content .left_con{float:left;font-size:16px;background:#eff3f5}
+.content .left_con .account{margin-top:30px}
+.content .left_con li .num{color:#f01447}
+.content .left_con li{color:#666;padding:6px 0}
+.content .left_con li.title{color:#333;font-weight:700}
+.content .left_con li.new:after{content:'NEW';padding:1px 2px;background:#f01447;font-size:8px;color:#fff;margin-left:5px}
+.content .left_con .order_g{margin-top:20px}
+.content .left_con li.active{color:#f01447}
+.content .right{width:1040px;box-sizing:border-box;float:right;color:#666;margin-bottom:100px}
+.myBox{margin:0}
+.myBox .myItem{background:#fff;box-shadow:0 1px 5px #EBEFF1;margin-bottom:10px}
+.myBox .myItem table{width:100%}
+.myItem table tr td{width:347px;border:1px solid #ECEDEF;vertical-align:middle;height:220px;text-align:center}
+.userBox .userPhoto{width:100px;height:100px;border-radius:50%;margin-right:35px;margin-left:40px}
+.userBox .userInfo{text-align:left}
+.userBox .userInfo h2{font-size:30px;color:#405063;margin:10px 0 20px 0}
+.userBox .userInfo p{font-size:18px;color:#8898b2;margin-bottom:10px}
+.moneyBox .moneyIcon{margin-left:40px;margin-right:10px}
+.moneyBox .moneyInfo{text-align:left}
+.noSel .moneyInfo{margin-top:20px}
+.moneyBox .moneyInfo h2{font-size:30px;color:#405063;margin:10px 0 20px 0}
+.moneyBox .moneyInfo p{font-size:18px;color:#8898b2;margin-bottom:10px}
+.moneyBox .moneyInfo p .small{color:#8898b2;font-weight:400;font-size:18px;margin-left:5px}
+.moneyBox .moneyInfo p.price{font-weight:700;font-size:38px;position:relative;padding-left:15px;margin:18px 0}
+.moneyBox .moneyInfo p.price sup{position:absolute;left:0;top:-8px;font-weight:700;font-size:16px}
+.moneyBox .linkBtn{margin-top:10px;display:inline-block;font-size:18px;padding:7px 25px;border-radius:17px}
+.smallSel{text-align:center;position:relative}
+.smallSel .current{border:1px solid #AAADB2;color:#AAADB2;font-size:12px;padding:3px 0;border-radius:15px}
+.smallSel .triangle{padding:5px 18px 5px 5px;background:0 0}
+.smallSel:hover ul{display:block}
+.smallSel ul{position:absolute;background:#fff;display:none;left:0;top:26px;width:100%;box-shadow:0 1px 5px #EBEFF1}
+.smallSel ul li{padding:5px 0;color:#AAADB2;cursor:pointer}
+.smallSel ul li:hover{color:#f01447}
+.myBox .myItem.pcBg{background:url(../../images/pcBg.png) no-repeat top left;background-size:100% 100%;box-shadow:0 1px 5px #EBEFF1;padding:10px 10px 10px 105px}
+.myBox .myItem.phoneBg{background:url(../../images/phoneBg.png) no-repeat top left;background-size:100% 100%;box-shadow:0 1px 5px #EBEFF1;padding:10px 10px 10px 105px}
+.myBox .myItem.pcBg table,.myBox .myItem.phoneBg table{background:#fff}
+.myBox .myItem.pcBg table tr td,.myBox .myItem.phoneBg table tr td{height:200px}
+.myBox .myItem.pcBg table tr td.title,.myBox .myItem.phoneBg table tr td.title{width:248px;padding-left:55px;box-sizing:border-box}
+.myItem.pcBg .moneyBox .moneyIcon,.myItem.phoneBg .moneyBox .moneyIcon{margin-left:18px;margin-right:50px;margin-top:20px}

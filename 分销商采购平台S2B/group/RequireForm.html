@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>八爪鱼在线旅游平台</title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/global.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/common.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/require.css">
+</head>
+<body>
+<div class="requireForm">
+    <table>
+        <tr>
+           <td class="forTit"><i class="font_roseo">*</i>目的地：</td>
+           <td>
+               <select>
+                    <option>vv</option>
+                    <option>vv333</option>
+               </select>
+           </td>
+           <td class="forTit"><i class="font_roseo">*</i>八爪鱼推荐：</td> 
+           <td>
+                <div class="checkBox clearfix">
+                    <label class="clearfix">
+                        <span class="icon checkbox"></span><span>是</span>
+                    </label>
+                    <label class="clearfix">
+                        <span class="icon checkbox"></span><span>否</span>
+                    </label>                    
+                </div>
+
+           </td> 
+        </tr>
+        <tr>
+           <td class="forTit"><i class="font_roseo">*</i>团队名称：</td>
+           <td>
+                <input type="text" style="width:180px;">
+           </td>
+           <td class="forTit"><i class="font_roseo">*</i>出行人数：</td> 
+           <td>
+                <input type="text" style="width:60px;">
+                <span class="tip">成人</span>
+                <input type="text" style="width:60px;">
+                <span class="tip">儿童</span>
+           </td> 
+        </tr>
+        <tr>
+           <td class="forTit"><i class="font_roseo">*</i>行程天数：</td> 
+           <td>
+                <input type="text" style="width:55px;">
+                <span class="tip">天</span>
+                <input type="text" style="width:55px;">
+                <span class="tip">晚</span>
+           </td> 
+           <td class="forTit"><i class="font_roseo">*</i>出发日期：</td>
+           <td>
+                <div class="dateBox">
+                <input type="text" style="width:180px;">
+                <i class="icon dateIcon"></i>
+                </div>
+           </td>           
+        </tr>
+        <tr>
+           <td class="forTit"><i class="font_roseo">*</i>分销商联系人：</td> 
+           <td>
+                <input type="text" style="width:180px;">
+           </td> 
+           <td class="forTit"><i class="font_roseo">*</i>联系人手机：</td>
+           <td>
+                <input type="text" style="width:180px;">
+           </td>           
+        </tr>  
+        <tr>
+           <td class="forTit"><i class="font_roseo">*</i>报价截止：</td> 
+           <td>
+                <div class="dateBox">
+                <input type="text" style="width:180px;">
+                <i class="icon dateIcon"></i>
+                </div>
+           </td> 
+           <td class="forTit"><i class="font_roseo">*</i>供应商：</td>
+           <td>
+                <input type="text" style="width:180px;">
+           </td>           
+        </tr> 
+        <tr>
+           <td class="forTit">参考行程：</td> 
+           <td colspan="3">
+                <input type="text" style="width:230px;">
+           </td>           
+        </tr> 
+        <tr>
+           <td class="forTit">参考行程：</td> 
+           <td colspan="3">
+                <div class="genUpload" style="width: 320px;">
+                    <div class="genUpload_groups" style="float: left;">
+                        <p class="genUpload_button">
+                            <a href="javascript:;" id="upload_button" class=" ">上传附件</a>
+                            <a class="del" href="javascript:;" id="del">删除附件</a>
+                        </p>
+                        <ol class="genUpload_fileInfos">
+                            <li>原文件名：<em id="ContentPlaceHolder1_upload_origName"></em></li>
+                            <li>新文件名：<em id="ContentPlaceHolder1_upload_newName"></em></li>
+                        </ol>
+                    </div>
+                </div>
+           </td>           
+        </tr> 
+        <tr>
+           <td class="forTit">行程要求：</td> 
+           <td colspan="3">
+                <textarea></textarea>
+           </td>           
+        </tr> 
+        <tr>
+           <td class="forTit">食宿要求：</td> 
+           <td colspan="3">
+                <textarea></textarea>
+           </td>          
+        </tr> 
+        <tr>
+           <td class="forTit">其他：</td> 
+           <td colspan="3">
+                <textarea></textarea>
+           </td>          
+        </tr>                                                                         
+    </table>
+    <div class="formBtn">
+        <a href="javascript:;" class="witeBg">关闭</a>
+        <a href="javascript:;" class="redBtn">发布整团需求</a>
+    </div>
+</div>
+<script src="../resource/js/jquery.min.js"></script>
+<script src="../resource/js/toggle.js"></script>
+<script type="text/javascript">
+  $(".checkbox").toggle(
+    function(){
+      $(this).addClass('checked');
+    },
+    function(){
+      $(this).removeClass('checked');
+    }
+  )
+</script>
+</body>
+</html>

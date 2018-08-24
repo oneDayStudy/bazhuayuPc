@@ -1,0 +1,144 @@
+.proTabsCon .title .flyIcon{float:left;display:inline-block;background:url(../../images/icon/flyIcon.png) no-repeat;width:32px;height:34px;margin-right:10px}
+.ticketFlyBox{margin-top:30px;padding-left:42px}
+.Tab{height:48px;width:1018px;border-bottom:1px solid #fc8e81;color:#666;font-weight:500}
+.Tab span{float:left;display:inline-block;width:100px;height:48px;font-size:16px;line-height:48px;text-align:center}
+.tabBj{width:207px;float:left;overflow:hidden}
+.tabBj1{background:url(../../images/icon/tabBj1.png) no-repeat}
+.tabBj2{background:url(../../images/icon/tabBj2.png) no-repeat}
+.trafficCon{overflow:hidden;color:#666}
+.content_detail{width:932px;border:1px solid #e4e4e4;border-top:0;padding:30px 42px;position:relative}
+.content_detail_check{overflow:hidden;font-size:14px}
+.content_detail_check span b{display:inline-block;width:18px;height:18px;cursor:pointer;background:url(../../images/icon.png) no-repeat;background-position:0 -379px}
+.content_detail_check span b.checked{background-position:-19px -379px}
+.content_detail span{float:left;height:20px;line-height:20px;margin-left:8px}
+.content_input{overflow:hidden;margin-top:24px}
+.content_input p{float:left;width:176px;height:35px;overflow:hidden;line-height:35px;margin-left:36px}
+.content_input p span{float:left;line-height:35px}
+.content_input p input{float:left;width:106px;height:28px;border:1px solid #dfe4e6;margin-left:6px;padding:0 3px;}
+.content_input .search{position:absolute;width:80px;height:30px;background:#fb7262;line-height:30px;text-align:center;color:#fff;border-radius:6px;right:46px;bottom:40px}
+.groupTicketBox .ticketCon .ticketRight{width:180px;}
+.groupTicketBox .resultBox .choiceTicket{padding:0 15px;}
+.groupTicketBox .resultBox .ticketCon .ticketRight{padding-left:30px;padding-top:40px;}
+.groupTicketBox .signleBox .ticketCon .ticketRight{padding-left:20px;padding-top:15px;}
+.groupTicketBox .signleBox .ticketCon .ticketLeft{border-right:none;}
+.groupTicketBox .resultBox .trainTable{table-layout:fixed;}
+.groupTicketBox .flightItem .ticketCol p{width:135px;}
+.groupTicketBox .trainTable .flightItem .moreCol p.price{width:130px;}
+.groupTicketBox .flightInfo .flightItem td{border-top:1px solid #E4E4E4;}
+.width_80{width:80px!important;}
+.groupTicketBox .flightInfo .ticketCol{width:130px;}
+.groupTicketBox .flightItem{padding:30px 0;}
+.groupTicketBox .flightItem .ticketCol.width_80 p{width:80px!important;}
+.groupTicketBox .flightItem .ticketCol .zdBox{width:80px;}
+.groupTicketBox .flightItem .linePrice{line-height:24px!important;}
+.groupTicketBox .flightItem .otherSeat{right:80px;top:75%;}
+/*6-26 offerDetail*/
+.menu_header_table{background: #fff;}
+.header_table{width:1200px;margin:0 auto;overflow: hidden;}
+.headerTable_l{float: left;width: 30%;overflow: hidden;}
+.headerTable_r{float: right;width: 40%;overflow: hidden;font-size:14px;margin-top:18px;margin-bottom:18px;line-height: 34px;}
+.headerTable_l h3{float: left;position: relative;margin-top:18px;margin-bottom:18px;line-height: 34px;padding:0px 24px;}
+.headerTable_l{color:#989eb0;font-size:18px;line-height: 34px;}
+.headerTable_l h3.checked{ color:#2a333e;}
+.headerTable_l h3 .priceInfoIcon{display: inline-block;width:32px;height:32px;background: url("../../images/icon/priceInfoIcon.png") no-repeat;vertical-align: middle;}
+.headerTable_l h3.checked .priceInfoIcon{display: inline-block;width:32px;height:32px;background: url("../../images/icon/priceInfoIconActive.png") no-repeat;vertical-align: middle;}
+.headerTable_l h3 .findInfoIcon{display: inline-block;width:32px;height:32px;background: url("../../images/icon/findInfoIcon.png") no-repeat;vertical-align: middle;}
+.headerTable_l h3.checked .findInfoIcon{display: inline-block;width:32px;height:32px;background: url("../../images/icon/findInfoIconActive.png") no-repeat;vertical-align: middle;}
+h3.checked .btm{position: absolute;width: 100%;height:2px;background: red;bottom:-18px;left:0;}
+.flyIcon{   float: left;  display: inline-block;  background: url(../../images/icon/flyIcon.png) no-repeat;  width: 32px;  height: 34px;  margin-right: 10px;}
+.header_export{float:left;width: 120px;height:30px;color:#f01447;border-radius:15px;line-height: 30px;}
+.exportIcon{display: inline-block;width:20px;height:20px;background:url(../../images/icon/exportIcon.png) no-repeat;vertical-align: middle;  margin-left: 12px;margin-right:6px;padding-bottom:2px;}
+.contactService{float:left;line-height: 30px;padding:0px 12px;color:#149bf0;margin-left:20px;}
+.messIcon{display: inline-block;width: 20px;height: 20px;background: url("../../images/icon/messIcon.png") no-repeat;vertical-align: middle;margin-right:8px;}
+.contactPhone{float:left;line-height: 30px;}
+.Vertical{float:left;width:1px;height:34px;background: #ece3e3;margin-left:10px;margin-right:14px;}
+.mattersAttention{padding-left:20px;}
+.feeBox .planBox{position: relative;top:0px;}
+.feeBox .planBox a{display: block;  float: left;  width: 128px;  height: 35px;
+    margin: 15px 0px 0px 0px;  border: 1px solid #EBEBEB;  border-radius: 3px;
+    font-size: 16px;  color: #7e8995;  line-height: 35px;  text-align: center;
+    border-bottom: 0;  border-bottom-left-radius:0px;  border-bottom-right-radius:0px; }
+.planBox a.active{color:#fff;background: url("../../images/icon/tabbg.png") no-repeat;}
+.planBox a i{display: inline-block;width:20px;height:20px; }
+.planBox a .check{background: url("../../images/icon/plan_unselected.png") no-repeat;vertical-align: middle;}
+.planBox a.active .check{background: url("../../images/icon/plan_selected.png") no-repeat;vertical-align: middle;}
+.costStatement,.depositSetting{font-size: 14px;  color: #7e8995;  margin: 25px 0 0 50px;}
+.settlementReference{margin-top:20px;}
+.touristContact{margin-top:20px;font-size:14px;color:#666666;}
+.touristContact span i{margin-left:20px;margin-right:12px;color:orangered;}
+.touristContact span input{margin-left:20px;font-size:14px;color:#ceced0;width:350px;height:35px;border:1px solid #ceced0;}
+.remarkInfo{margin-top:20px;}
+.remarkInfo p{overflow: hidden;margin-left:20px;margin-right:15px;margin-top:20px;}
+.remarkInfo span{height:20px;float: left;}
+.remarkInfo textarea{height:70px;width:835px;float: left;}
+.confirm{text-align: center;}
+.confirmBtn{text-align: center;display:inline-block;background: #fff;width:180px;height:36px;border-radius:18px;line-height: 36px;font-size:16px;color:#d00232;border: 1px solid #d00232;}
+.proDetailCon .proTabsCon{padding-top:10px;}
+.instruction{color:#f01447;font-size:14px;line-height:30px;padding:20px 0px;}
+.proTabsBox .ticketFlyBox{margin-top:0px;}
+.trafficCon .content_detail{padding:20px 42px;}
+.content_detail .content_input{margin-top:6px;}
+.content_detail .content_input .search{bottom:24px;}
+.wangfan select{width:70px;height:30px;border:1px solid #dfe4e6;}
+.content_input span{float:left;display:inline-block;border:1px solid #dfe4e6;paddding:0px 13px;line-height:30px;height:30px;}
+.content_input span{padding:0px 10px;}
+.planeStarIcon{display: inline-block;width:20px;height:20px;background: url("../../images/icon/plane_start.png") no-repeat; vertical-align: middle;margin-right:6px;}
+.gobackIcon{display: inline-block;width:20px;height:20px;background: url("../../images/icon/go_back.png") no-repeat; vertical-align: middle;margin-right:6px;}
+.planeArriveIcon{display: inline-block;width:20px;height:20px;background: url("../../images/icon/plane_arrive.png") no-repeat; vertical-align: middle;margin-right:6px;}
+.calendarStarIcon{display: inline-block;width:20px;height:20px;background: url("../../images/icon/calendar_start.png") no-repeat; vertical-align: middle;margin-right:6px;}
+.calendarBackIcon{display: inline-block;width:20px;height:20px;background: url("../../images/icon/calendar_back.png") no-repeat; vertical-align: middle;margin-right:6px;}
+.trainStarIcon{display: inline-block;width:20px;height:20px;background: url("../../images/icon/train.png") no-repeat; vertical-align: middle;margin-right:6px;}
+.resultBox .ticketTable .ticketCon .ticketLeft{width:730px;}
+.groupTicketBox .resultBox .ticketCon .ticketRight{width:144px;}
+.exportOffer a{display: inline-block;width:60px;height:30px;line-height: 30px;
+    text-align: center;font-size: 12px;border-radius:15px;position: relative;top:100px;left:25px;}
+.exportOffer{border-left: 1px solid #E4E4E4;width:100px;  float: right;height: 227px;}
+.exportOfferBtn_add{border:1px solid #6dbdf6;color: #6dbdf6;}
+.exportOfferBtn_remove{border:1px solid #f12453;color: #f12453;}
+.PageSplitter{width:250px;margin: 20px auto;}
+.PageSplitter a{float:left;}
+.PageSplitter ul{float:left;overflow: hidden;}
+.PageSplitter ul li{float:left;}
+.PageSplitter a,.PageSplitter ul li{width:37px;height:37px;border:1px solid #e4e4e4;line-height: 37px;text-align: center;}
+.PageSplitter a.active,.PageSplitter ul li.active{color:#fff;background: #fb7262;}
+.booking p{line-height: 40px;font-size:14px;text-align: center;}
+.ticketPrice{text-align: center;font-size: 16px;  color: #f01447;line-height: 40px; }
+.ticketLastSit{color: #7E8995;font-size:14px;text-align: center;line-height: 40px;}
+.ticketBtn{position: relative;}
+.ticketBtn a{display: inline-block;  width: 60px;  height: 30px;  line-height: 30px;  text-align: center;
+    font-size: 12px;  border-radius: 15px;  position: absolute;  top: 60px;  left: 25px;}
+.ticketBtn_add{border: 1px solid #6dbdf6;  color: #6dbdf6;}
+.ticketBtn_remove{border: 1px solid #f12453;  color: #f12453;}
+/*6-26 offerDetail over*/
+/*6-27 referenceQueotation*/
+.menu_header_table{background: #fff;}
+.header_table{width:1200px;margin:0 auto;overflow: hidden;}
+.headerTable_l{float: left;width: 36%;overflow: hidden;}
+.headerTable_r{float: right;width: 40%;overflow: hidden;font-size:14px;margin-top:18px;margin-bottom:18px;line-height: 34px;}
+.headerTable_l h3{float: left;position: relative;margin-top:18px;margin-bottom:18px;line-height: 34px;padding:0px 24px;}
+.headerTable_l{color:#989eb0;font-size:18px;line-height: 34px;}
+.headerTable_l h3.checked{ color:#2a333e;}
+.headerTable_l h3 .priceInfoIcon{display: inline-block;width:32px;height:32px;background: url("../../images/icon/priceInfoIcon.png") no-repeat;vertical-align: middle;}
+.headerTable_l h3.checked .priceInfoIcon{display: inline-block;width:32px;height:32px;background: url("../../images/icon/priceInfoIconActive.png") no-repeat;vertical-align: middle;}
+.headerTable_l h3 .findInfoIcon{display: inline-block;width:32px;height:32px;background: url("../../images/icon/findInfoIcon.png") no-repeat;vertical-align: middle;}
+.headerTable_l h3.checked .findInfoIcon{display: inline-block;width:32px;height:32px;background: url("../../images/icon/findInfoIconActive.png") no-repeat;vertical-align: middle;}
+h3.checked .btm{position: absolute;width: 100%;height:2px;background: red;bottom:-18px;left:0;}
+.flyIcon{   float: left;  display: inline-block;  background: url(../../images/icon/flyIcon.png) no-repeat;  width: 32px;  height: 34px;  margin-right: 10px;}
+.header_export{float:left;width: 120px;height:30px;color:#149bf0;border-radius:15px;line-height: 30px;}
+.exportIcon{display: inline-block;width:20px;height:20px;background:url(../../images/icon/exportIcon.png) no-repeat;vertical-align: middle;  margin-left: 12px;margin-right:6px;padding-bottom:2px;}
+.contactService{float:left;line-height: 30px;padding:0px 12px;color:#149bf0;margin-left:20px;}
+.messIcon{display: inline-block;width: 20px;height: 20px;background: url("../../images/icon/messIcon.png") no-repeat;vertical-align: middle;margin-right:8px;}
+.contactPhone{float:left;line-height: 30px;}
+.Vertical{float:left;width:1px;height:34px;background: #ece3e3;margin-left:10px;margin-right:14px;}
+.basicInfoMation{width:1200px;border:1px solid #e4e4e4;margin:10px auto;overflow: hidden;}
+.basicHeader{background: #f6f9fa;padding:10px 0px;;}
+.basicHeader p{margin-left:20px;color:#333333;line-height: 30px;font-size:16px;font-weight:700;}
+.basicCont{background: #fff;padding:20px 30px;color:#999999;font-size:14px;line-height: 30px;}
+.basicHeader table{width: 1000px;}
+.basicHeader table td{width:25%;}
+.costDetail{margin-top:20px;}
+.accessories{margin-top:20px;}
+.costDetail table,.accessoriesCont table{border-collapse: collapse;}
+.costTable th,.costTable td,.acceContTable td,.acceContTable th{border:1px solid #e4e4e4;text-align: center;line-height:40px;}
+.downloadBtn{display: inline-block;width:60px;height:30px;line-height: 30px;text-align: center;border:1px solid #1495f0;border-radius:15px;}
+/*6-27 over*/

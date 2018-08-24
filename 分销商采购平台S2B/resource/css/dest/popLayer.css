@@ -1,0 +1,72 @@
+﻿.BDBox{background:#fff;padding:20px 40px;}
+.BDBox table{width:100%;color:#405063;font-size:14px;}
+.BDBox table tr th{font-weight:bold;}
+.BDBox table tr th,.BDBox table tr td{padding:5px;text-align:center;vertical-align:middle;}
+.BDBox .checkbox{margin-top:3px;}
+.BDBox input{height:30px;width:100px;text-align:center;border:1px solid #DFE4E6;color:#405063;}
+.BDBox span.djs{background:url(../../images/icon/icon_shalou.png) no-repeat center left; padding-left:15px;}
+.BDBox .priceData{text-align:right;}
+.BDBox .priceData em{font-size:24px;}
+
+.TDBox{padding:30px;background:#fff;}
+.TDBox .tdTit{font-size:14px;color:#7e8995;margin-bottom:15px;position:relative;}
+.TDBox .tdTit span{margin-right:100px;}
+.TDBox .tdTit a{float:right;}
+.TDBox .tdTit .rule{display:none;width:490px;margin:0 auto 20px;text-align:left;padding:16px 0 16px 20px;line-height:24px;position:absolute;right:0;top:20px;background:url(../../images/blackBg.png) repeat;color:#fff;z-index:999}
+.TDBox .tdTit .rule .plus_tit{font-weight:700;color:#666}
+.TDBox .tdTit .rule .ps{font-size:12px;color:#fff;text-align:left}
+.TDBox .tdTit .rule_tit{vertical-align:top;width:70px;display:inline-block;color:#fc0}
+.TDBox .tdTit .rule .jp{margin-top:5px}
+.TDBox .tdTit .rule_con{display:inline-block;width:412px;line-height:18px}
+.TDBox .tdTit:hover .rule{display:block;}
+.tdTable{width:100%;background:#f6f9fa;border:1px solid #E4E4E4;color:#405063;}
+.tdTable tr th{padding:20px 5px;text-align:center;vertical-align:middle;font-weight:bold;}
+.tdTable tr td{padding:8px 5px;text-align:center;vertical-align:middle;}
+.tdTable .hasborder{border-top:1px solid #E4E4E4;}
+.tdTable .hasborder td{text-align:right;padding-right:20px;color:#7e8995;}
+.tdTable .hasborder td em{font-size:20px;margin:0 3px;font-weight:bold;}
+.TDBox .notice{margin:15px 0;text-align:center;color:#fb7262;}
+.TDBox .lineInfo{background:#f6f9fa;border:1px solid #E4E4E4;margin-bottom:10px;padding:20px;}
+.TDBox .lineInfo .title{font-size:14px;font-weight:bold;color:#2a333e;}
+.TDBox .lineInfo h2{font-size:16px;color:#405063;margin:8px 0;}
+.TDBox .lineInfo p{font-size:12px;color:#7e8995;}
+.TDBox .lineInfo p span{padding:8px 0;margin-right:50px;}
+.ticket_Box{background:#f6f9fa;border:1px solid #E4E4E4;margin-bottom:10px;}
+.ticket_Box .ticketCon{border-bottom:0;width:100%;margin:0 auto;}
+.ticket_Box .ticketCon .ticketLeft{border-right:none;margin:0 auto;}
+.ticketCol .sharePop{position:absolute;right:-202px;top:-25px;background:#232d39;padding:10px;color:#fff;z-index:999;}
+.ticketCol .sharePop span{display:block;}
+.ticket_Box .ticketCol p{width:auto;}
+.YDBox{background:#fff;}
+.YD_outer{padding:30px;}
+.YD_table{width:100%;color:#405063;text-align:center;}
+.YD_table tr th{font-weight:bold;text-align:center;padding:15px;}
+.YD_table tr th,.YD_table tr td{padding:8px 15px;border:1px solid #e4e4e4;}
+.YD_table .traffic{display:table;width:100%;font-size:12px;}
+.YD_table .traffic .trafIcon,.YD_table .traffic .trafInfo{display:table-cell;vertical-align:middle;text-align:left;font-size:12px;}
+.YD_table .traffic .trafIcon{width:24px;}
+.YD_table .traffic .trafIcon img{width:24px;}
+.YD_table .traffic .trafInfo{padding-left:10px;}
+.YD_table .disabledTd{color:#C6CCD3!important;}
+
+.airList .return_tab{width:100%;height:49px;line-height:49px;position:relative}
+.airList .return_tab ul{display:block;margin:0;padding:0;width:100%;height:49px;line-height:49px;background:url(../../images/tabs_one.png) no-repeat center left transparent}
+.airList .return_tab ul.tabBg_2{background:url(../../images/tabs_two.png) no-repeat center left transparent}
+.airList .return_tab ul.tabBg_3{background:url(../../images/tabs_thr.png) no-repeat center left transparent}
+.airList .return_tab ul.tabBg_4{background:url(../../images/tabs_four.png) no-repeat center left transparent}
+.airList .return_tab ul li{font-size:16px;float:left;width:132px;margin-left:-16px;text-align:center;height:49px;color:#7e8995;box-sizing:border-box;cursor:pointer;background:0 0}
+.airList .return_tab ul li:first-child{margin-left:0;}
+.airList .return_tab ul li.active{color:#f01447;font-weight:700;}
+.airList .return_tab .changeLine{position:absolute;right:30px;top:50%;margin-top:-20px;}
+.newChoose .tit{font-size:16px;color:#7e8995;margin-bottom:20px;}
+.ticketTable .airBox{padding:0;}
+.ticketTable .ticketCon .ticketLeft{width:auto!important;}
+.ticketTable .ticketCon .ticketRight{width:auto!important;padding-left: 20px;}
+.ticketTable .ticketItem .ticketCol{padding: 0 6px;}
+.resultBox .ticketTable td .flightItem:first-child{border-top:none;}
+.airList .airTabs .changeLine { position: absolute;right: 30px;top: 50%;margin-top: -20px;}
+
+.singleItem .ticketRight{padding-top:0px!important;}
+
+.singleItem .ticketRight .blank_20{height:5px;}
+

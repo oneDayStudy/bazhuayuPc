@@ -1,0 +1,3569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/common.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/mix_order.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/mix_ordertail.css">
+    
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/ticket.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/proDetail.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/popLayer.css">
+
+
+
+    <link href="../resource/js/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../resource/css/dest/ticketEmailModel.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/feiyuOrder7-18zb.css">
+</head>
+<body>
+    <div class="myheader_wrap">
+        <div class="myheader">
+            <div class="shop"><span class="triangle">kl-fxs分销商门店<em></em></span>
+                <ul class="all_shop none">
+                    <li class="first"><a>青年分社</a></li>
+                    <li><a>分店</a></li>
+                    <li><a>分店</a></li>
+                    <li class="last"><a>退出</a></li>
+                </ul>
+            </div>
+            <div class="head_right">
+                <ul class="top_menu">
+                    <li class="active"><a>首页</a></li>
+                    <li><a>短线</a></li>
+                    <li><a>长线</a></li>
+                    <li><a>出境</a></li>
+                    <li><a>邮轮</a></li>
+                    <li><a>整团</a></li>
+                    <li><a>分期</a></li>
+                </ul>
+                <div class="icon_list">
+                    <a class="telphone"></a>
+                    <a class="money"></a>
+                    <a class="ring"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_contain">
+        <div class="menu">
+            <i class="bzy_logo"></i>
+            <em class="pos">苏州站</em>
+            <div class="search_all">
+                <ul class="nav_hd">
+                    <li><a>我的店</a></li>
+                    <li class="cur"><a>订单中心</a></li>
+                    <li><a>我的财务</a></li>
+                    <li><a>收客统计</a></li>
+                    <li><a>电子合同</a></li>
+                    <li><a>我的收藏</a></li>
+                </ul>
+                <div class="s_wrap none">
+                    <div class="search_wrap">
+                        <span class="triangle r_tri">出境</span>
+                        <ul class="depart_wrap none">
+                            <li>邮轮</li>
+                            <li>出境</li>
+                            <li>邮轮</li>
+                        </ul>
+                        <input type="text" placeholder="输入目的地/线路/关键词/供应商">
+                        <i class="yi"></i>
+                        <div class="content_wrap">
+                            <p>热门目的地</p>
+                            <div class="hot">
+                                <a class="active">上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a class="i_search"></a>
+            </div>
+            
+        </div>
+    </div>
+    <style>
+    .content .left li{position:relative;padding-left:20px;}
+    .menuIcon{display:inline-block;width:17px;height:17px;position:absolute;left:0;}
+    .menuIcon.lyIcon{background:url(../resource/images/icon/i_ly.png) no-repeat center center;} 
+    .menuIcon.ztIcon{background:url(../resource/images/icon/i_zt.png) no-repeat center center;} 
+    .menuIcon.qtIcon{background:url(../resource/images/icon/i_qt.png) no-repeat center center;} 
+    </style>
+    <div class="content">
+        <div class="left">
+            <ul>
+                <li class="title"><a><i class="menuIcon lyIcon"></i>旅游订单</a></li>
+                <li><a>游客订单</a></li>
+                <li><a>散客订单</a></li>
+                <li><a>整团订单</a></li>
+                <li class="new"><a>目的地订单</a><i></i></li>
+            </ul>
+            <ul>
+                <li class="title"><a><i class="menuIcon ztIcon"></i>整团订单</a></li>
+                <li><a>游客订单</a></li>
+                <li><a>散客订单</a></li>
+                <li><a>整团订单</a></li>
+                <li class="new"><a>目的地订单</a><i></i></li>
+            </ul>            
+            <ul class="order_g">
+                <li class="title"><i class="menuIcon qtIcon"></i>其他订单<a></a></li>
+                <li class="new active"><a>机票订单</a><i></i></li>
+                <li><a>保鲜订单</a></li>
+                <li><a>门票订单</a></li>
+                <li><a>签证订单</a></li>
+                <li><a>车辆订单</a></li>
+                <li><a>人工订单</a></li>
+                <li><a>购买保险</a></li>
+                <li><a>购物车</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="info fisrt">
+                <div class="info_input order_origin">
+                    <span class="date_go">线路类型</span>
+                    <select>
+                        <option>跟团游</option>
+                        <option>自由行</option>
+                    </select>
+                </div>
+                <div class="info_input order_origin">
+                    <span class="date_go">订单来源</span>
+                    <select>
+                        <option></option>
+                        <option>1</option>
+                    </select>
+                </div>
+                <div class="info_input order_origin">
+                    <span class="date_go">订单状态</span>
+                    <select>
+                        <option>待审核</option>
+                        <option>1</option>
+                    </select>
+                </div>
+                <div class="info_input order_num"><input type="text" placeholder="游客姓名\订单编号\线路名称"></div>
+            </div>
+            <div class="info second_info">
+                <div class="info_input cal">
+                    <span class="date_go">出团日期</span>
+                    <label>
+                        <input type="text" value="2017-08-12">
+                        <i class="icon-caladar"></i>
+                    </label>
+                    <em class="zhi">至</em>
+                    <label>
+                        <input type="text" placeholder="下单时间" onclick="WdatePicker({skin:'twoer',dateFmt:'yyyy-MM-dd'})">
+                        <i class="icon-caladar"></i>
+                    </label>
+                </div>
+                <div class="info_input cal order_date">
+                    <span class="date_go">下单日期</span>
+                    <label>
+                        <input type="text" value="2017-08-12">
+                        <i class="icon-caladar"></i>
+                    </label>
+                    <em class="zhi">至</em>
+                    <label>
+                        <input type="text" placeholder="下单时间" onclick="WdatePicker({skin:'twoer',dateFmt:'yyyy-MM-dd'})">
+                        <i class="icon-caladar"></i>
+                    </label>
+                </div>
+                <div class="info_input order_num"><input type="button" class="search"value="搜索"></div>
+                
+                <div class="advance_search down"><i>高级搜索</i><em></em></div>
+            </div>
+            <div class="info_wrap none">
+                <div class="info mid">
+                    <!-- <div class="info_input line_type">
+                        <span class="date_go">产品类型</span>
+                        <span class="r_tri">订单状态</span>
+                        <ul class="depart_wrap none">
+                            <li>订单状态</li>
+                            <li>目的地订单</li>
+                            <li>长线-出发地跟团</li>
+                            <li>短线-周边游</li>
+                            <li>出境游</li>
+                        </ul>
+                    </div> -->
+                    
+                    <div class="info_input order_origin onelevel">
+                        <span class="date_go">目的地</span>
+                        <select>
+                            <option>全部</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="info_input order_origin ej level">
+                        <span class="date_go">二级目的地</span>
+                        <select>
+                            <option>全部</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="info_input txt name">
+                        <span class="date_go">游客姓名</span>
+                        <label>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="info_input txt tel phone">
+                        <span class="date_go">游客电话</span>
+                        <label>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="info_input order_origin tel isOr">
+                        <span class="date_go">是否分级</span>
+                        <select>
+                            <option>是</option>
+                            <option>否</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="info mid_copy">
+                    <div class="info_input order_origin">
+                        <span class="date_go">对账状态</span>
+                        <select>
+                            <option>订单状态</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="info_input order_origin">
+                        <span class="date_go">结算状态</span>
+                        <select>
+                            <option>订单状态</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="info_input cal">
+                        <span class="date_go">回团日期</span>
+                        <label>
+                            <input type="text" value="2017-08-12">
+                            <i class="icon-caladar"></i>
+                        </label>
+                        <em class="zhi">至</em>
+                        <label>
+                            <input type="text" placeholder="下单时间" onclick="WdatePicker({skin:'twoer',dateFmt:'yyyy-MM-dd'})">
+                            <i class="icon-caladar"></i>
+                        </label>
+                    </div>
+                    <div class="info_input order_origin width70">
+                        <span class="date_go">是否日结</span>
+                        <select>
+                            <option>全部</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="info last">
+                    <div class="info_input txt">
+                        <span class="date_go">行程天数</span>
+                        <label>
+                            <input type="text">
+                        </label>
+                    </div>
+                </div>  
+            </div>
+             <div class="order_info">
+                <div class="order_tab">
+                    <span class="tab_item tab1 active" data-index="0">全部订单</span>
+                    <span class="tab_item tab2" data-index="1">待支付<em>（12）</em></span>
+                    <p class="mon_info">
+                        <span>鱼钱宝基本户：<em>￥15.01</em></span>
+                        <span>贷记交易额度：<em>￥15.01</em></span>
+                        <span>贷记交易余额：<em>￥15.01</em></span>
+                    </p>
+                </div>
+                <table class="groupList">
+                    <tr>
+                        <th style="width:315px;">订单信息</th>
+                        <th style="width:100px;">出发/返回</th>
+                        <th style="width:30px;">人数</th>
+                        <th style="width:80px;">结算价</th>
+                        <th style="">订单状态</th>
+                        <th style="">订单操作</th>
+                    </tr>
+                </table>                
+                <div class="order_list all_order none" data-index="0">
+                    <div class="order_item">
+                        <p class="num">
+                        <span>订单编号：kls123455666</span><span>下单时间：2016-12-01</span><span>联系人：王二狗  18501597421</span>
+                        <span class="operateGroup">                                   
+                            <i class="PayIcon" title="合并付款"></i>                                    
+                        </span>
+                        </p>
+                        <table class="double relative">
+                            <tr>
+                                <td class="t_first">
+                                    <div class=line_in>
+                                        <div class="go li_info">
+                                            <p class="lin_tit">海南三亚6日五晚六日游>海景房连住,新年南山祈福,金银蓝尼贝赠送三山岛出海南山</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    <p>09-15  06:25</p>
+                                    <p>09-15  06:25</p>
+                                </td>
+                                <td class="tour_num">
+                                    <p class="concat">2人</p>
+                                </td>
+                                <td class="price all_price">
+                                    <p class="num_p"><span>￥1450<i></i></span></p><p>实际支付￥100</p><p>授信支付￥100</p><p>尚未支付￥100</p>
+                                    <!--价格弹层开始-->
+                                    <table class="dialog_price none">
+                                        <tr class="one">
+                                            <th></th>
+                                            <th>旅游产品</th>
+                                            <th>机票</th>
+                                            <th>退团违约金</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">门市价</td>
+                                            <td>￥1250</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">结算价</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr class="last">
+                                            <td class="tit">预计利润</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                    </table> 
+                                    <!--价格弹层结束-->                                      
+                                </td>
+                                <td class="state">
+                                    <p class="pay">已报名</p>
+                                    <p class="cping">（退团审核中）</p>
+                                </td>    
+                                <td class="operation">
+                                    <a href="javascript:;" class="BD">绑定乘客</a>
+                                    <a href="javascript:;" class="applyTT">退团申请</a>
+                                    <a>取消订单</a>
+                                    <a>订单日志</a>
+                                    <div class="more-opera"><em>更多操作</em><i></i>
+                                        <ul class="more_con none">
+                                            <li class="yh"><a>游客优惠</a></li>
+                                            <li><a>报名确认单</a></li>
+                                            <li><a>出团通知单</a></li>
+                                            <li><a>游客优惠</a></li>
+                                            <li><a>订单日志</a></li>
+                                            <li><a>查看日志</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="order_item">
+                        <p class="num">
+                        <span>订单编号：kls123455666</span><span>下单时间：2016-12-01</span><span>联系人：王二狗  18501597421</span>
+                        <span class="operateGroup">                                   
+                            <i class="YDJT" title="预定交通"></i>                                    
+                        </span>
+                        </p>
+                        <table class="double relative">
+                            <tr>
+                                <td class="t_first">
+                                    <div class=line_in>
+                                        <div class="go li_info">
+                                            <p class="lin_tit">海南三亚6日五晚六日游>海景房连住,新年南山祈福,金银蓝尼贝赠送三山岛出海南山</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    <p>09-15  06:25</p>
+                                    <p>09-15  06:25</p>
+                                </td>
+                                <td class="tour_num">
+                                    <p class="concat">2人</p>
+                                </td>
+                                <td class="price all_price">
+                                    <p class="num_p"><span>￥1450<i></i></span></p><p>实际支付￥100</p><p>授信支付￥100</p><p>尚未支付￥100</p>
+                                    <!--价格弹层开始-->
+                                    <table class="dialog_price none">
+                                        <tr class="one">
+                                            <th></th>
+                                            <th>旅游产品</th>
+                                            <th>机票</th>
+                                            <th>退团违约金</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">门市价</td>
+                                            <td>￥1250</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">结算价</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr class="last">
+                                            <td class="tit">预计利润</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                    </table> 
+                                    <!--价格弹层结束-->                                      
+                                </td>
+                                <td class="state">
+                                    <p class="pay">已报名</p>
+                                    <p class="cping">（退团审核中）</p>
+                                </td>    
+                                <td class="operation">
+                                    <a>查看订单</a>
+                                    <a>取消订单</a>
+                                    <a>订单日志</a>
+                                    <div class="more-opera"><em>更多操作</em><i></i>
+                                        <ul class="more_con none">
+                                            <li class="yh"><a>游客优惠</a></li>
+                                            <li><a>报名确认单</a></li>
+                                            <li><a>出团通知单</a></li>
+                                            <li><a>游客优惠</a></li>
+                                            <li><a>订单日志</a></li>
+                                            <li><a>查看日志</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="order_item">
+                        <p class="num"><span>订单编号：kls123455666</span><span>下单时间：2016-12-01</span><span>联系人：王二狗  18501597421<span></p>
+                        <table class="double relative">
+                            <tr>
+                                <td class="t_first">
+                                    <div class=line_in>
+                                        <div class="go li_info">
+                                            <p class="lin_tit">海南三亚6日五晚六日游>海景房连住,新年南山祈福,金银蓝尼贝赠送三山岛出海南山</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    <p>09-15  06:25</p>
+                                    <p>09-15  06:25</p>
+                                </td>
+                                <td class="tour_num">
+                                    <p class="concat">2人</p>
+                                </td>
+                                <td class="price all_price">
+                                    <p class="num_p"><span>￥1450<i></i></span></p><p>实际支付￥100</p><p>授信支付￥100</p><p>尚未支付￥100</p>
+                                </td>
+                                <td class="state">
+                                    <p class="pay">已报名</p>
+                                    <p class="cping">（退团审核中）</p>
+                                </td>    
+                                <td class="operation">
+                                    <a class="online">在线支付</a>
+                                    <a>取消订单</a>
+                                    <a>订单日志</a>
+                                    <div class="more-opera"><em>更多操作</em><i></i>
+                                        <ul class="more_con none">
+                                            <li class="yh"><a>游客优惠</a></li>
+                                            <li><a>报名确认单</a></li>
+                                            <li><a>出团通知单</a></li>
+                                            <li><a>游客优惠</a></li>
+                                            <li><a>订单日志</a></li>
+                                            <li><a>查看日志</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>                                        
+                </div>
+                <div class="order_list all_order none" data-index="1">
+                    <div class="order_item">
+                        <p class="num"><span>订单编号：kls123455666</span><span>下单时间：2016-12-01</span><span>联系人：王二狗  18501597421<span></p>
+                        <table class="double relative">
+                            <tr>
+                                <td class="t_first">
+                                    <div class=line_in>
+                                        <div class="go li_info">
+                                            <p class="lin_tit">海南三亚6日五晚六日游>海景房连住,新年南山祈福,金银蓝尼贝赠送三山岛出海南山</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    <p>09-15  06:25</p>
+                                    <p>09-15  06:25</p>
+                                </td>
+                                <td class="tour_num">
+                                    <p class="concat">2人</p>
+                                </td>
+                                <td class="price all_price">
+                                    <p class="num_p"><span>￥1450<i></i></span></p><p>实际支付￥100</p><p>授信支付￥100</p><p>尚未支付￥100</p>
+                                </td>
+                                <td class="state">
+                                    <p class="pay">已报名</p>
+                                    <p class="cping">（退团审核中）</p>
+                                </td>    
+                                <td class="operation">
+                                    <a>查看订单</a>
+                                    <a>取消订单</a>
+                                    <a>订单日志</a>
+                                    <div class="more-opera"><em>更多操作</em><i></i>
+                                        <ul class="more_con none">
+                                            <li class="yh"><a>游客优惠</a></li>
+                                            <li><a>报名确认单</a></li>
+                                            <li><a>出团通知单</a></li>
+                                            <li><a>游客优惠</a></li>
+                                            <li><a>订单日志</a></li>
+                                            <li><a>查看日志</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="order_item">
+                        <p class="num"><span>订单编号：kls123455666</span><span>下单时间：2016-12-01</span><span>联系人：王二狗  18501597421<span></p>
+                        <table class="double relative">
+                            <tr>
+                                <td class="t_first">
+                                    <div class=line_in>
+                                        <div class="go li_info">
+                                            <p class="lin_tit">海南三亚6日五晚六日游>海景房连住,新年南山祈福,金银蓝尼贝赠送三山岛出海南山</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    <p>09-15  06:25</p>
+                                    <p>09-15  06:25</p>
+                                </td>
+                                <td class="tour_num">
+                                    <p class="concat">2人</p>
+                                </td>
+                                <td class="price all_price">
+                                    <p class="num_p"><span>￥1450<i></i></span></p><p>实际支付￥100</p><p>授信支付￥100</p><p>尚未支付￥100</p>
+                                </td>
+                                <td class="state">
+                                    <p class="pay">已报名</p>
+                                    <p class="cping">（退团审核中）</p>
+                                </td>    
+                                <td class="operation">
+                                    <a>查看订单</a>
+                                    <a>取消订单</a>
+                                    <a>订单日志</a>
+                                    <div class="more-opera"><em>更多操作</em><i></i>
+                                        <ul class="more_con none">
+                                            <li class="yh"><a>游客优惠</a></li>
+                                            <li><a>报名确认单</a></li>
+                                            <li><a>出团通知单</a></li>
+                                            <li><a>游客优惠</a></li>
+                                            <li><a>订单日志</a></li>
+                                            <li><a>查看日志</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="order_item">
+                        <p class="num"><span>订单编号：kls123455666</span><span>下单时间：2016-12-01</span><span>联系人：王二狗  18501597421<span></p>
+                        <table class="double relative">
+                            <tr>
+                                <td class="t_first">
+                                    <div class=line_in>
+                                        <div class="go li_info">
+                                            <p class="lin_tit">海南三亚6日五晚六日游>海景房连住,新年南山祈福,金银蓝尼贝赠送三山岛出海南山</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    <p>09-15  06:25</p>
+                                    <p>09-15  06:25</p>
+                                </td>
+                                <td class="tour_num">
+                                    <p class="concat">2人</p>
+                                </td>
+                                <td class="price all_price">
+                                    <p class="num_p"><span>￥1450<i></i></span></p><p>实际支付￥100</p><p>授信支付￥100</p><p>尚未支付￥100</p>
+                                </td>
+                                <td class="state">
+                                    <p class="pay">已报名</p>
+                                    <p class="cping">（退团审核中）</p>
+                                </td>    
+                                <td class="operation">
+                                    <a>查看订单</a>
+                                    <a>取消订单</a>
+                                    <a>订单日志</a>
+                                    <div class="more-opera"><em>更多操作</em><i></i>
+                                        <ul class="more_con none">
+                                            <li class="yh"><a>游客优惠</a></li>
+                                            <li><a>报名确认单</a></li>
+                                            <li><a>出团通知单</a></li>
+                                            <li><a>游客优惠</a></li>
+                                            <li><a>订单日志</a></li>
+                                            <li><a>查看日志</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>                                        
+                </div>
+                 <!--7-18 start-->
+                 <style>
+
+                    .messIcon{display:inline-block;width:20px;height:18px;background:url("../resource/images/icon/messIcon2.png") no-repeat; vertical-align: middle;margin-right:8px;margin-top:-4px;cursor:pointer;}
+                    .kefu_red{display:inline-block;width:18px;height:17px;background:url("../resource/images/icon/kefu_red.png") no-repeat; vertical-align: middle;margin-right:10px;cursor:pointer;}
+
+                    .detailIcon{display: inline-block;width:16px;height:16px;background: url("../resource/images/icon/icon_detail.png") no-repeat;  vertical-align: middle;position: absolute;top:2px;right:-20px;}
+                    .huocIcon{display: inline-block;width:50px;height:52px;background: url("../resource/images/icon/huocheIcon.png") no-repeat;}
+                    .feijiIcon{display: inline-block;width:50px;height:52px;background: url("../resource/images/icon/feijiIcon.png") no-repeat;}
+                    .huiIcon{display: inline-block;width:24px;height:26px;background: url("../resource/images/icon/huiIcon.png") no-repeat;
+                    position:absolute;right:-45px;top:-4px;}
+
+                 </style>
+                 <div class="feiyuOrder">
+                     <!--feiyuOrderList1-->
+                    <div class="feiyuOrderList">
+                        <div class="orderList_header">
+                            <table class="orderList_header_table" style="table-layout: fixed;">
+                        <tr>
+                            <th width="255" class="odc_one">
+                                <span>订单编号：<i>RF00003864</i></span>
+                            </th>
+                            <th width="240">
+                                <span>下单时间：<i>2018-07-13  09:55 </i></span>
+                            </th>
+                            <th width="70">
+                                <span>联系人：<i>李</i></span>
+                            </th>
+                            <th width="120">
+                                <span><i>18003578053</i></span>
+                            </th>
+                            <th>
+                                <span class="oh_mess"><i class="messIcon"></i>在线客服</span>
+                            </th>
+                            <th>
+                            </th>
+                        </tr>
+                    </table>
+                        </div>
+                        <div class="orderList_cont">
+                            <!--list1-->
+                            <table class="od_c_t1 orderList_cont" style="width: 100%;">
+
+                                <tr>
+                                    <th width="265" class="odc_tit">
+                                        <p class="odc_tit_detail">
+                                            三亚进出，畅享至美海岛，一价全包，赠千古情表演，3天用车，入住1晚香水湾园林度假酒店
+                                        </p>
+                                    </th>
+                                    <th width="80" class="odc_time">
+                                        <p>2018-07-18</p>
+                                        <p>2018-07-19</p>
+                                    </th>
+                                    <th class="odc_man" width="70">
+                                         <p>0 人</p>
+                                    </th>
+                                    <th class="odc_price" width="100">
+                                         <p class="odc_p_1">￥50000 <i class="detailIcon"></i></p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                         <!--dialog-->
+                                        <table class="pri_dialog" style="display: none;">
+                                            <tr>
+                                                <td class="tit">门市价</td>
+                                                <td>200</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tit">结算价</td>
+                                                <td>200</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tit">预计利润</td>
+                                                <td>200</td>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                    <th>
+                                        <p class="odc_p_2" style="padding-left:20px;">已取消</p>
+                                    </th>
+                                    <th>
+                                        <p class="odc_p_3 odc_title_centers">订单详情</p>
+                                    </th>
+                                </tr>
+                            </table>
+
+                            <!--list2-->
+                            <div class="ad_c_top_bt"></div>
+                            <table class="od_c_t2" style="width: 97%;">
+                                <tr>
+                                    <th width="65">
+                                        <p><i class="huocIcon"></i></p>
+                                    </th>
+                                    <th width="220" class="odc_t2_number">
+                                        <p><span class="f_color_gray9">订单编号:</span><span>TP00001948</span></p>
+                                        <p><span class="f_color_gray9">去程:</span><span>苏州-桂林北   K1556</span></p>
+                                        <p><span class="odc_t2_tuigai">退改规则</span></p>
+                                        <!--退改dialog-->
+                                        <div class="tuigai_dialog" style="display:none;">
+                                                <p>不得退票</p>
+                                                <p>按票面价计算，起飞前0小时前改签费30%，起飞前0小时及起飞后改签费50%</p>
+                                                <p>不得自愿签转</p>
+                                                <p>您可免费携带5公斤且体积不超过20×40×55CM的非托运行李和20公斤且体积不超过40×60×100CM的托运行李。</p>
+                                                <p>票面价为 670元，实际退改以票面价为准</p>
+                                        </div>
+                                    </th>
+                                    <th width="110">
+                                        <p>07-16  11:28</p>
+                                    </th>
+                                    <th width="100">
+                                        <p>1人</p>
+                                    </th>
+                                    <th width="100" class="odc_t2_price">
+                                        <p class="odc_p_1">￥50000</p>
+                                        <p class="odc_p_2">已支付￥20000</p>
+                                        <p class="odc_p_2">未支付￥20000</p>
+                                    </th>
+                                    <th width="140">
+                                        <p class="order_fail">订单失败</p>
+                                        <p class="order_fail_reson">
+                                            <span class="fail_reson">失败原因</span>
+                                            <span class="order_fail_dialog" style="display: none">未询价，请先问价</span>
+                                        </p>
+
+                                    </th>
+                                    <th>
+                                        <p class="odc_p_3">删除火车票订单</p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td width="65">
+                                        <p><i class="huocIcon"></i></p>
+                                    </td>
+                                    <td width="210" class="odc_t2_number">
+                                        <p><span class="f_color_gray9">订单编号:</span><span>TP00001948</span></p>
+                                        <p><span class="f_color_gray9">去程:</span><span>苏州-桂林北   K1556</span></p>
+                                        <p><span class="odc_t2_tuigai">退改规则</span></p>
+                                        <!--退改dialog-->
+                                        <div class="tuigai_dialog" style="display:none;">
+                                            <p>不得退票</p>
+                                            <p>按票面价计算，起飞前0小时前改签费30%，起飞前0小时及起飞后改签费50%</p>
+                                            <p>不得自愿签转</p>
+                                            <p>您可免费携带5公斤且体积不超过20×40×55CM的非托运行李和20公斤且体积不超过40×60×100CM的托运行李。</p>
+                                            <p>票面价为 670元，实际退改以票面价为准</p>
+                                        </div>
+                                    </td>
+                                    <td width="100">
+                                        <p>07-16  11:28</p>
+                                    </td>
+                                    <td width="110">
+                                        <p>1人</p>
+                                    </td>
+                                    <td width="100" class="odc_t2_price">
+                                        <p class="odc_p_1">￥50000 </p>
+                                        <p class="odc_p_2">已支付￥20000</p>
+                                        <p class="odc_p_2">未支付￥20000</p>
+                                    </td>
+                                    <td width="140">
+                                        <p class="order_fail">订单失败</p>
+                                        <p class="order_fail_reson">
+                                            <span class="fail_reson">失败原因</span>
+                                            <span class="order_fail_dialog" style="display:none;">未询价，请先问价</span>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="odc_p_3">删除火车票订单</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                     <!--feiyuOrderList2-->
+                     <div class="feiyuOrderList">
+                         <div class="orderList_header">
+                             <table class="orderList_header_table" style="table-layout: fixed;">
+                                 <tr>
+                                     <th width="255" class="odc_one">
+                                         <span>订单编号：<i>RF00003864</i></span>
+                                     </th>
+                                     <th width="240">
+                                         <span>下单时间：<i>2018-07-13  09:55 </i></span>
+                                     </th>
+                                     <th width="70">
+                                         <span>联系人：<i>李</i></span>
+                                     </th>
+                                     <th width="120">
+                                         <span><i>18003578053</i></span>
+                                     </th>
+                                     <th>
+                                         <span class="oh_mess"><i class="messIcon"></i>在线客服</span>
+                                     </th>
+                                     <th>
+                                     </th>
+                                 </tr>
+                             </table>
+                         </div>
+                         <div class="orderList_cont">
+                             <!--list1-->
+                             <table class="od_c_t1" style="width: 100%;border-bottom:none;">
+                                 <tr>
+                                     <th width="265" class="odc_tit">
+                                         <p class="odc_tit_detail">
+                                             三亚进出，畅享至美海岛，一价全包，赠千古情表演，3天用车，入住1晚香水湾园林度假酒店
+                                         </p>
+                                     </th>
+                                     <th width="80" class="odc_time">
+                                         <p>2018-07-18</p>
+                                         <p>2018-07-19</p>
+                                     </th>
+                                     <th class="odc_man" width="70">
+                                         <p>0 人</p>
+                                     </th>
+                                     <th class="odc_price" width="100">
+                                         <p class="odc_p_1">￥50000 <i class="detailIcon"></i></p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                         <!--dialog-->
+                                         <table class="pri_dialog" style="display: none">
+                                             <tr>
+                                                 <td class="tit">门市价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">结算价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">预计利润</td>
+                                                 <td>200</td>
+                                             </tr>
+                                         </table>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_2">已取消</p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">订单详情</p>
+                                     </th>
+                                 </tr>
+                             </table>
+
+                         </div>
+                     </div>
+                     <!--feiyuOrderList3-->
+                     <div class="feiyuOrderList list-active" >
+                         <div class="orderList_header">
+                             <table class="orderList_header_table" style="table-layout: fixed;">
+                                 <tr>
+                                     <th width="255" class="odc_one">
+                                         <span>订单编号：<i>RF00003864</i></span>
+                                     </th>
+                                     <th width="240">
+                                         <span>下单时间：<i>2018-07-13  09:55 </i></span>
+                                     </th>
+                                     <th width="70">
+                                         <span>联系人：<i>李</i></span>
+                                     </th>
+                                     <th width="120">
+                                         <span><i>18003578053</i></span>
+                                     </th>
+                                     <th>
+                                         <span class="oh_mess"><i class="messIcon"></i>在线客服</span>
+                                     </th>
+                                     <th>
+                                     </th>
+                                 </tr>
+                             </table>
+                         </div>
+                         <div class="orderList_cont">
+                             <!--list1-->
+                             <table class="od_c_t1" style="width: 100%;">
+                                 <tr>
+                                     <th width="265" class="odc_tit">
+                                         <p class="odc_tit_detail">
+                                             三亚进出，畅享至美海岛，一价全包，赠千古情表演，3天用车，入住1晚香水湾园林度假酒店
+                                         </p>
+                                     </th>
+                                     <th width="80" class="odc_time">
+                                         <p>2018-07-18</p>
+                                         <p>2018-07-19</p>
+                                     </th>
+                                     <th class="odc_man" width="70">
+                                         <p>0 人</p>
+                                     </th>
+                                     <th class="odc_price" width="100">
+                                         <p class="odc_p_1">￥50000 <i class="detailIcon"></i><i class="huiIcon"></i></p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                         <!--dialog-->
+                                         <table class="pri_dialog" style="top:40px;display: none;">
+                                             <tr>
+                                                 <td class="tit">门市价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">结算价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">预计利润</td>
+                                                 <td>200</td>
+                                             </tr>
+                                         </table>
+                                         <!--优惠 dialog-->
+                                         <table class="hui_dialog" style="display: none;">
+                                             <tr>
+                                                 <td class="tit">用券</td>
+                                                 <td>￥200</td>
+
+                                             </tr>
+                                         </table>
+                                     </th>
+                                     <th width="90">
+                                         <p class="odc_p_2" style="padding-left:40px">已取消</p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">订单详情</p>
+                                         <p class="odc_p_3">修改订单</p>
+                                         <p class="odc_p_3">游客退订</p>
+                                         <p class="odc_p_3">报名确认单</p>
+                                         <p class="odc_p_3">出团通知书</p>
+                                     </th>
+                                 </tr>
+                             </table>
+
+                                <!--list2-->
+
+                             <div class="ad_c_top_bt"></div>
+                             <table class="od_c_t2" style="width: 97%;">
+                                 <tr>
+                                     <td width="55">
+                                         <p><i class="feijiIcon"></i></p>
+                                     </td>
+                                     <td width="200" class="odc_t2_number" style="padding-right:20px">
+                                         <p><span class="f_color_gray9">订单编号:</span><span>TP00001948</span></p>
+                                         <p style="line-height:22px"><span class="f_color_gray9">去程:</span><span>上海浦东浦东国际机场-桂林两江机场(KY8292)</span></p>
+                                         <p style="line-height:22px"><span class="f_color_gray9">去程:</span><span>桂林两江机场-上海浦东浦东国际机场(KY8230)</span></p>
+                                         <p><span class="odc_t2_tuigai">退改规则</span><span class="tuigai"><i class="messIcon"></i>机票客服</span></p>
+                                         <!--退改dialog-->
+                                         <div class="tuigai_dialog" style="display:none;top:130px;">
+                                             <p>不得退票</p>
+                                             <p>按票面价计算，起飞前0小时前改签费30%，起飞前0小时及起飞后改签费50%</p>
+                                             <p>不得自愿签转</p>
+                                             <p>您可免费携带5公斤且体积不超过20×40×55CM的非托运行李和20公斤且体积不超过40×60×100CM的托运行李。</p>
+                                             <p>票面价为 670元，实际退改以票面价为准</p>
+                                         </div>
+                                     </td>
+                                     <td width="120">
+                                         <p>07-16  11:28</p>
+                                         <p>07-19 17:00</p>
+                                     </td>
+                                     <td width="110">
+                                         <p>1人</p>
+                                     </td>
+                                     <td width="100" class="odc_t2_price">
+                                         <p class="odc_p_1">￥50000</p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                     </td>
+                                     <td width="140">
+                                         <p class="order_fail">待支付</p>
+                                         <p class="order_fail_reson">订单超时</p>
+                                     </td>
+                                     <td>
+                                         <p class="odc_p_3">查看机票订单</p>
+                                         <p class="odc_p_3">取消机票订单</p>
+                                     </td>
+                                 </tr>
+                             </table>
+                         </div>
+                     </div>
+                     <!--feiyuOrderList4-->
+                     <div class="feiyuOrderList">
+                         <div class="orderList_header">
+                             <table class="orderList_header_table" style="table-layout: fixed;">
+                                 <tr>
+                                     <th width="255" class="odc_one">
+                                         <span>订单编号：<i>RF00003864</i></span>
+                                     </th>
+                                     <th width="240">
+                                         <span>下单时间：<i>2018-07-13  09:55 </i></span>
+                                     </th>
+                                     <th width="70">
+                                         <span>联系人：<i>李</i></span>
+                                     </th>
+                                     <th width="120">
+                                         <span><i>18003578053</i></span>
+                                     </th>
+                                     <th>
+                                         <span class="oh_mess"><i class="messIcon"></i>在线客服</span>
+                                     </th>
+                                     <th>
+                                     </th>
+                                 </tr>
+                             </table>
+                         </div>
+                         <div class="orderList_cont">
+                             <!--list1-->
+                             <table class="od_c_t1" style="width: 100%;">
+                                 <tr>
+                                     <th width="265" class="odc_tit">
+                                         <p class="odc_tit_detail">
+                                             三亚进出，畅享至美海岛，一价全包，赠千古情表演，3天用车，入住1晚香水湾园林度假酒店
+                                         </p>
+                                     </th>
+                                     <th width="80" class="odc_time">
+                                         <p>2018-07-18</p>
+                                         <p>2018-07-19</p>
+                                     </th>
+                                     <th class="odc_man" width="80">
+                                         <p>0 人</p>
+                                     </th>
+                                     <th class="odc_price" width="100">
+                                         <p class="odc_p_1">￥50000 <i class="detailIcon"></i></p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                         <!--dialog-->
+                                         <table class="pri_dialog" style="display: none;">
+                                             <tr>
+                                                 <td class="tit">门市价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">结算价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">预计利润</td>
+                                                 <td>200</td>
+                                             </tr>
+                                         </table>
+                                     </th>
+                                     <th width="110">
+                                         <p class="odc_p_2">已取消</p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">订单详情</p>
+                                     </th>
+                                 </tr>
+                             </table>
+
+                             <!--list2-->
+                             <div class="ad_c_top_bt"></div>
+                             <table class="od_c_t2" style="width: 97%;">
+                                 <tr>
+                                     <th width="55">
+                                         <p><i class="feijiIcon"></i></p>
+                                     </th>
+                                     <th width="230" class="odc_t2_number">
+                                         <p ><span class="f_color_gray9">订单编号:</span><span>TP00001948</span></p>
+                                         <p style="line-height:18px;"><span class="f_color_gray9">去程:</span><span>海浦东浦东国际机场-桂林两江机场(KY8292)</span></p>
+                                         <p><span class="odc_t2_tuigai">退改规则</span><span class="tuigai"><i class="messIcon"></i>机票客服</span></p>
+                                         <!--退改dialog-->
+                                         <div class="tuigai_dialog" style="display:none;">
+                                             <p>不得退票</p>
+                                             <p>按票面价计算，起飞前0小时前改签费30%，起飞前0小时及起飞后改签费50%</p>
+                                             <p>不得自愿签转</p>
+                                             <p>您可免费携带5公斤且体积不超过20×40×55CM的非托运行李和20公斤且体积不超过40×60×100CM的托运行李。</p>
+                                             <p>票面价为 670元，实际退改以票面价为准</p>
+                                         </div>
+                                     </th>
+                                     <th width="110">
+                                         <p>07-16  11:28</p>
+                                     </th>
+                                     <th width="110">
+                                         <p>1人</p>
+                                     </th>
+                                     <th width="100" class="odc_t2_price">
+                                         <p class="odc_p_1">￥50000 </p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                     </th>
+                                     <th width="140">
+                                         <p class="order_fail">订单失败</p>
+                                         <p class="order_fail_reson">
+                                             <span class="fail_reson">失败原因</span>
+                                             <span class="order_fail_dialog" style="display:none;">未询价，请先问价</span>
+                                         </p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">查看机票订单</p>
+                                     </th>
+                                 </tr>
+                                 <tr>
+                                     <th width="55">
+                                         <p><i class="feijiIcon"></i></p>
+                                     </th>
+                                     <th width="200" class="odc_t2_number">
+                                         <p ><span class="f_color_gray9">订单编号:</span><span>TP00001948</span></p>
+                                         <p style="line-height:18px;"><span class="f_color_gray9">去程:</span><span>海浦东浦东国际机场-桂林两江机场(KY8292)</span></p>
+                                         <p><span class="odc_t2_tuigai">退改规则</span><span class="tuigai"><i class="messIcon"></i>机票客服</span></p>
+                                         <!--退改dialog-->
+                                         <div class="tuigai_dialog" style="display:none;">
+                                             <p>不得退票</p>
+                                             <p>按票面价计算，起飞前0小时前改签费30%，起飞前0小时及起飞后改签费50%</p>
+                                             <p>不得自愿签转</p>
+                                             <p>您可免费携带5公斤且体积不超过20×40×55CM的非托运行李和20公斤且体积不超过40×60×100CM的托运行李。</p>
+                                             <p>票面价为 670元，实际退改以票面价为准</p>
+                                         </div>
+                                     </th>
+                                     <th width="110">
+                                         <p>07-16  11:28</p>
+                                     </th>
+                                     <th width="110">
+                                         <p>1人</p>
+                                     </th>
+                                     <th width="100" class="odc_t2_price">
+                                         <p class="odc_p_1">￥50000 </p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                     </th>
+                                     <th width="140">
+                                         <p class="order_fail">订单失败</p>
+                                         <p class="order_fail_reson">
+                                             <span class="fail_reson">失败原因</span>
+                                             <span class="order_fail_dialog" style="display: none">未询价，请先问价</span>
+                                         </p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">查看机票订单</p>
+                                     </th>
+                                 </tr>
+                                 <tr>
+                                     <th width="55">
+                                         <p><i class="feijiIcon"></i></p>
+                                     </th>
+                                     <th width="200" class="odc_t2_number">
+                                         <p ><span class="f_color_gray9">订单编号:</span><span>TP00001948</span></p>
+                                         <p style="line-height:18px;"><span class="f_color_gray9">去程:</span><span>海浦东浦东国际机场-桂林两江机场(KY8292)</span></p>
+                                         <p><span class="odc_t2_tuigai">退改规则</span><span class="tuigai"><i class="messIcon"></i>机票客服</span></p>
+                                         <!--退改dialog-->
+                                         <div class="tuigai_dialog" style="display:none;">
+                                             <p>不得退票</p>
+                                             <p>按票面价计算，起飞前0小时前改签费30%，起飞前0小时及起飞后改签费50%</p>
+                                             <p>不得自愿签转</p>
+                                             <p>您可免费携带5公斤且体积不超过20×40×55CM的非托运行李和20公斤且体积不超过40×60×100CM的托运行李。</p>
+                                             <p>票面价为 670元，实际退改以票面价为准</p>
+                                         </div>
+                                     </th>
+                                     <th width="110">
+                                         <p>07-16  11:28</p>
+                                     </th>
+                                     <th width="110">
+                                         <p>1人</p>
+                                     </th>
+                                     <th width="100" class="odc_t2_price">
+                                         <p class="odc_p_1">￥50000</p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                     </th>
+                                     <th width="140">
+                                         <p class="order_fail">订单失败</p>
+                                         <p class="order_fail_reson">
+                                             <span class="fail_reson">失败原因</span>
+                                             <span class="order_fail_dialog" style="display: none">未询价，请先问价</span>
+                                         </p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">查看机票订单</p>
+                                     </th>
+                                 </tr>
+                                 <tr>
+                                     <th width="55">
+                                         <p><i class="feijiIcon"></i></p>
+                                     </th>
+                                     <th width="200" class="odc_t2_number">
+                                         <p ><span class="f_color_gray9">订单编号:</span><span>TP00001948</span></p>
+                                         <p style="line-height:18px;"><span class="f_color_gray9">去程:</span><span>海浦东浦东国际机场-桂林两江机场(KY8292)</span></p>
+                                         <p><span class="odc_t2_tuigai">退改规则</span><span class="tuigai"><i class="messIcon"></i>机票客服</span></p>
+                                         <!--退改dialog-->
+                                         <div class="tuigai_dialog" style="display:none;">
+                                             <p>不得退票</p>
+                                             <p>按票面价计算，起飞前0小时前改签费30%，起飞前0小时及起飞后改签费50%</p>
+                                             <p>不得自愿签转</p>
+                                             <p>您可免费携带5公斤且体积不超过20×40×55CM的非托运行李和20公斤且体积不超过40×60×100CM的托运行李。</p>
+                                             <p>票面价为 670元，实际退改以票面价为准</p>
+                                         </div>
+                                     </th>
+                                     <th width="110">
+                                         <p>07-16  11:28</p>
+                                     </th>
+                                     <th width="110">
+                                         <p>1人</p>
+                                     </th>
+                                     <th width="100" class="odc_t2_price">
+                                         <p class="odc_p_1">￥50000</p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                     </th>
+                                     <th width="140">
+                                         <p class="order_fail">订单失败</p>
+                                         <p class="order_fail_reson">
+                                             <span class="fail_reson">失败原因</span>
+                                             <span class="order_fail_dialog" style="display: none">未询价，请先问价</span>
+                                         </p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">查看机票订单</p>
+                                     </th>
+                                 </tr>
+                                 <tr>
+                                     <th width="55">
+                                         <p><i class="feijiIcon"></i></p>
+                                     </th>
+                                     <th width="200" class="odc_t2_number">
+                                         <p ><span class="f_color_gray9">订单编号:</span><span>TP00001948</span></p>
+                                         <p style="line-height:18px;"><span class="f_color_gray9">去程:</span><span>海浦东浦东国际机场-桂林两江机场(KY8292)</span></p>
+                                         <p><span class="odc_t2_tuigai">退改规则</span><span class="tuigai"><i class="messIcon"></i>机票客服</span></p>
+                                         <!--退改dialog-->
+                                         <div class="tuigai_dialog" style="display:none;">
+                                             <p>不得退票</p>
+                                             <p>按票面价计算，起飞前0小时前改签费30%，起飞前0小时及起飞后改签费50%</p>
+                                             <p>不得自愿签转</p>
+                                             <p>您可免费携带5公斤且体积不超过20×40×55CM的非托运行李和20公斤且体积不超过40×60×100CM的托运行李。</p>
+                                             <p>票面价为 670元，实际退改以票面价为准</p>
+                                         </div>
+                                     </th>
+                                     <th width="110">
+                                         <p>07-16  11:28</p>
+                                     </th>
+                                     <th width="110">
+                                         <p>1人</p>
+                                     </th>
+                                     <th width="100" class="odc_t2_price">
+                                         <p class="odc_p_1">￥50000</p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                     </th>
+                                     <th width="140">
+                                         <p class="order_fail">订单失败</p>
+                                         <p class="order_fail_reson">
+                                             <span class="fail_reson">失败原因</span>
+                                             <span class="order_fail_dialog" style="display: none">未询价，请先问价</span>
+                                         </p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">查看机票订单</p>
+                                     </th>
+                                 </tr>
+
+                                 <tr>
+                                     <td width="55">
+                                         <p><i class="feijiIcon"></i></p>
+                                     </td>
+                                     <td width="200" class="odc_t2_number">
+                                         <p><span class="f_color_gray9">订单编号:</span><span>TP00001948</span></p>
+                                         <p style="line-height:18px;"><span class="f_color_gray9">去程:</span><span>苏州-桂林北   K1556</span></p>
+                                         <p><span class="odc_t2_tuigai">退改规则</span><span class="tuigai"><i class="messIcon"></i>机票客服</span></p>
+                                         <!--退改dialog-->
+                                         <div class="tuigai_dialog" style="display:none;">
+                                             <p>不得退票</p>
+                                             <p>按票面价计算，起飞前0小时前改签费30%，起飞前0小时及起飞后改签费50%</p>
+                                             <p>不得自愿签转</p>
+                                             <p>您可免费携带5公斤且体积不超过20×40×55CM的非托运行李和20公斤且体积不超过40×60×100CM的托运行李。</p>
+                                             <p>票面价为 670元，实际退改以票面价为准</p>
+                                         </div>
+                                     </td>
+                                     <td width="110">
+                                         <p>07-16  11:28</p>
+                                     </td>
+                                     <td width="110">
+                                         <p>1人</p>
+                                     </td>
+                                     <td width="100" class="odc_t2_price">
+                                         <p class="odc_p_1">￥50000</p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                     </td>
+                                     <td width="140">
+                                         <p class="order_fail">订单失败</p>
+                                         <p class="order_fail_reson">
+                                             <span class="fail_reson">失败原因</span>
+                                             <span class="order_fail_dialog" style="display: none">未询价，请先问价</span>
+                                         </p>
+                                     </td>
+                                     <td>
+                                         <p class="odc_p_3">查看机票订单</p>
+                                     </td>
+                                 </tr>
+                             </table>
+                         </div>
+                     </div>
+                     <!--feiyuOrderList5-->
+                     <div class="feiyuOrderList">
+                         <div class="orderList_header">
+                             <table class="orderList_header_table" style="table-layout: fixed;">
+                                 <tr>
+                                     <th width="255" class="odc_one">
+                                         <span>订单编号：<i>RF00003864</i></span>
+                                     </th>
+                                     <th width="240">
+                                         <span>下单时间：<i>2018-07-13  09:55 </i></span>
+                                     </th>
+                                     <th width="70">
+                                         <span>联系人：<i>李</i></span>
+                                     </th>
+                                     <th width="120">
+                                         <span><i>18003578053</i></span>
+                                     </th>
+                                     <th>
+                                         <span class="oh_mess"><i class="messIcon"></i>在线客服</span>
+                                     </th>
+                                     <th>
+                                         <a href="javascript:;" class="yudingJT">预定交通</a>
+                                     </th>
+                                 </tr>
+                             </table>
+                         </div>
+                         <div class="orderList_cont">
+                             <!--list1-->
+                             <table class="od_c_t1" style="width: 100%;">
+                                 <tr>
+                                     <th width="250" class="odc_tit">
+                                         <p class="odc_tit_detail">
+                                             <蜈支洲岛+分界洲岛+热带天堂公园+天涯海角5日游>三亚进出，畅享双岛，一价全包，3天用车，兴隆住温泉度假酒店，三亚住网评五钻度假酒店
+                                         </p>
+                                     </th>
+                                     <th width="80" class="odc_time">
+                                         <p>2018-07-18</p>
+                                         <p>2018-07-19</p>
+                                     </th>
+                                     <th class="odc_man" width="50">
+                                         <p>0 人</p>
+                                     </th>
+                                     <th class="odc_price" width="100">
+                                         <p class="odc_p_1">￥50000 <i class="detailIcon"></i></p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                         <!--dialog-->
+                                         <table class="pri_dialog" style="top:60px; display: none;">
+                                             <tr>
+                                                 <td class="tit">门市价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">结算价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">预计利润</td>
+                                                 <td>200</td>
+                                             </tr>
+                                         </table>
+                                     </th>
+                                     <th width="105">
+                                         <p class="odc_p_confirm">已报名确认</p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">订单详情</p>
+                                         <p class="odc_p_3 f_c_blue">在线支付</p>
+                                         <p class="odc_p_3 f_c_blue">修改订单</p>
+                                         <p class="odc_p_3 f_c_blue">游客退订</p>
+                                         <p class="odc_p_3">报名确认单</p>
+                                         <p class="odc_p_3">出团通知书</p>
+
+                                     </th>
+                                 </tr>
+                             </table>
+
+                             <!--list2-->
+                             <div class="ad_c_top_bt"></div>
+                             <table class="od_c_t2" style="width: 97%;">
+                                 <tr>
+                                     <th width="55">
+                                         <p><i class="feijiIcon"></i></p>
+                                     </th>
+                                     <th width="200" class="odc_t2_number">
+                                         <p ><span class="f_color_gray9">订单编号:</span><span>TP00001948</span></p>
+                                         <p style="line-height:18px;"><span class="f_color_gray9">去程:</span><span>海浦东浦东国际机场-桂林两江机场(KY8292)</span></p>
+                                         <p><span class="odc_t2_tuigai">退改规则</span><span class="tuigai"><i class="messIcon"></i>机票客服</span></p>
+                                         <!--退改dialog-->
+                                         <div class="tuigai_dialog" style="display:none;">
+                                             <p>不得退票</p>
+                                             <p>按票面价计算，起飞前0小时前改签费30%，起飞前0小时及起飞后改签费50%</p>
+                                             <p>不得自愿签转</p>
+                                             <p>您可免费携带5公斤且体积不超过20×40×55CM的非托运行李和20公斤且体积不超过40×60×100CM的托运行李。</p>
+                                             <p>票面价为 670元，实际退改以票面价为准</p>
+                                         </div>
+                                     </th>
+                                     <th width="110">
+                                         <p>07-16  11:28</p>
+                                     </th>
+                                     <th width="110">
+                                         <p>1人</p>
+                                     </th>
+                                     <th width="100" class="odc_t2_price">
+                                         <p class="odc_p_1">￥50000</p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                     </th>
+                                     <th width="140">
+                                        <p class="odc_p_confirm">待出票</p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">查看机票订单</p>
+                                     </th>
+                                 </tr>
+                                 <tr>
+                                     <td width="55">
+                                         <p><i class="feijiIcon"></i></p>
+                                     </td>
+                                     <td width="200" class="odc_t2_number">
+                                         <p><span class="f_color_gray9">订单编号:</span><span>TP00001948</span></p>
+                                         <p style="line-height:18px;"><span class="f_color_gray9">去程:</span><span>苏州-桂林北   K1556</span></p>
+                                         <p><span class="odc_t2_tuigai">退改规则</span><span class="tuigai"><i class="messIcon"></i>机票客服</span></p>
+                                         <!--退改dialog-->
+                                         <div class="tuigai_dialog" style="display:none;">
+                                             <p>不得退票</p>
+                                             <p>按票面价计算，起飞前0小时前改签费30%，起飞前0小时及起飞后改签费50%</p>
+                                             <p>不得自愿签转</p>
+                                             <p>您可免费携带5公斤且体积不超过20×40×55CM的非托运行李和20公斤且体积不超过40×60×100CM的托运行李。</p>
+                                             <p>票面价为 670元，实际退改以票面价为准</p>
+                                         </div>
+                                     </td>
+                                     <td width="110">
+                                         <p>07-16  11:28</p>
+                                     </td>
+                                     <td width="110">
+                                         <p>1人</p>
+                                     </td>
+                                     <td width="100" class="odc_t2_price">
+                                         <p class="odc_p_1">￥50000 </p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                     </td>
+                                     <td width="140">
+                                         <p class="odc_p_confirm">待出票</p>
+                                     </td>
+                                     <td>
+                                         <p class="odc_p_3">查看机票订单</p>
+                                     </td>
+                                 </tr>
+                             </table>
+                         </div>
+                     </div>
+                     <!--feiyuOrderList6-->
+                     <div class="feiyuOrderList">
+                         <div class="orderList_header">
+                             <table class="orderList_header_table" style="table-layout: fixed;">
+                                 <tr>
+                                     <th width="255" class="odc_one">
+                                         <span>订单编号：<i>RF00003864</i></span>
+                                     </th>
+                                     <th width="240">
+                                         <span>下单时间：<i>2018-07-13  09:55 </i></span>
+                                     </th>
+                                     <th width="70">
+                                         <span>联系人：<i>李</i></span>
+                                     </th>
+                                     <th width="120">
+                                         <span><i>18003578053</i></span>
+                                     </th>
+                                     <th>
+                                         <span class="oh_mess"><i class="messIcon"></i>在线客服</span>
+                                     </th>
+                                     <th>
+                                         <a href="javascript:;" class="yudingJT">预定交通</a>
+                                     </th>
+                                 </tr>
+                             </table>
+                         </div>
+                         <div class="orderList_cont">
+                             <!--list1-->
+                             <table class="od_c_t1" style="width: 100%;">
+                                 <tr>
+                                     <th width="250" class="odc_tit">
+                                         <p class="odc_tit_detail">
+                                             <蜈支洲岛+分界洲岛+热带天堂公园+天涯海角5日游>三亚进出，畅享双岛，一价全包，3天用车，兴隆住温泉度假酒店，三亚住网评五钻度假酒店
+                                         </p>
+                                     </th>
+                                     <th width="80" class="odc_time">
+                                         <p>2018-07-18</p>
+                                         <p>2018-07-19</p>
+                                     </th>
+                                     <th class="odc_man" width="50">
+                                         <p>0 人</p>
+                                     </th>
+                                     <th class="odc_price" width="100" >
+                                         <p class="odc_p_1">￥14000 <i class="detailIcon"></i></p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥54000</p>
+                                         <!--dialog-->
+                                         <table class="pri_dialog" style="top:60px;display: none;">
+                                             <tr>
+                                                 <td class="tit">门市价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">结算价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">预计利润</td>
+                                                 <td>200</td>
+                                             </tr>
+                                         </table>
+                                     </th>
+                                     <th width="105">
+                                         <p class="odc_p_confirm">已报名确认</p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">订单详情</p>
+                                         <p class="odc_p_3 f_c_blue">在线支付</p>
+                                         <p class="odc_p_3 f_c_blue">修改订单</p>
+                                         <p class="odc_p_3 f_c_blue">游客退订</p>
+                                         <p class="odc_p_3">报名确认单</p>
+                                         <p class="odc_p_3">出团通知书</p>
+
+                                     </th>
+                                 </tr>
+                             </table>
+
+                         </div>
+                     </div>
+                     <!--feiyuOrderList7-->
+                     <div class="feiyuOrderList">
+                         <div class="orderList_header">
+                             <table class="orderList_header_table" style="table-layout: fixed;">
+                                 <tr>
+                                     <th width="255" class="odc_one">
+                                         <span>订单编号：<i>RF00003864</i></span>
+                                     </th>
+                                     <th width="240">
+                                         <span>下单时间：<i>2018-07-13  09:55 </i></span>
+                                     </th>
+                                     <th width="70">
+                                         <span>联系人：<i>李</i></span>
+                                     </th>
+                                     <th width="120">
+                                         <span><i>18003578053</i></span>
+                                     </th>
+                                     <th>
+                                         <span class="oh_mess"><i class="messIcon"></i>在线客服</span>
+                                     </th>
+                                     <th>
+                                     </th>
+                                 </tr>
+                             </table>
+                         </div>
+                         <div class="orderList_cont">
+                             <!--list1-->
+                             <table class="od_c_t1" style="width: 100%;">
+                                 <tr>
+                                     <th width="250" class="odc_tit">
+                                         <p class="odc_tit_detail">
+                                             三亚进出，畅享双岛，一价全包，3天用车，兴隆住温泉度假酒店，三亚住网评五钻度假酒店
+                                         </p>
+                                     </th>
+                                     <th width="80" class="odc_time">
+                                         <p>2018-07-18</p>
+                                         <p>2018-07-19</p>
+                                     </th>
+                                     <th class="odc_man" width="50">
+                                         <p>0 人</p>
+                                     </th>
+                                     <th class="odc_price" width="100">
+                                         <p class="odc_p_1">￥100 <i class="detailIcon"></i></p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥54000</p>
+                                         <!--dialog-->
+                                         <table class="pri_dialog" style="display: none;">
+                                             <tr>
+                                                 <td class="tit">门市价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">结算价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">预计利润</td>
+                                                 <td>200</td>
+                                             </tr>
+                                         </table>
+                                     </th>
+                                     <th width="105">
+                                         <p class="odc_p_2">已退团</p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">订单详情</p>
+                                     </th>
+                                 </tr>
+                             </table>
+                         </div>
+                     </div>
+                     <!--feiyuOrderList8-->
+                     <div class="feiyuOrderList">
+                         <div class="orderList_header">
+                             <table class="orderList_header_table" style="table-layout: fixed;">
+                                 <tr>
+                                     <th width="255" class="odc_one">
+                                         <span>订单编号：<i>RF00003864</i></span>
+                                     </th>
+                                     <th width="240">
+                                         <span>下单时间：<i>2018-07-13  09:55 </i></span>
+                                     </th>
+                                     <th width="70">
+                                         <span>联系人：<i>李</i></span>
+                                     </th>
+                                     <th width="120">
+                                         <span><i>18003578053</i></span>
+                                     </th>
+                                     <th>
+                                         <span class="oh_mess"><i class="messIcon"></i>在线客服</span>
+                                     </th>
+                                     <th>
+
+                                     </th>
+                                 </tr>
+                             </table>
+                         </div>
+                         <div class="orderList_cont">
+                             <!--list1-->
+                             <table class="od_c_t1" style="width: 100%;">
+                                 <tr>
+                                     <th width="250" class="odc_tit">
+                                         <p class="odc_tit_detail">
+                                             <蜈支洲岛+呀喏达+南山+天涯海角5日游>三亚进出奢享，0购，3天用车，三亚高端海景一宅到底，海鲜美食
+                                         </p>
+                                     </th>
+                                     <th width="80" class="odc_time">
+                                         <p>2018-07-18</p>
+                                         <p>2018-07-19</p>
+                                     </th>
+                                     <th class="odc_man" width="50">
+                                         <p>0 人</p>
+                                     </th>
+                                     <th class="odc_price" width="100">
+                                         <p class="odc_p_1">￥100 <i class="detailIcon"></i></p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥54000</p>
+                                         <!--dialog-->
+                                         <table class="pri_dialog" style="display: none;">
+                                             <tr>
+                                                 <td class="tit">门市价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">结算价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">预计利润</td>
+                                                 <td>200</td>
+                                             </tr>
+                                         </table>
+                                     </th>
+                                     <th width="105">
+                                         <p class="odc_p_2">已退团</p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">订单详情</p>
+                                     </th>
+                                 </tr>
+                             </table>
+                         </div>
+                     </div>
+                     <!--feiyuOrderList9-->
+                     <div class="feiyuOrderList">
+                         <div class="orderList_header">
+                             <table class="orderList_header_table" style="table-layout: fixed;">
+                                 <tr>
+                                     <th width="255" class="odc_one">
+                                         <span>订单编号：<i>RF00003864</i></span>
+                                     </th>
+                                     <th width="240">
+                                         <span>下单时间：<i>2018-07-13  09:55 </i></span>
+                                     </th>
+                                     <th width="70">
+                                         <span>联系人：<i>李</i></span>
+                                     </th>
+                                     <th width="120">
+                                         <span><i>18003578053</i></span>
+                                     </th>
+                                     <th>
+                                         <span class="oh_mess"><i class="messIcon"></i>在线客服</span>
+                                     </th>
+                                     <th>
+
+                                     </th>
+                                 </tr>
+                             </table>
+                         </div>
+                         <div class="orderList_cont">
+                             <!--list1-->
+                             <table class="od_c_t1" style="width: 100%;">
+                                 <tr>
+                                     <th width="250" class="odc_tit">
+                                         <p class="odc_tit_detail">
+                                             <厦门+永定高北土楼+鼓浪屿4日游>厦门进出，永定高北土楼，纯玩无购物舒适酒店
+                                         </p>
+                                     </th>
+                                     <th width="80" class="odc_time">
+                                         <p>2018-07-18</p>
+                                         <p>2018-07-19</p>
+                                     </th>
+                                     <th class="odc_man" width="50">
+                                         <p>0 人</p>
+                                     </th>
+                                     <th class="odc_price" width="100">
+                                         <p class="odc_p_1">￥100 <i class="detailIcon"></i></p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥54000</p>
+                                         <!--dialog-->
+                                         <table class="pri_dialog" style="display: none;">
+                                             <tr>
+                                                 <td class="tit">门市价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">结算价</td>
+                                                 <td>200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="tit">预计利润</td>
+                                                 <td>200</td>
+                                             </tr>
+                                         </table>
+                                     </th>
+                                     <th width="105">
+                                         <p class="odc_p_2" style="margin-left:36px;">已取消</p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">订单详情</p>
+                                     </th>
+                                 </tr>
+                             </table>
+                             <!--list2-->
+                             <div class="ad_c_top_bt"></div>
+                             <table class="od_c_t2" style="width: 97%;">
+                                 <tr>
+                                     <th width="55">
+                                         <p><i class="feijiIcon"></i></p>
+                                     </th>
+                                     <th width="200" class="odc_t2_number">
+                                         <p ><span class="f_color_gray9">订单编号: </span><span> TP00001948</span></p>
+                                         <p style="line-height:18px;"><span class="f_color_gray9">去程: </span><span> 海浦东浦东国际机场-桂林两江机场(KY8292)</span></p>
+                                         <p><span class="odc_t2_tuigai">退改规则</span><span class="tuigai"><i class="messIcon"></i>机票客服</span></p>
+                                         <!--退改dialog-->
+                                         <div class="tuigai_dialog" style="display:none;">
+                                             <p>不得退票</p>
+                                             <p>按票面价计算，起飞前0小时前改签费30%，起飞前0小时及起飞后改签费50%</p>
+                                             <p>不得自愿签转</p>
+                                             <p>您可免费携带5公斤且体积不超过20×40×55CM的非托运行李和20公斤且体积不超过40×60×100CM的托运行李。</p>
+                                             <p>票面价为 670元，实际退改以票面价为准</p>
+                                         </div>
+                                     </th>
+                                     <th width="110">
+                                         <p>07-16  11:28</p>
+                                     </th>
+                                     <th width="110">
+                                         <p>1人</p>
+                                     </th>
+                                     <th width="100" class="odc_t2_price">
+                                         <p class="odc_p_1">￥50000 </p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                     </th>
+                                     <th width="140">
+                                         <p class="odc_p_2">已取消</p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">查看机票订单</p>
+                                     </th>
+                                 </tr>
+                                 <tr>
+                                     <th width="55">
+                                         <p><i class="huocIcon"></i></p>
+                                     </th>
+                                     <th width="200" class="odc_t2_number">
+                                         <p ><span class="f_color_gray9">订单编号: </span><span> TP00001948</span></p>
+                                         <p style="line-height:18px;"><span class="f_color_gray9">去程: </span><span> 海浦东浦东国际机场-桂林两江机场(KY8292)</span></p>
+                                         <p><span class="odc_t2_tuigai">退改规则</span><span class="tuigai"><i class="messIcon"></i>机票客服</span></p>
+
+                                     </th>
+                                     <th width="110">
+                                         <p>07-16  11:28</p>
+                                     </th>
+                                     <th width="110">
+                                         <p>1人</p>
+                                     </th>
+                                     <th width="100" class="odc_t2_price">
+                                         <p class="odc_p_1">￥50000 </p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                     </th>
+                                     <th width="140">
+                                         <p class="odc_p_2">已退票</p>
+                                     </th>
+                                     <th>
+                                         <p class="odc_p_3">查看机票订单</p>
+                                     </th>
+                                 </tr>
+                                 <tr>
+                                     <td width="55">
+                                         <p><i class="feijiIcon"></i></p>
+                                     </td>
+                                     <td width="200" class="odc_t2_number">
+                                         <p><span class="f_color_gray9">订单编号:</span><span>TP00001948</span></p>
+                                         <p style="line-height:18px;"><span class="f_color_gray9">去程:</span><span>苏州-桂林北   K1556</span></p>
+                                         <p><span class="odc_t2_tuigai">退改规则</span><span class="tuigai"><i class="messIcon"></i>机票客服</span></p>
+
+                                     </td>
+                                     <td width="110">
+                                         <p>07-16  11:28</p>
+                                     </td>
+                                     <td width="110">
+                                         <p>1人</p>
+                                     </td>
+                                     <td width="100" class="odc_t2_price">
+                                         <p class="odc_p_1">￥50000</p>
+                                         <p class="odc_p_2">已支付￥20000</p>
+                                         <p class="odc_p_2">未支付￥20000</p>
+                                     </td>
+                                     <td width="140">
+                                         <p class="odc_p_2">已取消</p>
+                                     </td>
+                                     <td>
+                                         <p class="odc_p_3">查看机票订单</p>
+                                     </td>
+                                 </tr>
+                             </table>
+                         </div>
+                     </div>
+                 </div>
+                 <!--7-18 end-->
+            </div>
+        </div>
+    </div>
+    <!--绑定乘客开始-->
+    <div class="BDBox none" id="BDBox">
+        <table>
+            <tr>
+                <th><span class="icon checkbox"></span></th>
+                <th>游客姓名</th>
+                <th>类型</th>
+                <th>性别</th>
+                <th>证件类型</th>
+                <th>证件号码</th>
+            </tr>        
+            <tr>
+                <td><span class="icon checkbox"></span></td>
+                <td>王尼玛</td>
+                <td>成人</td>
+                <td>男</td>
+                <td>身份证</td>
+                <td>3205972215631111154</td>
+            </tr>
+        </table>
+        <div class="formBtn">
+            <a href="javascript:;" class="redBtn">确认</a>                
+        </div>        
+    </div>
+    <!--绑定乘客结束-->
+    <!--合并付款开始-->
+    <div class="BDBox none" id="payAllBox">
+        <table>
+            <tr>
+                <th></th>
+                <th>项目</th>
+                <th>订单金额</th>
+                <th>预付款</th>
+                <th>剩余支付</th>
+                <th>付款类型</th>
+                <th>本次支付</th>
+                <th>支付倒计时</th>
+            </tr>        
+            <tr>
+                <td><span class="icon checkbox"></span></td>
+                <td>旅游线路</td>
+                <td>￥1450</td>
+                <td>￥290</td>
+                <td>￥1450</td>
+                <td>预付款支付</td>
+                <td><input typs="text" value="￥290"></td>
+                <td><span class="djs">23:28:59</span></td>
+            </tr>
+            <tr>
+                <td><span class="icon checkbox"></span></td>
+                <td>旅游线路</td>
+                <td>￥1450</td>
+                <td>￥290</td>
+                <td>￥1450</td>
+                <td>预付款支付</td>
+                <td><input typs="text" value="￥290" disabled></td>
+                <td><span class="djs">23:28:59</span></td>
+            </tr>
+            <tr><td colspan="8" class="priceData">本次支付：<b class="font_roseo">￥<em>24999</em></b></td></tr>            
+        </table>
+        <div class="formBtn">
+            <a href="javascript:;" class="redBtn">去支付</a>                
+        </div>        
+    </div>
+    <!--合并付款结束-->
+    <!--申请退订开始-->
+    <div class="TDBox none" id="TDBox">
+        <div class="tdTit clearfix">
+            <span>订单编号：F02465566</span><span>下单时间：2017-9-11 23:00</span><a href="javascript:;" class="f_blue tgRule" id="tgRule">退改规则</a>
+            <div class="rule ">
+                <div class="rule0">
+                    <span class="rule_tit">旅游线路：</span>
+                    <div class="rule_con">
+                        <p class="ps">一、出发前3日内截止到出团前1天17点，退团收取结算价10%违约金</p>
+                        <p class="ps">二、出发前1天17点后到回团日期之前，退团收取结算价50%违约金</p>
+                        <p class="ps">三、机票违约金根据不同航班自动计算</p>
+                        <p class="ps">四、保险相关费用在计划起飞时间前2小时之内不可退，其余时间均可退</p>
+                    </div>
+                </div>
+                <div class="rule0 jp">
+                    <span class="rule_tit">机票：</span>
+                    <div class="rule_con">
+                        <p class="ps">一、出发前3日内截止到出团前1天17点，退团收取结算价10%违约金</p>
+                        <p class="ps">二、出发前1天17点后到回团日期之前，退团收取结算价50%违约金</p>
+                        <p class="ps">三、机票违约金根据不同航班自动计算</p>
+                        <p class="ps">四、保险相关费用在计划起飞时间前2小时之内不可退，其余时间均可退</p>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        <div class="lineInfo">                                                                                
+            <p class="title">线路信息</p>
+            <h2><海南三亚6日五晚六日游>海景房连住,新年南山祈福,金银蓝尼贝赠送三山岛出海南山</h2>
+            <p><span>线路编号：L09988777 </span><span>团次编号：L09988777</span></p>
+            <p><span>出团日期：2017-09-11 </span><span>回团日期：2017-09-11</span></p>
+        </div>
+        <div class="ticket_Box ">
+            <div class="ticketCon clearfix">
+                <div class="ticketLeft">
+                    <div class="ticketItem clearfix">
+                        <div class="ticketCol ticketIcon quIcon width_80"></div>
+                        <div class="ticketCol width_80">
+                            <p class="airLine">09-25</p>
+                            <p>周一</p>
+                        </div>      
+                        <div class="ticketCol relative">
+                            <p class="airLine">东方航空MU5615<sup class="font_pink">共享</sup></p>
+                            <div class="sharePop none">
+                                <span>实际乘坐：东方航空MU5615</span>
+                                <span>请按照实际乘坐航班办理值机</span>
+                            </div>                                         
+                            <p>经济舱</p>
+                        </div> 
+                        <div class="ticketCol">
+                            <h2><span>21：00</span></h2>
+                            <p>上海浦东国际机场</p>
+                        </div>
+                      <div class="ticketCol ticketLine">
+                        <p class="lineBg"><i class="lineOne"></i><i class="airIcon"></i></p>
+                        <p>约3小时40分</p>
+                        <p>经停</p>
+                      </div>
+                        <div class="ticketCol">
+                            <h2><span>00：40<i class="oneDay">+1</i></span></h2>
+                            <p>三亚凤凰国际机场</p>
+                        </div>
+                        <div class="ticketCol width_80">
+                            <p class="airLine"></p>
+                            <p>含餐</p>
+                        </div>                                        
+                    </div>
+                    <div class="ticketItem clearfix">
+                        <div class="ticketCol ticketIcon fanIcon width_80"></div>
+                        <div class="ticketCol width_80">
+                            <p class="airLine">09-25</p>
+                            <p>周一</p>
+                        </div>      
+                        <div class="ticketCol">
+                            <p class="airLine">东方航空MU5615</p>
+                            <p>经济舱</p>
+                        </div>  
+                        <div class="ticketCol">
+                            <h2><span>21：00</span></h2>
+                            <p>上海浦东国际机场</p>
+                        </div>
+                      <div class="ticketCol ticketLine">
+                        <p class="lineBg"><i class="lineOne"></i><i class="trainIcon"></i></p>
+                        <p>约3小时40分</p>
+                        <p>经停</p>
+                      </div>
+                        <div class="ticketCol">
+                            <h2><span>00：40<i class="oneDay">+1</i></span></h2>
+                            <p>三亚凤凰国际机场</p>
+                        </div>
+                        <div class="ticketCol width_80">
+                            <p class="airLine"></p>
+                            <p>含餐</p>
+                        </div>                                          
+                    </div>
+                </div>
+            </div>          
+        </div>         
+        <div class="ticket_Box ">
+            <div class="ticketCon clearfix">
+                <div class="ticketLeft">
+                    <div class="ticketItem clearfix">
+                        <div class="ticketCol width_80">
+                            <p class="airLine">09-25</p>
+                            <p>周一</p>
+                        </div>      
+                        <div class="ticketCol relative">
+                            <p class="airLine">东方航空MU5615<sup class="font_pink">共享</sup></p>
+                            <div class="sharePop none">
+                                <span>实际乘坐：东方航空MU5615</span>
+                                <span>请按照实际乘坐航班办理值机</span>
+                            </div>                                         
+                            <p>经济舱</p>
+                        </div>  
+                        <div class="ticketCol">
+                            <h2><span>21：00</span></h2>
+                            <p>上海浦东国际机场</p>
+                        </div>
+                      <div class="ticketCol ticketLine">
+                        <p class="lineBg"><i class="lineOne"></i><i class="airIcon"></i></p>
+                        <p>约3小时40分</p>
+                        <p>经停</p>
+                      </div>
+                        <div class="ticketCol">
+                            <h2><span>00：40<i class="oneDay">+1</i></span></h2>
+                            <p>三亚凤凰国际机场</p>
+                        </div>
+                        <div class="ticketCol width_80">
+                            <p class="airLine"></p>
+                            <p>含餐</p>
+                        </div>                                        
+                    </div>
+                </div>
+            </div>            
+        </div> 
+        <div class="ticket_Box ">
+            <div class="ticketCon clearfix">
+                <div class="ticketLeft">
+                    <div class="ticketItem clearfix">
+                        <div class="ticketCol width_80">
+                            <p class="airLine">09-25</p>
+                            <p>周一</p>
+                        </div>      
+                        <div class="ticketCol relative">
+                            <p class="airLine">G4036</p>                                        
+                            <p>一等座</p>
+                        </div>  
+                        <div class="ticketCol">
+                            <h2><span>21：00</span></h2>
+                            <p>三亚南站</p>
+                        </div>
+                      <div class="ticketCol ticketLine">
+                        <p class="lineBg"><i class="lineOne"></i><i class="trainIcon"></i></p>
+                        <p>约3小时40分</p>
+                      </div>
+                        <div class="ticketCol">
+                            <h2><span>00：40</span></h2>
+                            <p>苏州园区站</p>
+                        </div>                                        
+                    </div>
+                </div>
+            </div>           
+        </div>          
+        <div class="tdTit clearfix">
+            <span>请选择需要退订的项目</span><a href="javascript:;" class="f_blue tgRule" id="tgRule">退改规则</a>
+            <div class="rule ">
+                <div class="rule0">
+                    <span class="rule_tit">旅游线路：</span>
+                    <div class="rule_con">
+                        <p class="ps">一、出发前3日内截止到出团前1天17点，退团收取结算价10%违约金</p>
+                        <p class="ps">二、出发前1天17点后到回团日期之前，退团收取结算价50%违约金</p>
+                        <p class="ps">三、机票违约金根据不同航班自动计算</p>
+                        <p class="ps">四、保险相关费用在计划起飞时间前2小时之内不可退，其余时间均可退</p>
+                    </div>
+                </div>
+                <div class="rule0 jp">
+                    <span class="rule_tit">机票：</span>
+                    <div class="rule_con">
+                        <p class="ps">一、出发前3日内截止到出团前1天17点，退团收取结算价10%违约金</p>
+                        <p class="ps">二、出发前1天17点后到回团日期之前，退团收取结算价50%违约金</p>
+                        <p class="ps">三、机票违约金根据不同航班自动计算</p>
+                        <p class="ps">四、保险相关费用在计划起飞时间前2小时之内不可退，其余时间均可退</p>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        <table class="tdTable">
+            <tr>
+                <th></th>
+                <th>申请退订人</th>
+                <th>类型</th>
+                <th>线路信息</th>
+                <th>去程/回程金额</th>
+                <th>参考违约金</th>
+            </tr> 
+            <tr>
+                <td><span class="icon checkbox"></span></td>
+                <td>张三</td>
+                <td>成人（25-35周岁）</td>
+                <td><span>线路¥800</span><span>房差¥200</span></td>
+                <td>￥1700/￥1700</td>
+                <td>¥0</td>
+            </tr> 
+            <tr class="hasborder">
+                <td colspan="6">参考合计违约金：<b class="font_roseo">¥<em>249</em></b></td>
+            </tr>  
+            <tr class="hasborder">
+                <td colspan="6">参考合计退款：<b class="font_roseo">¥<em>249</em></b></td>
+            </tr>                                               
+        </table>
+        <div class="notice">*上述金额为预计估算，违约金金额以客服最终审核确认为准。</div>
+        <div class="formBtn">
+            <a href="javascript:;" class="redBtn">提交申请</a>                
+        </div>               
+    </div>
+    <!--申请退订结束-->
+    <!--预定交通开始-->
+    <div class="YDBox none"  id="YDBox">
+    <div class="YD_outer">
+        <table class="YD_table">
+            <tr>
+                <th>序号</th>
+                <th>游客姓名</th>
+                <th>证件类型</th>
+                <th>证件号码</th>
+                <th>类型</th>
+                <th colspan="2" width="510">大交通</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>王尼玛</td>
+                <td>身份证</td>
+                <td>3205972215631111154</td>
+                <td>成人</td>
+                <td>
+                    <div class="traffic">
+                        <div class="trafIcon"><img src="../resource/images/icon/airPlane.png"></div>
+                        <div class="trafInfo">
+                            <p>三亚凤凰-上海虹桥</p>
+                            <p>中国南方航空CZ62732</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="traffic">
+                        <div class="trafIcon"><img src="../resource/images/icon/hcIcon.png"></div>
+                        <div class="trafInfo">
+                            <p>三亚凤凰-上海虹桥</p>
+                            <p>中国南方航空CZ62732</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>王尼玛</td>
+                <td>身份证</td>
+                <td>3205972215631111154</td>
+                <td>儿童</td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>            
+        </table>
+        <div class="formBtn">
+            <a href="javascript:;" class="RedButton">预订去程</a>
+            <a href="javascript:;" class="RedButton">预订返程</a>
+            <a href="javascript:;" class="RedButton">预订往返</a>                
+        </div>
+    </div>
+    <!--预定去程-->
+    <div class="ticketPop" style="display:block;">
+        <div class="airReturnBox">
+        <!--机票选择开始-->
+        <div class="airList">
+          <div class="airTabs tabs" >
+            <ul>
+              <li class="cur">飞机</li>
+              <li class="second">火车</li>
+            </ul>
+          </div>
+          <div class="airBox tabs_con">
+          <div class="lineAddress clearfix">
+            <p class="distance">
+              <span class="calendar">
+              <span>请选择去程：</span>
+              <select class="textBox">
+                <option>上海浦东机场</option>
+                <option>上海浦东机场</option>
+              </select>  
+              </span>
+   
+            </p>
+            <p class="distance"><img src="../resource/images/line.png"></p>            
+            <p class="distance">
+              <span class="calendar">
+              <select class="textBox">
+                <option>上海浦东机场</option>
+                <option>上海浦东机场</option>
+              </select>  
+              </span>
+            </p>
+
+            <p class="distance"> 
+              <span class="calendar">
+                <span>出发日期：</span>
+                <span>2017-12-31</span>
+              </span>
+   
+            </p>        
+          </div>
+          <div class="resultBox flightInfo" style="border-top:none;">
+            <table class="ticketTable">
+              <tr>
+                <td>
+                <!--copy begin-->
+                <div class="flightItem clearfix">     
+                  <div class="ticketCol width_80">
+                    <p>09-25</p>
+                    <p>周一</p>
+                  </div>
+                  <div class="ticketCol">
+                    <p>东方航空MU5615</p>
+                    <p>经济舱</p>
+                  </div>
+                  <div class="ticketCol">
+                    <h2><span>21：00</span></h2>
+                    <p>上海浦东国际机场</p>
+                  </div>
+                  <div class="ticketCol ticketLine">
+                    <p class="lineBg"><i class="lineOne"></i><i class="airIcon"></i></p>
+                    <p>约3小时40分</p>
+                  </div>
+                  <div class="ticketCol">
+                    <h2><span>21：00</span></h2>
+                    <p>上海浦东国际机场</p>
+                  </div>
+                  <div class="ticketCol ">
+                    <div class="zdBox clearfix">
+                      <span>含餐</span>
+                    </div>
+                  </div>
+                  <div class="ticketCol hasTips"><p class="linePrice">¥<i>24999</i>/人</p><p class="tips">仅剩<span class="font_roseo">3</span>席</p></div>
+                  <a href="javascript:;" class="chooseBtn">更换</a>
+                </div>
+                <div class="flightList" style="display:none;">
+                  <div class="flightBuyItem clearfix">
+                    <div class="itemCol flyTags">
+                      <span class="info f_999">经济舱Y舱</span>
+                      <span class="info f_blue">
+                      退改
+                      <span class="info question">
+                            <i class="icon QIcon"></i>
+                            <span class="answerBox">说明说明</span>
+                         </span>              
+                      </span>
+                      <span class="info font_roseo">1折</span>
+                      <span class="info f_999">仅剩<i class="font_roseo">3</i>席</span>
+                    </div>
+                    <a href="javascript:;" class="ReserveBtn checked">已选中</a>            
+                    <div class="DiscountPrice">
+                      <p class="price">¥<i>24999</i></p>
+                    </div>
+                  </div>
+                  <div class="flightBuyItem clearfix">
+                    <div class="itemCol flyTags">
+                      <span class="info f_999">经济舱Y舱</span>
+                      <span class="info f_blue">
+                      退改
+                      <span class="info question">
+                            <i class="icon QIcon"></i>
+                            <span class="answerBox">说明说明</span>
+                         </span>              
+                      </span>
+                      <span class="info font_roseo">1折</span>
+                      <span class="info f_999">仅剩<i class="font_roseo">3</i>席</span>
+                    </div>
+                    <a href="javascript:;" class="ReserveBtn">选中</a>            
+                    <div class="DiscountPrice">
+                      <p class="price">¥<i>24999</i></p>
+                    </div>
+                  </div>        
+                </div>
+                <!--copy end-->                
+              </td>
+              </tr>
+              <tr>
+                <td>
+                <!--copy begin-->
+                <div class="flightItem clearfix">     
+                  <div class="ticketCol width_80">
+                    <p>09-25</p>
+                    <p>周一</p>
+                  </div>
+                  <div class="ticketCol">
+                    <p>东方航空MU5615</p>
+                    <p>经济舱</p>
+                  </div>
+                  <div class="ticketCol">
+                    <h2><span>21：00</span></h2>
+                    <p>上海浦东国际机场</p>
+                  </div>
+                  <div class="ticketCol ticketLine">
+                    <p class="lineBg"><i class="lineOne"></i><i class="trainIcon"></i></p>
+                    <p>约3小时40分</p>
+                  </div>
+                  <div class="ticketCol">
+                    <h2><span>21：00</span></h2>
+                    <p>上海浦东国际机场</p>
+                  </div>
+                  <div class="ticketCol ">
+                    <div class="zdBox clearfix">
+                      <span>含餐</span>
+                    </div>
+                  </div>
+                  <div class="ticketCol hasTips"><p class="linePrice">¥<i>24999</i>/人</p><p class="tips">仅剩<span class="font_roseo">3</span>席</p></div>
+                  <a href="javascript:;" class="chooseBtn">更换</a>
+                </div>
+                <div class="flightList" style="display:none;">
+                  <div class="flightBuyItem clearfix">
+                    <div class="itemCol flyTags">
+                      <span class="info f_999">经济舱Y舱</span>
+                      <span class="info f_blue">
+                      退改
+                      <span class="info question">
+                            <i class="icon QIcon"></i>
+                            <span class="answerBox">说明说明</span>
+                         </span>              
+                      </span>
+                      <span class="info font_roseo">1折</span>
+                      <span class="info f_999">仅剩<i class="font_roseo">3</i>席</span>
+                    </div>
+                    <a href="javascript:;" class="ReserveBtn checked">已选中</a>            
+                    <div class="DiscountPrice">
+                      <p class="price">¥<i>24999</i></p>
+                    </div>
+                  </div>
+                  <div class="flightBuyItem clearfix">
+                    <div class="itemCol flyTags">
+                      <span class="info f_999">经济舱Y舱</span>
+                      <span class="info f_blue">
+                      退改
+                      <span class="info question">
+                            <i class="icon QIcon"></i>
+                            <span class="answerBox">说明说明</span>
+                         </span>              
+                      </span>
+                      <span class="info font_roseo">1折</span>
+                      <span class="info f_999">仅剩<i class="font_roseo">3</i>席</span>
+                    </div>
+                    <a href="javascript:;" class="ReserveBtn">选中</a>            
+                    <div class="DiscountPrice">
+                      <p class="price">¥<i>24999</i></p>
+                    </div>
+                  </div>        
+                </div>
+                <!--copy end-->                
+              </td>
+              </tr>          
+            </table>
+          </div>  
+          </div>
+          <div class="airBox tabs_con" style="display:none;">
+              <div class="lineAddress clearfix">
+                <p class="distance">
+                  <span class="calendar">
+                  <span>请选择去程：</span>
+                  <select class="textBox">
+                    <option>上海浦东机场</option>
+                    <option>上海浦东机场</option>
+                  </select>  
+                  </span>
+       
+                </p>
+                <p class="distance"><img src="../resource/images/line.png"></p>            
+                <p class="distance">
+                  <span class="calendar">
+                  <select class="textBox">
+                    <option>上海浦东机场</option>
+                    <option>上海浦东机场</option>
+                  </select>  
+                  </span>
+                </p>
+
+                <p class="distance"> 
+                  <span class="calendar">
+                    <span>出发日期：</span>
+                    <span>2017-12-31</span>
+                  </span>
+       
+                </p>        
+              </div>       
+            <div class="resultBox flightInfo">
+              <table class="ticketTable">
+                <tr>
+                  <td>
+                    <!--copy begin-->
+                    <div class="flightItem clearfix">     
+                      <div class="ticketCol width_80">
+                        <p>09-25</p>
+                        <p>周一</p>
+                      </div>
+                      <div class="ticketCol">
+                        <p>东方航空MU5615</p>
+                        <p>经济舱</p>
+                      </div>
+                      <div class="ticketCol">
+                        <h2><span>21：00</span></h2>
+                        <p>上海浦东国际机场</p>
+                      </div>
+                      <div class="ticketCol ticketLine">
+                        <p class="lineBg"><i class="lineOne"></i><i class="trainIcon"></i></p>
+                        <p>约3小时40分</p>
+                      </div>
+                      <div class="ticketCol">
+                        <h2><span>21：00</span></h2>
+                        <p>上海浦东国际机场</p>
+                      </div>
+                      <div class="ticketCol ">
+                        <div class="zdBox clearfix">
+                          <span>含餐</span>
+                        </div>
+                      </div>
+                      <div class="ticketCol hasTips"><p class="linePrice">¥<i>24999</i>/人</p><p class="tips">仅剩<span class="font_roseo">3</span>席</p></div>
+                      <a href="javascript:;" class="chooseBtn">更换</a>
+                    </div>
+                    <div class="flightList" style="display:none;">
+                      <div class="flightBuyItem clearfix">
+                        <div class="itemCol flyTags">
+                          <span class="info f_999">经济舱Y舱</span>
+                          <span class="info f_blue">
+                          退改
+                          <span class="info question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                             </span>              
+                          </span>
+                          <span class="info font_roseo">1折</span>
+                          <span class="info f_999">仅剩<i class="font_roseo">3</i>席</span>
+                        </div>
+                        <a href="javascript:;" class="ReserveBtn checked">已选中</a>            
+                        <div class="DiscountPrice">
+                          <p class="price">¥<i>24999</i></p>
+                        </div>
+                      </div>
+                      <div class="flightBuyItem clearfix">
+                        <div class="itemCol flyTags">
+                          <span class="info f_999">经济舱Y舱</span>
+                          <span class="info f_blue">
+                          退改
+                          <span class="info question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                             </span>              
+                          </span>
+                          <span class="info font_roseo">1折</span>
+                          <span class="info f_999">仅剩<i class="font_roseo">3</i>席</span>
+                        </div>
+                        <a href="javascript:;" class="ReserveBtn">选中</a>            
+                        <div class="DiscountPrice">
+                          <p class="price">¥<i>24999</i></p>
+                        </div>
+                      </div>        
+                    </div>
+                    <!--copy end-->                
+                  </td>
+                </tr>
+              </table>
+           </div>
+        </div>
+        <!--机票选择结束-->
+        </div>
+        </div>
+    </div>
+    <!--预定去程重新选择-->
+    <div class="chooseAgain">
+
+    </div>
+    <!--预定返程-->
+    <div class="returnBox">
+        <div class="ticketPop" style="display:block;">
+            <div class="airReturnBox">
+            <!--机票选择开始-->
+            <div class="airList">
+              <div class="airTabs return_tab">
+                <ul>
+                  <li class="" data-index="0">飞机往返</li>
+                  <li class="two" data-index="1">火车往返</li>
+                  <li class="thr" data-index="2">飞机+火车</li>
+                  <li class="four" data-index="3">火车+飞机</li>                  
+                </ul>
+                <a href="javascript:;" class="RedButton changeLine">更换航班</a>
+              </div>
+              <div class="airBox tabsMain" data-index="0">
+
+              <div class="resultBox flightInfo">
+                <table class="ticketTable">
+                  <tr>
+                    <td>
+                    <!--copy begin-->
+                    <div class="flightItem clearfix">     
+                      <div class="ticketCol width_80">
+                        <p>09-25</p>
+                        <p>周一</p>
+                      </div>
+                      <div class="ticketCol">
+                        <p>东方航空MU5615</p>
+                        <p>经济舱</p>
+                      </div>
+                      <div class="ticketCol">
+                        <h2><span>21：00</span></h2>
+                        <p>上海浦东国际机场</p>
+                      </div>
+                      <div class="ticketCol ticketLine">
+                        <p class="lineBg"><i class="lineOne"></i><i class="airIcon"></i></p>
+                        <p>约3小时40分</p>
+                      </div>
+                      <div class="ticketCol">
+                        <h2><span>21：00</span></h2>
+                        <p>上海浦东国际机场</p>
+                      </div>
+                      <div class="ticketCol ">
+                        <div class="zdBox clearfix">
+                          <span>含餐</span>
+                        </div>
+                      </div>
+                      <div class="ticketCol hasTips"><p class="linePrice">¥<i>24999</i>/人</p><p class="tips">仅剩<span class="font_roseo">3</span>席</p></div>
+                      <a href="javascript:;" class="chooseBtn">更换</a>
+                    </div>
+                    <div class="flightList" style="display:none;">
+                      <div class="flightBuyItem clearfix">
+                        <div class="itemCol flyTags">
+                          <span class="info f_999">经济舱Y舱</span>
+                          <span class="info f_blue">
+                          退改
+                          <span class="info question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                             </span>              
+                          </span>
+                          <span class="info font_roseo">1折</span>
+                          <span class="info f_999">仅剩<i class="font_roseo">3</i>席</span>
+                        </div>
+                        <a href="javascript:;" class="ReserveBtn checked">已选中</a>            
+                        <div class="DiscountPrice">
+                          <p class="price">¥<i>24999</i></p>
+                        </div>
+                      </div>
+                      <div class="flightBuyItem clearfix">
+                        <div class="itemCol flyTags">
+                          <span class="info f_999">经济舱Y舱</span>
+                          <span class="info f_blue">
+                          退改
+                          <span class="info question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                             </span>              
+                          </span>
+                          <span class="info font_roseo">1折</span>
+                          <span class="info f_999">仅剩<i class="font_roseo">3</i>席</span>
+                        </div>
+                        <a href="javascript:;" class="ReserveBtn">选中</a>            
+                        <div class="DiscountPrice">
+                          <p class="price">¥<i>24999</i></p>
+                        </div>
+                      </div>        
+                    </div>
+                    <!--copy end-->                
+                  </td>
+                  </tr>
+                  <tr>
+                    <td>
+                    <!--copy begin-->
+                    <div class="flightItem clearfix">     
+                      <div class="ticketCol width_80">
+                        <p>09-25</p>
+                        <p>周一</p>
+                      </div>
+                      <div class="ticketCol">
+                        <p>东方航空MU5615</p>
+                        <p>经济舱</p>
+                      </div>
+                      <div class="ticketCol">
+                        <h2><span>21：00</span></h2>
+                        <p>上海浦东国际机场</p>
+                      </div>
+                      <div class="ticketCol ticketLine">
+                        <p class="lineBg"><i class="lineOne"></i><i class="trainIcon"></i></p>
+                        <p>约3小时40分</p>
+                      </div>
+                      <div class="ticketCol">
+                        <h2><span>21：00</span></h2>
+                        <p>上海浦东国际机场</p>
+                      </div>
+                      <div class="ticketCol ">
+                        <div class="zdBox clearfix">
+                          <span>含餐</span>
+                        </div>
+                      </div>
+                      <div class="ticketCol hasTips"><p class="linePrice">¥<i>24999</i>/人</p><p class="tips">仅剩<span class="font_roseo">3</span>席</p></div>
+                      <a href="javascript:;" class="chooseBtn">更换</a>
+                    </div>
+                    <div class="flightList" style="display:none;">
+                      <div class="flightBuyItem clearfix">
+                        <div class="itemCol flyTags">
+                          <span class="info f_999">经济舱Y舱</span>
+                          <span class="info f_blue">
+                          退改
+                          <span class="info question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                             </span>              
+                          </span>
+                          <span class="info font_roseo">1折</span>
+                          <span class="info f_999">仅剩<i class="font_roseo">3</i>席</span>
+                        </div>
+                        <a href="javascript:;" class="ReserveBtn checked">已选中</a>            
+                        <div class="DiscountPrice">
+                          <p class="price">¥<i>24999</i></p>
+                        </div>
+                      </div>
+                      <div class="flightBuyItem clearfix">
+                        <div class="itemCol flyTags">
+                          <span class="info f_999">经济舱Y舱</span>
+                          <span class="info f_blue">
+                          退改
+                          <span class="info question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                             </span>              
+                          </span>
+                          <span class="info font_roseo">1折</span>
+                          <span class="info f_999">仅剩<i class="font_roseo">3</i>席</span>
+                        </div>
+                        <a href="javascript:;" class="ReserveBtn">选中</a>            
+                        <div class="DiscountPrice">
+                          <p class="price">¥<i>24999</i></p>
+                        </div>
+                      </div>        
+                    </div>
+                    <!--copy end-->                
+                  </td>
+                  </tr>          
+                </table>
+              </div>  
+              </div>
+              <div class="airBox tabsMain none" data-index="1">
+     
+                <div class="resultBox flightInfo">
+                  <table class="ticketTable">
+                    <tr>
+            <td>
+              <!--copy begin-->
+                <div class="ticketCon clearfix">
+                  <div class="ticketLeft">
+                    <div class="ticketItem clearfix">
+                      <div class="ticketCol ticketIcon quIcon width_80"></div>
+                      <div class="ticketCol width_80">
+                        <p class="airLine">09-25</p>
+                        <p>周一</p>
+                      </div>    
+                      <div class="ticketCol">
+                        <p class="airLine">东方航空MU5615<i class="font_pink">共享</i></p>
+                        <p>经济舱</p>
+                      </div>  
+                      <div class="ticketCol">
+                        <h2><span>21：00</span></h2>
+                        <p>上海浦东国际机场</p>
+                      </div>
+                      <div class="ticketCol ticketLine">
+                        <p class="lineBg"><i class="lineOne"></i><i class="airIcon"></i></p>
+                        <p>约3小时40分</p>
+                        <p>经停</p>
+                      </div>
+                      <div class="ticketCol">
+                        <h2><span>00：40<i class="oneDay">+1</i></span></h2>
+                        <p>三亚凤凰国际机场</p>
+                      </div>
+                      <div class="ticketCol width_80">
+                        <p class="airLine"></p>
+                        <p>含餐</p>
+                      </div>
+                    </div>
+                    <div class="ticketItem clearfix">
+                      <div class="ticketCol ticketIcon fanIcon width_80"></div>
+                      <div class="ticketCol width_80">
+                        <p class="airLine">09-25</p>
+                        <p>周一</p>
+                      </div>    
+                      <div class="ticketCol">
+                        <p class="airLine">东方航空MU5615</p>
+                        <p>经济舱</p>
+                      </div>  
+                      <div class="ticketCol">
+                        <h2><span>21：00</span></h2>
+                        <p>上海浦东国际机场</p>
+                      </div>
+                      <div class="ticketCol ticketLine">
+                        <p class="lineBg"><i class="lineOne"></i><i class="trainIcon"></i></p>
+                        <p>约3小时40分</p>
+                        <p>经停</p>
+                      </div>
+                      <div class="ticketCol">
+                        <h2><span>00：40<i class="oneDay">+1</i></span></h2>
+                        <p>三亚凤凰国际机场</p>
+                      </div>
+                      <div class="ticketCol width_80">
+                        <p class="airLine"></p>
+                        <p>含餐</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ticketRight">
+                    <p>往返票价</p>
+                    <h2>¥<i>24999</i>/人
+                   
+                    </h2>
+                    <p class="tips">
+                      <span>仅剩<span class="font_roseo">3</span>席</span>
+                      <span class="f_blue" style="position:relative;">退改
+                          <span class="question">
+                            <i class="icon QIcon"></i>
+                            <span class="answerBox">说明说明</span>
+                         </span>
+                      </span>
+                     </p>            
+                    <div class="blank_20"></div>
+                    <a href="javascript:;" class="choiceBtn">已选中</a>
+                  </div>
+                </div>
+
+              <!--copy end-->                
+            </td>
+                    </tr>
+                  </table>
+               </div>
+            </div>
+              <div class="airBox tabsMain none" data-index="2">
+      
+                <div class="resultBox flightInfo">
+                  <table class="ticketTable">
+                    <tr>
+                      <td>
+                        <!--copy begin-->
+                        <div class="flightItem clearfix">     
+                          <div class="ticketCol width_80">
+                            <p>09-25</p>
+                            <p>周一</p>
+                          </div>
+                          <div class="ticketCol">
+                            <p>东方航空MU5615</p>
+                            <p>经济舱</p>
+                          </div>
+                          <div class="ticketCol">
+                            <h2><span>21：00</span></h2>
+                            <p>上海浦东国际机场</p>
+                          </div>
+                          <div class="ticketCol ticketLine">
+                            <p class="lineBg"><i class="lineOne"></i><i class="trainIcon"></i></p>
+                            <p>约3小时40分</p>
+                          </div>
+                          <div class="ticketCol">
+                            <h2><span>21：00</span></h2>
+                            <p>上海浦东国际机场</p>
+                          </div>
+                          <div class="ticketCol ">
+                            <div class="zdBox clearfix">
+                              <span>含餐</span>
+                            </div>
+                          </div>
+                          <div class="ticketCol hasTips"><p class="linePrice">¥<i>24999</i>/人</p><p class="tips">仅剩<span class="font_roseo">3</span>席</p></div>
+                          <a href="javascript:;" class="chooseBtn">更换</a>
+                        </div>
+                        <div class="flightList" style="display:none;">
+                          <div class="flightBuyItem clearfix">
+                            <div class="itemCol flyTags">
+                              <span class="info f_999">经济舱Y舱</span>
+                              <span class="info f_blue">
+                              退改
+                              <span class="info question">
+                                    <i class="icon QIcon"></i>
+                                    <span class="answerBox">说明说明</span>
+                                 </span>              
+                              </span>
+                              <span class="info font_roseo">1折</span>
+                              <span class="info f_999">仅剩<i class="font_roseo">3</i>席</span>
+                            </div>
+                            <a href="javascript:;" class="ReserveBtn checked">已选中</a>            
+                            <div class="DiscountPrice">
+                              <p class="price">¥<i>24999</i></p>
+                            </div>
+                          </div>
+                          <div class="flightBuyItem clearfix">
+                            <div class="itemCol flyTags">
+                              <span class="info f_999">经济舱Y舱</span>
+                              <span class="info f_blue">
+                              退改
+                              <span class="info question">
+                                    <i class="icon QIcon"></i>
+                                    <span class="answerBox">说明说明</span>
+                                 </span>              
+                              </span>
+                              <span class="info font_roseo">1折</span>
+                              <span class="info f_999">仅剩<i class="font_roseo">3</i>席</span>
+                            </div>
+                            <a href="javascript:;" class="ReserveBtn">选中</a>            
+                            <div class="DiscountPrice">
+                              <p class="price">¥<i>24999</i></p>
+                            </div>
+                          </div>        
+                        </div>
+                        <!--copy end-->                
+                      </td>
+                    </tr>
+                  </table>
+               </div>
+            </div>
+              <div class="airBox tabsMain none" data-index="3" >
+     
+                <div class="resultBox flightInfo">
+                  <table class="ticketTable">
+                    <tr>
+                      <td>
+                        <!--copy begin-->
+                        <div class="flightItem clearfix">     
+                          <div class="ticketCol width_80">
+                            <p>09-25</p>
+                            <p>周一</p>
+                          </div>
+                          <div class="ticketCol">
+                            <p>东方航空MU5615</p>
+                            <p>经济舱</p>
+                          </div>
+                          <div class="ticketCol">
+                            <h2><span>21：00</span></h2>
+                            <p>上海浦东国际机场</p>
+                          </div>
+                          <div class="ticketCol ticketLine">
+                            <p class="lineBg"><i class="lineOne"></i><i class="trainIcon"></i></p>
+                            <p>约3小时40分</p>
+                          </div>
+                          <div class="ticketCol">
+                            <h2><span>21：00</span></h2>
+                            <p>上海浦东国际机场</p>
+                          </div>
+                          <div class="ticketCol ">
+                            <div class="zdBox clearfix">
+                              <span>含餐</span>
+                            </div>
+                          </div>
+                          <div class="ticketCol hasTips"><p class="linePrice">¥<i>24999</i>/人</p><p class="tips">仅剩<span class="font_roseo">3</span>席</p></div>
+                          <a href="javascript:;" class="chooseBtn">更换</a>
+                        </div>
+                        <div class="flightList" style="display:none;">
+                          <div class="flightBuyItem clearfix">
+                            <div class="itemCol flyTags">
+                              <span class="info f_999">经济舱Y舱</span>
+                              <span class="info f_blue">
+                              退改
+                              <span class="info question">
+                                    <i class="icon QIcon"></i>
+                                    <span class="answerBox">说明说明</span>
+                                 </span>              
+                              </span>
+                              <span class="info font_roseo">1折</span>
+                              <span class="info f_999">仅剩<i class="font_roseo">3</i>席</span>
+                            </div>
+                            <a href="javascript:;" class="ReserveBtn checked">已选中</a>            
+                            <div class="DiscountPrice">
+                              <p class="price">¥<i>24999</i></p>
+                            </div>
+                          </div>
+                          <div class="flightBuyItem clearfix">
+                            <div class="itemCol flyTags">
+                              <span class="info f_999">经济舱Y舱</span>
+                              <span class="info f_blue">
+                              退改
+                              <span class="info question">
+                                    <i class="icon QIcon"></i>
+                                    <span class="answerBox">说明说明</span>
+                                 </span>              
+                              </span>
+                              <span class="info font_roseo">1折</span>
+                              <span class="info f_999">仅剩<i class="font_roseo">3</i>席</span>
+                            </div>
+                            <a href="javascript:;" class="ReserveBtn">选中</a>            
+                            <div class="DiscountPrice">
+                              <p class="price">¥<i>24999</i></p>
+                            </div>
+                          </div>        
+                        </div>
+                        <!--copy end-->                
+                      </td>
+                    </tr>
+                  </table>
+               </div>
+            </div>
+            <!--end-->                        
+            </div>
+            </div>
+        </div>        
+    </div>
+    <!--结束-->
+    <!--重新选择开始-->
+    <div class="YD_outer newChoose">
+        <div class="tit">当前选中班次为：</div>
+        <!--重新选择-->
+<div class="resultBox flightInfo">
+          <table class="ticketTable">
+            <tbody><tr>
+            <td>
+              <!--copy begin-->
+                <div class="ticketCon clearfix">
+                  <div class="ticketLeft"  style="width:899px;">
+                    <div class="ticketItem clearfix">
+                      <div class="ticketCol ticketIcon quIcon width_80"></div>
+                      <div class="ticketCol width_80">
+                        <p class="airLine">09-25</p>
+                        <p>周一</p>
+                      </div>    
+                      <div class="ticketCol">
+                        <p class="airLine">东方航空MU5615<i class="font_pink">共享</i></p>
+                        <p>经济舱</p>
+                      </div>  
+                      <div class="ticketCol">
+                        <h2><span>21：00</span></h2>
+                        <p>上海浦东国际机场</p>
+                      </div>
+                      <div class="ticketCol ticketLine">
+                        <p class="lineBg"><i class="lineOne"></i><i class="airIcon"></i></p>
+                        <p>约3小时40分</p>
+                        <p>经停</p>
+                      </div>
+                      <div class="ticketCol">
+                        <h2><span>00：40<i class="oneDay">+1</i></span></h2>
+                        <p>三亚凤凰国际机场</p>
+                      </div>
+                      <div class="ticketCol width_80">
+                        <p class="airLine"></p>
+                        <p>含餐</p>
+                      </div>
+                    </div>
+                    <div class="ticketItem clearfix">
+                      <div class="ticketCol ticketIcon fanIcon width_80"></div>
+                      <div class="ticketCol width_80">
+                        <p class="airLine">09-25</p>
+                        <p>周一</p>
+                      </div>    
+                      <div class="ticketCol">
+                        <p class="airLine">东方航空MU5615</p>
+                        <p>经济舱</p>
+                      </div>  
+                      <div class="ticketCol">
+                        <h2><span>21：00</span></h2>
+                        <p>上海浦东国际机场</p>
+                      </div>
+                      <div class="ticketCol ticketLine">
+                        <p class="lineBg"><i class="lineOne"></i><i class="trainIcon"></i></p>
+                        <p>约3小时40分</p>
+                        <p>经停</p>
+                      </div>
+                      <div class="ticketCol">
+                        <h2><span>00：40<i class="oneDay">+1</i></span></h2>
+                        <p>三亚凤凰国际机场</p>
+                      </div>
+                      <div class="ticketCol width_80">
+                        <p class="airLine"></p>
+                        <p>含餐</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ticketRight">
+                    <p>往返票价</p>
+                    <h2>¥<i>24999</i>/人
+                   
+                    </h2>
+                    <p class="tips">
+                      <span>仅剩<span class="font_roseo">3</span>席</span>
+                      <span class="f_blue" style="position:relative;">退改
+                          <span class="question">
+                            <i class="icon QIcon"></i>
+                            <span class="answerBox">说明说明</span>
+                         </span>
+                      </span>
+                     </p>            
+                    <div class="blank_20"></div>
+                    <a href="javascript:;" class="choiceBtn roseoButton">重新选择</a>
+                  </div>
+                </div>
+              <!--copy end-->
+              <!--copy begin-->
+                <div class="ticketCon singleItem clearfix">
+                  <div class="ticketLeft"  style="width:899px;">
+                    <div class="ticketItem clearfix">
+                      <div class="ticketCol ticketIcon quIcon width_80"></div>
+                      <div class="ticketCol width_80">
+                        <p class="airLine">09-25</p>
+                        <p>周一</p>
+                      </div>    
+                      <div class="ticketCol">
+                        <p class="airLine">东方航空MU5615<i class="font_pink">共享</i></p>
+                        <p>经济舱</p>
+                      </div>  
+                      <div class="ticketCol">
+                        <h2><span>21：00</span></h2>
+                        <p>上海浦东国际机场</p>
+                      </div>
+                      <div class="ticketCol ticketLine">
+                        <p class="lineBg"><i class="lineOne"></i><i class="airIcon"></i></p>
+                        <p>约3小时40分</p>
+                        <p>经停</p>
+                      </div>
+                      <div class="ticketCol">
+                        <h2><span>00：40<i class="oneDay">+1</i></span></h2>
+                        <p>三亚凤凰国际机场</p>
+                      </div>
+                      <div class="ticketCol width_80">
+                        <p class="airLine"></p>
+                        <p>含餐</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ticketRight">
+                    <h2>¥<i>24999</i>/人
+                    </h2>
+                    <p class="tips">
+                      <span>仅剩<span class="font_roseo">3</span>席</span>
+                      <span class="f_blue" style="position:relative;">退改
+                          <span class="question">
+                            <i class="icon QIcon"></i>
+                            <span class="answerBox">说明说明</span>
+                         </span>
+                      </span>
+                     </p>            
+                    <div class="blank_20"></div>
+                    <a href="javascript:;" class="choiceBtn roseoButton">重新选择</a>
+                  </div>
+                </div>
+              <!--copy end-->                                           
+            </td>
+            </tr>
+            <tr>
+            <td>
+<div class="addBox hasborder">
+                <div class="secureOuter">
+                  <table class="secureBox">
+                    <tbody><tr>
+                      <td rowspan="3" class="s_tit">航意险：</td>
+                      <td>
+                        <div class="securItem clearfix">
+                          <span class="safeItem">20元-合众综合交通意外十天 20元
+                            <span class="question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                            </span>
+                          </span>
+                          <p class="price font_roseo">￥40 元/份<span class="icon checkbox"></span></p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="securItem clearfix">
+                          <span class="safeItem">20元-合众2015高额1天航意险20元
+                            <span class="question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                            </span>                          
+                          </span>
+                          <p class="price font_roseo">￥25 元/份<span class="icon checkbox"></span></p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                  <hr class="dashed">
+                  <table class="secureBox">
+                    <tbody><tr>
+                      <td rowspan="3" class="s_tit">航延险：</td>
+                      <td>
+                        <div class="securItem clearfix">
+                          <span class="safeItem">20元-合众综合交通意外十天 20元
+                            <span class="question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                            </span>
+                          </span>
+                          <p class="price font_roseo">￥40 元/份<span class="icon checkbox"></span></p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="securItem clearfix">
+                          <span class="safeItem">20元-合众2015高额1天航意险20元
+                            <span class="question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                            </span>                          
+                          </span>
+                          <p class="price font_roseo">￥25 元/份<span class="icon checkbox"></span></p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                  <hr class="dashed">
+                  <table class="secureBox">
+                    <tbody><tr>
+                      <td rowspan="3" class="s_tit">火车保险：</td>
+                      <td>
+                        <div class="securItem clearfix">
+                          <span class="safeItem">20元-合众综合交通意外十天 20元
+                            <span class="question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                            </span>
+                          </span>
+                          <p class="price font_roseo">￥40 元/份<span class="icon checkbox"></span></p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="securItem clearfix">
+                          <span class="safeItem">20元-合众2015高额1天航意险20元
+                            <span class="question">
+                                <i class="icon QIcon"></i>
+                                <span class="answerBox">说明说明</span>
+                            </span>                          
+                          </span>
+                          <p class="price font_roseo">￥25 元/份<span class="icon checkbox"></span></p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody></table>                                    
+                </div>
+              </div>            
+            </td>
+                    </tr>
+                  </tbody></table>
+               </div>
+               <div class="blank_20"></div>        
+        <!--选择结束-->
+        <table class="YD_table">
+            <tr>
+                <th>序号</th>
+                <th>游客姓名</th>
+                <th>证件类型</th>
+                <th>证件号码</th>
+                <th>类型</th>
+	            <th class="YD_table_width">火车票身份核验</th>
+                <th colspan="2" width="510">大交通</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" >1</td>
+                <td>王尼玛</td>
+                <td>身份证</td>
+                <td>3205972215631111154</td>
+                <td>成人</td>
+                <td class="YD_table_width">通过</td>
+                <td>
+                    <div class="traffic">
+                        <div class="trafIcon"><img src="../resource/images/icon/airPlane.png"></div>
+                        <div class="trafInfo">
+                            <p>三亚凤凰-上海虹桥</p>
+                            <p>中国南方航空CZ62732</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="traffic">
+                        <div class="trafIcon"><img src="../resource/images/icon/hcIcon.png"></div>
+                        <div class="trafInfo">
+                            <p>三亚凤凰-上海虹桥</p>
+                            <p>中国南方航空CZ62732</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="disabledTd">
+                <td><input type="checkbox" disabled>1</td>
+                <td>王尼玛</td>
+                <td>身份证</td>
+                <td>3205972215631111154</td>
+                <td>儿童</td>
+                 <td>通过</td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr> 
+              <!--火车票邮寄 18-4-1-->
+    <tr class="tickedEmailBox">
+    	<!--注意单元格合并问题-后期添加表格必须对应-->
+    	<td colspan="8" style="padding:0">
+    	<!--验证不通过时-->
+    	<div class="ticked_dashed">
+                	
+                	<ul class="ticked_dashed_header" style="margin-left: 1%;">
+                		<li>火车票身份验证不通过时，请选择以下的策略方案</li>
+                		<li class="pv1 f_blue">电子票
+                		<div class="pv1_content" style="display: none;">电子票为在线购票的火车票，若购买的车次具备刷二代身份证进出站条件的，无需换取纸质票即可乘车，否则需要至车站换取纸质票。
+</div>
+                		</li>
+                		<li class="pv2 f_blue">配送票
+                		<div class="pv2_content" style="display: none;">
+                			配送票是根据您下单时留下的配送地址送票上门，若购买电子票身份核验不通过时可选择购买配送票。
+							<br>1、配送票订单出票成功后，3个工作日内送达，偏远地区，极限天气或其它不可控因素除外；
+							<br>2、请务必准确填写配送地址，如地址错误导致无法送达，责任自行承担；
+							<br>3、送票上门预售期为28天内，如超过28天，会在预售期开始后第一时间出票；
+							<br>4、配送票如需退票或改签，请携带纸质车票和购票时的有效证件前往火车站人工窗口办理；
+							<br>5、部分乡镇及偏远地区不保证能送达，请尽量选择市、区、县内地址。
+
+                		</div>
+                		<script type="text/javascript">
+//              			console.log("this is my js")
+                			window.onload=function(){
+                				if($){
+//              				console.log($)
+                				$(".pv1").mouseenter(function(){
+                					$(".pv1_content").show();
+                				})
+                				$(".pv1").mouseout(function(){
+                					$(".pv1_content").hide();
+                				})
+                				
+                				$(".pv2").mouseenter(function(){
+                					$(".pv2_content").show();
+                				})
+                				$(".pv2").mouseout(function(){
+                					$(".pv2_content").hide();
+                				})
+                			}	
+                			}
+                		</script>
+                		</li>
+                		<li class="font_pink">（配送票需额外支付5元/人手续费）</li>
+                	</ul>
+                	<ul class="ticked_dashed_checked">
+                		<li>
+                			<span class="disabledchecked"></span><span class="f_cecece">身份核验通过的购买电子票，身份核验不通过的购买配送票</span><span class="font_pink">此车次暂不支持购买配送票</span>
+                		</li>
+                		<li>
+                			<span class="icon checkbox"></span><span>全部购买配送票</span><span  class="font_pink">此车次暂不支持购买配送票</span>
+                		</li>
+                		<li>
+                			<span class="icon checkbox"></span><span>只购买身份核验通过的电子票</span>
+                		</li>
+                	</ul>
+                </div>
+    	
+    	<!--验证不通过的结束-->
+    	
+    	<div class="OpportmanBox ReserveBox ticked_email" style="margin-top:20px;">
+              <div class="title" style="text-align: left;line-height:10px;">
+              <b class="relative">火车票邮寄（只邮寄配送票）
+                <span class="question">
+                    <em class="icon QIcon" 
+                    style=" width:16px;
+							height:16px;
+							background-position: -265px 0;
+							margin-top:14px;"
+					></em>
+                    <em class="answerBox">说明说明</em>
+                </span>
+              </b>
+              <span class="ticked_email_titileDetail">（邮寄费15元/单，单笔订单上线为20人）</span></div>
+              
+              <div class="infoBox contactBox">
+                <!--copy begin-->
+                <div class="formCol clearfix">
+                  <div class="signStyle"><i style="color:red">*&nbsp;</i>收货人姓名：</div>
+                  <div class="formCon">
+                    <div class="formItem clearfix">
+                      <div class="inputBox width_150">
+                        <input type="text" placeholder="请填写姓名">
+                      </div>                    
+                    </div>
+                  </div>                
+                </div>
+                <!--所在地区-->
+                <div class="formCol clearfix checkAdress">
+                  <div class="signStyle"><i style="color:red">*&nbsp;</i>所在地区：</div>
+                  <div class="formCon">
+                    <select style="margin-left: 0;">
+					<option value="volvo">请选择省</option>
+					<option value="saab">Saab</option>
+					<option value="mercedes">Mercedes</option>
+					<option value="audi">Audi</option>
+					</select>
+					<select>
+					<option value="volvo">请选择市</option>
+					<option value="saab">Saab</option>
+					<option value="mercedes">Mercedes</option>
+					<option value="audi">Audi</option>
+					</select>
+					<select>
+					<option value="volvo">请选择区</option>
+					<option value="saab">Saab</option>
+					<option value="mercedes">Mercedes</option>
+					<option value="audi">Audi</option>
+					</select>
+                  </div> 
+                
+                <!--copy end-->              
+              </div>
+                <!--街道地址-->
+                <div class="formCol clearfix">
+                  <div class="signStyle"><i style="color:red">*&nbsp;</i>街道地址：</div>
+                  <div class="formCon">
+                    <div class="formItem clearfix">
+                      <div class="inputBox width_180">
+                        <input type="text" placeholder="">
+                      </div>                    
+                    </div>
+                  </div> 
+                 <div class="zhushi">注：不需要重复填写省市区</div>
+                <!--copy end-->              
+              </div>
+              <!--邮编-->
+                <div class="formCol clearfix">
+                  <div class="signStyle">&nbsp;&nbsp;&nbsp;邮编：</div>
+                  <div class="formCon">
+                    <div class="formItem clearfix">
+                      <div class="inputBox width_150">
+                        <input type="text" placeholder="">
+                      </div>                    
+                    </div>
+                  </div> 
+                 
+                <!--copy end-->              
+              </div>
+              <!--手机号码-->
+                <div class="formCol clearfix">
+                  <div class="signStyle"><i style="color:red">*&nbsp;</i>手机号码：</div>
+                  <div class="formCon">
+                    <div class="formItem clearfix">
+                      <div class="inputBox width_150">
+                        <input type="text" placeholder="">
+                      </div>                    
+                    </div>
+                  </div> 
+                 
+                <!--copy end-->              
+              </div>
+            </div>
+            </div>
+
+    	</td>
+    </tr>
+    <!--火车票邮寄 2018-4-2 over-->
+        </table>
+        
+      
+        <!--YD_outer2 over-->
+    </div>
+    
+    <!--重新选择结束--> 
+    <div class="formBtn">
+    <a href="javascript:;" class="closeBtn">关闭</a>  
+    <a href="javascript:;" class="redBtn">提交</a> 
+</div> 
+    </div>
+    <!--预定交通结束-->   
+    <script src="../resource/js/jquery.min.js"></script>
+    <script src="../resource/js/layer/layer.js"></script>
+    <script type="text/javascript" src="../resource/js/My97DatePicker/WdatePicker.js"></script>
+    <script src="../resource/js/layer/order718zb.js"></script>
+
+    <script type="text/javascript">
+     $(function () {
+          $(".BD").click(function () {
+              layer.open({
+                  scrollbar: false,
+                  title: '请选择需要绑定的人员名单',
+                  type: 1,
+                  area: ['840px', '560px'],
+                  content: $("#BDBox")
+                  //content: $("#ticketPop_1")
+              });
+          });
+          $(".PayIcon").click(function () {
+              layer.open({
+                  scrollbar: false,
+                  title: '合并付款',
+                  type: 1,
+                  area: ['840px', '560px'],
+                  content: $("#payAllBox")
+                  //content: $("#ticketPop_1")
+              });
+          });         
+          $(".applyTT").click(function () {
+              layer.open({
+                  scrollbar: false,
+                  title: '退订申请',
+                  type: 1,
+                  area: ['990px', '560px'],
+                  content: $("#TDBox")
+                  //content: $("#ticketPop_1")
+              });
+          }); 
+          $(".YDJT").click(function () {
+              layer.open({
+                  scrollbar: false,
+                  title: '预定交通',
+                  type: 1,
+                  area: ['1200px', '750px'],
+                  content: $("#YDBox")
+                  //content: $("#ticketPop_1")
+              });
+          });                             
+          });    
+        $(function(){
+              $(".checkbox").toggle(
+                function(){
+                  $(this).addClass('checked');
+                },
+                function(){
+                  $(this).removeClass('checked');
+                }
+              )            
+            $(".shop").hover(function(){
+                $(this).find(".all_shop").toggleClass("none");
+            })
+            $(".i_search").click(function(){
+                $(this).parents(".search_all").find(".s_wrap ").fadeIn(200);
+            })
+            $("body").click(function(e){
+                var _con = $(".i_search,.s_wrap ");
+                if( !_con.is(e.target) && _con.has(e.target).length == 0){
+                    $(".s_wrap").addClass("none").fadeOut(100);
+                }
+                var _cc = $(".hb_time");
+                if( !_cc.is(e.target) && _cc.has(e.target).length == 0){
+                    $(".hb_sel").addClass("none");
+                }
+            })
+            //舱位共享
+            $(".airLine sup").hover(function(){
+                $(this).parents(".ticketCol").find(".sharePop").removeClass("none");
+            },function(){
+                $(this).parents(".ticketCol").find(".sharePop").addClass("none");
+            })            
+            //出发地
+            $(".depart_wrap li").click(function(){
+                $(this).parents(".search_wrap").find(".triangle").text($(this).text());
+                $(this).parent(".depart_wrap").addClass("none");
+            })
+            $(".search_wrap .triangle").click(function(){
+                $(this).parents(".search_wrap").find(".depart_wrap").toggleClass("none");
+            })
+            //tab切换
+          $(function () {
+            $(".tabs li").click(function () { 
+            var index_tab = $(this).parent().children().index($(this)); //选项卡的索引值 
+            $(this).addClass('cur').siblings().removeClass('cur');
+            $(this).parent().toggleClass("tabBg_2");
+            var content_obj = $(".tabs_con") //内容节点 
+            content_obj.hide(); 
+            content_obj.eq(index_tab).show(); 
+            }); 
+          }); 
+          /*机票选择展开*/
+          $(".chooseBtn").toggle(
+            function(){
+              $(this).parents().next('.flightList').show();
+            },
+            function(){
+              $(this).parents().next('.flightList').hide();
+            }
+          ) 
+                //预定返程
+            $(".return_tab li").click(function(){
+                $(this).addClass("active").siblings("li").removeClass("active");
+                $(".tabsMain[data-index="+ $(this).data("index")+"]").removeClass("none").siblings(".tabsMain").addClass("none");
+            })                                
+                //订单tab
+            $(".order_tab .tab_item").click(function(){
+                $(this).addClass("active").siblings(".tab_item").removeClass("active");
+                $(".order_list[data-index="+ $(this).data("index")+"]").removeClass("none").siblings(".order_list").addClass("none");
+            })
+            //价格详情hover
+            $(".price .num_p").hover(function(){
+                $(this).parent().children(".dialog_price").removeClass("none");
+            },function(){
+                $(this).parent().children(".dialog_price").addClass("none");
+            })
+            $(".price .num_p em").hover(function(){
+                $(this).parents(".order_item").find(".yuding").removeClass("none");
+            },function(){
+                $(this).parents(".order_item").find(".yuding").addClass("none");
+            })
+            //更多操作
+            $(".operation .more-opera").click(function(){
+                $(this).toggleClass("up");
+                $(this).find(".more_con").toggleClass("none");
+                if($(this).hasClass("up")){
+                    $(this).find("em").text("收起操作");
+                }else{
+                    $(this).find("em").text("更多操作");
+                }
+            })
+            //航班时间
+            $(".order_title .hb_time .hb_txt").click(function(){
+                $(this).parents(".hb_time").find(".hb_sel").toggleClass("none")
+            })
+            //高级搜索
+            $(".advance_search").click(function(){
+                $(this).toggleClass("down");
+                $(".info_wrap").toggleClass("none");
+                if($(this).hasClass("down")){
+                    $(this).find("i").text("高级搜索");
+                }else{
+                    $(this).find("i").text("收起");
+                }
+            })
+            //修改订单
+            $(".operation .edit,.operation .adjust,.operation .application,.operation .commonet").click(function(){
+                $(".dia_bd").removeClass("none");
+            })
+            $(".operation .edit").click(function(){
+                $(this).parents(".order_item").find(".xg_order").removeClass("none");
+            })
+            $(".edit_content .close,.edit_content .add_xg").click(function(){
+                $(".dia_bd").addClass("none");
+                $(this).parents(".order_item").find(".edit_wrap").addClass("none");
+            })
+            //补差调整
+            $(".operation .adjust").click(function(){
+                $(this).parents(".order_item").find(".bc_order").removeClass("none");
+            })
+            //退团申请
+            $(".operation .application").click(function(){
+                $(this).parents(".order_item").find(".tt_order").removeClass("none");
+            })
+            $(".operation .commonet").click(function(){
+                $(this).parents(".order_item").find(".pj_order").removeClass("none");
+            })
+            //高级搜索产品类型多选
+            $(".r_tri").click(function(){
+                $(this).next(".depart_wrap").toggleClass("none");
+            })
+            $(".depart_wrap li").click(function(){
+                $(this).parents(".line_type").find(".r_tri").text($(this).text());
+            })
+            //退改规则
+            $(".tui_rule").hover(function(){
+                $(".rule").removeClass("none");
+            },function(){
+                $(".rule").addClass("none");
+            })
+        })
+    </script>
+</body>
+</html>

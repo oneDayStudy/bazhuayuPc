@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>八爪鱼在线旅游平台</title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/common.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/tanceng.css">
+    <style>
+        /*我的客户列表*/
+        .mask{background: url("../resource/images/bodyMask.png");width:100%;height:3600px;}
+        .customerList{margin:100px auto;width: 950px;background: #fff;font-size:16px;}
+        .errorIcon{display: inline-block;width: 18px;height: 18px;background: url("../resource/images/icon/return_btn.png") no-repeat;}
+        .customer_header p{background: #f6f9fa;width:950px;height:50px;text-align: center;line-height: 50px;font-size: 18px;position: relative;}
+        .customer_header p i{position: absolute;right: 10px;top:14px;}
+        .cust_btn{text-align: center;}
+        .cust_useBtn{display: inline-block;width: 180px;height:40px;line-height: 40px;background: #fd4a67;color:#fff;border-radius:4px;}
+        .blank_20{height:20px;}
+        /*我的客户列表 over*/
+
+
+        /*超时提示样式*/
+        .timeoutPrompt_cont{}
+        .timeout_p{text-align: center;margin-top:38px;}
+        .timeout_t{text-align: center;line-height: 20px;line-height: 28px;}
+        .timeoutIcon{display: inline-block;width: 85px;height: 85px;background: url("../resource/images/icon/timeoutIcon.png") no-repeat;}
+        .timeout_btn{text-align: center}
+        .timeout_btn a{display: inline-block;width: 180px;height:40px;line-height: 40px;background: #fd4a67;color:#fff;margin-top:20px;border-radius:4px;}
+        /*超时提示样式 over*/
+        /*线路集合提示*/
+        .lineColle_cont{font-size:16px;line-height: 24px;}
+        .lineColle_cont dl{overflow: hidden;padding-top:20px;height:168px;width:490px;margin:20px auto;}
+        .lineColle_cont dt{float: left;margin-right:20px;}
+        .lineColle_cont dd{float: left}
+        .excamationIcon{display: inline-block;width:54px;height:54px;background: url("../resource/images/icon/excamaIcon.png") no-repeat;}
+        .lineColle_btn{text-align: center}
+        .lineColle_btn a{display: inline-block;width: 180px;height:40px;line-height: 40px;background: #fd4a67;color:#fff;margin-top:20px;border-radius: 4px;}
+        /*线路集合提示 over*/
+        /*订单提交系列 1,2,3,4*/
+        .orderSub{overflow: hidden;font-size:16px;line-height:27px;}
+        .orderSub dl{overflow: hidden;width:360px;height:100px;margin:120px auto;padding:20px 0;}
+        .orderSub dt{float:left;}
+        .orderSub dd{float:left;margin-left:20px;}
+        .orderSubIcon{display: inline-block;width: 58px;height:62px;background: url("../resource/images/icon/orderSubIcon.png") no-repeat;}
+        /*订单提交系列 1,2,3,4 over*/
+    </style>
+</head>
+<body>
+<style>
+    .errorIcon{
+        background: url(../resource/images/icon/tan_delete.png) no-repeat center center;
+    }
+    .orderNum{
+        border-bottom:1px solid #d6d6d6;
+        padding:20px 0 30px 0;
+        margin:0 20px;
+    }
+    .orderNum p{
+        color:#666;
+        padding:3px 0;
+    }
+    .orderNum p em{
+        color:#000;
+    }
+    .orderNum p em i{
+        display: inline-block;
+        width:20px;
+    }
+    .choseCustomer{
+        margin:20px 20px 10px  20px;
+        position: relative;
+    }
+    .plea_cho{
+        font-size: 18px;
+        color:#000;
+        padding:10px 0;
+        overflow: hidden;
+    }
+    .choseNum{
+        padding:5px 0;
+        border:1px solid #d6d6d6;
+    }
+    .plea_cho i{
+        float: right;
+        color:#35bae6;
+        cursor: pointer;
+    }
+    .rule_details{
+        position: absolute;
+        right:0;
+        top:40px;
+        border:1px solid #fce1bc;
+        width:250px;
+        padding:10px;
+        background: #fff3db;
+        box-shadow: 1px 2px 3px #eff3f5;
+        color:#666;
+        line-height:22px;
+        font-size: 14px;
+        display: none;
+    }
+    .triangle-border {
+        position: absolute;
+       right:10%;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-style: dashed dashed solid dashed;
+    }
+    .tb-border {
+       top:-21px;
+        border-color: transparent transparent #fce1bc transparent;
+    }
+    .tb-background {
+       top:-20px;
+        border-color: transparent transparent #fff3db transparent;
+    }
+    .cho_search{
+        padding:10px 10px;
+    }
+    .cho_search a{
+        border:1px solid #ff4858;
+        padding:3px 20px;
+        border-radius: 5px;
+        color:#ff4858;
+    }
+    .cho_tab{
+        border:1px solid #d6d6d6;
+        width:98%;
+        margin:0 10px 5px 10px;
+        height:200px;
+    }
+    .cho_tab tr th{
+        text-align: center;
+        font-size: 16px;
+        color:#666;
+    }
+    .cho_tab tr td{
+        text-align: center;
+        color:#000;
+        font-size: 16px;
+    }
+    .king_money{
+        color:#ff4858;
+    }
+    .tips_money{
+        color:#ff4858;
+        text-align: center;
+        padding:10px 0 20px 0;
+    }
+    .inp_name{
+        width:80px;
+        margin-right: 30px;
+        border:1px solid #d6d6d6;
+        padding:3px 5px;
+    }
+    .inp_card{
+        width:180px;
+        margin-right:10px;
+        border:1px solid #d6d6d6;
+        padding:3px 5px;
+    }
+    /*第二种退订机票*/
+   .reduceIcon{
+       display: inline-block;
+       vertical-align: middle;
+       width:20px;
+       height:20px;
+       border:1px solid #d6d6d6;
+       background: url(../resource/images/newPackImg.png) no-repeat center center;
+       background-position:-100px -7px ;
+   }
+    .NumBox {
+       width:24px;
+        height:22px;
+        vertical-align: middle;
+        border:1px solid #d6d6d6;
+        box-sizing: border-box;
+        border-left: 0;
+        border-right: 0;
+        display: inline-block;
+        text-align: center;
+        margin-top: 1px;
+    }
+    .addIcon {
+        display: inline-block;
+        vertical-align: middle;
+        width:20px;
+        height:20px;
+        border:1px solid #d6d6d6;
+        background: url(../resource/images/newPackImg.png) no-repeat center center;
+        background-position: -121px -7px;
+    }
+    .tu_rule{
+        border:1px solid #d6d6d6;
+        margin:0 20px 30px 20px;
+        padding:30px;
+        background: #f6f9fa;
+    }
+    .tui_title{
+        font-size: 16px;
+    }
+    .tui_detail{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .tui_detail p{
+        line-height: 25px;
+    }
+    .tui_detail p i{
+        display: inline-block;
+        width:20px;
+    }
+    .cust_btn a{
+        background: #fd4a67;
+    }
+    .customerList .order_bor{
+        border-bottom: 0;
+    }
+    /*绑定乘客*/
+    /*.passenger_wai{*/
+        /*width:1000px;*/
+    /*}*/
+    .passenger{
+        overflow: hidden;
+        padding:0 0 30px 0;
+    }
+    .choice_passenger{
+        float: left;
+        width:58%;
+    }
+    .passenger_title{
+        padding:5px 0;
+    }
+    .passenger_left{
+        border:1px solid #d6d6d6;
+        padding:10px;
+        height:250px;
+    }
+    .passenger_search{
+    }
+    .pa_name{
+        width:50px;
+    }
+    .pa_card{
+        width:130px;
+    }
+    .passenger_search a{
+        border:1px solid #ff4858;
+        color:#ff4858;
+        padding:0 5px;
+        border-radius: 5px;
+    }
+    .info_passenger{
+        padding-left: 20px;
+        color:#00a7de;
+    }
+    .passenger_tab{
+        width:100%;
+        max-height:205px;
+        border:1px solid #d6d6d6;
+        overflow: scroll;
+    }
+    .passenger_tab tr{
+        border-top:1px solid #cecece;
+    }
+    .passenger_tab tbody tr th,.passenger_tab tbody tr td{
+        text-align: center;
+        padding:10px 0;
+    }
+    .passenger_tab tbody tr th{
+        background: #f6f9fa;
+        color:#666;
+    }
+    .passenger_modify{
+        color:#00a7de;
+        cursor: pointer;
+    }
+    .passenger_modify:hover{
+        text-decoration: underline;
+    }
+    .input_text{
+        width:80px;
+        text-align: center;
+        color:#000;
+        border:1px solid #cecece;
+    }
+    .select_passenger{
+        width:80px;
+        height:25px;
+        text-align: left;
+        border:1px solid #cecece;
+
+    }
+    .input_card{
+        width:170px;
+        height:25px;
+        text-align: center;
+        border:1px solid #CECECE;
+    }
+    .td_tri{
+        position: relative;
+    }
+    .tips_pass{
+        position: absolute;
+        left: 0;
+        top:25px;
+        border: 1px solid #fad6a7;
+        padding: 5px;
+        background: #fef3da;
+        box-shadow: 1px 2px 3px #eff3f5;
+        color:#ff4858;
+        font-size: 14px;
+    }
+    .triangle-border1{
+        position: absolute;
+        left: 10%;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-style: dashed dashed solid dashed;
+    }
+    .tb-border1 {
+        top:-21px;
+        border-color: transparent transparent #fad6a7 transparent;
+    }
+    .tb-background1 {
+        top:-20px;
+        border-color: transparent transparent #fef3da transparent;
+    }
+    .passenger_right{
+        float: left;
+        width:40%;
+        margin-left:10px;
+    }
+    .over_scroll{
+        height: 205px;
+        margin-top: 10px;
+        overflow-y:scroll;
+    }
+    /*绑定乘客2*/
+    .update_passenger{
+        padding:0 20px;
+        overflow: hidden;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .update_passenger a{
+        color:#00a7de;
+        display: inline-block;
+    }
+    .fan{
+        float: left;
+    }
+    .pilia,.xiaz{
+        float: right;
+        padding-left: 25px;
+        background: url("../resource/images/icon/inportup.png") no-repeat center left;
+        margin-left: 20px;
+    }
+    .xiaz{
+        background: url("../resource/images/icon/downLoad1.png") no-repeat center left;
+    }
+    .tor_content{
+        padding:10px 20px 10px 20px;
+    }
+    .tor_content p{
+        padding:10px 0;
+    }
+    .content_inp{
+        padding:5px 0;
+    }
+    .content_inp span{
+        display: inline-block;
+        color:#666;
+        font-size: 14px;
+        width:280px;
+    }
+    .content_inp span em{
+        text-align: right;
+        padding-right: 5px;
+        display: inline-block;
+    }
+    .em-na{
+        width:40px;
+    }
+    .em-co{
+        width:70px;
+    }
+    .content_inp span i{
+        width:10px;
+        color:#ff4858;
+        vertical-align: middle;
+    }
+    .content_inp span input{
+        width:180px;
+        padding:3px 5px;
+        border:1px solid #dfe4e6;
+    }
+    .content_save{
+        border:1px solid #ff4858;
+        padding:3px 20px;
+        color:#ff4858;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+    .tor_list{
+        margin-top: 15px;
+    }
+    .jihua{
+        display: inline-block;
+        font-size: 14px;
+        color:#666;
+    }
+    .width_20{
+        display: inline-block;
+        width:20px;
+    }
+    .list_red{
+        color:#ff4858;
+    }
+    .add_bor{
+        height:330px;
+        margin:20px;
+        overflow-y:scroll;
+    
+    }
+    .add_tor{
+        border:1px solid #dfe4e6;
+        width:100%;
+        max-height: 330px;
+
+       
+    }
+    .add_tor tr{
+        border-top:1px solid #dfe4e6;
+    }
+    .add_tor tr th,.add_tor tr td{
+        text-align: center;
+        padding:10px 5px;
+        font-size: 14px;
+
+    }
+    .add_tor tr th{
+        background:#f6f9fa;
+        color:#405063;
+        font-weight: bold;
+    }
+    .add_tor tr td{
+        color:#405063;
+    }
+    .add_tor tr td a{
+        display: inline-block;
+        padding:0 10px;
+        color:#00a7de;
+    }
+    .add_tor tr td input{
+        color:#000;
+    }
+    .add_tor tr td input::-webkit-input-placeholder{
+        color:#ccc;
+    }
+    .add_tor tr td input,.add_tor tr td select{
+        padding:2px 5px;
+        text-align: center;
+        border:1px solid #dfe4e6;
+    }
+    .tor_name{
+        width:60px;
+    }
+
+    .tor_sex{
+        width:50px;
+    }
+    .tor_old{
+        width:70px;
+    }
+    .tor_card{
+        width:80px;
+    }
+    .add_tor tr td input.tor_cardNum{
+        width:160px;
+        text-align: left;
+    }
+    .add_tor tr td input.tor_tel{
+        width:100px;
+        text-align: left;
+    }
+    .gantan{
+        width:170px;
+        background:url("../resource/images/icon/gantan.png") no-repeat center right;
+        background-position: center right 10px;
+    }
+    .add_tor tr td.edit_one{
+        text-align: left;
+        padding-left:13px;
+    }
+    .tips_card{
+        left:20px;
+        top:50px;
+        white-space:nowrap;
+    }
+    .tips_tel{
+        left:30px;
+        top:50px;
+        white-space:nowrap;
+    }
+    .add_tor tr td a.tor_add{
+        border:1px solid #ff4858;
+        padding:5px 15px;
+        color:#ff4858;
+        text-align: right;
+        border-radius: 5px;
+        margin: 10px 10px 10px 0;
+        font-size: 16px;
+    }
+    .ding{
+        position: relative;
+    }
+</style>
+<div   class="mask">
+    <!--退订机票-->
+    <div class="customerList">
+        <div class="customer_header">
+            <p>退订机票<i class="errorIcon"></i></p>
+        </div>
+        <div class="orderNum">
+            <p>订单编号：<em>D0000000001</em></p>
+            <p>航班信息：<em>去程：MU5615（12月31日）<i></i>返程：MU5615（01月08日）</em></p>
+        </div>
+        <div class="choseCustomer">
+            <p class="plea_cho">请选择退订乘客<i class="tui_rule">退订规则</i></p>
+            <div class="rule_details">
+                <div class="detail_one">
+                    <span>开车前15天（不含）以上退票的，不收取退票费；票面乘车站开车时间前48小时以上的按票价5%计，24小时以上、不租48小时以上的按照票价10%计，不租24小时的按票价20
+                    %计。开车前48小时~15天期间内，改签成变更站至开车15天以上的其他列车，又在距开车15天能退票的。扔核收5%的退票费。</span>
+                    <div class="triangle-border tb-border"></div>
+                    <div class="triangle-border tb-background"></div>
+                </div>
+            </div>
+            <div class="choseNum">
+                <p class="cho_search">
+                    <span>姓名</span>
+                    <input type="text" class="inp_name"/>
+                    <span>证件号</span>
+                    <input type="text" class="inp_card"/>
+                    <a href="#">查询</a>
+                </p>
+                <table class="cho_tab" border="1">
+                    <tr>
+                        <th><input type="checkbox"/>全选</th>
+                        <th>姓名</th>
+                        <th>证件类型</th>
+                        <th>证件号</th>
+                        <th>票型</th>
+                        <th>票价</th>
+                        <th>参考违约金</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>测试01</td>
+                        <td>身份证</td>
+                        <td>360828198806083631</td>
+                        <td>成人票</td>
+                        <td>￥500</td>
+                        <td>￥500</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>测试01</td>
+                        <td>身份证</td>
+                        <td>360828198806083631</td>
+                        <td>成人票</td>
+                        <td>￥500</td>
+                        <td>￥500</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>测试01</td>
+                        <td>身份证</td>
+                        <td>360828198806083631</td>
+                        <td>成人票</td>
+                        <td>￥500</td>
+                        <td>￥500</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>测试01</td>
+                        <td>身份证</td>
+                        <td>360828198806083631</td>
+                        <td>成人票</td>
+                        <td>￥500</td>
+                        <td>￥500</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="text-align: right;padding-right: 20px;">合计参考违约金<span class="king_money">￥1500</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <p class="tips_money">*上述金额为预计估算，违约金金额以客服最终审核确认为准。</p>
+        <div class="cust_btn">
+            <a href="javascript:;" class="cust_useBtn">提交</a>
+        </div>
+        <div class="blank_20"></div>
+    </div>
+    <!--退订机票2-->
+    <div class="customerList">
+        <div class="customer_header">
+            <p>退订机票<i class="errorIcon"></i></p>
+        </div>
+        <div class="orderNum order_bor">
+            <p>订单编号：<em>D0000000001</em></p>
+            <p>航班信息：<em>去程：MU5615（12月31日）<i></i>返程：MU5615（01月08日）</em></p>
+            <p>退订数量：
+                <a href="#"class="reduceIcon IconOrange"></a><input class="NumBox" type="text" placeholder="1"><a href="javascript:;" class="addIcon"></a>
+            </p>
+        </div>
+        <div class="tu_rule">
+            <p class="tui_title">退订规则</p>
+            <div class="tui_detail">
+                <p>机票（去程：MU5615<i></i>返程：MU5615）：</p>
+                <p>一、出发前3日内截止到出团前1天17点，退团收取结算价10%违约金。</p>
+                <p>二、出发前1天17点后到回团日期之前，退团收取结算价50%违约金。</p>
+                <p>三、机票违约金根据不同航班自动计算。</p>
+                <p>四、保险相关费用在计划起飞时间前2小时之内不可退，其余时间均可退。</p>
+            </div>
+        </div>
+        <div class="cust_btn">
+            <a href="javascript:;" class="cust_useBtn">提交</a>
+        </div>
+        <div class="blank_20"></div>
+    </div>
+    <!--绑定乘客-->
+    <div class="customerList passenger_wai">
+        <div class="customer_header">
+            <p>绑定乘客<i class="errorIcon"></i></p>
+        </div>
+        <div class="orderNum">
+            <p>订单编号：<em>D0000000001</em></p>
+            <p>航班信息：<em>去程：MU5615（12月31日）<i></i>返程：MU5615（01月08日）</em></p>
+        </div>
+        <div class="choseCustomer passenger">
+            <!--左边请选择绑定乘客-->
+            <div class="choice_passenger">
+                <p class="passenger_title">请选择绑定乘客</p>
+                <div class="passenger_left">
+                    <p class="passenger_search">
+                        <span>姓名</span>
+                        <input type="text" class="pa_name"/>
+                        <span>证件号</span>
+                        <input type="text" class="pa_card"/>
+                        <a href="#">搜索</a>
+                        <span class="info_passenger">游客信息管理</span>
+                    </p>
+                    <div class="over_scroll">
+                        <table border="0" class="passenger_tab">
+                            <tr>
+                                <th><input type="checkbox"/>全选</th>
+                                <th>姓名</th>
+                                <th>证件类型</th>
+                                <th>证件号</th>
+                                <th>操作</th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"/></td>
+                                <td>测试01</td>
+                                <td>身份证</td>
+                                <td>360828198806083631</td>
+                                <td class="passenger_modify">修改</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"/></td>
+                                <td><input type="text" placeholder="测试01" class="input_text"/></td>
+                                <td>
+                                    <select class="select_passenger">
+                                        <option>身份证</option>
+                                        <option>护照</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" placeholder="360828198806083631" class="input_card"/></td>
+                                <td class="passenger_modify">保存</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"/></td>
+                                <td>测试01</td>
+                                <td>身份证</td>
+                                <td>360828198806083631</td>
+                                <td class="passenger_modify">修改</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"/></td>
+                                <td>测试01</td>
+                                <td colspan="2" class="td_tri">
+                                    <div class="tips_pass">
+                                        <span>请先补充证件类型及号码。</span>
+                                        <div class="triangle-border1 tb-border1"></div>
+                                        <div class="triangle-border1 tb-background1"></div>
+                                    </div>
+                                </td>
+                                <td class="passenger_modify">修改</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"/></td>
+                                <td>测试01</td>
+                                <td>身份证</td>
+                                <td>360828198806083631</td>
+                                <td class="passenger_modify">修改</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--右边已经绑定的乘客-->
+            <div class="passenger_right">
+                <p class="passenger_title">请选择绑定乘客</p>
+                <div class="passenger_left">
+                    <p class="passenger_search">
+                        <span>姓名</span>
+                        <input type="text" class="pa_name"/>
+                        <span>证件号</span>
+                        <input type="text" class="pa_card"/>
+                        <a href="#">搜索</a>
+                    </p>
+                    <div class="over_scroll">
+                        <table border="0" class="passenger_tab">
+                            <tr>
+                                <th><input type="checkbox"/>全选</th>
+                                <th>姓名</th>
+                                <th>证件号</th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"/></td>
+                                <td>测试01</td>
+                                <td>360828198806083631</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"/></td>
+                                <td>测试01</td>
+                                <td>360828198806083631</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"/></td>
+                                <td>测试01</td>
+                                <td>360828198806083631</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"/></td>
+                                <td>测试01</td>
+                                <td>360828198806083631</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"/></td>
+                                <td>测试01</td>
+                                <td>360828198806083631</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cust_btn">
+            <a href="javascript:;" class="cust_useBtn">提交</a>
+        </div>
+        <div class="blank_20"></div>
+    </div>
+    <!--绑定乘客2-->
+    <div class="customerList passenger_wai">
+        <div class="customer_header">
+            <p>绑定乘客<i class="errorIcon"></i></p>
+        </div>
+        <div class="update_passenger">
+           <a href="#" class="fan">&lt;返回绑定乘客</a>
+           <a href="#"class="xiaz">批量模板下载</a>
+            <a href="#" class="pilia">批量上传</a>
+        </div>
+        <div class="tor_content">
+            <p>游客联系人</p>
+            <div class="content_inp">
+                <span>
+                    <em class="em-na">
+                        <i>*</i>姓名
+                    </em>
+                    <input type="text" class="con_name"/>
+                </span>
+                <span>
+                    <em class="em-co"><i>*</i>联系方式</em>
+                    <input type="text"/>
+                </span>
+                <a href="#" class="content_save">保存</a>
+            </div>
+            <p class="tor_list">游客列表<em class="jihua">（计划出游人数24人<i class="width_20"></i>已录入：<i class="list_red">4</i>人<i class="width_20"></i>未录入：<i class="list_red">20</i>人）</em></p>
+            <div class="content_inp">
+                <span>
+                    <em class="em-na">
+                       姓名
+                    </em>
+                    <input type="text" class="con_name"/>
+                </span>
+                <span>
+                    <em class="em-co">联系方式</em>
+                    <input type="text"/>
+                </span>
+                <a href="#" class="content_save">查询</a>
+            </div>
+        </div>
+        <div class=add_bor>
+            <table class="add_tor" >
+            <tr>
+                <th>序号</th>
+                <th><i>*</i>游客姓名</th>
+                <th>性别</th>
+                <th><i>*</i>类型</th>
+                <th>证件类型</th>
+                <th>证件号码</th>
+                <th>联系电话</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>王尼玛</td>
+                <td>男</td>
+                <td>成人</td>
+                <td>身份证</td>
+                <td>3205972215631111154</td>
+                <td>18888888888</td>
+                <td><a href="#">编辑</a><a href="#">删除</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>张全蛋</td>
+                <td>男</td>
+                <td>成人</td>
+                <td>身份证</td>
+                <td>3205972215631111154</td>
+                <td>18888888888</td>
+                <td><a href="#">编辑</a><a href="#">删除</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>吕修全</td>
+                <td>男</td>
+                <td>成人</td>
+                <td>身份证</td>
+                <td>3205972215631111154</td>
+                <td>18888888888</td>
+                <td class="edit_one"><a href="#">编辑</a></td>
+            </tr>
+             <tr>
+                <td>3</td>
+                <td>吕修全</td>
+                <td>男</td>
+                <td>成人</td>
+                <td>身份证</td>
+                <td>3205972215631111154</td>
+                <td>18888888888</td>
+                <td class="edit_one"><a href="#">编辑</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><input type="text" placeholder="张三" class="tor_name"/></td>
+                <td>
+                    <select class="tor_sex">
+                        <option>男</option>
+                        <option>女</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="tor_old">
+                        <option>成人</option>
+                        <option>儿童</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="tor_card">
+                        <option>身份证</option>
+                        <option>护照</option>
+                    </select>
+                </td>
+                <td><input type="text" placeholder="3205972215631111154" class="tor_cardNum"/></td>
+                <td class="gantan"><input type="text" placeholder="18888888888" class="tor_tel"/></td>
+                <td class="edit_one"><a href="#">编辑</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><input type="text" placeholder="" class="tor_name"/></td>
+                <td>
+                    <select class="tor_sex">
+                        <option>男</option>
+                        <option>女</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="tor_old">
+                        <option>成人</option>
+                        <option>儿童</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="tor_card">
+                        <option>身份证</option>
+                        <option>护照</option>
+                    </select>
+                </td>
+                <td class="ding">
+                    <input type="text" placeholder="请输入证件号码" class="tor_cardNum"/>
+                    <div class="tips_pass tips_card">
+                        <span>请先输入正确的证件号码</span>
+                        <div class="triangle-border1 tb-border1"></div>
+                        <div class="triangle-border1 tb-background1"></div>
+                    </div>
+                </td>
+                <td class="gantan ding">
+                    <input type="text" placeholder="18888888888" class="tor_tel"/>
+                    <div class="tips_pass tips_tel">
+                        <span>请先输入正确的电话号码</span>
+                        <div class="triangle-border1 tb-border1"></div>
+                        <div class="triangle-border1 tb-background1"></div>
+                    </div>
+                </td>
+                <td><a href="#">保存</a><a href="#">删除</a></td>
+            </tr>
+            <tr>
+                <td colspan="8" style="text-align: right;">
+                    <a href="#" class=tor_add>新增游客</a>
+                </td>
+            </tr>
+        </table>
+        </div>
+        <div class="blank_20"></div>
+    </div>
+</div>
+    <script src="../resource/js/jquery-1.10.1.min.js"></script>
+    <script>
+        $(function(){
+            //鼠标悬浮于退订规则时显示详情
+            $('.plea_cho i').mouseover(function(){
+                $('.rule_details').css('display','block');
+            });
+            $('.plea_cho i').mouseout(function(){
+                $('.rule_details').css('display','none');
+            })
+        })
+    </script>
+</body>
+</html>

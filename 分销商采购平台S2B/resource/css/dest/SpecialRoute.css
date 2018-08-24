@@ -1,0 +1,267 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+   overflow-x: hidden;
+   min-width:1920px;
+   margin:0 auto;
+}
+.header {
+    width:100%;
+    margin:0 auto;
+}
+.header-one {
+    width:100%;
+}
+.h-pic1{
+    width:100%;
+    display: block;
+}
+.h-pic2{
+    width:100%;
+
+    display: block;
+}
+.h-pic3{
+    width:100%;
+    display: block;
+}
+.middle{
+    width:100%;
+    min-height:1600px;
+    background-image: url("../../images/red.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+}
+.hot-buy{
+    width:1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.hot1{
+    width:260px;
+    float: left;
+    margin-top: 40px;
+}
+
+.hot-pic1{
+    width:260px;
+    height: 180px;
+    padding-top:5px;
+    position: relative;
+}
+.bg{
+    width:260px;
+    height:180px;
+    display: block;
+    position: absolute;
+    margin-top: -5px;
+}
+.sz{
+    width:60px;
+    height:25px;
+    background-color:rgba(0,0,0,0.3);
+    font-size: 12px;
+    color:#fff;
+    line-height: 25px;
+    text-align: center;
+    margin-left:5px;
+    position: absolute;
+    z-index:999;
+}
+.tq{
+    font-size: 12px;
+    color:#fff;
+    margin-top: 145px;
+    position: absolute;
+}
+.tq>span:first-child
+{
+    padding-left: 8px;
+}
+.tq>span:nth-child(2)
+{
+    padding-left:90px;
+}
+.disc{
+    display: block;
+    height:35px;
+    margin-top: -5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color:#405063;
+    text-indent: 5px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    background-color:#fff;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.me-price{
+    height:20px;
+    background-color:#fff;
+    padding-bottom: 5px;
+}
+.me-price>span{
+    font-size: 12px;
+    color:#8898b2;
+}
+.me-price>span:first-child
+{
+    padding-left: 5px;
+}
+.me-price>span:nth-child(2)
+{
+    padding-left: 48px;
+}
+.yh{
+    width: 255px;
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 5px;
+    background-color: #fff;
+}
+.yh>span{
+    border:1px solid #000;
+}
+.yh>span:first-child{
+    display: inline-block;
+    width:100px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color:#ff2a00;
+    font-size: 12px;
+    border:1px solid #ff2a00;
+    border-radius: 10px;
+}
+.yh>span:nth-child(2){
+    display: inline-block;
+    width:80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color:#ff9900;
+    font-size: 12px;
+    border:1px solid #ff9900;
+    border-radius: 10px;
+}
+.pr-last{
+    width: 260px;
+    height:30px;
+    font-size: 12px;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+.pr-last>span{
+    color:#8898b2;
+    padding-left: 5px;
+}
+.pr-money{
+    font-size: 24px;
+    color:#f01447;
+    padding-right: 5px;
+    font-weight: bold;
+}
+.ht2{
+    margin-left: 20px;
+}
+/*自在自由行*/
+.free{
+    width: 1920px;
+    height: 100px;
+    margin-top: 60px;
+}
+.free>img{
+    width:1920px;
+    height:100px;
+}
+.free-travel{
+    width:1100px;
+    margin: auto;
+    margin-top: 40px;
+    overflow: hidden;
+}
+.tra{
+    width:260px;
+    height:325px;
+    float: left;
+}
+.t1{
+    margin-left: 20px;
+}
+.tra{
+    margin-top: 20px;
+}
+.tra-first{
+    background-image:url("../../images/pic_5.png");
+    background-size:260px 325px;
+    background-repeat:no-repeat;
+}
+.san_nav
+{
+    width:184px;
+    position: fixed;
+    top: 100px;
+    right:170px;
+    display: none;
+    z-index: 10000;
+}
+.tig-top{
+    width:184px;
+}
+.tig-top>img{
+    width:184px;
+    height:110px;
+    display: block;
+}
+.tig_yellow{
+    width: 184px;
+    height:200px;
+    margin: auto;
+    background-color:rgba(225,255,255,0);
+}
+.yell{
+    width: 124px;
+    height:200px;
+    margin: auto;
+    background-color: #fea82d;
+}
+.yell>ul>li{
+    list-style: none;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+
+}
+.lm{
+    display: block;
+    color: #cb2728;
+    font-weight: bold;
+    font-size: 16px;
+}
+.lm>a{
+    text-decoration: none;
+    color: #cb2728;
+}
+.bor{
+    display:block;
+    width:50px;
+    height:1px;
+    margin: auto;
+    background-color:#fec26c;
+}
+.tig-foot{
+    width:184px;
+}
+.tig-foot>img{
+    width:184px;
+    height:55px;
+    cursor: pointer;
+}

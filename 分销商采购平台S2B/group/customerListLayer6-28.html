@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>八爪鱼在线旅游平台</title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/common.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/tanceng.css">
+    <style>
+        /*我的客户列表*/
+        .mask{background: url("../resource/images/bodyMask.png");width:100%;height:3600px;}
+        .customerList{margin:100px auto;width: 700px;background: #fff;font-size:16px;}
+        .errorIcon{display: inline-block;width: 18px;height: 18px;background: url("../resource/images/icon/return_btn.png") no-repeat;}
+        .customer_header p{background: #f6f9fa;width:700px;height:50px;text-align: center;line-height: 50px;font-size: 18px;position: relative;}
+        .customer_header p i{position: absolute;right: 10px;top:14px;}
+        .customerList_inp{margin-top:24px;padding:0px 20px;}
+        .customerList_inp span{margin-left:10px;}
+        .customerList_inp input{width:168px;height:30px;border:1px solid #e4e4e4;margin-left:10px;}
+        .cust_searchBtn{display: inline-block;width:100px;height:30px;text-align: center;line-height: 30px;color:#fff;font-size:16px;border-radius:4px;background-color: #cacaca;margin-left:20px;}
+        .customerList_inp a.active{display: inline-block;width:100px;height:30px;text-align: center;line-height: 30px;color:#fff;font-size:16px;background-color: #fd4a67;margin-left:20px;}
+        .cust_table{margin:20px auto;}
+        .customerTable{width: 600px;table-layout: fixed;margin:0 auto;}
+        .customerTable th{text-align: center;background: #f6f9fa;height:36px;line-height: 36px;}
+        .customerTable td{text-align: center;line-height: 46px;border-bottom:1px solid #e4e4e4;}
+        .customerTable tr td i{display:inline-block;width:12px;height:12px;background: url("../resource/images/icon/checkBlue.png") no-repeat;vertical-align: middle;margin-right:6px;}
+        .customerTable tr td i.active{display:inline-block;width:12px;height:12px;background: url("../resource/images/icon/checkedBlue.png") no-repeat;vertical-align: middle;margin-right:6px;}
+        .cust_btn{text-align: center;}
+        .cust_useBtn{display: inline-block;width: 180px;height:40px;line-height: 40px;background: #fd4a67;color:#fff;border-radius:4px;}
+        .blank_20{height:20px;}
+        /*我的客户列表 over*/
+        /*超时提示样式*/
+        .timeoutPrompt_cont{}
+        .timeout_p{text-align: center;margin-top:38px;}
+        .timeout_t{text-align: center;line-height: 20px;line-height: 28px;}
+        .timeoutIcon{display: inline-block;width: 85px;height: 85px;background: url("../resource/images/icon/timeoutIcon.png") no-repeat;}
+        .timeout_btn{text-align: center}
+        .timeout_btn a{display: inline-block;width: 180px;height:40px;line-height: 40px;background: #fd4a67;color:#fff;margin-top:20px;border-radius:4px;}
+        /*超时提示样式 over*/
+        /*线路集合提示*/
+        .lineColle_cont{font-size:16px;line-height: 24px;}
+        .lineColle_cont dl{overflow: hidden;padding-top:20px;height:168px;width:490px;margin:20px auto;}
+        .lineColle_cont dt{float: left;margin-right:20px;}
+        .lineColle_cont dd{float: left}
+        .excamationIcon{display: inline-block;width:54px;height:54px;background: url("../resource/images/icon/excamaIcon.png") no-repeat;}
+        .lineColle_btn{text-align: center}
+        .lineColle_btn a{display: inline-block;width: 180px;height:40px;line-height: 40px;background: #fd4a67;color:#fff;margin-top:20px;border-radius: 4px;}
+        /*线路集合提示 over*/
+        /*订单提交系列 1,2,3,4*/
+        .orderSub{overflow: hidden;font-size:16px;line-height:27px;}
+        .orderSub dl{overflow: hidden;width:360px;height:100px;margin:120px auto;padding:20px 0;}
+        .orderSub dt{float:left;}
+        .orderSub dd{float:left;margin-left:20px;}
+        .orderSubIcon{display: inline-block;width: 58px;height:62px;background: url("../resource/images/icon/orderSubIcon.png") no-repeat;}
+        /*订单提交系列 1,2,3,4 over*/
+    </style>
+</head>
+<body>
+<div   class="mask">
+    <!--我的客户列表-->
+    <div class="customerList">
+        <div class="customer_header">
+            <p>我的客户列表 <i class="errorIcon"></i></p>
+        </div>
+        <div class="customerList_inp">
+            <span>姓名 <input type="text" class="nameInp"/></span>
+            <span >手机号 <input type="text" style="width:220px;" class="phoneInp"/></span>
+            <a href="javascript" class="cust_searchBtn">搜索</a>
+        </div>
+        <div class="cust_table">
+            <table class="customerTable">
+                <tbody>
+                <tr>
+                    <th>姓名</th>
+                    <th>手机号</th>
+                    <th>证件类型</th>
+                    <th style="width:200px;">证件号</th>
+                    <th>性别</th>
+                </tr>
+                <tr>
+                    <td><i class="checkBlueIcon"></i>测试</td>
+                    <td>12375225846</td>
+                    <td>身份证</td>
+                    <td >54210218884575</td>
+                    <td>女</td>
+                </tr>
+                <tr>
+                    <td><i class="checkedBlueIcon"></i>测试</td>
+                    <td>12375225846</td>
+                    <td>身份证</td>
+                    <td >54210218884575</td>
+                    <td>女</td>
+                </tr>
+                <tr>
+                    <td><i class="checkBlueIcon"></i>测试</td>
+                    <td>12375225846</td>
+                    <td>身份证</td>
+                    <td >54210218884575</td>
+                    <td>女</td>
+                </tr>
+                <tr>
+                    <td><i class="checkBlueIcon"></i>测试</td>
+                    <td>12375225846</td>
+                    <td>身份证</td>
+                    <td >54210218884575</td>
+                    <td>女</td>
+                </tr>
+                <tr>
+                    <td><i class="checkBlueIcon"></i>测试</td>
+                    <td>12375225846</td>
+                    <td>身份证</td>
+                    <td >54210218884575</td>
+                    <td>女</td>
+                </tr>
+                <tr>
+                    <td><i class="checkBlueIcon"></i>测试</td>
+                    <td>12375225846</td>
+                    <td>身份证</td>
+                    <td >54210218884575</td>
+                    <td>女</td>
+                </tr>
+                <tr>
+                    <td><i class="checkBlueIcon"></i>测试</td>
+                    <td>12375225846</td>
+                    <td>身份证</td>
+                    <td >54210218884575</td>
+                    <td>女</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="cust_btn">
+            <a href="javascript:;" class="cust_useBtn">使用</a>
+        </div>
+        <div class="blank_20"></div>
+    </div>
+    <!--我的客户列表 over-->
+    <!--超时提示-->
+    <div class="customerList timeoutPrompt">
+        <div class="customer_header">
+            <p>我的客户列表 <i class="errorIcon"></i></p>
+        </div>
+        <div class="timeoutPrompt_cont">
+            <p class="timeout_p"><i class="timeoutIcon"></i></p>
+            <p class="timeout_t" style="margin-top:10px;">由于在此页面停留时间过长，资源信息可能已经发生变动，
+            </p>
+            <p class="timeout_t"> 请重新查询</p>
+        </div>
+        <div class="timeout_btn">
+            <a href="javascript:;">确认</a>
+        </div>
+        <div class="blank_20"></div>
+    </div>
+    <!--超时提示 over-->
+    <!--线路集合提示-->
+    <div class="lineCollectionTip customerList">
+        <div class="customer_header">
+            <p>我的客户列表 <i class="errorIcon"></i></p>
+        </div>
+        <div class="lineColle_cont">
+            <dl>
+                <dt><i class="excamationIcon"></i></dt>
+                <dd>
+                    <p style="font-size:24px;">您预定的大交通时间和地接时间不符合</p>
+                    <p style="margin-top:10px;">回程交通预计出发时间为：2018-07-05 10：25</p>
+                    <p style="">地接线路行程结束时间为：2018-07-05 10：25</p>
+                    <p style="">提前离团可能产生离团费，请预留好充足的时间！</p>
+                    <p style="margin-top:20px;">是否确认下单？</p>
+                </dd>
+            </dl>
+        </div>
+        <div class="lineColle_btn">
+            <a href="javascript:;">确定</a>
+        </div>
+        <div class="blank_20"></div>
+    </div>
+    <!--线路集合提示 over-->
+    <!--订单提交系列-->
+    <div class="customerList orderSub">
+        <dl>
+            <dt><i class="orderSubIcon"></i></dt>
+            <dd>
+                <p style="font-size:24px;">订单提交中</p>
+                <p style="margin-top:10px;">正在向航司申请出票，请耐心等待…</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="customerList orderSub">
+        <dl>
+            <dt><i class="orderSubIcon"></i></dt>
+            <dd>
+                <p style="font-size:24px;">订单提交中</p>
+                <p style="margin-top:10px;">正在向12306申请出票，请耐心等待…</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="customerList orderSub">
+        <dl  style="width: 400px;">
+            <dt><i class="orderSubIcon"></i></dt>
+            <dd>
+                <p style="font-size:24px;">订单提交中</p>
+                <p style="margin-top:10px;">正在向航司和12306申请出票，请耐心等待…</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="customerList orderSub">
+        <dl style="width: 200px;">
+            <dt><i class="orderSubIcon"></i></dt>
+            <dd>
+                <p style="font-size:24px;">订单提交中</p>
+                <p style="margin-top:10px;">请耐心等待…</p>
+            </dd>
+        </dl>
+    </div>
+    <!--订单提交系列 over-->
+</div>
+    <script src="../resource/js/jquery-1.10.1.min.js"></script>
+    <script>
+        $(function(){
+            //        搜索按钮
+//            实现input输入内容后点击效果
+            var pInpVal;
+            var nInpVal;
+            $(".phoneInp").bind("input propertychange change",function(event){
+                 pInpVal = $(".phoneInp").val();
+                console.log(pInpVal)
+                if(pInpVal&&nInpVal){
+                    $(this).parents(".customerList_inp").find(".cust_searchBtn").addClass("active")
+                }else{
+                    $(this).parents(".customerList_inp").find(".cust_searchBtn").removeClass("active")
+                }
+            });
+            $(".nameInp").bind("input propertychange change",function(event){
+                nInpVal = $(".nameInp").val();
+                console.log(nInpVal)
+                if(pInpVal&&nInpVal){
+                    $(this).parents(".customerList_inp").find(".cust_searchBtn").addClass("active")
+                }else{
+                    $(this).parents(".customerList_inp").find(".cust_searchBtn").removeClass("active")
+                }
+            });
+            //        cleck
+            $(".customerTable tr td i").on("click",function(){
+                $(this).toggleClass("active")
+            })
+        })
+    </script>
+</body>
+</html>

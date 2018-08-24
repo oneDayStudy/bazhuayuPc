@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>八爪鱼在线旅游平台</title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/common.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/require.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/proDetail.css">
+    <style>
+
+        .bzy_logo{
+            float: left;
+            margin-top: 15px;
+        }
+        .menu_contain .menu em.pos{
+            float: left;
+        }
+        .nav_href {
+            color: #666;
+            font-size: 12px;
+            padding: 20px 0;
+        }
+        .main_content {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .price_liu{
+            padding:0 50px;
+        }
+        .price_detail{
+            height:350px;
+            margin-top: 40px;
+            padding:0 50px;
+        }
+        .lace{
+            height:30px;
+            background:url("../resource/images/white_o.png") no-repeat center center;
+            background-size: 100% 100%;
+        }
+        .price_left{
+            border-right:1px solid #dfe4e6;
+            float: left;
+            width:800px;
+        }
+        .price_right{
+            float: left;
+            width: 250px;
+            margin-left: 20px;
+        }
+        .detailCon{
+            border-collapse: collapse;
+            width:100%;
+        }
+        .detailCon tr td{
+            padding:8px 0;
+            color:#666;
+            font-size: 14px;
+        }
+        .price_right div{
+            text-align: center;
+        }
+        .xuQiu{
+            font-size: 16px;
+            color:#666;
+        }
+        .content_1{
+            margin:15px 0;
+            padding:5px 0;
+        }
+        .content_1 a{
+            padding:5px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            color:#666;
+        }
+        .ke_fu{
+            margin-top: 30px;
+        }
+        .ke_fu a{
+            border:1px solid #dfe4e6;
+        }
+        .pri_view a{
+            background: #f01447;
+            color:#fff;
+        }
+        .create_time{
+            margin-top: 20px;
+            font-size: 14px;
+            color:#999;
+        }
+        .reference{
+            color:#1276f2;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .ref{
+            padding-right: 30px;
+        }
+
+
+
+        .process{
+            padding:35px 0 5px 0;
+            overflow: hidden;
+        }
+        .process div
+        {
+            float: left;
+        }
+        .pro_one{
+            width:30px;
+            height:30px;
+            background: url("../resource/images/icon/icon_indicat.png") no-repeat center center;
+            background-size: 100%;
+            border-radius: 50%;
+        }
+        .pro_line{
+            width:300px;
+            height:5px;
+            margin-top:12px;
+            background: url("../resource/images/icon/line_red.png") no-repeat center center;
+        }
+        .pro_two{
+            width:20px;
+            height:20px;
+            background: url("../resource/images/icon/circle.png") no-repeat center center;
+            border-radius: 50%;
+            margin-top: 5px;
+        }
+        .pro_line1{
+            width:300px;
+            height:5px;
+            margin-top:12px;
+            background: url("../resource/images/icon/line_gary.png") no-repeat center center;
+        }
+        .one1{
+            margin-left: 50px;
+        }
+        .pro_status{
+
+            overflow: hidden;
+        }
+        .pro_status div
+        {
+            float: left;
+            margin-top:5px;
+
+            font-size: 16px;
+        }
+        .sat1{
+            margin-left:40px;
+        }
+        .sat2{
+            margin-left:280px;
+        }
+        .sat3{
+            margin-left: 270px;
+        }
+        .status-color1{
+            color:#474747;
+        }
+        .status-color2{
+            color:#999;
+        }
+        .pro_details{
+            overflow: hidden;
+        }
+        .pro_details div{
+            float: left;
+        }
+        .detail_one{
+            position:relative;
+            padding:0 5px;
+            line-height:25px;
+            background:#eff3f5;
+            box-shadow:1px 2px 3px #eff3f5;
+            border:1px solid #d3d9e3;
+            border-radius:4px;
+            text-align:center;
+            color:#666;
+            margin-top:15px;
+        }
+        .triangle-border {
+            position:absolute;
+            left:50px;
+            overflow:hidden;
+            width:0;
+            height:0;
+            border-width:10px;
+            border-style: dashed dashed solid dashed;
+        }
+        .tb-border {
+            bottom:25px;
+            border-color: transparent transparent #d3d9e3 transparent;
+        }
+        .tb-background {
+            bottom:24px;
+            border-color:transparent transparent #eff3f5 transparent;
+        }
+        .two{
+            margin-left:90px;
+        }
+        .tri_or{
+            left:75px;
+        }
+        .three{
+            margin-left:90px;
+        }
+        .tri_or1{
+            left:120px;
+        }
+        .proDetailCon{
+            padding-bottom:0;
+        }
+
+        .order_info{
+            width:1200px;
+            margin:0 auto;
+            padding-bottom:40px;
+            background: #fff;
+        }
+        .info_detail{
+            padding:0 50px;
+        }
+        .detail-title{
+            font-size: 16px;
+            color:#333;
+            font-weight: bold;
+            padding-top:20px;
+        }
+        .detail-name{
+            margin-top: 30px;
+            font-size: 14px;
+            color:#666;
+        }
+        .detail-name span{
+            margin-left: 50px;
+        }
+        .detail-name span:nth-child(2),.detail-name span:nth-child(3){
+            margin-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <!--头部开始-->
+    <div class="myheader_wrap">
+        <div class="myheader">
+            <div class="shop"><span class="triangle">kl-fxs分销商门店<em></em></span>
+                <ul class="all_shop none">
+                    <li class="first"><a>青年分社</a></li>
+                    <li><a>分店</a></li>
+                    <li><a>分店</a></li>
+                    <li class="last"><a>退出</a></li>
+                </ul>
+            </div>
+            <div class="head_right">
+                <ul class="top_menu">
+                    <li class="active"><a>首页</a></li>
+                    <li><a>短线</a></li>
+                    <li><a>长线</a></li>
+                    <li><a>出境</a></li>
+                    <li><a>邮轮</a></li>
+                    <li><a>整团</a></li>
+                    <li><a>分期</a></li>
+                </ul>
+                <div class="icon_list">
+                    <a class="telphone"></a>
+                    <a class="money"></a>
+                    <a class="ring"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_contain">
+        <div class="menu clearfix">
+            <img class="bzy_logo" src="../resource/images/white_logo.png">
+            <em class="pos">苏州站</em>
+            <div class="search_all">
+                <ul class="nav_hd">
+                    <li><a>我的店</a></li>
+                    <li><a>订单中心</a></li>
+                    <li><a>我的财务</a></li>
+                    <li class="cur"><a>收客统计</a></li>
+                    <li><a>电子合同</a></li>
+                    <li><a>我的收藏</a></li>
+                </ul>
+                <div class="s_wrap none">
+                    <div class="search_wrap">
+                        <span class="triangle r_tri">出境</span>
+                        <ul class="depart_wrap none">
+                            <li>邮轮</li>
+                            <li>出境</li>
+                            <li>邮轮</li>
+                        </ul>
+                        <input type="text" placeholder="输入目的地/线路/关键词/供应商">
+                        <i class="yi"></i>
+                        <div class="content_wrap">
+                            <p>热门目的地</p>
+                            <div class="hot">
+                                <a class="active">上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="i_search"></a>
+            </div>
+            
+        </div>
+    </div>    
+    <!--头部结束-->
+    <!--需求详情开始-->
+    <div class="container shadow">
+        <div id="ContentPlaceHolder1_divNav" class="nav_href">
+            您所在位置：
+            <a href="javascript:;">首页&gt;</a>
+            <a href="javascript:;">订单中心&gt;</a>
+            <a>国内订单</a>&gt;
+            <a class="current">国内订单详情</a>
+        </div>
+        <div class="proDetailCon">
+            <!--第一块流程-->
+            <div class="price_liu">
+                <div class="process">
+                    <div class="pro_one one1"></div>
+                    <div class="pro_line"></div>
+                    <div class="pro_one"></div>
+                    <div class="pro_line1"></div>
+                    <div class="pro_two"></div>
+                    <div class="pro_line1"></div>
+                    <div class="pro_two"></div>
+                </div>
+                <div class="pro_status">
+                    <div class="sat1 status-color1">待报价</div>
+                    <div class="sat2 status-color1">报价中</div>
+                    <div class="sat2 status-color2">已报价</div>
+                    <div class="sat3 status-color2">已选用</div>
+                </div>
+
+                <div class="pro_details">
+                    <div class="detail_one">
+                        <span>收到需求，正在为您寻找合适的供应商</span>
+                        <div class="triangle-border tb-border"></div>
+                        <div class="triangle-border tb-background"></div>
+                    </div>
+
+                    <div class="detail_one two" style="display: none;">
+                        <span>供应商正在为您报价，请耐心等待</span>
+                        <div class="triangle-border tb-border tri_or"></div>
+                        <div class="triangle-border tb-background tri_or"></div>
+                    </div>
+                    <div class="detail_one three" style="display: none;">
+                        <span>已为您提供一份合适的报价，请查看、选择合适方案</span>
+                        <div class="triangle-border tb-border tri_or1"></div>
+                        <div class="triangle-border tb-background tri_or1"></div>
+                    </div>
+                </div>
+            </div>
+            <!--第二块详情-->
+            <div class="price_detail">
+                <!--左边-->
+                <div class="price_left">
+                    <table class="detailCon" border="0">
+                        <tr>
+                            <td>预计出游日期：<sapn>2017-01-24</sapn></td>
+                            <td colspan="2">出游主题：团队建设；团队建设；团队建设 </td>
+                        </tr>
+                        <tr>
+                            <td>出发地：上海</td>
+                            <td colspan="2">目的地：杭州、杭州 </td>
+                        </tr>
+                        <tr>
+                            <td>成团地点：--- </td>
+                            <td style="width:320px;">出游人数：20人</td>
+                            <td>预计游玩天数：3</td>
+                        </tr>
+                        <tr>
+                            <td>大交通：---</td>
+                            <td>住宿晚数：2</td>
+                            <td>酒店要求：五星级</td>
+                        </tr>
+                        <tr>
+                            <td>用餐标准：50元/人/餐</td>
+                            <td colspan="2">行程安排：--- </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">指定景点：--- </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">参考行程：---</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">参考行程附件：<span class="reference ref">参考行程1.xlsx</span>    <span class="reference ref">参考行程1.xlsx</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">其他要求：20人，周五出发，周日回，出游时间10月-11月，预算1500，安排回程送礼品；推荐2个好玩的地方</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">同行备注：80</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <!--右边-->
+                <div class="price_right">
+                    <div class="xuQiu">需求单ID：<span>ZT0003863</span></div>
+                    <div class="content_1 ke_fu">
+                        <a href="#">联系客服</a>
+                    </div>
+                    <div class="content_1 pri_view">
+                        <a href="#">查看报价</a>
+                    </div>
+                    <div class="create_time">创建于：2017-08-10 11:30:08</div>
+                </div>
+            </div>
+            <div class="lace"></div>
+        </div>  
+    </div>
+
+    <div class="blank_20"></div>
+
+    <!--订单联系人信息-->
+    <div class="order_info">
+        <div class="info_detail">
+            <p class="detail-title">订单联系人信息</p>
+        </div>
+        <div class="detail-name">
+            <span>姓名：王尼玛</span>
+            <span>联系电话：1831258645</span>
+            <span>邮箱：456871203@qq.com</span>
+        </div>
+    </div>
+
+    <!--需求详情结束-->
+    <script src="../resource/js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $('html,body').css('background','#eff3f5');
+        $(function(){
+
+        })
+    </script>
+</body>
+</html>

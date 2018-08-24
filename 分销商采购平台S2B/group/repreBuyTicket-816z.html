@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>八爪鱼在线旅游平台</title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/common.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/tanceng.css">
+    <style>
+        /*我的客户列表*/
+        .mask{background: url("../resource/images/bodyMask.png");width:100%;height:3600px;}
+        .customerList{margin:100px auto;width: 1060px;background: #fff;font-size:14px;}
+        .errorIcon{display: inline-block;width: 18px;height: 18px;background: url("../resource/images/icon/return_btn.png") no-repeat;}
+        .customer_header p{background: #e3e3e3;width:1060px;height:50px;text-align: center;line-height: 50px;font-size: 18px;position: relative;color:#333333;font-weight: 700;}
+        .customer_header p i{position: absolute;right: 10px;top:14px;}
+        .cust_btn{text-align: center;}
+        .cust_useBtn{display: inline-block;width: 180px;height:40px;line-height: 40px;background: #fd4a67;color:#fff;border-radius:4px;}
+        .blank_20{height:20px;}
+        /*我的客户列表 over*/
+        .f_red{margin-right:4px;position: relative;top:3px;}
+        .cust_title{font-size:16px;padding:32px 25px 24px 30px;position: relative;}
+        .cust_suplier p{padding-left:25px;font-size:14px;color:#666666;}
+        .cust_suplier input{width:394px;height:32px;border-radius:4px;border:1px solid #bdbdbd;margin-left:4px;padding:0 10px 0px 16px;}
+
+        .goIcon{display: inline-block;width: 20px;height:20px;background: url("../resource/images/icon/ticket-goIcon2.png") no-repeat;vertical-align: middle;margin:10px;}
+        .goIcon.active{display: inline-block;width: 20px;height:20px;background: url("../resource/images/icon/ticket-goIcon.png") no-repeat;vertical-align: middle;margin:10px;}
+        .ticket_info{padding:0px 0px 0px 30px;}
+        .ticket_info p{color:#333333;font-size:14px;margin-bottom:16px;}
+        .ticket-num{width:44px;height:30px;border-radius:4px;border:1px solid #bdbdbd;padding:0px 10px 0px 16px;margin:0px 70px 0px 10px; }
+        .orderNumber{width:96px;height:30px;border-radius:4px;border:1px solid #bdbdbd;padding:0px 10px 0px 16px;margin:0px 10px; }
+        .depars_inp_a{width:114px;height:30px;border-radius:4px;border:1px solid #bdbdbd;padding:0px 10px 0px 16px;margin:0px 10px 0px 10px;}
+        .depars_inp_b{width:159px;height:30px;border-radius:4px;border:1px solid #bdbdbd;padding:0px 10px 0px 16px;margin:0px 70px 0px 0px;}
+        .departime_day{width:102px;height:30px;border-radius:4px;border:1px solid #bdbdbd;padding:0px 10px 0px 16px;margin:0px 10px 0px 10px;}
+        .departime_hour{width:40px;height:30px;border-radius:4px;border:1px solid #bdbdbd;padding:0px 10px 0px 16px;margin:0px 10px 0px 0px;}
+        .departime_milli{width:60px;height:30px;border-radius:4px;border:1px solid #bdbdbd;padding:0px 10px 0px 16px;margin:0px 10px 0px 10px;}
+
+        .setInfo{border:1px solid #ccc;width: 94%;margin:0 auto;background: #e3e3e3;}
+        .table_td{width: 100%;display: table; border-collapse: collapse;text-align:center;table-layout: fixed;}
+        .setInfo_head{  color:#666666;font-size:14px;line-height:40px;background: #e3e3e3;  }
+        .setInfo_head span,.setInfo_title span{display: table-cell}
+        .setInfo_inp .con{width: 100%;text-align: left;}
+        .setInfo_inp span{margin-left:10px;}
+        .setInfo_title{color:#999999;text-align: center;border-bottom:1px solid #bdbdbd;}
+        .setInfo_title span{padding:10px 0px;background: #ffffff;}
+        .setInfo_inp{background: #ffffff;color:#666666;border-bottom:1px dashed #bdbdbd;}
+        .setInfo_inp input{margin:10px 0px;width:80px;height:30px;border-radius: 4px;border:1px solid #bdbdbd;}
+        .setInfo_add{background: #fff;position: relative;height: 50px;border-bottom:1px solid #bdbdbd;}
+        .setInfo_add a{display: inline-block;text-align: center;line-height: 32px;width:69px;height:32px;color:#ffffff;background: #ff4858;border-radius:4px;
+        position: absolute;top:8px;right:20px;}
+        .setInfo_deliver{background: #ffffff;border-bottom:1px solid #bdbdbd;height:50px;line-height: 50px;
+            padding-left: 10px;;}
+        .setInfo_deliver input{width:126px;height:30px;border-radius: 4px;border:1px solid #bdbdbd;margin:0px 10px;text-align: center;}
+        .setInfo_deliver i{padding-top:4px;color:#333333;}
+        .setInfo_sum{font-size:14px;color:#666666;height: 50px;line-height: 50px;}
+        .setInfo_s{padding-left:60%;}
+        .setInfo_s span{}
+        .setInfo_s span em{font-size:18px;font-weight: 600;}
+        .nameTemp_btn{color:#1890ff;font-size: 14px;}
+        .cust_list_btn{position: absolute;right:3%;}
+        .cust_list_btn a{margin-left:20px;}
+        .passenger_Info{width:94%;margin:0 auto;border:1px solid #bdbdbd;}
+        .passenInfo_table{table-layout: fixed;width: 100%;font-size:14px;}
+        .passenInfo_table th{background: #e3e3e3;color:#666666;text-align: center;line-height: 40px;}
+        .passenInfo_table td{background: #ffffff;text-align: center;padding:10px 0px;border-bottom:1px dashed #bdbdbd;}
+        .passenInfo_table tr.noBottom td{border-bottom:none;}
+        .passenInfo_table td input{width:126px;height:30px;border-radius: 4px;border:1px solid #bdbdbd;margin:0px 6px;}
+        .passenger_Info .checkIcon{display: inline-block;width: 18px;height: 18px;background: url("../resource/images/icon/daigou_check.png")}
+        .passenger_Info .checkIcon.active{display: inline-block;width: 18px;height: 18px;background: url("../resource/images/icon/daigouChecked.png")}
+        .blank_32{height:32px;}
+    </style>
+</head>
+<body>
+<div   class="mask">
+    <!--火车票供应商-->
+    <div class="customerList">
+        <div class="customer_header">
+            <p>代购火车票 <i class="errorIcon"></i></p>
+        </div>
+        <div class="cust_title">
+            火车票供应商
+        </div>
+        <div class="cust_suplier">
+            <p><i class="f_red">*</i>供应商 <input type="text"/></p>
+        </div>
+        <div class="cust_title">
+            火车票信息
+        </div>
+        <div class="ticket_info">
+            <p>
+                <i class="f_red">*</i><span style="color: #666666;">车次方向</span><i class="goIcon active"></i><span style="margin-right:10px;">去程</span><i class="goIcon"></i><span style="margin-right:65px;">回程</span>
+                <i class="f_red">*</i><span>车次</span><input type="text" value="G5468" class="ticket-num"/>
+                <i class="goIcon" style="margin-left:0px;"></i><span>可凭二代身份证直接进出站</span><span style="margin-left:70px;">12306订单号</span><input type="text" value="G546854668" class="orderNumber"/>
+
+            </p>
+            <p>
+                <i class="f_red">*</i><span style="color: #666666;">出发站</span><input type="text" value="" class="depars_inp_a"/><input type="text" value="" class="depars_inp_b"/>
+                <i class="f_red">*</i><span>出发时间</span><input type="text" class="departime_day"/><input type="text" class="departime_hour"/>时 <input type="text" class="departime_milli"/>分
+            </p>
+            <p style="margin-bottom: 0px;">
+                <i class="f_red">*</i><span style="color: #666666;">到达站</span><input type="text" value="" class="depars_inp_a"/><input type="text" value="" class="depars_inp_b"/>
+                <i class="f_red">*</i><span>到达时间</span><input type="text" class="departime_day"/><input type="text" class="departime_hour"/>时 <input type="text" class="departime_milli"/>分
+            </p>
+        </div>
+        <div class="cust_title">
+            座位信息
+        </div>
+        <div class="setInfo">
+            <div class="setInfo_head table_td">
+                <span>基本信息</span>
+                <span>供应商结算信息</span>
+                <span>分销商结算信息</span>
+            </div>
+            <div class="setInfo_title table_td">
+                <span style="width:120px;"><i class="f_red">*</i>座位等级</span>
+                <span style="width:80px;"><i class="f_red">*</i>票型</span>
+                <span style="width:120px;"><i class="f_red">*</i>票数（张）</span>
+                <span style="width: 140px;"><i class="f_red">*</i>票面价(元/张)</span>
+                <span style="width: 130px;"><p>供应商手续费</p><p>(元/张)</p></span>
+                <span style="width:130px;"><p>供应商结算价</p><p>(元/张)</p></span>
+                <span style="width: 130px;"><p>销售公司手续费</p><p>(元/张)</p></span>
+                <span style="width: 130px;"><p>销售公司结算价</p><p>(元/张)</p></span>
+            </div>
+
+            <div class="table_td setInfo_inp">
+                <div class="con">
+                    <span><input type="text" style="width:85px;padding:0px 10px;" placeholder="高级软卧"/></span>
+                    <span><input type="text" style="width: 55px;padding:0px 10px;" placeholder="成人"/></span>
+                    <span><input type="text" style="width: 70px;margin-let:10px;padding:0px 10px;"/></span>
+                    <span><input type="text" style="width: 105px;padding:0px 10px;"/></span>
+                    <span><input type="text" style="width: 105px;padding:0px 10px;"/></span>
+                    <span style="margin:0px 48px;">200</span>
+                    <span><input type="text" style="width: 105px;padding:0px 10px;"/></span>
+                    <span style="margin:0px 48px;">200</span>
+                </div>
+            </div>
+            <div class="table_td setInfo_inp">
+                <div class="con">
+                    <span><input type="text" style="width:85px;padding:0px 10px;" placeholder="高级软卧"/></span>
+                    <span><input type="text" style="width: 55px;padding:0px 10px;" placeholder="成人"/></span>
+                    <span><input type="text" style="width: 70px;padding:0px 10px;margin-let:10px;"/></span>
+                    <span><input type="text" style="width: 105px;padding:0px 10px;"/></span>
+                    <span><input type="text" style="width: 105px;padding:0px 10px;"/></span>
+                    <span style="margin:0px 48px;">200</span>
+                    <span><input type="text" style="width: 105px;padding:0px 10px;"/></span>
+                    <span style="margin:0px 48px;">200</span>
+                </div>
+            </div>
+            <div class="table_td setInfo_add">
+                <a href="javascript:;">新增</a>
+            </div>
+            <div class="setInfo_deliver">
+                <span style="color:#666666;">快递费：</span><i class="goIcon active"></i>供应商寄出快递 <i class="goIcon"></i>销售公司寄出快递
+                <input style="width: 105px;padding:0px 10px;" type="text"/>元
+            </div>
+            <div class="setInfo_sum">
+                <div class="setInfo_s">
+                    <span style="font-weight: 700;font-size: 16px;margin-right:10px;">合计</span><span>供应商结算价：</span><span class="f_red" style="top:0px;">￥<em>400</em></span><span style="margin-left:35px;">分销商结算价：</span><span class="f_red" style="top:0px;">￥<em>400</em></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="cust_title">
+            <spam>乘客信息</spam>
+            <span class="cust_list_btn"><a href="javascript:;" class="nameTemp_btn">名单模板</a>
+            <a href="javascript:;" class="nameTemp_btn">导出模板</a></span>
+        </div>
+        <div class="passenger_Info">
+            <table class="passenInfo_table">
+                <tr>
+                    <th width="80">序号</th>
+                    <th width="200"><i class="f_red">*</i>姓名</th>
+                    <th width="100"><i class="f_red">*</i>票型</th>
+                    <th width="90"><i class="f_red">*</i>是否购票</th>
+                    <th width="110"><i class="f_red">*</i>座位等级</th>
+                    <th>座位号</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><input type="text" style="width: 160px;padding:0 10px;" /></td>
+                    <td><input type="text" style="width: 60px;padding:0px 10px;"/></td>
+                    <td><i class="checkIcon"></i></td>
+                    <td><input type="text" style="width:85px;padding:0px 10px;"/></td>
+                    <td>
+                        <input type="text" style="width: 110px;padding:0px 10px;"/>
+                        <span>车型</span>
+                        <input type="text" style="width:110px;padding:0px 10px;"/>
+                        <span>号</span>
+                    </td>
+                </tr>
+                <tr class="noBottom">
+                    <td>2</td>
+                    <td><input type="text" style="width: 160px;padding:0 10px;" /></td>
+                    <td><input type="text" style="width: 60px;padding:0px 10px;"/></td>
+                    <td><i class="checkIcon active"></i></td>
+                    <td><input type="text" style="width:85px;padding:0px 10px;"/></td>
+                    <td>
+                        <input type="text" style="width: 110px;padding:0px 10px;"/>
+                        <span>车型</span>
+                        <input type="text" style="width:110px;padding:0px 10px;"/>
+                        <span>号</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="blank_32"></div>
+        <div class="cust_btn">
+            <a href="javascript:;" class="cust_useBtn">提交</a>
+        </div>
+        <div class="blank_32"></div>
+    </div>
+    <!--我的客户列表 over-->
+
+</div>
+    <script src="../resource/js/jquery-1.10.1.min.js"></script>
+    <script>
+
+        $(function(){
+            //        搜索按钮
+//            实现input输入内容后点击效果
+            var pInpVal;
+            var nInpVal;
+            $(".phoneInp").bind("input propertychange change",function(event){
+                 pInpVal = $(".phoneInp").val();
+                console.log(pInpVal)
+                if(pInpVal&&nInpVal){
+                    $(this).parents(".customerList_inp").find(".cust_searchBtn").addClass("active")
+                }else{
+                    $(this).parents(".customerList_inp").find(".cust_searchBtn").removeClass("active")
+                }
+            });
+            $(".nameInp").bind("input propertychange change",function(event){
+                nInpVal = $(".nameInp").val();
+                console.log(nInpVal)
+                if(pInpVal&&nInpVal){
+                    $(this).parents(".customerList_inp").find(".cust_searchBtn").addClass("active")
+                }else{
+                    $(this).parents(".customerList_inp").find(".cust_searchBtn").removeClass("active")
+                }
+            });
+            //        cleck
+            $(".customerTable tr td i").on("click",function(){
+                $(this).toggleClass("active")
+            })
+        })
+        $(function () {
+            $(".checkIcon").on("click", function () {
+                $(this).toggleClass("active")
+            })
+//            goIcon
+            $(".goIcon").on("click",function(){
+
+                if($(this).hasClass('active')){
+                    $(this).removeClass("active")
+//                    $(this).siblings(".goIcon").addClass("active")
+                }else{
+                    $(this).addClass("active")
+//                    $(this).siblings(".goIcon").removeClass("active")
+                }
+            })
+        });
+    </script>
+</body>
+</html>

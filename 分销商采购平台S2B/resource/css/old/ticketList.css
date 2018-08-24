@@ -1,0 +1,213 @@
+.ticketFilterBox{background:#fff;padding:20px}
+.ticketFilterBox .filterSel{position:relative}
+.ticketFilterBox select{display:none}
+.filterSel .inputText{width:100px;height:28px;border:1px solid #CECECE;float:left;margin-right:10px;padding:0 5px}
+.filterSel .inputText input{border:none;outline:0;width:100%;height:28px;line-height:28px;font-size:16px}
+.filterSel .Ichange{display:block;float:left;width:51px;height:24px;background:url(../../images/ticket.png) no-repeat;background-position:0 -4px;margin-top:3px;margin-right:10px}
+.filterSel .Ichange:hover{background-position:0 -30px}
+.filterSel .calendar{width:165px;position:relative}
+.calendar .day{position:absolute;right:30px;font-size:14px;color:#999;top:5px}
+.calendar .calendarIcon{display:inline-block;width:16px;height:16px;background:url(../../images/ticket.png) no-repeat;background-position:-62px -28px;position:absolute;top:6px;right:7px}
+.filterSel .text{float:left;margin-right:10px;color:#666;font-size:16px;display:block;line-height:30px}
+.filterSel .filterBtn{position:absolute;right:0;top:-5px;display:block;width:110px;height:40px;font-size:18px;color:#fff;text-align:center;line-height:40px;background:#f88a00;border-radius:5px}
+.filterSel .filterBtn:hover{background:#FFA32F}
+.ticketMain{margin-top:8px}
+.date_bar{background:#fff}
+.date_bar .bar_l,.date_bar .next_btn,.date_bar .prev_btn{float:left;border:1px solid #E3E3E3;height:58px}
+.date_bar .next_btn,.date_bar .prev_btn{width:30px;cursor:pointer;position:relative;background:#fafafa}
+.date_bar .next_btn{margin-left:-1px}
+.date_bar .next_btn:hover,.date_bar .prev_btn:hover{background:#fff8f1}
+.date_bar .prev_btn .caret_left{width:6px;height:10px;position:absolute;left:50%;margin-left:-3px;top:50%;margin-top:-5px;display:block;background:url(../../images/ticket.png) no-repeat;background-position:-85px -10px}
+.date_bar .next_btn .caret_right{width:6px;height:10px;position:absolute;left:50%;margin-left:-3px;top:50%;margin-top:-5px;display:block;background:url(../../images/ticket.png) no-repeat;background-position:-92px -10px}
+.date_bar .bar_con{width:1051px;float:left;overflow:hidden}
+.date_bar .bar_con ul{width:5000px}
+.date_bar .bar_con ul li{width:150px;height:46px;float:left;font-size:14px;text-align:center;border:1px solid #E3E3E3;border-bottom:1px solid #F88A00;border-right:none;background:#f5f5f5;padding-top:12px;cursor:pointer}
+.date_bar .bar_con ul li:first-child{border-left:none}
+.bar_con .price{color:#e84c3d}
+.date_bar .bar_con ul li:hover{background:#fff}
+.date_bar .bar_con .sel{border:1px solid #F88A00;border-bottom:1px solid #fff;background:#fff}
+.date_bar .bar_l{margin-left:-1px;width:85px;text-align:center;font-size:14px;color:#FF6500;cursor:pointer;background:#fafafa}
+.date_bar .bar_l .i_date{width:30px;height:29px;display:block;background:url(../../images/ticket.png) no-repeat;background-position:-2px -61px;margin:14px auto}
+.resultFilter{padding:10px 30px;background:#fff}
+.resultFilter select{display:none}
+.resultFilter .select_box{font-size:14px;color:#999;width:115px;line-height:26px;background:url(../../images/selList.png) no-repeat 95px -12px}
+.resultFilter .select_showbox{height:26px;width:85px;overflow:hidden}
+.resultFilter .select_option{top:26px;font-size:14px;min-width:115px}
+.resultFilter .resultText{line-height:28px;color:#333;font-size:16px;float:right}
+.resultFilter .resultText span{color:#f88a00;font-size:20px;margin:0 5px}
+.flightTit{background:#fff;padding-bottom:10px}
+.flightTit ul li{float:left;font-size:14px;color:#666;padding:0 40px;background:url(../../images/lineS.png) no-repeat center left}
+.flightTit ul li:first-child{background:0 0}
+.flightTit .sortIcon{display:inline-block;width:9px;height:10px;background:url(../../images/ticket.png) no-repeat -42px -77px;margin-left:5px}
+.flightInfo{background:#fff}
+.flightInfo .flightItem{padding:35px 0;border-top:1px solid #E3E3E3;position:relative}
+.flightInfo .ticketCol{width:156px;padding:0 10px;float:left;text-align:center;font-size:14px;color:#666}
+.flightInfo .ticketCol p{line-height:24px}
+.flightItem .ticketCol .airTit{position:relative;padding-left:28px}
+.flightItem .ticketCol .airTit .airlines{position:absolute;left:0}
+.flightItem .ticketCol .airlines{display:inline-block;height:24px;width:24px}
+.flightItem .ticketCol .airDF{background:url(../../images/i_DF.png) no-repeat center center}
+.flightItem .ticketCol h2{font-size:24px;font-weight:700;margin-bottom:10px;color:#333}
+.flightItem .ticketCol h2 span{position:relative}
+.flightItem .ticketCol h2 i{color:#e74c3c;font-size:14px;position:absolute;left:-25px;top:2px}
+.flightItem .ticketCol p{width:156px;overflow:hidden;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.flightItem .ticketIcon{width:110px;height:46px}
+.flightItem .quIcon{background:url(../../images/quIcon.png) no-repeat center center}
+.flightItem .fanIcon{background:url(../../images/fanIcon.png) no-repeat center center}
+.flightItem .ticketCol .lineIcon{display:block;margin:0 auto;width:132px;height:10px;background:url(../../images/lineIcon.png) no-repeat center center}
+.flightItem .ticketCol .airLine{margin-bottom:10px}
+.flightItem .ticketCol .zdBox{width:120px;margin:8px auto}
+.flightItem .zd{width:45px;padding:0 8px;border-left:2px solid #E7E7E7;text-align:center;float:left}
+.flightItem .ticketCol .food{float:left;padding:0 8px;line-height:36px}
+.flightItem .linePrice{color:#e74c3c;line-height:52px!important}
+.flightItem .linePrice i{font-size:32px}
+.flightItem .chooseBtn{position:absolute;right:30px;top:41px;display:block;width:100px;height:40px;background:url(../../images/selList.png) no-repeat 74px -28px #6bceee;color:#fff;line-height:40px;font-size:20px;text-align:center;border-radius:5px;padding-right:10px}
+.flightItem .chooseBtn:hover{background:url(../../images/selList.png) no-repeat 74px -28px #2AB8E6}
+.flightList{background:#fafafa;padding:0 30px;border-top:1px solid #E3E3E3}
+.flightList .flightBuyItem{padding:30px 0;border-top:1px dashed #CECECE}
+.flightList .flightBuyItem:first-child{border-top:none}
+.flightBuyItem .itemCol{float:left;vertical-align:middle}
+.flightBuyItem .flyStyle{width:105px;text-align:center}
+.flightBuyItem .flyStyle h2{font-size:16px;color:#666}
+.flightBuyItem .flyStyle p{font-size:14px;color:#999;margin:3px 0}
+.flightBuyItem .flyTags{padding:8px 0;font-size:14px}
+.flightBuyItem .flyTags span{display:inline-block;margin-right:15px}
+.flightBuyItem .flyTags span.hasBorder{color:#f88a00;padding:2px 8px;border:1px solid #f88a00}
+.flightBuyItem .discount{color:#999;font-size:14px;line-height:42px;margin:0 75px}
+.flightBuyItem .DiscountPrice{float:right;width:156px;padding:0 10px;text-align:center;font-size:14px;color:#666;margin-right:20px}
+.DiscountPrice .price{color:#e74c3c}
+.DiscountPrice .price i{font-size:32px}
+.DiscountPrice .coupon{font-size:14px;font-weight:700;cursor:pointer}
+.DiscountPrice .coupon i{color:#e84c3d}
+.DiscountPrice .coupon .i_b{display:inline-block;margin-left:3px;width:10px;height:6px;background:url(../../images/selList.png) no-repeat;background-position:0 -23px}
+.flightBuyItem .ReserveBtn{float:right;display:block;border-radius:5px;width:90px;height:38px;font-size:16px;line-height:38px;background:#e84c3d;color:#fff;text-align:center}
+.flightBuyItem .ReserveBtn:hover{background:#C0392B}
+.steps_g ul{overflow:hidden;zoom:1}
+.steps_g ul li{width:25%;font-size:17px;float:left;height:40px;line-height:40px;color:#666;text-align:center;background:url(../../images/barbg.png) no-repeat 100% 0 #d4d4d4;font-weight:700}
+.steps_g ul li.done{background-position:100% -80px;background-color:#ffc47a;color:#fff}
+.steps_g ul li.current_prev{background-position:100% -40px;background-color:#ffc47a;color:#fff}
+.steps_g ul li.current{color:#fff;background-color:#F89C28}
+.steps_g ul li.last{background-image:none}
+.ReserveCon{margin:30px 0}
+.ReserveCon .ReserveConL{width:810px;float:left}
+.ReserveConL .ticketBox{border:4px solid #F0F0F0;padding:20px 0;position:relative}
+.ticketBox .ticketCol{float:left;text-align:center;width:197px}
+.ticketBox .ticketCol h2{font-size:24px;font-weight:700;margin-bottom:10px}
+.ticketBox .ticketCol h2 span{position:relative}
+.ticketBox .ticketCol h2 i{color:#e74c3c;font-size:14px;position:absolute;left:-25px;top:2px}
+.ticketBox .ticketCol p{width:197px;overflow:hidden;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ticketBox .ticketCol .lineIcon{display:block;margin:0 auto;width:132px;height:10px;background:url(../../images/lineIcon.png) no-repeat center center}
+.ticketBox .halfCircle{width:11px;height:26px;background:url(../../images/flight.png) no-repeat}
+.ticketBox .Left{position:absolute;left:-4px;top:50%;margin-top:-13px;background-position:-104px -49px}
+.ticketBox .Right{position:absolute;right:-4px;top:50%;margin-top:-13px;background-position:-116px -49px}
+.ReserveConL .OpportmanBox{border:4px solid #F0F0F0}
+.ReserveBox{margin-bottom:20px}
+.ReserveBox .title{background:#f8f8f8;font-size:20px;padding:20px;position:relative}
+.ReserveBox .formBox{padding:30px 0}
+.formCol{padding-left:30px}
+.formCol .signNum{float:left;width:32px;height:32px;margin-right:20px;color:#fff;font-size:20px;line-height:32px;text-align:center;background:url(../../images/flight.png) no-repeat;background-position:-75px -97px}
+.formCol .signNumcur{background-position:-108px -97px}
+.formCol .formCon{float:left}
+.formCon .formItem{margin-bottom:20px}
+.formCon .formItem .inputBox,.formCon .formItem .selectBox{float:left}
+.formCon .formItem .inputBox{height:30px;border:1px solid #CECECE;line-height:30px;width:357px;padding:0 30px 0 18px;position:relative}
+.formCon .formItem .inputBox input{border:none;outline:0;height:30px;font-size:14px;width:100%}
+.formItem .inputBox .infoTips{position:absolute;right:0;top:0;display:block;width:30px;height:30px;background:url(../../images/flight.png) no-repeat;background-position:-69px -203px}
+.selectBox .book-select{position:relative;margin-right:10px;cursor:pointer;font-size:16px}
+.book-select .select-header{height:30px;line-height:30px;border:1px solid #CECECE;width:168px}
+.select-header .select-arrow{display:block;float:right;width:32px;height:32px;background:url(../../images/flight.png) no-repeat -137px -36px}
+.select-header .select-txt{padding-left:18px;margin-right:30px}
+.book-select .select-body{display:none;z-index:401;position:absolute;width:100%;max-height:350px;overflow-x:hidden;overflow-y:auto;border:1px solid #bbb;border-radius:0 0 2px 2px;box-sizing:border-box;box-shadow:2px 2px 5px #ddd;-webkit-box-shadow:2px 2px 5px #ddd;background-color:#FFF;border-top-width:0}
+.book-select .select-body li{padding:8px 0 8px 18px;line-height:22px;cursor:pointer}
+.book-select .select-body li:hover{background:#fff4e9}
+.select-open:hover .select-body{display:block}
+.infoTips .youhuiInfo{position:absolute;top:30px;left:0;z-index:9999;display:none;padding:8px;width:290px;background:#fff;box-shadow:0 0 16px 2px rgba(0,0,0,.3);-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=135, Color='#000000')";filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')}
+.infoTips:hover .youhuiInfo{display:block}
+.infoTips .youhuiInfo:after{position:absolute;top:-16px;left:6px;z-index:9999;display:block;overflow:hidden;width:0;height:0;border-color:transparent transparent #fff;border-style:dashed dashed solid;border-width:8px;content:' ';font-size:0;line-height:0}
+.infoTips .youhuiInfo p{line-height:20px}
+.infoTips .youhuiInfo .calHuititle{margin-bottom:5px;padding-bottom:8px;border-bottom:1px solid #ccc;font-weight:700;font-size:14px}
+.formCol .delete_form{float:right;line-height:30px;margin-right:18px}
+.formCol .delete_form a{color:#00a7de;font-size:16px;margin-left:10px}
+.formCol .delete_form a:hover{color:#e74c3c}
+.formCon .addNewPeo a{display:block;color:#fff;border-radius:5px;height:40px;width:115px;font-size:18px;line-height:40px;text-align:center;float:left;background:url(../../images/addIcon.png) no-repeat center left 15px #6bceee;padding-left:20px}
+.formCon .addNewPeo span{color:#999;font-size:16px;margin-left:10px;float:left;line-height:40px}
+.formCon .savePeo{margin-bottom:20px;color:#666;font-size:14px}
+.ReserveBox .contactBox{padding:30px 30px 15px 30px}
+.contactBox p{margin-bottom:15px}
+.contactBox p .contactForm,.contactBox p .tit{display:block;float:left;font-size:14px}
+.contactBox p .tit{line-height:32px;margin-right:15px}
+.contactBox p .contactForm{height:30px;border:1px solid #CECECE;padding:0 18px;width:230px}
+.contactBox p .contactForm input{border:none;outline:0;width:100%;height:30px;font-size:16px}
+.addBox .useCar{padding:10px 30px}
+.addBox .useCar .useCarL{float:left;font-size:16px}
+.useCar .useCarL span{line-height:40px}
+.useCar .useCarL .tite{color:#999}
+.addBox .useCar .jsService{float:right;display:block;color:#fff;border-radius:5px;height:40px;width:115px;font-size:18px;line-height:40px;text-align:center;background:#6bceee}
+.addBox .useCar .jsService:hover{background:#2AB8E6}
+.addBox .secureBox{border-top:1px solid #DDD;padding:30px;font-size:16px}
+.secureBox .tit{color:#999;float:left}
+.secureBox .secureCol{float:left;width:600px}
+.secureBox .secureCol .safeItem{background:url(../../images/i_Q.png) no-repeat center right;padding-right:20px;cursor:pointer}
+.secureCol p{margin-bottom:15px}
+.secureCol p label{float:right;color:#e74c3c;cursor:pointer}
+.secureCol label input[type=checkbox]{vertical-align:middle;-webkit-appearance:none;background:url(../../images/flight.png) no-repeat;height:20px;width:20px;border:none;outline:0;background-position:0 -245px;margin-left:10px}
+.secureCol label input[type=checkbox]:checked{vertical-align:middle;background:url(../../images/flight.png) no-repeat;height:20px;width:20px;background-position:-20px -245px;margin-left:10px}
+.secureCol .iQuestion{display:inline-block;width:16px;height:16px;background:url(../../images/i_Q.png)}
+.ReserveCon .ReserveConR{width:344px;padding:0 10px;float:right;border:4px solid #e9dccc;border-bottom:none;background:#fff9f3;position:relative}
+.ReserveConR .bottBg{width:373px;height:17px;position:absolute;bottom:-16px;left:-4px;background:url(../../images/ticket-BG.png) no-repeat center center}
+.ReserveConR .title{font-size:20px;color:#996a2e;padding:20px 10px;border-bottom:1px solid #E8D3BA}
+.ReserveConR .ReservePrice{padding:10px;border-bottom:1px solid #E8D3BA}
+.ReservePrice .priceItem{width:100%}
+.ReservePrice .priceItem tr td{padding:4px 0}
+.priceItem .pItemTit{font-size:16px;color:#b58e5d}
+.priceItem .PriceData{color:#e84c3d;font-size:22px}
+.priceItem .Pricesmall{color:#e84c3d;font-size:18px}
+.priceItem .Pricesmall span{color:#b58e5d}
+.priceItem .priceNotice{font-size:16px;color:#b58e5d;margin-top:5px}
+.priceItem .priceNotice span{color:#e84c3d}
+.ReserveConR .payOrder{padding:25px 0 0 0;text-align:center}
+.ReserveConR .payOrder .priceTotal{font-size:16px;color:#f88a00}
+.payOrder .priceTotal .PriceData{color:#e84c3d;font-size:32px}
+.payOrder .orderSubmit{display:block;width:160px;height:46px;color:#fff;font-size:24px;text-align:center;line-height:46px;background:#e74c3c;margin:20px auto;border-radius:5px}
+.payOrder .orderSubmit:hover{background:#CD4739}
+.payOrder .notice{text-decoration:underline;color:#00a7de;font-size:16px;cursor:pointer}
+.steps_5{margin-bottom:20px}
+.steps_5 ul li{width:20%}
+.lineInfoScan{padding:30px 30px 15px 30px;font-size:16px}
+.lineInfoScan .infoItems{margin-bottom:15px}
+.infoItems .infoTit{float:left;color:#999;line-height:28px}
+.infoItems .infoIntro{float:left;color:#666;margin-left:10px}
+.infoItems .infoIntro p{line-height:28px}
+.infoItems .width_650{width:650px}
+.infoIntro .inputDate{float:left;position:relative;width:150px;padding:0 10px;height:28px;border:1px solid #DDD}
+.infoIntro .inputDate input{width:100%;height:28px;line-height:28px;border:none;outline:0}
+.infoItems .greyBox{width:745px;float:left;background:#f8f8f8;margin-top:15px}
+.infoItems .greyBox table{width:100%}
+.greyBox tr td,.infoItems .greyBox tr th{padding:15px 0;text-align:center}
+.infoItems .greyBox tr th{color:#999;border-bottom:1px dashed #D3D3D3}
+.infoItems .greyBox .width_215{width:155px;padding-left:60px;text-align:left}
+.greyBox .choiceNum .NumBox{background:#f8f8f8}
+.infoItems .limit a{color:#00a7de}
+.infoItems .limit a:hover{text-decoration:underline}
+.hasborder .useCar{border-top:1px solid #DDD}
+.YHtable{font-size:16px;width:100%}
+.YHtable tr td{text-align:left}
+.YHtable .formCol .secureCol{padding-top:10px}
+.YHtable .disabled span{color:#cecece}
+.infoBox .formCol{padding-left:0}
+.infoBox .formCol .signStyle{font-size:16px;color:#999;float:left;line-height:30px;margin-right:10px}
+.infoBox .formCol .width_110{width:80px;margin-right:10px}
+.infoBox .formCol .width_150{width:150px;margin-right:10px}
+.infoBox .formCol .book-select .select-header{width:100px}
+.infoBox .formCol .secureCol{float:left;margin-left:20px;font-size:16px;line-height:30px}
+.infoBox .formCol .secureCol input{margin-right:10px}
+.infoBox .formCol .secureCol p label{color:#666}
+.choicePlane{position:absolute;right:30px;top:9px;display:block;color:#fff;border-radius:5px;height:40px;width:115px;font-size:18px;line-height:40px;text-align:center;background:#6bceee}
+.choicePlane:hover{background:#2AB8E6;color:#fff}
+.payEnd{width:380px;min-height:402px;margin:80px auto;background:url(../../images/end.png) no-repeat top left;padding-left:120px}
+.payEnd h2{font-size:40px;line-height:70px}
+.payEnd p{font-size:20px;line-height:30px}
+.payEnd p.f_org b{color:#e84c3d;font-size:30px}
+.payEnd .twoBtn{margin-top:50px}
+.payEnd .twoBtn a{font-size:16px;color:#666;display:block;float:left;padding:6px 35px;border:2px solid #CECECE;border-radius:5px;margin-right:15px}
+.payEnd .twoBtn a:hover{background:#eee}

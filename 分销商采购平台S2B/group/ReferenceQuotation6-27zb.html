@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>八爪鱼在线旅游平台</title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/common.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/require.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/proDetail.css">
+	<link rel="stylesheet" type="text/css" href="../resource/css/dest/ticketLine.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/ticketGroup-zb.css">
+	<style>
+		/*.menu_header_table{background: #fff;}*/
+		/*.header_table{width:1200px;margin:0 auto;overflow: hidden;}*/
+		/*.headerTable_l{float: left;width: 30%;overflow: hidden;}*/
+		/*.headerTable_r{float: right;width: 40%;overflow: hidden;font-size:14px;margin-top:18px;margin-bottom:18px;line-height: 34px;}*/
+		/*.headerTable_l h3{float: left;position: relative;margin-top:18px;margin-bottom:18px;line-height: 34px;padding:0px 24px;}*/
+		/*.headerTable_l{color:#989eb0;font-size:18px;line-height: 34px;}*/
+		/*.headerTable_l h3.checked{ color:#2a333e;}*/
+		/*.headerTable_l h3 .priceInfoIcon{display: inline-block;width:32px;height:32px;background: url("../resource/images/icon/priceInfoIcon.png") no-repeat;vertical-align: middle;}*/
+		/*.headerTable_l h3.checked .priceInfoIcon{display: inline-block;width:32px;height:32px;background: url("../resource/images/icon/priceInfoIconActive.png") no-repeat;vertical-align: middle;}*/
+		/*.headerTable_l h3 .findInfoIcon{display: inline-block;width:32px;height:32px;background: url("../resource/images/icon/findInfoIcon.png") no-repeat;vertical-align: middle;}*/
+		/*.headerTable_l h3.checked .findInfoIcon{display: inline-block;width:32px;height:32px;background: url("../resource/images/icon/findInfoIconActive.png") no-repeat;vertical-align: middle;}*/
+		/*h3.checked .btm{position: absolute;width: 100%;height:2px;background: red;bottom:-18px;left:0;}*/
+		/*.flyIcon{   float: left;  display: inline-block;  background: url(../resource/images/icon/flyIcon.png) no-repeat;  width: 32px;  height: 34px;  margin-right: 10px;}*/
+		/*.header_export{float:left;width: 120px;height:30px;border:1px solid #f01447;color:#f01447;border-radius:15px;line-height: 30px;}*/
+		/*.exportIcon{display: inline-block;width:20px;height:20px;background:url(../resource/images/icon/exportIcon.png) no-repeat;vertical-align: middle;  margin-left: 12px;margin-right:6px;padding-bottom:2px;}*/
+		/*.contactService{float:left;line-height: 30px;padding:0px 12px;color:#149bf0;margin-left:20px;}*/
+		/*.messIcon{display: inline-block;width: 20px;height: 20px;background: url("../resource/images/icon/messIcon.png") no-repeat;vertical-align: middle;margin-right:8px;}*/
+		/*.contactPhone{float:left;line-height: 30px;}*/
+		/*.Vertical{float:left;width:1px;height:34px;background: #ece3e3;margin-left:10px;margin-right:14px;}*/
+		/*.basicInfoMation{width:1200px;border:1px solid #e4e4e4;margin:10px auto;overflow: hidden;}*/
+		/*.basicHeader{background: #f6f9fa;padding:10px 0px;;}*/
+		/*.basicHeader p{margin-left:20px;color:#333333;line-height: 30px;font-size:16px;font-weight:500;}*/
+		/*.basicCont{background: #fff;padding:20px 30px;color:#999999;font-size:14px;line-height: 30px;}*/
+		/*.basicHeader table{width: 1000px;}*/
+		/*.basicHeader table td{width:25%;}*/
+		/*.costDetail{margin-top:20px;}*/
+		/*.accessories{margin-top:20px;}*/
+		/*.costDetail table,.accessoriesCont table{border-collapse: collapse;}*/
+		/*.costTable th,.costTable td,.acceContTable td,.acceContTable th{border:1px solid #e4e4e4;text-align: center;line-height:40px;}*/
+		/*.downloadBtn{display: inline-block;width:60px;height:30px;line-height: 30px;text-align: center;border:1px solid #1495f0;border-radius:15px;}*/
+		.costCont table td,.basicCont table td p span,.accessoriesCont .acceContTable td{color:#333333;}
+		.basicCont table td p b{display: inline-block;width:130px;color:#999999;text-align: right;font-weight: 300;}
+	</style>
+</head>
+<body>
+    <!--头部开始-->
+    	<div class="myheader_wrap">
+        <div class="myheader">
+            <div class="shop"><span class="triangle">kl-fxs分销商门店<em></em></span>
+                <ul class="all_shop none">
+                    <li class="first"><a>青年分社</a></li>
+                    <li><a>分店</a></li>
+                    <li><a>分店</a></li>
+                    <li class="last"><a>退出</a></li>
+                </ul>
+            </div>
+            <div class="head_right">
+                <ul class="top_menu">
+                    <li class="active"><a>首页</a></li>
+                    <li><a>短线</a></li>
+                    <li><a>长线</a></li>
+                    <li><a>出境</a></li>
+                    <li><a>邮轮</a></li>
+                    <li><a>整团</a></li>
+                    <li><a>分期</a></li>
+                </ul>
+                <div class="icon_list">
+                    <a class="telphone"></a>
+                    <a class="money"></a>
+                    <a class="ring"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    	<div class="menu_contain">
+        <div class="menu clearfix">
+            <img class="bzy_logo" src="../resource/images/white_logo.png">
+            <em class="pos">苏州站</em>
+            <div class="search_all">
+                <ul class="nav_hd">
+                    <li><a>我的店</a></li>
+                    <li><a>订单中心</a></li>
+                    <li><a>我的财务</a></li>
+                    <li class="cur"><a>收客统计</a></li>
+                    <li><a>电子合同</a></li>
+                    <li><a>我的收藏</a></li>
+                </ul>
+                <div class="s_wrap none">
+                    <div class="search_wrap">
+                        <span class="triangle r_tri">出境</span>
+                        <ul class="depart_wrap none">
+                            <li>邮轮</li>
+                            <li>出境</li>
+                            <li>邮轮</li>
+                        </ul>
+                        <input type="text" placeholder="输入目的地/线路/关键词/供应商">
+                        <i class="yi"></i>
+                        <div class="content_wrap">
+                            <p>热门目的地</p>
+                            <div class="hot">
+                                <a class="active">上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="i_search"></a>
+            </div>
+            
+        </div>
+    </div>    
+    <!--头部结束-->
+	<!--新增header-tab-->
+		<div class="header_table">
+			<div class="headerTable_l" style="font-size: 14px;color:#f01447;line-height:34px;margin-top:20px;">
+				<p>说明：此份报价单仅供参考，如果下单请联系客服提供正式报价单！</p>
+			</div>
+			<div class="headerTable_r" style="width:30%;">
+				<div class="contactService"><i class="messIcon"></i><a>联系客服</a></div>
+				<div class="contactPhone"><i class="Vertical"></i><span>客服电话：</span><span class="retphone">18688889999</span></div>
+			</div>
+		</div>
+		<!--基本信息-->
+		<div class="basicInfoMation">
+			<div class="basicHeader">
+				<p>基本信息</p>
+			</div>
+			<div class="basicCont" style="padding-left:10px;">
+				<table style="table-layout:fixed" width="100%;">
+					<tr>
+						<td width="">
+							<p><b>报价单标题：</b><span>三亚到上海</span></p>
+						</td>
+						<td><p><b>报价单ID:</b> <span>DS00212</span></p></td>
+						<td><P><b>出团时间：</b> <span>2018-05-21 00:00:00</span></P></td>
+						<td><P><b>回团时间：</b> <span>2018-05-21 00:00:00</span></P></td>
+					</tr>
+					<tr>
+						<td>
+							<p><b>出发地：</b><span>苏州</span></p>
+						</td>
+						<td><p><b>目的地:</b> <span>周庄，同里，千湖岛</span></p></td>
+						<td><P><b>成团地点：</b> <span>三亚</span></P></td>
+						<td><P><b>离团地点：</b> <span>海口</span></P></td>
+					</tr>
+					<tr>
+						<td>
+							<p><b>出游人数：</b><span>5成人2儿童</span></p>
+						</td>
+						<td><p><b>游玩天数:</b> <span>4天（住宿：3晚）</span></p></td>
+						<td><P><b>报价单有效截止期：</b> <span>2018-6-1</span></P></td>
+						<td><P><b>线路特色：</b> <span>暂无</span></P></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--基本信息over-->
+	<!--费用明细-->
+		<div class="costDetail basicInfoMation">
+		<div class="costHeader basicHeader">
+			<p>费用明细</p>
+		</div>
+		<div class="costCont basicCont">
+			<table style="table-layout:fixed" width="100%;" class="costTable">
+				<tbody>
+				<tr>
+					<th>项目</th>
+					<th>单价</th>
+				</tr>
+				<tr>
+					<td>成人价</td>
+					<td>￥2400/人</td>
+				</tr>
+				<tr>
+					<td>儿童价</td>
+					<td>￥2400/人</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!--费用明细over-->
+	<!--报价单附件-->
+		<div class="accessories basicInfoMation">
+		<div class="basicHeader">
+			<p>报价单附件</p>
+		</div>
+		<div class="accessoriesCont basicCont">
+			<table style="table-layout:fixed" width="100%;" class="acceContTable">
+				<tbody>
+				<tr>
+					<th>文件名</th>
+					<th>上传时间</th>
+					<th>上传人</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td>201803200002报价单.doc</td>
+					<td>2018-03-20  11:30:28</td>
+					<td>李四</td>
+					<td><a href="javascript:;" class="downloadBtn" style="color:#1495f0;">下载</a></td>
+				</tr>
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!--报价单附件over-->
+		<script src="../resource/js/jquery.min.js"></script>
+    	<script type="text/javascript">
+//		6-28
+	$(function(){
+		$(".table_detail").on("click",function(){
+			$(".prointro").show()
+			$(".ticketFlyBox").hide()
+			$(this).addClass("checked")
+			$(this).parent().find(".table_finder").removeClass("checked")
+		})
+		$(".table_finder").on("click",function(){
+			$(".prointro").hide()
+			$(".ticketFlyBox").show()
+			$(this).addClass("checked")
+			$(this).parent().find(".table_detail").removeClass("checked")
+		})
+	})
+
+//       tab 切换
+        $(function(){
+            $('.tabf').on('click',function(){
+                $('.tabBj').removeClass().addClass('tabBj').addClass('tabBj1')
+                $('.tabf').css({'color':'white'})
+                $('.tabt').css({'color':'#666666'})
+                $('.trafficCon').eq(0).css('display','block')
+                $('.trafficCon').eq(1).css('display','none')
+            })
+            $('.tabt').on('click',function(){
+                $('.tabBj').removeClass().addClass('tabBj').addClass('tabBj2')
+                $('.tabf').css({'color':'#666666'})
+                $('.tabt').css({'color':'white'})
+                $('.trafficCon').eq(0).css('display','none')
+                $('.trafficCon').eq(1).css('display','block')
+            })
+        })
+//        往返单程
+        $('.wangfan_icon').click(function(){
+            $('.dancheng_icon').removeClass('checked')
+            $(this).addClass('checked')
+
+            $('.content_wangfan').css('display',"block").siblings('.content_dancheng').css('display','none')
+        })
+        $('.dancheng_icon').click(function(){
+            $('.wangfan_icon').removeClass('checked')
+            $(this).addClass('checked')
+
+            $('.content_dancheng').css('display',"block").siblings('.content_wangfan').css('display','none')
+        })
+
+        $('html,body').css('background','#eff3f5');
+        $(function(){
+            $(".offerBtnBox .editBtn").click(
+                function(){
+                    if ($(this).children('span').text() == '展示全部') {
+                        $(this).children('span').text('收起全部');
+                        $(this).addClass('upIcon');
+                        $(this).parents().parents().find('.hideInfo').removeClass('none');
+                    } else {
+                        $(this).children('span').text('展示全部');
+                        $(this).removeClass('upIcon');
+                        $(this).parents().parents().find('.hideInfo').addClass('none');
+                    }
+
+                }
+            )
+
+            $(".moreTicket").click(
+                function(){
+                    if ($(this).children('span').text() == '更多机票') {
+                        $(this).children('span').text('收起机票');
+                        $(this).addClass('upIcon');
+                        $(this).parent ().find('.hideInfo').removeClass('none');
+                    } else {
+                        $(this).children('span').text('更多机票');
+                        $(this).removeClass('upIcon');
+                        $(this).parent ().find('.hideInfo').addClass('none');
+                    }
+
+                }
+            )
+			$(".otherSeat").toggle(
+				function(){
+				  $(this).parents().next('.flightList').show();
+				},
+				function(){
+				  $(this).parents().next('.flightList').hide();
+				}
+			);
+          $(".checkbox").toggle(
+                function(){
+                  $(this).addClass('checked');
+                },
+                function(){
+                  $(this).removeClass('checked');
+                }
+              );
+	$(".Squrecheckbox").toggle(
+        function(){
+          $(this).addClass('checked');
+        },
+        function(){
+          $(this).removeClass('checked');
+        }
+      );
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/common.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/mix_order.css">
+    <link href="../resource/js/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="myheader_wrap">
+        <div class="myheader">
+            <div class="shop"><span class="triangle">kl-fxs分销商门店<em></em></span>
+                <ul class="all_shop none">
+                    <li class="first"><a>青年分社</a></li>
+                    <li><a>分店</a></li>
+                    <li><a>分店</a></li>
+                    <li class="last"><a>退出</a></li>
+                </ul>
+            </div>
+            <div class="head_right">
+                <ul class="top_menu">
+                    <li class="active"><a>首页</a></li>
+                    <li><a>短线</a></li>
+                    <li><a>长线</a></li>
+                    <li><a>出境</a></li>
+                    <li><a>邮轮</a></li>
+                    <li><a>整团</a></li>
+                    <li><a>分期</a></li>
+                </ul>
+                <div class="icon_list">
+                    <a class="telphone"></a>
+                    <a class="money"></a>
+                    <a class="ring"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="menu_contain">
+        <div class="menu">
+            <i class="bzy_logo"></i>
+            <em class="pos">苏州站</em>
+            <div class="search_all">
+                <ul class="nav_hd">
+                    <li><a>我的店</a></li>
+                    <li class="cur"><a>订单中心</a></li>
+                    <li><a>我的财务</a></li>
+                    <li><a>收客统计</a></li>
+                    <li><a>电子合同</a></li>
+                    <li><a>我的收藏</a></li>
+                </ul>
+                <div class="s_wrap none">
+                    <div class="search_wrap">
+                        <span class="triangle r_tri">出境</span>
+                        <ul class="depart_wrap none">
+                            <li>邮轮</li>
+                            <li>出境</li>
+                            <li>邮轮</li>
+                        </ul>
+                        <input type="text" placeholder="输入目的地/线路/关键词/供应商">
+                        <i class="yi"></i>
+                        <div class="content_wrap">
+                            <p>热门目的地</p>
+                            <div class="hot">
+                                <a class="active">上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a><a>上海</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a class="i_search"></a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <ul>
+                <li class="title"><a>旅游订单</a></li>
+                <li><a>游客订单</a></li>
+                <li><a>散客订单</a></li>
+                <li><a>整团订单</a></li>
+                <li class="new"><a>目的地订单</a><i></i></li>
+            </ul>
+            <ul class="order_g">
+                <li class="title">其他订单<a></a></li>
+                <li class="new active"><a>机票订单</a><i></i></li>
+                <li><a>保鲜订单</a></li>
+                <li><a>门票订单</a></li>
+                <li><a>签证订单</a></li>
+                <li><a>车辆订单</a></li>
+                <li><a>人工订单</a></li>
+                <li><a>购买保险</a></li>
+                <li><a>购物车</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="info fisrt">
+                <div class="info_input order_origin">
+                    <span class="date_go">线路类型</span>
+                    <select>
+                        <option>跟团游</option>
+                        <option>自由行</option>
+                    </select>
+                </div>
+                <div class="info_input order_origin">
+                    <span class="date_go">订单来源</span>
+                    <select>
+                        <option></option>
+                        <option>1</option>
+                    </select>
+                </div>
+                <div class="info_input order_origin">
+                    <span class="date_go">订单状态</span>
+                    <select>
+                        <option>待审核</option>
+                        <option>1</option>
+                    </select>
+                </div>
+                <div class="info_input order_num"><input type="text" placeholder="游客姓名\订单编号\线路名称"></div>
+            </div>
+            <div class="info second_info">
+                <div class="info_input cal">
+                    <span class="date_go">出团日期</span>
+                    <label>
+                        <input type="text" value="2017-08-12">
+                        <i class="icon-caladar"></i>
+                    </label>
+                    <em class="zhi">至</em>
+                    <label>
+                        <input type="text" placeholder="下单时间" onclick="WdatePicker({skin:'twoer',dateFmt:'yyyy-MM-dd'})">
+                        <i class="icon-caladar"></i>
+                    </label>
+                </div>
+                <div class="info_input cal order_date">
+                    <span class="date_go">下单日期</span>
+                    <label>
+                        <input type="text" value="2017-08-12">
+                        <i class="icon-caladar"></i>
+                    </label>
+                    <em class="zhi">至</em>
+                    <label>
+                        <input type="text" placeholder="下单时间" onclick="WdatePicker({skin:'twoer',dateFmt:'yyyy-MM-dd'})">
+                        <i class="icon-caladar"></i>
+                    </label>
+                </div>
+                <div class="info_input order_num"><input type="button" class="search"value="搜索"></div>
+                
+                <div class="advance_search down"><i>高级搜索</i><em></em></div>
+            </div>
+            <div class="info_wrap none">
+                <div class="info mid">
+                    <!-- <div class="info_input line_type">
+                        <span class="date_go">产品类型</span>
+                        <span class="r_tri">订单状态</span>
+                        <ul class="depart_wrap none">
+                            <li>订单状态</li>
+                            <li>目的地订单</li>
+                            <li>长线-出发地跟团</li>
+                            <li>短线-周边游</li>
+                            <li>出境游</li>
+                        </ul>
+                    </div> -->
+                    
+                    <div class="info_input order_origin onelevel">
+                        <span class="date_go">目的地</span>
+                        <select>
+                            <option>全部</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="info_input order_origin ej level">
+                        <span class="date_go">二级目的地</span>
+                        <select>
+                            <option>全部</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="info_input txt name">
+                        <span class="date_go">游客姓名</span>
+                        <label>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="info_input txt tel phone">
+                        <span class="date_go">游客电话</span>
+                        <label>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="info_input order_origin tel isOr">
+                        <span class="date_go">是否分级</span>
+                        <select>
+                            <option>是</option>
+                            <option>否</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="info mid_copy">
+                    <div class="info_input order_origin">
+                        <span class="date_go">对账状态</span>
+                        <select>
+                            <option>订单状态</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="info_input order_origin">
+                        <span class="date_go">结算状态</span>
+                        <select>
+                            <option>订单状态</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="info_input cal">
+                        <span class="date_go">回团日期</span>
+                        <label>
+                            <input type="text" value="2017-08-12">
+                            <i class="icon-caladar"></i>
+                        </label>
+                        <em class="zhi">至</em>
+                        <label>
+                            <input type="text" placeholder="下单时间" onclick="WdatePicker({skin:'twoer',dateFmt:'yyyy-MM-dd'})">
+                            <i class="icon-caladar"></i>
+                        </label>
+                    </div>
+                    <div class="info_input order_origin width70">
+                        <span class="date_go">是否日结</span>
+                        <select>
+                            <option>全部</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="info last">
+                    <div class="info_input txt">
+                        <span class="date_go">行程天数</span>
+                        <label>
+                            <input type="text">
+                        </label>
+                    </div>
+                </div>  
+            </div>
+             <div class="order_info">
+                <div class="order_tab">
+                    <span class="tab_item tab1 active" data-index="0">全部订单</span>
+                    <span class="tab_item tab2" data-index="1">待支付<em>（12）</em></span>
+                    <p class="mon_info">
+                        <span>鱼钱宝基本户：<em>￥15.01</em></span>
+                        <span>贷记交易额度：<em>￥15.01</em></span>
+                        <span>贷记交易余额：<em>￥15.01</em></span>
+                    </p>
+                </div>
+                <table class="groupList">
+                    <tr>
+                        <th style="width:260px;">订单信息</th>
+                        <th style="width:110px;">出发/返回</th>
+                        <th style="width:30px;">人数</th>
+                        <th style="width:80px;">结算价</th>
+                        <th style="">订单状态</th>
+                        <th style="width:150px">订单操作</th>
+                    </tr>
+                </table>                
+                <div class="order_list all_order" data-index="0">
+                    <div class="order_item">
+                        <p class="num"><span>订单编号：kls123455666</span><span>下单时间：2016-12-01</span><span>联系人：王二狗  18501597421<span></p>
+                        <table class="double relative">
+                            <tr>
+                                <td class="t_first">
+                                    <div class=line_in>
+                                        <div class="go li_info">
+                                            <p class="lin_tit">海南三亚6日五晚六日游>海景房连住,新年南山祈福,金银蓝尼贝赠送三山岛出海南山</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    <p>09-15  06:25</p>
+                                    <p>09-15  06:25</p>
+                                </td>
+                                <td class="tour_num">
+                                    <p class="concat">2人</p>
+                                </td>
+                                <td class="price all_price">
+                                    <p class="num_p"><span>￥1450<i></i></span></p>
+                                    <p>实际支付￥100</p>
+                                    <p>授信支付￥100</p>
+                                    <p>尚未支付￥100</p>
+                                    <!--价格弹层开始-->
+                                    <table class="dialog_price none">
+                                        <tr class="one">
+                                            <th></th>
+                                            <th>旅游产品</th>
+                                            <th>机票</th>
+                                            <th>退团违约金</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">门市价</td>
+                                            <td>￥1250</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">结算价</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr class="last">
+                                            <td class="tit">预计利润</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                    </table> 
+                                    <!--价格弹层结束-->                                   
+                                </td>
+                                <td class="state">
+                                    <p class="pay">已报名</p>
+                                    <p><span class="djs">00 : 29 : 32</span></p>
+                                    <p class="cping">（退团审核中）</p>
+                                </td>    
+                                <td class="operation">
+                                    <a class="confirmOrder">确认订单</a>
+                                    <a>查看订单</a>                                    
+                                    <a>订单日志</a>
+                                    <div class="more-opera"><em>更多操作</em><i></i>
+                                        <ul class="more_con none">
+                                            <li class="yh"><a>游客优惠</a></li>
+                                            <li><a>确认订单</a></li>
+                                            <li><a>出团通知单</a></li>
+                                            <li><a>游客优惠</a></li>
+                                            <li><a>订单日志</a></li>
+                                            <li><a>查看日志</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="mixTable">
+                        <table class="double relative">
+                            <tr>
+                                <td class="t_first">
+                                    <div class=line_in>
+                                        <div class="go li_info airLine">
+                                            <p class="orderNum">订单编号：kls123455666<p>
+                                            <p class="clearfix"><span><img src="../resource/images/icon/airPlane.png"></span>上海虹桥-三亚凤凰</p>
+                                            <p class="clearfix"><span>去程</span>中国南方航空 CZ62723</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    <p>09-15  06:25</p>
+                                    <p>09-15  06:25</p>
+                                </td>
+                                <td class="tour_num">
+                                    <p class="concat">2人</p>
+                                </td>
+                                <td class="price all_price">
+                                    <p class="num_p"><span>￥1450<i></i></span></p><p>实际支付￥100</p><p>授信支付￥100</p><p>尚未支付￥100</p>
+                                    <!--价格弹层开始-->
+                                    <table class="dialog_price none">
+                                        <tr class="one">
+                                            <th></th>
+                                            <th>旅游产品</th>
+                                            <th>机票</th>
+                                            <th>退团违约金</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">门市价</td>
+                                            <td>￥1250</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">结算价</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr class="last">
+                                            <td class="tit">预计利润</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                    </table> 
+                                    <!--价格弹层结束-->                                      
+                                </td>
+                                <td class="state">
+                                    <p class="pay">已报名</p>
+                                    <p class="cping">（退团审核中）</p>
+                                </td>    
+                                <td class="operation">
+                                    <a>查看订单</a>
+                                    <a>取消订单</a>
+                                    <a>订单日志</a>
+                                    <div class="more-opera"><em>更多操作</em><i></i>
+                                        <ul class="more_con none">
+                                            <li class="yh"><a>游客优惠</a></li>
+                                            <li><a>报名确认单</a></li>
+                                            <li><a>出团通知单</a></li>
+                                            <li><a>游客优惠</a></li>
+                                            <li><a>订单日志</a></li>
+                                            <li><a>查看日志</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        </div>
+                        <div class="mixTable">
+                        <table class="double relative">
+                            <tr>
+                                <td class="t_first">
+                                    <div class=line_in>
+                                        <div class="go li_info airLine">
+                                            <p class="orderNum">订单编号：kls123455666<p>
+                                            <p class="clearfix"><span><img src="../resource/images/icon/airPlane.png"></span>上海虹桥-三亚凤凰</p>
+                                            <p class="clearfix"><span>去程</span>中国南方航空 CZ62723</p>
+                                        </div>
+                                    </div>
+                                    <div class=line_in>
+                                        <div class="go li_info airLine">
+                                            <p class="orderNum">订单编号：kls123455666<p>
+                                            <p class="clearfix"><span><img src="../resource/images/icon/hcIcon.png"></span>上海虹桥-三亚凤凰</p>
+                                            <p class="clearfix"><span>去程</span>中国南方航空 CZ62723</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    <p>09-15  06:25</p>
+                                    <p>09-15  06:25</p>
+                                </td>
+                                <td class="tour_num">
+                                    <p class="concat">2人</p>
+                                </td>
+                                <td class="price all_price">
+                                    <p class="num_p"><span>￥1450<i></i></span></p><p>实际支付￥100</p><p>授信支付￥100</p><p>尚未支付￥100</p>
+                                    <!--价格弹层开始-->
+                                    <table class="dialog_price none">
+                                        <tr class="one">
+                                            <th></th>
+                                            <th>旅游产品</th>
+                                            <th>机票</th>
+                                            <th>退团违约金</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">门市价</td>
+                                            <td>￥1250</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">结算价</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr class="last">
+                                            <td class="tit">预计利润</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                    </table> 
+                                    <!--价格弹层结束-->                                      
+                                </td>
+                                <td class="state">
+                                    <p class="pay">已报名</p>
+                                    <p class="cping">（退团审核中）</p>
+                                </td>    
+                                <td class="operation">
+                                    <a>查看订单</a>
+                                    <a>取消订单</a>
+                                    <a>订单日志</a>
+                                    <div class="more-opera"><em>更多操作</em><i></i>
+                                        <ul class="more_con none">
+                                            <li class="yh"><a>游客优惠</a></li>
+                                            <li><a>报名确认单</a></li>
+                                            <li><a>出团通知单</a></li>
+                                            <li><a>游客优惠</a></li>
+                                            <li><a>订单日志</a></li>
+                                            <li><a>查看日志</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        </div>                        
+                    </div>
+                    <div class="order_item">
+                        <p class="num"><span>订单编号：kls123455666</span><span>下单时间：2016-12-01</span><span>联系人：王二狗  18501597421<span></p>
+                        <table class="double relative">
+                            <tr>
+                                <td class="t_first">
+                                    <div class=line_in>
+                                        <div class="go li_info">
+                                            <p class="lin_tit">海南三亚6日五晚六日游>海景房连住,新年南山祈福,金银蓝尼贝赠送三山岛出海南山</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    <p>09-15  06:25</p>
+                                    <p>09-15  06:25</p>
+                                </td>
+                                <td class="tour_num">
+                                    <p class="concat">2人</p>
+                                </td>
+                                <td class="price all_price">
+                                    <p class="num_p"><span>￥1450<i></i></span></p><p>实际支付￥100</p><p>授信支付￥100</p><p>尚未支付￥100</p>
+                                    <!--价格弹层开始-->
+                                    <table class="dialog_price none">
+                                        <tr class="one">
+                                            <th></th>
+                                            <th>旅游产品</th>
+                                            <th>机票</th>
+                                            <th>退团违约金</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">门市价</td>
+                                            <td>￥1250</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">结算价</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr class="last">
+                                            <td class="tit">预计利润</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                    </table> 
+                                    <!--价格弹层结束-->                                      
+                                </td>
+                                <td class="state">
+                                    <p class="pay">已报名</p>
+                                    <p class="cping">（退团审核中）</p>
+                                </td>    
+                                <td class="operation">
+                                    <a>查看订单</a>
+                                    <a>取消订单</a>
+                                    <a>订单日志</a>
+                                    <div class="more-opera"><em>更多操作</em><i></i>
+                                        <ul class="more_con none">
+                                            <li class="yh"><a>游客优惠</a></li>
+                                            <li><a>报名确认单</a></li>
+                                            <li><a>出团通知单</a></li>
+                                            <li><a>游客优惠</a></li>
+                                            <li><a>订单日志</a></li>
+                                            <li><a>查看日志</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="order_item">
+                        <p class="num"><span>订单编号：kls123455666</span><span>下单时间：2016-12-01</span><span>联系人：王二狗  18501597421<span></p>
+                        <table class="double relative">
+                            <tr>
+                                <td class="t_first">
+                                    <div class=line_in>
+                                        <div class="go li_info">
+                                            <p class="lin_tit">海南三亚6日五晚六日游>海景房连住,新年南山祈福,金银蓝尼贝赠送三山岛出海南山</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    <p>09-15  06:25</p>
+                                    <p>09-15  06:25</p>
+                                </td>
+                                <td class="tour_num">
+                                    <p class="concat">2人</p>
+                                </td>
+                                <td class="price all_price">
+                                    <p class="num_p"><span>￥1450<i></i></span></p><p>实际支付￥100</p><p>授信支付￥100</p><p>尚未支付￥100</p>
+                                    <!--价格弹层开始-->
+                                    <table class="dialog_price none">
+                                        <tr class="one">
+                                            <th></th>
+                                            <th>旅游产品</th>
+                                            <th>机票</th>
+                                            <th>退团违约金</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">门市价</td>
+                                            <td>￥1250</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">结算价</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr class="last">
+                                            <td class="tit">预计利润</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                    </table> 
+                                    <!--价格弹层结束-->                                      
+                                </td>
+                                <td class="state">
+                                    <p class="pay">已报名</p>
+                                    <p class="cping">（退团审核中）</p>
+                                </td>    
+                                <td class="operation">
+                                    <a class="online">在线支付</a>
+                                    <a>取消订单</a>
+                                    <a>订单日志</a>
+                                    <div class="more-opera"><em>更多操作</em><i></i>
+                                        <ul class="more_con none">
+                                            <li class="yh"><a>游客优惠</a></li>
+                                            <li><a>报名确认单</a></li>
+                                            <li><a>出团通知单</a></li>
+                                            <li><a>游客优惠</a></li>
+                                            <li><a>订单日志</a></li>
+                                            <li><a>查看日志</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>                                        
+                </div>
+                <div class="order_list all_order none" data-index="1">
+                    <div class="order_item">
+                        <p class="num"><span>订单编号：kls123455666</span><span>下单时间：2016-12-01</span><span>联系人：王二狗  18501597421<span></p>
+                        <table class="double">
+                            <tr>
+                                <td class="t_first">
+                                    <div class=line_in>
+                                        <div class="go li_info">
+                                            <p class="lin_tit">海南三亚6日五晚六日游>海景房连住,新年南山祈福,金银蓝尼贝赠送三山岛出海南山</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    <p>09-15  06:25</p>
+                                    <p>09-15  06:25</p>
+                                </td>
+                                <td class="tour_num">
+                                    <p class="concat">2人</p>
+                                </td>
+                                <td class="price all_price">
+                                    <p class="num_p"><span>￥1450<i></i></span></p><p>实际支付￥100</p><p>授信支付￥100</p><p>尚未支付￥100</p>
+                                </td>
+                                <td class="state">
+                                    <p class="pay">已报名</p>
+                                    <p class="cping">（退团审核中）</p>
+                                </td>    
+                                <td class="operation">
+                                    <a>查看订单</a>
+                                    <a>取消订单</a>
+                                    <a>订单日志</a>
+                                    <div class="more-opera"><em>更多操作</em><i></i>
+                                        <ul class="more_con none">
+                                            <li class="yh"><a>游客优惠</a></li>
+                                            <li><a>报名确认单</a></li>
+                                            <li><a>出团通知单</a></li>
+                                            <li><a>游客优惠</a></li>
+                                            <li><a>订单日志</a></li>
+                                            <li><a>查看日志</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="order_item">
+                        <p class="num"><span>订单编号：kls123455666</span><span>下单时间：2016-12-01</span><span>联系人：王二狗  18501597421<span></p>
+                        <table class="double relative">
+                            <tr>
+                                <td class="t_first">
+                                    <div class=line_in>
+                                        <div class="go li_info">
+                                            <p class="lin_tit">海南三亚6日五晚六日游>海景房连住,新年南山祈福,金银蓝尼贝赠送三山岛出海南山</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    <p>09-15  06:25</p>
+                                    <p>09-15  06:25</p>
+                                </td>
+                                <td class="tour_num">
+                                    <p class="concat">2人</p>
+                                </td>
+                                <td class="price all_price">
+                                    <p class="num_p"><span>￥1450<i></i></span></p><p>实际支付￥100</p><p>授信支付￥100</p><p>尚未支付￥100</p>
+                                    <table class="dialog_price none">
+                                        <tr class="one">
+                                            <th></th>
+                                            <th>旅游产品</th>
+                                            <th>机票</th>
+                                            <th>退团违约金</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">门市价</td>
+                                            <td>￥1250</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">结算价</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                        <tr class="last">
+                                            <td class="tit">预计利润</td>
+                                            <td>￥1450</td>
+                                            <td>￥450</td>
+                                            <td>￥450</td>
+                                        </tr>
+                                    </table>                                    
+                                </td>
+                                <td class="state">
+                                    <p class="pay">已报名</p>
+                                    <p class="cping">（退团审核中）</p>
+                                </td>    
+                                <td class="operation">
+                                    <a>查看订单</a>
+                                    <a>取消订单</a>
+                                    <a>订单日志</a>
+                                    <div class="more-opera"><em>更多操作</em><i></i>
+                                        <ul class="more_con none">
+                                            <li class="yh"><a>游客优惠</a></li>
+                                            <li><a>报名确认单</a></li>
+                                            <li><a>出团通知单</a></li>
+                                            <li><a>游客优惠</a></li>
+                                            <li><a>订单日志</a></li>
+                                            <li><a>查看日志</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="order_item">
+                        <p class="num"><span>订单编号：kls123455666</span><span>下单时间：2016-12-01</span><span>联系人：王二狗  18501597421<span></p>
+                        <table class="double">
+                            <tr>
+                                <td class="t_first">
+                                    <div class=line_in>
+                                        <div class="go li_info">
+                                            <p class="lin_tit">海南三亚6日五晚六日游>海景房连住,新年南山祈福,金银蓝尼贝赠送三山岛出海南山</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    <p>09-15  06:25</p>
+                                    <p>09-15  06:25</p>
+                                </td>
+                                <td class="tour_num">
+                                    <p class="concat">2人</p>
+                                </td>
+                                <td class="price all_price">
+                                    <p class="num_p"><span>￥1450<i></i></span></p><p>实际支付￥100</p><p>授信支付￥100</p><p>尚未支付￥100</p>
+                                </td>
+                                <td class="state">
+                                    <p class="pay">已报名</p>
+                                    <p class="cping">（退团审核中）</p>
+                                </td>    
+                                <td class="operation">
+                                    <a>查看订单</a>
+                                    <a>取消订单</a>
+                                    <a>订单日志</a>
+                                    <div class="more-opera"><em>更多操作</em><i></i>
+                                        <ul class="more_con none">
+                                            <li class="yh"><a>游客优惠</a></li>
+                                            <li><a>报名确认单</a></li>
+                                            <li><a>出团通知单</a></li>
+                                            <li><a>游客优惠</a></li>
+                                            <li><a>订单日志</a></li>
+                                            <li><a>查看日志</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>                                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dia_bd none"></div>
+    <script src="../resource/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../resource/js/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".shop").hover(function(){
+                $(this).find(".all_shop").toggleClass("none");
+            })
+            $(".i_search").click(function(){
+                $(this).parents(".search_all").find(".s_wrap ").fadeIn(200);
+            })
+            $("body").click(function(e){
+                var _con = $(".i_search,.s_wrap ");
+                if( !_con.is(e.target) && _con.has(e.target).length == 0){
+                    $(".s_wrap").addClass("none").fadeOut(100);
+                }
+                var _cc = $(".hb_time");
+                if( !_cc.is(e.target) && _cc.has(e.target).length == 0){
+                    $(".hb_sel").addClass("none");
+                }
+            })
+            //出发地
+            $(".depart_wrap li").click(function(){
+                $(this).parents(".search_wrap").find(".triangle").text($(this).text());
+                $(this).parent(".depart_wrap").addClass("none");
+            })
+            $(".search_wrap .triangle").click(function(){
+                $(this).parents(".search_wrap").find(".depart_wrap").toggleClass("none");
+            })
+            //订单tab
+            $(".order_tab .tab_item").click(function(){
+                $(this).addClass("active").siblings(".tab_item").removeClass("active");
+                $(".order_list[data-index="+ $(this).data("index")+"]").removeClass("none").siblings(".order_list").addClass("none");
+            })
+            //价格详情hover
+            $(".price .num_p").hover(function(){
+                $(this).parent().children(".dialog_price").removeClass("none");
+            },function(){
+                $(this).parent().children(".dialog_price").addClass("none");
+            })
+            $(".price .num_p em").hover(function(){
+                $(this).parents(".order_item").find(".yuding").removeClass("none");
+            },function(){
+                $(this).parents(".order_item").find(".yuding").addClass("none");
+            })
+            //更多操作
+            $(".operation .more-opera").click(function(){
+                $(this).toggleClass("up");
+                $(this).find(".more_con").toggleClass("none");
+                if($(this).hasClass("up")){
+                    $(this).find("em").text("收起操作");
+                }else{
+                    $(this).find("em").text("更多操作");
+                }
+            })
+            //航班时间
+            $(".order_title .hb_time .hb_txt").click(function(){
+                $(this).parents(".hb_time").find(".hb_sel").toggleClass("none")
+            })
+            //高级搜索
+            $(".advance_search").click(function(){
+                $(this).toggleClass("down");
+                $(".info_wrap").toggleClass("none");
+                if($(this).hasClass("down")){
+                    $(this).find("i").text("高级搜索");
+                }else{
+                    $(this).find("i").text("收起");
+                }
+            })
+            //修改订单
+            $(".operation .edit,.operation .adjust,.operation .application,.operation .commonet").click(function(){
+                $(".dia_bd").removeClass("none");
+            })
+            $(".operation .edit").click(function(){
+                $(this).parents(".order_item").find(".xg_order").removeClass("none");
+            })
+            $(".edit_content .close,.edit_content .add_xg").click(function(){
+                $(".dia_bd").addClass("none");
+                $(this).parents(".order_item").find(".edit_wrap").addClass("none");
+            })
+            //补差调整
+            $(".operation .adjust").click(function(){
+                $(this).parents(".order_item").find(".bc_order").removeClass("none");
+            })
+            //退团申请
+            $(".operation .application").click(function(){
+                $(this).parents(".order_item").find(".tt_order").removeClass("none");
+            })
+            $(".operation .commonet").click(function(){
+                $(this).parents(".order_item").find(".pj_order").removeClass("none");
+            })
+            //高级搜索产品类型多选
+            $(".r_tri").click(function(){
+                $(this).next(".depart_wrap").toggleClass("none");
+            })
+            $(".depart_wrap li").click(function(){
+                $(this).parents(".line_type").find(".r_tri").text($(this).text());
+            })
+            //退改规则
+            $(".tui_rule").hover(function(){
+                $(".rule").removeClass("none");
+            },function(){
+                $(".rule").addClass("none");
+            })
+        })
+    </script>
+</body>
+</html>

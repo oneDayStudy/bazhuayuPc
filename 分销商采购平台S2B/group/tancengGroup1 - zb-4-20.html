@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>八爪鱼在线旅游平台</title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/common.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/dest/tanceng.css">
+</head>
+<body>
+        <!--tickeniss content-->
+
+        <div class="noBodyMsg">
+            <!--无游客信息弹窗内容-->
+            <div class="noBodyMsg_cont" style="display: none">
+                <p class="babaIcon" style="line-height:0;margin-top:10px;"><i></i></p>
+                <p style="font-size:16px;color:#405063;font-weight: 600;">目前占无游客信息</p>
+                <p style="font-size: 14px;color:#7e8995;margin-top:10px;">若预定火车票，请先完善游客信息 若预定单程或往返的机票，可先预定，再完善游客信息，然后绑定乘客</p>
+            </div>
+            <!--无游客信息弹窗内容 over-->
+                <!--交通列表-->
+                <div class="YD_table_content clearfix">
+                    <table class="YD_table ">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>游客姓名</th>
+                            <th>证件类型</th>
+                            <th>证件号码</th>
+                            <th>类型</th>
+                            <th colspan="2" width="510">大交通</th>
+                        </tr>
+                        </thead>
+                        <tbody id="ContentPlaceHolder1_tbodyTourist">
+                        <tr>
+                            <td>1</td>
+                            <td>张继蕊</td>
+                            <td>身份证</td>
+                            <td>370811198702123025</td>
+                            <td>成人</td>
+                            <td>
+                                <div class="YD_logo"><i></i></div>
+                                <div class="YD_cont_r">
+                                    <p>三亚凤凰-上海虹桥</p>
+                                    <p>中国南方航空CZ62732</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="YD_logo"><i></i></div>
+                                <div class="YD_cont_r">
+                                    <p>三亚凤凰-上海虹桥</p>
+                                    <p>中国南方航空CZ62732</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>张继蕊</td>
+                            <td>身份证</td>
+                            <td>370811198702123025</td>
+                            <td>成人</td>
+                            <td>
+                                <div class="YD_logo"><i></i></div>
+                                <div class="YD_cont_r">
+                                    <p>三亚凤凰-上海虹桥</p>
+                                    <p>中国南方航空CZ62732</p>
+                                </div>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>张继蕊</td>
+                            <td>身份证</td>
+                            <td>370811198702123025</td>
+                            <td>成人</td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <div class="YD_logo"><i></i></div>
+                                <div class="YD_cont_r">
+                                    <p>三亚凤凰-上海虹桥</p>
+                                    <p>中国南方航空CZ62732</p>
+                                </div>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--交通列表over-->
+                <!--火车飞机tab-->
+            <div class="ticketFlyBox">
+                <!--tab-->
+                <div class="Tab">
+                    <div class="TabBox">
+                        <div class="tabBj tabBj1">
+                            <span class="tabf" style="color: white;">飞机</span>
+                            <span class="tabt" style="color: rgb(102, 102, 102);">火车</span>
+                        </div>
+                    </div>
+                </div>
+                <!--内容切换1-->
+                <div class="content" style="display: block;">
+                    <!--选择详情块儿-->
+                    <div class="content_detail">
+
+                        <div class="content_detail_check">
+                            <span>航程类型</span><span><b type="radio" name="my" class="checked wangfan_icon"></b></span><span>往返</span>
+                            <span style="margin-left:30px;"><b type="radio" name="my" class="dancheng_icon"></b></span><span>单程</span>
+                        </div>
+                        <div class="content_input">
+                            <p style="margin-left: 0px;"><span>出发城市</span><input type="text"></p>
+                            <p><span>到达城市</span><input type="text"></p>
+                            <p><span>出发日期</span><input type="text"></p>
+                        </div>
+
+                        <!--订票块儿-->
+                        <div class="content_box content_wangfan">往返</div>
+                        <div class="content_box content_dancheng" style="display: none">单程</div>
+                    </div>
+
+                </div>
+                <!--1over-->
+                <!--内容切换2-->
+                <div class="content" style="display: none;">
+                    <!--选择详情块儿-->
+                    <div class="content_detail">
+                        <div class="content_input" style="margin-top:0px ">
+                            <p style="margin-left: 0px;"><span>出发城市</span><input type="text"></p>
+                            <p><span>到达城市</span><input type="text"></p>
+                            <p><span>出发日期</span><input type="text"></p>
+                            <a href="javascript:;" class="search">查询</a>
+                        </div>
+                    </div>
+                    <!--订票块儿-->
+                    <div class="content_box">往返</div>
+
+                </div>
+                <!--2over-->
+            </div>
+                <!--火车飞机tab over-->
+            <div class="noBodyMsg_btn">
+                <a href="javascript:;">预定去程</a>
+                <a href="javascript:;">预定返程</a>
+                <a href="javascript:;">预定往返</a>
+            </div>
+        </div>
+        <!--tickeniss content over-->
+
+    <script src="../resource/js/jquery.min.js"></script>
+    <script type="text/javascript">
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+body {  user-select: none;  -moz-user-select: none;  }
+.wrap{position: relative}
+.tickeniss_btn{overflow: hidden;}
+.tickeniss_btn ul{margin:50px auto;width: 900px;}
+.tickeniss_btn ul li{float:left;margin-left:20px;background: #fb7262;  width:100px;height:30px;border-radius: 20px;text-align: center;line-height: 30px;color:#fff;  }
+/*弹框架子*/
+.WrapMask{width:100%;height:300%;background: #000;background: rgba(0,0,0,0.3);position:absolute;top: -100px;
+    left: 0;}
+.tickenissBox{width:1200px;top:80px;left:0px;background: #fff;position: relative;margin:0 auto;}
+.tickeniss_title{width:100%;height:60px;background: #f6f9fa;line-height:60px;text-align: center;color:#405063;font-size: 18px;}
+.return_btn{position: absolute;right:20px;top:20px;background: url(../../images/icon/return_btn.png) no-repeat;width:18px;height:18px;}
+/*弹窗内容*/
+.noBodyMsg{width:100%;background:#fff;overflow:hidden;position: relative;padding-bottom:26px;}
+/*无信息情况*/
+.noBodyMsg_cont{  width:1145px;border:1px solid #e4e4e4;margin:20px auto;  }
+.noBodyMsg_cont p{  text-align: center; }
+.noBodyMsg_cont p i{  display: inline-block;  width:150px;height:180px;  background: url(../../images/baba_logo.png) no-repeat;  }
+.noBodyMsg_btn{  width:403px;margin:28px auto;  background: red;  }
+.noBodyMsg_btn a{  background:#fb7262;float: left;width:100px;height:35px;line-height:35px;text-align: center;font-size:16px;color: #fff;border-radius:2px;margin-left:34px;  }
+.tickenissBox iframe{  width:100%;  }
+.iframe{}
+/*订单详情*/
+.YD_table_content{width:100%;width:1140px;margin:20px auto;}
+.YD_table{width:100%;color:#405063;text-align:center;border-collapse:collapse;}
+.YD_table tr th{font-weight:bold;text-align:center;padding:15px;}
+.YD_table tr th,.YD_table tr td{padding:8px 15px;border:1px solid #e4e4e4;}
+.YD_table .YD_logo i{display: inline-block;background: url(../../images/icon/fly_icon.png) no-repeat;width: 24px;height:21px;margin-top:10px; }
+.YD_table .YD_logo{width:20%;float: left;text-align: right;}
+.YD_table .YD_cont_r{width: 70%;float:left;text-align: left;padding-left:12px;}
+/*火车飞机tab*/
+.ticketFlyBox{  width: 1140px;  margin:0 auto;  }
+.Tab{  height:48px;width:1140px;  border-bottom:1px solid #fc8e81;  color:#666666;font-weight: 500;  }
+.Tab span{  float: left;  display: inline-block; width:100px; height:48px;  font-size:16px;line-height:48px;text-align: center;  }
+.tabBj{width:252px;height:49px;float:left;overflow:hidden;}
+.tabBj1{background:url(../../images/tabBG_1.png) no-repeat}
+.tabBj2{background:url(../../images/tabBG_2.png) no-repeat}
+.ticketFlyBox span{color:#7e8995;font-size:14px;}
+.ticketFlyBox span.tabCurrent{color:#f01447;font-size:16px;font-weight:600;}
+
+/*飞机*/
+.ticketFlyBox_btn{overflow:hidden;width:245px;height:66px;margin:26px auto;color:#405063;font-size:16px;}
+.ticketFlyBox_btn a{float:left;width:100px;height:35px;line-height: 35px;color:#405063;font-size:16px;text-align: center;border-radius: 2px;}
+.content{overflow:hidden;color:#666666;position: relative;}
+.content_detail{  width:1058px; border:1px solid #fc8e81;border-top:0px;  padding:30px 40px;  position: relative;  }
+.content_box{  margin-top:20px;border:1px solid #e4e4e4;  }
+.content_detail_check{overflow: hidden;font-size:14px;font-size: 14px;border:1px solid #e4e4e4;line-height: 50px;  padding-left:25px;  }
+.content_detail_check span{float:left;}
+.content_detail_check span.content_detail_icon{float:left;margin-left:2px;}
+.content_detail_icon i{float: left;width:16px;height:16px;background: url(../../images/icon/icon_detail.png);margin-left:5px;margin-top:16px;}
+.content_detail_box{width:200px;border:1px solid #e4e4e4;position: absolute;left:632px;top:50px;z-index: 999;background: #fff;padding:6px;text-align: left;color:#666666;}
+.content_detail_check ul{margin-bottom:25px;}
+.content_detail_check ul li{overflow:hidden;color:#7e8995;font-size:14px; margin-top:14px;line-height:30px;margin-bottom:10px;}
+.content_detail_check input{width:185px;height:28px;margin-left:8px;margin-right:8px;border:1px solid #dfe4e6;}
+.content_detail_check .title{font-size:14px;color:#405063;font-weight: 600;}
+/*火车*/
+.content_detail_check{color:#405063;}
+
+.content_detail_check .GoCheck_input{margin-top:20px;height:30px;position: relative;}
+.content_detail_check .GoCheck_input .GoCheck_inp1{width:440px;float:left;height:30px;line-height: 30px;}
+.content_detail_check .GoCheck_input .GoCheck_inp1 input{width:140px;float:left;}
+.content_detail_check .GoCheck_input i{display: inline-block;width:24px;height:24px;background: url("../../images/icon/hcIcon.png") no-repeat;vertical-align: middle;}
+.content_detail_check .GoCheck_input a{display: inline-block;background: #fb7262;color: #fff;width:80px;height:30px;line-height:30px;text-align: center;border-radius: 4px;  position: absolute;right:22px; }
+/*火车-list*/
+.ticketList_title{width: 100%;height:38px;background: #f6f9fa;}
+.ticketList_title th{height:38px;background: #f6f9fa;padding:0 10px;text-align: center;border-bottom: 1px solid #e4e4e4;color:#7e8995;}
+.ticketList_title th i{}
+.ticketList_title th i.fangClicked{}
+.check{  float:left;margin-top:18px;margin-left:8px;margin-right:4px;  width:14px;height:14px;  }
+.fangClick{  background: url(../../images/icon/fangClick.png);  }
+.fangClicked{  background: url(../../images/icon/fangClicked.png);  }
+.content_detail_check tr td{text-align: center;border-bottom:1px solid #dfe4e6;}
+.startTime{padding:35px 0; }
+.startTime p{height:26px;width: 100%;text-align: center;line-height:26px;}
+.ticketLogo p i{display: inline-block;width: 128px;height:15px;background: url(../../images/icon/ticket_logo.png) no-repeat;margin-top:15px;}
+.ticketLogo p{height:30px;line-height: 30px;color: #8898b2;font-size: 12px;}
+.ticketNum p{height:30px;line-height: 30px;font-size: 14px;color: #8898b2;}
+.ticketChair p{color:#405063;font-size:14px;height:30px;line-height: 30px;}
+.ticketPrice p{color:#f01447;font-size:16px;font-weight: 600;line-height: 30px;}
+.ticketRemain p{font-size:14px;color:#7e8995;line-height:30px;}
+.ticketGoBuy p{line-height: 30px;}
+.ticketGoBuy p a{display: inline-block;width:72px;height:22px;line-height:22px;background: #fb7262;color:#fff;border-radius:4px;margin-left:10px;}
+/*当前选中班次*/
+.currentShift{margin:25px auto;width:1140px;overflow: hidden;position: relative;}
+    /*title*/
+.current_title{color:#7e8995;font-size:16px;}
+.current_chose{  width:1138px;height:100px;margin-top:16px; border:1px solid #e4e4e4; }
+    /*.current_chose li*/
+.current_chose ul{overflow: hidden;}
+.current_chose ul li{float:left;}
+.current_choseIcon{}
+.current_choseIcon i{width:24px;height:24px;display: inline-block;background: url(../../images/icon/return.png) no-repeat; margin:36px 25px;line-height: 100px;}
+.current_choseTime{margin:20px 0;}
+.current_choseChair{margin:20px 30px;}
+.current_choseTime p,.current_choseChair p{font-size:14px;line-height:30px;color:#405063; text-align: center;}
+.current_choseStar,.current_choseEnd{margin:20px 30px;}
+.current_choseEnd{position: relative;}
+.current_choseEnd span{position: absolute; color: #e74c3c;top:0px;left:-24px;font-size:14px;}
+.current_choseStar p,.current_choseEnd p{font-size:14px;line-height:30px;color:#405063; text-align: center;}
+.current_choseIcon2{margin:20px 30px;}
+.current_choseIcon2 p i{display: inline-block;width:119px;height:15px;background: url(../../images/icon/logo_ticke662.png) no-repeat;margin-top:10px;}
+.current_choseIcon2 p{font-size:12px;line-height:24px;color:#8898b2; text-align: center;}
+.current_IsEat{margin:40px 30px;}
+.current_IsEat p{color:#405063;font-size:14px;text-align: center;line-height: 30px;}
+.current_Price{margin:16px 40px;}
+.current_Price p{ color: #f01447;font-size:16px;line-height:30px;text-align: center;}
+.current_Price .current_Price_p{color: #666666;font-size:14px;line-height:30px;}
+.current_Price .current_Price_p i{width:16px;height:16px;display: inline-block;background: url("../../images/icon/icon_detail.png") no-repeat;margin:-3px 6px;}
+.current_Price .current_Price_p span{position: absolute;right:60px;top:100px;background:#fff;width:100px;height:100px;border:1px solid #ccc;padding:8px;text-align: left;}
+.current_btn{width:90px;height:30px;line-height:30px;font-size:14px;text-align:center;color:#fff;border-radius:4px;background: #fb7262;position:absolute;right:22px;top:84px;margin-top:-15px;}
+    /*table list*/
+.current_list{width:100%;margin-top:10px;}
+.current_list table{border:1px solid #e4e4e4;border-collapse:collapse;}
+.current_list table th,.current_list table td{text-align: center;color:#405063;font-size:14px;line-height:50px;border:1px solid #e4e4e4;}
+.current_list table th{font-weight: 600;}
+.currentList_chose{width:54px;}
+.currentList_chose i{display:inline-block;width:14px;height:14px;background: url("../../images/icon/fangClick.png")}
+.currentList_chose i.checked{display:inline-block;width:14px;height:14px;background: url("../../images/icon/fangClicked.png")}
+.currentList_num{width: 54px;}
+.currentList_name{width: 160px;}
+.currentList_id{width: 120px;}
+.currentList_type{width: 110px;}
+.current_list table td.noVerify{color:red}
+    /*火车票验证不通过*/
+.ticketNoVerify{overflow: hidden;border:1px solid #e4e4e4;border-top:0;}
+.ticketNoVerify ul{margin:25px 30px;}
+.ticketNoVerify ul li{}
+.ticketNoVerify_title{font-size:14px;color:#405063;line-height:30px;}
+.ticketNoVerify_title span{font-size:14px;color:#00a7de;margin:11px;}
+.ticketNoVerify_check{line-height: 30px;font-size:12px;color:#666666;}
+.ticketNoVerify_check i{display: inline-block;width: 16px;height: 16px;background: url("../../images/icon/check16size.png") no-repeat;vertical-align: middle;margin-right: 15px;}
+.ticketNoVerify_check i.checked{background: url("../../images/icon/checked16size.png")}
+.ticketEmail_t{heigth:44px;background:#f6f9fa;font-size:14px;color:#666666;line-height:44px;padding-left:16px;}
+.ticketEmail_t i{width:16px;height:16px;display: inline-block;background: url("../../images/icon/icon_detail.png") no-repeat;margin:-3px 4px;}
+.ticketEmail_inp{color:#405063;font-size:14px;margin:25px 30px;}
+.ticketEmail_inp li{width:100%;text-align: right;margin-bottom:16px;line-height: 28px;overflow: hidden;}
+.ticketEmail_inp li p{float: left;width: 100px;}
+.ticketEmail_inp input{float:left;border:1px solid #dfe4e6;width:160px;height:28px;margin-left:15px;}
+.ticketEmail_select{float: left;margin-left:15px;}
+.ticketEmail_select span{float: left;}
+.ticketEmail_inp select{border:1px solid #dfe4e6;width:80px;height:28px;float:left;}
+        /*btn*/
+.current_btn2,.current_btn3{width: 250px;overflow: hidden;height:58px;margin:26px auto;}
+.currentBtn_close,.currentBtn_method{float:left;width:96px;height:34px;text-align: center;line-height: 34px;border-radius:4px;}
+.currentBtn_close{border:1px solid #cecece;color: #405063;}
+.currentBtn_method{float:left;margin-left:43px;background:#f01447; color:#fff;}
+/*占不支持情况*/
+.ticketNoVerify_N{color:#fb7262;font-size:14px;}
+.ticketNoVerify_N p{margin:14px 18px;}
+/*单订飞机*/
+.alonReserFly{width:1140px;margin:30px auto;position: relative;}
+.alonReserFly_t{height:50px;width: 1140px;position: relative;top:1px;border-bottom: 1px solid #fdb8b0;}
+.fly_tBj{width:131px;height:49px;background: url("../../images/tabbG.png") no-repeat;line-height: 49px;font-size:16px;
+    font-weight: 600;color:#f01447;text-align: center;position: absolute;bottom:-1px;}
+.mask{position:absolute;width:129px;height:2px;background: #fff;top:-2px;}
+.alonReserFly_cont{  position: relative;  width:1138px;  border:1px solid #fdb8b0;overflow: hidden; border-top: 0px; }
+.alonReserFlyCont_t{  width:1060px;border:1px solid #e4e4e4;margin: 20px auto;  padding:10px 20px;}
+.alonReserFlyCont_t p{line-height: 38px;color:#7e8995;font-size:14px;}
+.alonReserFlyT_check i{display:inline-block;width: 16px;height:16px;background:url("../../images/icon/check16size.png") no-repeat; vertical-align: middle;}
+.alonReserFlyT_check i.checked{background:url("../../images/icon/checked16size.png") no-repeat;}
+.alonReserFlyT_inp{overflow: hidden;line-height: 38px;}
+.alonReserFlyT_inp span{float:left;margin-left:10px;}
+.alonReserFlyT_inp input{float:left;width:100px;height:28px;border:1px solid #dfe4e6;margin-top:4px;margin-left:10px;}
+.alonReserFlyCont_t .alonReserFlyT_detail{ color: #fb7262;font-size:14px;}
+.alonReserFlyT_detail span i{cursor:pointer;display: inline-block;background: url("../../images/icon/icon_detail.png") no-repeat;width:16px;height: 16px;vertical-align: middle;margin-left:8px;}
+.F_detail{display:inline-block;border:1px solid #e4e4e4;padding:8px;background: #fff;position: absolute;top:120px;left:570px;z-index:9;line-height:30px;color:#666666;}
+    /*conten table*/
+.alonReserFlyCont_L{width:1100px;margin:10px auto;border:1px solid #e4e4e4; }
+.alonReserFlyCont_L table{border-collapse: collapse; }
+.alonReserFlyCont_L th{height:35px;background: #f6f9fa;text-align: center;color:#7e8995;font-size:12px;line-height:36px;border-bottom:1px solid #e4e4e4;}
+.alonReserFlyCont_L td{text-align: center;padding-top:30px;padding-bottom:30px;font-size:14px;color:#666666;line-height:24px;position: relative;}
+.aloneFly_return{width:5%;}
+.aloneFly_time{width:6%;}
+.aloneFly_h{width:13%;}
+.aloneFly_star{width:15%; position: relative;}
+.aloneFly_img{width:18%;}
+.aloneFlyReturn{width: 5%;}
+.aloneFly_other{width:180px;}
+.aloneFly_Price{width:140px;}
+.aloneFly_return i{display: inline-block;width:24px;height:24px;background: url("../../images/icon/go.png") no-repeat;}
+.aloneFly_time p{}
+.aloneFly_img{position: relative;}
+.aloneFly_img p{}
+/*detail*/
+.go{position: relative;}
+.detailBox{position: absolute;border:1px solid #e4e4e4;background: #fff;top:20px;left:152px;padding:6px;}
+.aloneFly_img i{display: inline-block;width:113px;height:10px;background: url("../../images/icon/icon_jt.png") no-repeat;position: absolute;left:44px;top:54px;}
+.aloneFly_star i{position: absolute;color:#e74c3c;top:28px;right:8px;}
+.return td{border-bottom:1px solid #e4e4e4;}
+.return .aloneFly_return i{background: url("../../images/icon/return.png") no-repeat;}
+.hr{width:100%;height:0px;border-bottom:1px dashed #e4e4e4;position: absolute;bottom:10px;left:10px;}
+/* commen icon*/
+.detailIcon{display:inline-block;width:16px;height:16px;background: url("../../images/icon/icon_detail.png") no-repeat;vertical-align: middle;margin-left:8px;}
+.aFlyCheck p{color: #666666;font-size:14px;text-align: left;cursor: pointer;}
+.aFlyCheck p span{margin-left: 40px;}
+.aFlyCheck p i{width:16px;height:16px;display:inline-block;background: url("../../images/icon/check16size.png")no-repeat;vertical-align: middle;margin-right:10px;}
+.aFlyCheck p i.checked{background: url("../../images/icon/checked16size.png")no-repeat;vertical-align: middle;margin-right:10px;}
+
+.aFlyAdd ul{overflow: hidden;}
+.aFlyAdd ul li{width:30px;height:30px;float:left;border:1px solid #e4e4e4;line-height: 30px;text-align: center;}
+.alonReserFlyInp2{width:1100px;margin:10px auto;margin-bottom:20px;}
+.alonReserFlyInp2 ul{margin:25px 20px;}
+.alonReserFlyInp2 ul li{height:30px;line-height:30px;font-size:14px;color:#7e8995;margin-top:14px;padding-left:20px;}
+.alonReserFlyInp2 ul li input{height:28px;font-size:14px;color:#7e8995;border: 1px solid #dfe4e6;width: 180px;margin-left:12px;}
+.alonReserFlyInp2 ul li span{margin-left:10px;}
+.alonReserFlyInp2 ul li.FlyInp2_title{font-size:14px;font-weight: 600;color:#405063;padding-left:0;}
